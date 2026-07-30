@@ -1,16 +1,85 @@
+import React, { useState } from "react";
+import {
+  View,
 import { forwardRef, useState } from "react";
 import {
   StyleSheet,
   Text,
   TextInput,
-  TextInputProps,
+  StyleSheet,
   TouchableOpacity,
   View,
 } from "react-native";
+
 import { PasswordshowIcon, PasswordHideIcon } from "../../assets/svg/SvgIcons";
+import { AppTextInputProps } from "@/utils/types/Apptypes";
 import { theme } from "../../utils/theme/Theme";
 import { CustomTextInputProps } from "@/utils/types/Apptypes";
 
+const AppTextInput = ({
+  label,
+  error,
+  helperText,
+  leftIcon,
+  containerStyle,
+  isPassword = false,
+  inputContainerStyle,
+
+  onFocus,
+  onBlur,
+
+  ...props
+}: AppTextInputProps) => {
+  const [showPassword, setShowPassword] = useState(false);
+
+  const [isFocused, setIsFocused] = useState(false);
+
+  return (
+    <View style={[styles.container, containerStyle]}>
+      {label && <Text style={styles.label}>{label}</Text>}
+
+      <View
+        style={[
+          styles.inputContainer,
+
+          isFocused && styles.focusedBorder,
+
+          error && styles.errorBorder,
+
+          inputContainerStyle,
+        ]}
+      >
+        {leftIcon && <View style={styles.leftIcon}>{leftIcon}</View>}
+
+        <TextInput
+          style={styles.input}
+          secureTextEntry={isPassword && !showPassword}
+          placeholderTextColor={theme.colors.placeholder}
+          onFocus={(e) => {
+            setIsFocused(true);
+
+            onFocus?.(e);
+          }}
+          onBlur={(e) => {
+            setIsFocused(false);
+
+            onBlur?.(e);
+          }}
+          {...props}
+        />
+
+        {isPassword && (
+          <TouchableOpacity
+            onPress={() => setShowPassword(!showPassword)}
+            style={styles.eyeButton}
+          >
+            {showPassword ? (
+              <PasswordshowIcon color={theme.colors.muted} />
+            ) : (
+              <PasswordHideIcon color={theme.colors.muted} />
+            )}
+          </TouchableOpacity>
+        )}
 
 const CustomTextInput = forwardRef<TextInput, CustomTextInputProps>(
   (
@@ -95,59 +164,74 @@ const CustomTextInput = forwardRef<TextInput, CustomTextInputProps>(
           <Text style={styles.helperText}>{helperText}</Text>
         ) : null}
       </View>
-    );
-  }
-);
 
-CustomTextInput.displayName = "CustomTextInput";
+      {error && <Text style={styles.errorText}>{error}</Text>}
 
-export default CustomTextInput;
+      {helperText && !error && (
+        <Text style={styles.helperText}>{helperText}</Text>
+      )}
+    </View>
+  );
+};
+
+export default AppTextInput;
 
 const styles = StyleSheet.create({
-  wrapper: {
-    marginBottom: theme.spacing.md,
+  container: {
+    width: "100%",
+    marginBottom: 16,
   },
+
   label: {
-    color: theme.colors.textSecondary,
-    fontSize: theme.fontSize.small,
-    marginBottom: theme.spacing.xs,
+    fontSize: 14,
     fontWeight: "500",
+    color: theme.colors.muted,
+    marginBottom: 8,
   },
+
   inputContainer: {
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: theme.colors.inputBackground,
+    height: 52,
     borderWidth: 1,
-    borderRadius: theme.radius.md,
-    paddingHorizontal: theme.spacing.md,
+    borderColor: theme.colors.border,
+    borderRadius: 12,
+    paddingHorizontal: 14,
+    backgroundColor: theme.colors.inputBackground,
   },
-  inputContainerFocused: {
-    shadowColor: theme.colors.primary,
-    shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0.25,
-    shadowRadius: 6,
-    elevation: 2,
+
+  focusedBorder: {
+    borderColor: theme.colors.primary,
   },
-  leftIcon: {
-    marginRight: theme.spacing.sm,
-  },
-  rightIcon: {
-    paddingLeft: theme.spacing.sm,
-  },
+
   input: {
     flex: 1,
-    paddingVertical: theme.spacing.sm + 4,
-    fontSize: theme.fontSize.body,
+    fontSize: 16,
     color: theme.colors.text,
+    paddingHorizontal: 10,
   },
+
+  leftIcon: {
+    marginRight: 8,
+  },
+
+  eyeButton: {
+    padding: 5,
+  },
+
+  errorBorder: {
+    borderColor: theme.colors.danger,
+  },
+
   errorText: {
     color: theme.colors.danger,
-    fontSize: theme.fontSize.caption,
-    marginTop: theme.spacing.xs,
+    fontSize: 12,
+    marginTop: 5,
   },
+
   helperText: {
     color: theme.colors.muted,
-    fontSize: theme.fontSize.caption,
-    marginTop: theme.spacing.xs,
+    fontSize: 12,
+    marginTop: 5,
   },
 });
