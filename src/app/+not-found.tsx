@@ -9,7 +9,7 @@ const NotFoundPage = () => {
     <>
       <Stack.Screen options={{ title: "Opps! not found page" }} />
       <View style={styles.container}>
-        <TouchableOpacity onPress={() => route.dismissAll()}>
+        <TouchableOpacity onPress={() => route.dismissTo("/")}>
           <Text style={styles.button}> Go back to Home screen!</Text>
         </TouchableOpacity>
       </View>

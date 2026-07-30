@@ -1,14 +1,7 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import GetStartedAnimation from "@/components/GetStartedcomp";
 
-const getStartedScreen = () => {
-  return (
-    <View>
-      <Text>getStartedScreen</Text>
-    </View>
-  )
-}
+const GetStartedScreen = () => {
+  return <GetStartedAnimation />;
+};
 
-export default getStartedScreen
-
-const styles = StyleSheet.create({})
+export default GetStartedScreen;
