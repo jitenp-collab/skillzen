@@ -47,4 +47,5 @@ export type CustomTextInputProps = TextInputProps & {
   leftIcon?: ReactNode;
   containerStyle?: StyleProp<ViewStyle>;
   isPassword?: boolean;
+  inputContainerStyle?: StyleProp<ViewStyle>;
 };
