@@ -1,4 +1,4 @@
-import StatusBarComponent from "@/components/Statusbar";
+import StatusBarComponent from "@/components/common/Statusbar";
 import { Stack } from "expo-router";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
