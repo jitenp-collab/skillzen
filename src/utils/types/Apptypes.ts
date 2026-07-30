@@ -40,7 +40,6 @@ export type Props = {
   style?: StyleProp<ViewStyle>;
 };
 
-// see you soon
 export type CustomTextInputProps = TextInputProps & {
   label?: string;
   error?: string;
