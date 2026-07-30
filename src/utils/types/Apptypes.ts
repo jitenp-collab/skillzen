@@ -1,6 +1,6 @@
 import type { ComponentType, ReactNode } from "react";
 import { ComponentType, ReactNode } from "react";
-import { StyleProp, TextInputProps, ViewStyle } from "react-native";
+import { DimensionValue, StyleProp, TextInputProps, ViewStyle } from "react-native";
 
 export type GetStartedIconProps = {
   size?: number;
@@ -26,6 +26,21 @@ export type OnboardingPage = {
   features: Feature[];
 };
 
+//Done
+export type Props = {
+  title?: string;
+  onPress?: () => void;
+  width?: DimensionValue;
+  height?: number;
+  backgroundColor?: string;
+  textColor?: string;
+  borderRadius?: number;
+  fontSize?: number;
+  icon?: React.ReactNode;
+  disabled?: boolean;
+  style?: StyleProp<ViewStyle>;
+};
+
 export type AppTextInputProps = TextInputProps & {
 export type CustomTextInputProps = TextInputProps & {
   label?: string;
@@ -34,6 +49,7 @@ export type CustomTextInputProps = TextInputProps & {
   leftIcon?: ReactNode;
   containerStyle?: StyleProp<ViewStyle>;
   isPassword?: boolean;
+};
   inputContainerStyle?: StyleProp<ViewStyle>;
 };
 }

@@ -1,35 +1,8 @@
 import React from "react";
-import {
-  Pressable,
-  StyleSheet,
-  Text,
-  View,
-  DimensionValue,
-  StyleProp,
-  ViewStyle,
-} from "react-native";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 
 import { theme } from "@/utils/theme/Theme";
-
-type Props = {
-  title?: string;
-  onPress?: () => void;
-
-  width?: DimensionValue;
-  height?: number;
-
-  backgroundColor?: string;
-  textColor?: string;
-
-  borderRadius?: number;
-  fontSize?: number;
-
-  icon?: React.ReactNode;
-
-  disabled?: boolean;
-
-  style?: StyleProp<ViewStyle>;
-};
+import { Props } from "@/utils/types/Apptypes";
 
 const AppButton = ({
   title,
