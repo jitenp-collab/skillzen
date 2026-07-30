@@ -1,7 +1,9 @@
-import Svg, { Path } from "react-native-svg"
+import type { GetStartedIconProps } from "@/utils/types/Apptypes";
+
+import Svg, { Circle, Line, Path, Polyline, Rect } from "react-native-svg";
 
 export function AppLogo(props: any) {
-   return (
+  return (
     <Svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 58 52"
@@ -26,89 +28,153 @@ export function AppLogo(props: any) {
         strokeLinejoin="round"
       />
     </Svg>
-  )
+  );
 }
 
+const getStrokeProps = (color: string) => ({
+  stroke: color,
+  strokeWidth: 1.8,
+  strokeLinecap: "round" as const,
+  strokeLinejoin: "round" as const,
+});
 
-// import React from 'react';
-// import Svg, { Path,SvgWithCss, } from 'react-native-svg';
+// Learn by building icon
+export const BuildIcon = ({ size = 22, color }: GetStartedIconProps) => {
+  const strokeProps = getStrokeProps(color);
 
-// type SkillZenLogoProps = {
-//   size?: number;
-//   color?: string;
-//   centerColor?: string;
-// };
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path d="M14.5 5.5L18.5 9.5L9 19H5V15L14.5 5.5Z" {...strokeProps} />
 
-// const SkillZenLogo = ({
-//   size = 120,
-//   color = '#D7FF3F',
-//   centerColor = '#0B1020',
-// }: SkillZenLogoProps) => {
-//   return (
-//     <Svgwidth={size}
-//       height={size}
-//       viewBox="0 0 100 100"fill="none">      {/* Top-left leaf */}
-//       <Pathd="
-//           M47 48
-//           C36 42 25 31 24 18
-//           C23 9 28 4 35 5
-//           C47 6 58 18 63 31
-//           C54 31 48 37 47 48
-//           Z
-//         "fill={color}
-//       />
-//       {/* Right leaf */}
-//       <Pathd="
-//           M52 48
-//           C62 37 77 30 89 32
-//           C98 34 101 41 97 49
-//           C91 61 76 69 59 75
-//           C52 78 45 80 37 80
-//           C48 73 54 62 52 48
-//           Z
-//         "fill={color}
-//       />
-//       {/* Bottom-left orbit */}
-//       <Pathd="
-//           M48 56
-//           C38 46 25 43 14 48
-//           C5 52 3 60 8 67
-//           C15 77 31 82 49 80
-//           C39 86 23 88 11 82
-//           C-1 76 -4 64 2 55
-//           C10 43 29 39 48 56
-//           Z
-//         "fill={color}
-//       />
-//       {/* Small lower tail */}
-//       <Pathd="
-//           M54 78
-//           C62 84 72 87 81 85
-//           C78 93 67 95 58 91
-//           C53 89 50 85 48 82
-//           Z
-//         "fill={color}
-//       />
-//       {/* Dark heart-shaped centre */}
-//       <Pathd="
-//           M50 72
-//           C45 66 32 58 32 46
-//           C32 36 43 32 50 40
-//           C57 32 68 36 68 46
-//           C68 58 55 66 50 72
-//           Z
-//         "fill={centerColor}
-//       />
-//       {/* Centre four-point star */}
-//       <Pathd="
-//           M50 41
-//           C51.5 47 54 49.5 60 51
-//           C54 52.5 51.5 55 50 61
-//           C48.5 55 46 52.5 40 51
-//           C46 49.5 48.5 47 50 41
-//           Z
-//         "fill={color}
-//       /></Svg>  );
-// };
-// export default SkillZenLogo;
- 
+      <Line x1="12.5" y1="7.5" x2="16.5" y2="11.5" {...strokeProps} />
+
+      <Line x1="5" y1="19" x2="10" y2="19" {...strokeProps} />
+    </Svg>
+  );
+};
+
+// Track progress icon
+export const ProgressIcon = ({ size = 22, color }: GetStartedIconProps) => {
+  const strokeProps = getStrokeProps(color);
+
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Polyline points="3,17 9,11 13,15 21,7" {...strokeProps} />
+
+      <Polyline points="15,7 21,7 21,13" {...strokeProps} />
+    </Svg>
+  );
+};
+
+// Level up skills icon
+export const SkillsIcon = ({ size = 22, color }: GetStartedIconProps) => {
+  const strokeProps = getStrokeProps(color);
+
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Rect x="4" y="13" width="3.5" height="7" rx="1" {...strokeProps} />
+
+      <Rect x="10.25" y="9" width="3.5" height="11" rx="1" {...strokeProps} />
+
+      <Rect x="16.5" y="4" width="3.5" height="16" rx="1" {...strokeProps} />
+    </Svg>
+  );
+};
+
+// Lessons icon
+export const LessonsIcon = ({ size = 22, color }: GetStartedIconProps) => {
+  const strokeProps = getStrokeProps(color);
+
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path
+        d="M4 5.5C6.8 4.5 9.4 5 12 7V20C9.4 18 6.8 17.5 4 18.5V5.5Z"
+        {...strokeProps}
+      />
+
+      <Path
+        d="M20 5.5C17.2 4.5 14.6 5 12 7V20C14.6 18 17.2 17.5 20 18.5V5.5Z"
+        {...strokeProps}
+      />
+    </Svg>
+  );
+};
+
+// Practical tasks icon
+export const TasksIcon = ({ size = 22, color }: GetStartedIconProps) => {
+  const strokeProps = getStrokeProps(color);
+
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Rect x="5" y="4" width="14" height="16" rx="2" {...strokeProps} />
+
+      <Path
+        d="M9 4.5V3.5C9 2.7 9.7 2 10.5 2H13.5C14.3 2 15 2.7 15 3.5V4.5"
+        {...strokeProps}
+      />
+
+      <Polyline points="8,11 10,13 14,9" {...strokeProps} />
+
+      <Line x1="8" y1="16.5" x2="16" y2="16.5" {...strokeProps} />
+    </Svg>
+  );
+};
+
+// Growth icon
+export const GrowthIcon = ({ size = 22, color }: GetStartedIconProps) => {
+  const strokeProps = getStrokeProps(color);
+
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path
+        d="M8 4H16V8C16 11 14.2 13 12 13C9.8 13 8 11 8 8V4Z"
+        {...strokeProps}
+      />
+
+      <Path d="M8 6H5V8C5 10 6.3 11.5 8.2 11.8" {...strokeProps} />
+
+      <Path d="M16 6H19V8C19 10 17.7 11.5 15.8 11.8" {...strokeProps} />
+
+      <Line x1="12" y1="13" x2="12" y2="17" {...strokeProps} />
+
+      <Line x1="9" y1="20" x2="15" y2="20" {...strokeProps} />
+
+      <Path d="M10 17H14V20H10V17Z" {...strokeProps} />
+    </Svg>
+  );
+};
+
+// Next button arrow
+export const ArrowIcon = ({ size = 22, color }: GetStartedIconProps) => {
+  const strokeProps = getStrokeProps(color);
+
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Line x1="4" y1="12" x2="20" y2="12" {...strokeProps} />
+
+      <Polyline points="14,6 20,12 14,18" {...strokeProps} />
+    </Svg>
+  );
+};
+
+// Get Started rocket icon
+export const RocketIcon = ({ size = 22, color }: GetStartedIconProps) => {
+  const strokeProps = getStrokeProps(color);
+
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path
+        d="M14 4C17 2.5 20 3 21 3C21 4 21.5 7 20 10L14 16L8 10L14 4Z"
+        {...strokeProps}
+      />
+
+      <Circle cx="16.5" cy="7.5" r="1.5" {...strokeProps} />
+
+      <Path d="M8 10L5 11L3 14L9 15" {...strokeProps} />
+
+      <Path d="M14 16L13 19L10 21L9 15" {...strokeProps} />
+
+      <Path d="M7 17C5 18 4 20 4 20C4 20 6 19 7 17Z" {...strokeProps} />
+    </Svg>
+  );
+};
