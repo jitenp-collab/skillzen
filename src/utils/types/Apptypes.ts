@@ -1,4 +1,4 @@
-import type { ComponentType, ReactNode } from "react";
+import { ComponentType, ReactNode } from "react";
 import { StyleProp, TextInputProps, ViewStyle } from "react-native";
 
 export type GetStartedIconProps = {
