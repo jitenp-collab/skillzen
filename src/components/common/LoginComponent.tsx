@@ -9,6 +9,7 @@ import {
 import { useState } from "react";
 import CustomTextInput from "@/components/reusableComponents/CustomTextInput";
 import { theme } from "@/utils/theme/Theme";
+import AppButton from "../reusableComponents/AppButton";
 
 const LoginComponent = () => {
   const [password, setPassword] = useState("");
@@ -26,6 +27,13 @@ const LoginComponent = () => {
       >
         <Text style={styles.welcome}>Welcome Back!</Text>
         <Text style={styles.learinig}>Login to continue learinig</Text>
+
+        <CustomTextInput
+          label="email"
+          placeholder="Enter your email"
+          value={email}
+          onChangeText={setemail}
+        />
         <CustomTextInput
           label="Password"
           placeholder="Enter your password"
@@ -33,12 +41,16 @@ const LoginComponent = () => {
           value={password}
           onChangeText={setPassword}
         />
-        <CustomTextInput
-          label="email"
-          placeholder="Enter your email"
-          value={email}
-          onChangeText={setemail}
-        />
+        <View style={styles.forgotePassword}>
+          <AppButton
+            backgroundColor="#ffffff00"
+            title="Forgot Password ?"
+            textColor={theme.colors.muted}
+            fontSize={15}
+            fontweight="300"
+            style={styles.forgotePassword}
+          />
+        </View>
       </ScrollView>
     </KeyboardAvoidingView>
   );
@@ -63,5 +75,8 @@ const styles = StyleSheet.create({
   learinig: {
     textAlign: "center",
     color: theme.colors.muted,
+  },
+  forgotePassword: {
+    marginStart: "auto",
   },
 });

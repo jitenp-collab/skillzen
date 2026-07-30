@@ -26,7 +26,7 @@ export type OnboardingPage = {
 };
 
 //Done
-export type Props = {
+export type AppButtonProp = {
   title?: string;
   onPress?: () => void;
   width?: DimensionValue;
@@ -38,6 +38,7 @@ export type Props = {
   icon?: React.ReactNode;
   disabled?: boolean;
   style?: StyleProp<ViewStyle>;
+  fontweight?: any
 };
 
 export type CustomTextInputProps = TextInputProps & {

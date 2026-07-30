@@ -1,4 +1,4 @@
-import GetStartedAnimation from "@/components/GetStartedcomp";
+import GetStartedAnimation from "@/components/common/GetStartedcomp";
 
 const GetStartedScreen = () => {
   return <GetStartedAnimation />;
