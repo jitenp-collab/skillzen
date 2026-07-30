@@ -33,7 +33,14 @@ export function AppLogo(props: any) {
 
 export function PasswordshowIcon({ color = "#000", ...props }: any) {
   return (
-    <Svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <Svg
+      width="30px"
+      height="30px"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
       <Path
         d="M1 12s4-8 11-8 11 8 11 8M1 12s4 8 11 8 11-8 11-8"
         stroke={color}
@@ -41,7 +48,15 @@ export function PasswordshowIcon({ color = "#000", ...props }: any) {
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      <Circle cx={12} cy={12} r={3} stroke={color} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+      <Circle
+        cx={12}
+        cy={12}
+        r={3}
+        stroke={color}
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </Svg>
   );
 }
@@ -49,7 +64,7 @@ export function PasswordshowIcon({ color = "#000", ...props }: any) {
 export function PasswordHideIcon(props: any) {
   return (
     <Svg
-    width="30px"
+      width="30px"
       height="30px"
       viewBox="0 0 28 28"
       fill="none"

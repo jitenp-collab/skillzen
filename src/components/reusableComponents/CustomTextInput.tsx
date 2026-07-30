@@ -1,25 +1,16 @@
-import { forwardRef, ReactNode, useState } from "react";
+import { forwardRef, useState } from "react";
 import {
-  StyleProp,
   StyleSheet,
   Text,
   TextInput,
   TextInputProps,
   TouchableOpacity,
   View,
-  ViewStyle,
 } from "react-native";
 import { PasswordshowIcon, PasswordHideIcon } from "../../assets/svg/SvgIcons";
 import { theme } from "../../utils/theme/Theme";
+import { CustomTextInputProps } from "@/utils/types/Apptypes";
 
-interface CustomTextInputProps extends TextInputProps {
-  label?: string;
-  error?: string;
-  helperText?: string;
-  leftIcon?: ReactNode;
-  containerStyle?: StyleProp<ViewStyle>;
-  isPassword?: boolean;
-}
 
 const CustomTextInput = forwardRef<TextInput, CustomTextInputProps>(
   (

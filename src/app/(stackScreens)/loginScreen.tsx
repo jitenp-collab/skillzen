@@ -1,14 +1,24 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, View } from "react-native";
+import  { useState } from "react";
+import CustomTextInput from "@/components/reusableComponents/CustomTextInput";
 
 const loginScreen = () => {
+  const [password, setPassword] = useState("");
+
   return (
     <View>
-      <Text>loginScreen</Text>
+      <CustomTextInput
+        label="Password"
+        placeholder="Enter your password"
+        isPassword
+        value={password}
+        onChangeText={setPassword}
+        // error={passwordError}
+      />
     </View>
-  )
-}
+  );
+};
 
-export default loginScreen
+export default loginScreen;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
