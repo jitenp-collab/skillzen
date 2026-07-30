@@ -1,4 +1,3 @@
-import type { ComponentType, ReactNode } from "react";
 import { ComponentType, ReactNode } from "react";
 import { DimensionValue, StyleProp, TextInputProps, ViewStyle } from "react-native";
 
@@ -41,7 +40,6 @@ export type Props = {
   style?: StyleProp<ViewStyle>;
 };
 
-export type AppTextInputProps = TextInputProps & {
 export type CustomTextInputProps = TextInputProps & {
   label?: string;
   error?: string;
@@ -50,7 +48,3 @@ export type CustomTextInputProps = TextInputProps & {
   containerStyle?: StyleProp<ViewStyle>;
   isPassword?: boolean;
 };
-  inputContainerStyle?: StyleProp<ViewStyle>;
-};
-}
-

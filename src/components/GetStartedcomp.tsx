@@ -83,15 +83,12 @@ const GetStartedAnimation = () => {
   };
 
   return (
-    <SafeAreaView style={styles.safeArea}>
-      {/* <Stack.Screen
     <View style={styles.safeArea}>
       <Stack.Screen
         options={{
           headerShown: false,
           animation: "fade",
         }}
-      /> */}
       />
       <View style={styles.appHeader}>
         <AppLogo width={60} height={60} />
