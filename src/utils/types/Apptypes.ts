@@ -1,3 +1,4 @@
+import type { ComponentType, ReactNode } from "react";
 import { ComponentType, ReactNode } from "react";
 import { StyleProp, TextInputProps, ViewStyle } from "react-native";
 
@@ -25,6 +26,7 @@ export type OnboardingPage = {
   features: Feature[];
 };
 
+export type AppTextInputProps = TextInputProps & {
 export type CustomTextInputProps = TextInputProps & {
   label?: string;
   error?: string;
@@ -32,5 +34,7 @@ export type CustomTextInputProps = TextInputProps & {
   leftIcon?: ReactNode;
   containerStyle?: StyleProp<ViewStyle>;
   isPassword?: boolean;
+  inputContainerStyle?: StyleProp<ViewStyle>;
+};
 }
 
