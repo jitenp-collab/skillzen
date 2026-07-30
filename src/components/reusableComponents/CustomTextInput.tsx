@@ -1,15 +1,20 @@
 import React, { useState } from "react";
 import {
   View,
+import { forwardRef, useState } from "react";
+import {
+  StyleSheet,
   Text,
   TextInput,
   StyleSheet,
   TouchableOpacity,
+  View,
 } from "react-native";
 
 import { PasswordshowIcon, PasswordHideIcon } from "../../assets/svg/SvgIcons";
 import { AppTextInputProps } from "@/utils/types/Apptypes";
 import { theme } from "../../utils/theme/Theme";
+import { CustomTextInputProps } from "@/utils/types/Apptypes";
 
 const AppTextInput = ({
   label,
@@ -75,6 +80,89 @@ const AppTextInput = ({
             )}
           </TouchableOpacity>
         )}
+
+const CustomTextInput = forwardRef<TextInput, CustomTextInputProps>(
+  (
+    {
+      label,
+      error,
+      helperText,
+      leftIcon,
+      containerStyle,
+      isPassword = false,
+      secureTextEntry,
+      onFocus,
+      onBlur,
+      style,
+      ...rest
+    },
+    ref
+  ) => {
+    const [isFocused, setIsFocused] = useState(false);
+    const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+
+    const handleFocus: TextInputProps["onFocus"] = (e) => {
+      setIsFocused(true);
+      onFocus?.(e);
+    };
+
+    const handleBlur: TextInputProps["onBlur"] = (e) => {
+      setIsFocused(false);
+      onBlur?.(e);
+    };
+
+    const shouldHideText = isPassword ? !isPasswordVisible : secureTextEntry;
+
+    const borderColor = error
+      ? theme.colors.danger
+      : isFocused
+      ? theme.colors.primary
+      : theme.colors.border;
+
+    return (
+      <View style={[styles.wrapper, containerStyle]}>
+        {label ? <Text style={styles.label}>{label}</Text> : null}
+
+        <View
+          style={[
+            styles.inputContainer,
+            { borderColor },
+            isFocused && styles.inputContainerFocused,
+          ]}
+        >
+          {leftIcon ? <View style={styles.leftIcon}>{leftIcon}</View> : null}
+
+          <TextInput
+            ref={ref}
+            style={[styles.input, style]}
+            placeholderTextColor={theme.colors.placeholder}
+            selectionColor={theme.colors.primary}
+            secureTextEntry={shouldHideText}
+            onFocus={handleFocus}
+            onBlur={handleBlur}
+            {...rest}
+          />
+
+          {isPassword ? (
+            <TouchableOpacity
+              onPress={() => setIsPasswordVisible((prev) => !prev)}
+              hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
+              style={styles.rightIcon}
+            >
+              {isPasswordVisible ? (
+                <PasswordHideIcon width={20} height={20} color={theme.colors.muted} />
+              ) : (
+                <PasswordshowIcon width={20} height={20} color={theme.colors.muted} />
+              )}
+            </TouchableOpacity>
+          ) : null}
+        </View>
+
+        {error ? (
+          <Text style={styles.errorText}>{error}</Text>
+        ) : helperText ? (
+          <Text style={styles.helperText}>{helperText}</Text>
+        ) : null}
       </View>
 
       {error && <Text style={styles.errorText}>{error}</Text>}

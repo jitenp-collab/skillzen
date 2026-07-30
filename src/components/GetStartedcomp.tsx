@@ -1,111 +1,60 @@
 import React, { useEffect, useRef, useState } from "react";
 
 import {
-  FlatList,
-  type ListRenderItemInfo,
-  type NativeScrollEvent,
-  type NativeSyntheticEvent,
+  NativeScrollEvent,
+  NativeSyntheticEvent,
   Pressable,
-  StatusBar,
+  ScrollView,
   StyleSheet,
   Text,
   useWindowDimensions,
   View,
 } from "react-native";
 
-import { Stack, type Href, useRouter } from "expo-router";
+import { Stack, useRouter } from "expo-router";
+import { Feature } from "@/utils/types/Apptypes";
 
-import { SafeAreaView } from "react-native-safe-area-context";
+import { pages } from "../assets/data/GetStartedData";
+import { theme } from "../utils/theme/Theme";
+import { ArrowIcon, RocketIcon, AppLogo } from "../assets/svg/SvgIcons";
 
-import type { Feature, OnboardingPage } from "@/utils/types/Apptypes";
-
-import {
-  GET_STARTED_COLORS as COLORS,
-  pages,
-} from "../assets/data/GetStartedData";
-
-import { ArrowIcon, RocketIcon } from "../assets/svg/SvgIcons";
-
-const LOGIN_ROUTE = "/loginScreen";
-
-const BASE_WIDTH = 390;
-const BASE_HEIGHT = 844;
-
-const clamp = (value: number, minimum: number, maximum: number) => {
-  return Math.min(Math.max(value, minimum), maximum);
-};
+import AppButton from "@/components/common/AppButton";
 
 const GetStartedAnimation = () => {
   const router = useRouter();
+  const { width } = useWindowDimensions();
 
-  const { width, height } = useWindowDimensions();
-
-  const flatListRef = useRef<FlatList<OnboardingPage>>(null);
-
-  const currentPageRef = useRef(0);
-
+  const scrollViewRef = useRef<ScrollView>(null);
   const [currentPage, setCurrentPage] = useState(0);
-
-  const responsiveScale = clamp(
-    Math.min(width / BASE_WIDTH, height / BASE_HEIGHT),
-    0.75,
-    1.35
-  );
-
-  const styles = createStyles(width, height, responsiveScale);
-
-  const featureIconSize = clamp(21 * responsiveScale, 18, 30);
-
-  const buttonIconSize = clamp(20 * responsiveScale, 18, 28);
 
   const isLastPage = currentPage === pages.length - 1;
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      flatListRef.current?.scrollToOffset({
-        offset: currentPageRef.current * width,
-        animated: false,
-      });
-    }, 50);
-
-    return () => clearTimeout(timeout);
+    scrollViewRef.current?.scrollTo({
+      x: currentPage * width,
+      animated: false,
+    });
   }, [width]);
-
-  const updateCurrentPage = (index: number) => {
-    currentPageRef.current = index;
-    setCurrentPage(index);
-  };
 
   const handleScrollEnd = (event: NativeSyntheticEvent<NativeScrollEvent>) => {
     const pageIndex = Math.round(event.nativeEvent.contentOffset.x / width);
-
-    const validPageIndex = Math.max(0, Math.min(pageIndex, pages.length - 1));
-
-    updateCurrentPage(validPageIndex);
+    setCurrentPage(pageIndex);
   };
 
-  const moveToPage = (index: number) => {
-    const validPageIndex = Math.max(0, Math.min(index, pages.length - 1));
-
-    flatListRef.current?.scrollToOffset({
-      offset: validPageIndex * width,
+  const moveToPage = (pageIndex: number) => {
+    scrollViewRef.current?.scrollTo({
+      x: pageIndex * width,
       animated: true,
     });
-
-    updateCurrentPage(validPageIndex);
-  };
-
-  const handleGetStarted = () => {
-    router.replace(LOGIN_ROUTE);
+    setCurrentPage(pageIndex);
   };
 
   const handleButtonPress = () => {
     if (isLastPage) {
-      handleGetStarted();
-      return;
+      router.replace("/loginScreen");
+    } else {
+      moveToPage(currentPage + 1);
     }
-
-    moveToPage(currentPage + 1);
   };
 
   const renderFeature = (feature: Feature) => {
@@ -121,7 +70,7 @@ const GetStartedAnimation = () => {
             },
           ]}
         >
-          <FeatureIcon color={feature.iconColor} size={featureIconSize} />
+          <FeatureIcon color={feature.iconColor} size={40} />
         </View>
 
         <View style={styles.featureTextContainer}>
@@ -133,264 +82,209 @@ const GetStartedAnimation = () => {
     );
   };
 
-  const renderPage = ({ item }: ListRenderItemInfo<OnboardingPage>) => {
-    return (
-      <View style={[styles.page, { width }]}>
-        <View style={styles.pageContent}>
-          <View style={styles.headingContainer}>
-            <Text style={styles.title}>{item.title}</Text>
-
-            <Text style={styles.highlightedTitle}>{item.highlightedTitle}</Text>
-
-            <Text style={styles.description}>{item.description}</Text>
-          </View>
-
-          <View style={styles.featuresContainer}>
-            {item.features.map(renderFeature)}
-          </View>
-        </View>
-      </View>
-    );
-  };
-
   return (
     <SafeAreaView style={styles.safeArea}>
       {/* <Stack.Screen
+    <View style={styles.safeArea}>
+      <Stack.Screen
         options={{
           headerShown: false,
           animation: "fade",
         }}
       /> */}
+      />
+      <View style={styles.appHeader}>
+        <AppLogo width={60} height={60} />
 
-      <StatusBar barStyle="light-content" backgroundColor={COLORS.background} />
+        <Text style={styles.appName}>SkillZen</Text>
+      </View>
 
-      <FlatList
-        ref={flatListRef}
-        data={pages}
-        renderItem={renderPage}
-        keyExtractor={(item) => item.id}
+      <ScrollView
+        ref={scrollViewRef}
+        style={styles.scrollView}
         horizontal
         pagingEnabled
         bounces={false}
-        overScrollMode="never"
+        decelerationRate="fast"
         showsHorizontalScrollIndicator={false}
         onMomentumScrollEnd={handleScrollEnd}
-        style={styles.flatList}
-        getItemLayout={(_, index) => ({
-          length: width,
-          offset: width * index,
-          index,
-        })}
-      />
+      >
+        {pages.map((item) => (
+          <View key={item.id} style={[styles.page, { width }]}>
+            <View style={styles.pageContent}>
+              <View style={styles.headingContainer}>
+                <Text style={styles.title}>{item.title}</Text>
+
+                <Text style={styles.highlightedTitle}>
+                  {item.highlightedTitle}
+                </Text>
+
+                <Text style={styles.description}>{item.description}</Text>
+              </View>
+
+              <View style={styles.featuresContainer}>
+                {item.features.map(renderFeature)}
+              </View>
+            </View>
+          </View>
+        ))}
+      </ScrollView>
 
       <View style={styles.footer}>
-        <Pressable
+        <AppButton
+          title={isLastPage ? "Get Started" : "Next"}
           onPress={handleButtonPress}
-          style={({ pressed }) => [
-            styles.button,
-            pressed && styles.buttonPressed,
-          ]}
-        >
-          <Text style={styles.buttonText}>
-            {isLastPage ? "Get Started" : "Next"}
-          </Text>
-
-          {isLastPage ? (
-            <RocketIcon color={COLORS.background} size={buttonIconSize} />
-          ) : (
-            <ArrowIcon color={COLORS.background} size={buttonIconSize} />
-          )}
-        </Pressable>
+          icon={
+            isLastPage ? (
+              <RocketIcon color={theme.colors.background} size={20} />
+            ) : (
+              <ArrowIcon color={theme.colors.background} size={20} />
+            )
+          }
+        />
 
         <View style={styles.dotsContainer}>
-          {pages.map((page, index) => {
-            const isActive = currentPage === index;
-
-            return (
-              <Pressable
-                key={page.id}
-                hitSlop={10}
-                accessibilityRole="button"
-                accessibilityLabel={`Go to onboarding page ${index + 1}`}
-                onPress={() => moveToPage(index)}
-                style={[styles.dot, isActive && styles.activeDot]}
-              />
-            );
-          })}
+          {pages.map((page, index) => (
+            <Pressable
+              key={page.id}
+              hitSlop={10}
+              onPress={() => moveToPage(index)}
+              style={[styles.dot, currentPage === index && styles.activeDot]}
+            />
+          ))}
         </View>
       </View>
-    </SafeAreaView>
+    </View>
   );
 };
 
 export default GetStartedAnimation;
 
-const createStyles = (width: number, height: number, scale: number) => {
-  const contentWidth = Math.min(width * 0.85, 640);
+const styles = StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    backgroundColor: theme.colors.background,
+    paddingTop: 15,
+    paddingBottom: 20,
+    alignItems: "center",
+  },
+  appHeader: {
+    paddingBottom: 15,
+    width: "95%",
+    alignSelf: "center",
+    flexDirection: "row",
+    alignItems: "center",
+  },
 
-  const topPadding = clamp(height * 0.052, 28, 70);
+  appName: {
+    marginLeft: 10,
+    color: theme.colors.text,
+    fontSize: 30,
+    fontWeight: "800",
+  },
 
-  const footerBottomPadding = clamp(height * 0.021, 14, 28);
+  scrollView: {
+    flex: 1,
+  },
 
-  const headingFontSize = clamp(29 * scale, 22, 42);
+  page: {
+    flex: 1,
+  },
 
-  const headingLineHeight = clamp(35 * scale, 28, 50);
+  pageContent: {
+    flex: 1,
+    width: "95%",
+    alignSelf: "center",
+  },
 
-  const descriptionFontSize = clamp(14 * scale, 12, 19);
+  headingContainer: {
+    marginBottom: 20,
+  },
 
-  const descriptionLineHeight = clamp(21 * scale, 17, 27);
+  title: {
+    color: theme.colors.text,
+    fontSize: 29,
+    lineHeight: 35,
+    fontWeight: "800",
+  },
 
-  const featureTitleFontSize = clamp(14 * scale, 12, 19);
+  highlightedTitle: {
+    color: theme.colors.primary,
+    fontSize: 35,
+    lineHeight: 35,
+    fontWeight: "800",
+  },
 
-  const featureTitleLineHeight = clamp(19 * scale, 16, 26);
+  description: {
+    marginTop: 5,
+    color: theme.colors.muted,
+    fontSize: 14,
+  },
 
-  const featureDescriptionFontSize = clamp(11.5 * scale, 10, 16);
+  featuresContainer: {
+    flex: 1,
+    justifyContent: "flex-start",
+  },
 
-  const featureDescriptionLineHeight = clamp(17 * scale, 14, 23);
+  featureRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginVertical: 15,
+  },
 
-  const iconContainerSize = clamp(42 * scale, 34, 58);
+  featureIconContainer: {
+    width: 55,
+    height: 55,
+    borderRadius: 15,
+    alignItems: "center",
+    justifyContent: "center",
+  },
 
-  const buttonHeight = clamp(52 * scale, 44, 68);
+  featureTextContainer: {
+    flex: 1,
+    marginLeft: 14,
+  },
 
-  const buttonFontSize = clamp(14 * scale, 12, 19);
+  featureTitle: {
+    color: theme.colors.text,
+    fontSize: 18,
+    lineHeight: 25,
+    fontWeight: "700",
+  },
 
-  const dotSize = clamp(7 * scale, 6, 10);
+  featureDescription: {
+    marginTop: 3,
+    color: theme.colors.muted,
+    fontSize: 13,
+    lineHeight: 17,
+  },
 
-  const activeDotSize = clamp(8 * scale, 7, 11);
+  footer: {
+    width: "95%",
+    paddingTop: 10,
+    paddingBottom: 14,
+  },
 
-  return StyleSheet.create({
-    safeArea: {
-      flex: 1,
-      backgroundColor: COLORS.background,
-    },
+  dotsContainer: {
+    height: 30,
+    marginTop: 10,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 8,
+  },
 
-    flatList: {
-      flex: 1,
-    },
+  dot: {
+    width: 7,
+    height: 7,
+    borderRadius: 4,
+    backgroundColor: theme.colors.muted,
+    opacity: 0.4,
+  },
 
-    page: {
-      flex: 1,
-    },
-
-    pageContent: {
-      flex: 1,
-      width: contentWidth,
-      alignSelf: "center",
-      paddingTop: topPadding,
-    },
-
-    headingContainer: {
-      marginBottom: clamp(35 * scale, 24, 48),
-    },
-
-    title: {
-      color: COLORS.text,
-      fontSize: headingFontSize,
-      lineHeight: headingLineHeight,
-      fontWeight: "800",
-    },
-
-    highlightedTitle: {
-      color: COLORS.primary,
-      fontSize: headingFontSize,
-      lineHeight: headingLineHeight,
-      fontWeight: "800",
-    },
-
-    description: {
-      marginTop: clamp(13 * scale, 9, 18),
-      color: COLORS.muted,
-      fontSize: descriptionFontSize,
-      lineHeight: descriptionLineHeight,
-      fontWeight: "400",
-    },
-
-    featuresContainer: {
-      gap: clamp(23 * scale, 16, 32),
-    },
-
-    featureRow: {
-      flexDirection: "row",
-      alignItems: "center",
-    },
-
-    featureIconContainer: {
-      width: iconContainerSize,
-      height: iconContainerSize,
-      borderRadius: clamp(11 * scale, 9, 15),
-      alignItems: "center",
-      justifyContent: "center",
-    },
-
-    featureTextContainer: {
-      flex: 1,
-      marginLeft: clamp(14 * scale, 10, 20),
-    },
-
-    featureTitle: {
-      color: COLORS.text,
-      fontSize: featureTitleFontSize,
-      lineHeight: featureTitleLineHeight,
-      fontWeight: "700",
-    },
-
-    featureDescription: {
-      marginTop: clamp(3 * scale, 2, 5),
-      color: COLORS.muted,
-      fontSize: featureDescriptionFontSize,
-      lineHeight: featureDescriptionLineHeight,
-    },
-
-    footer: {
-      width: contentWidth,
-      alignSelf: "center",
-      paddingTop: clamp(12 * scale, 8, 18),
-      paddingBottom: footerBottomPadding,
-    },
-
-    button: {
-      height: buttonHeight,
-      borderRadius: clamp(8 * scale, 7, 12),
-      backgroundColor: COLORS.primary,
-      flexDirection: "row",
-      alignItems: "center",
-      justifyContent: "center",
-      gap: clamp(9 * scale, 7, 13),
-    },
-
-    buttonPressed: {
-      opacity: 0.85,
-    },
-
-    buttonText: {
-      color: COLORS.background,
-      fontSize: buttonFontSize,
-      fontWeight: "800",
-    },
-
-    dotsContainer: {
-      height: clamp(31 * scale, 24, 42),
-      marginTop: clamp(10 * scale, 7, 14),
-      flexDirection: "row",
-      alignItems: "center",
-      justifyContent: "center",
-      gap: clamp(8 * scale, 6, 12),
-    },
-
-    dot: {
-      width: dotSize,
-      height: dotSize,
-      borderRadius: dotSize / 2,
-      backgroundColor: COLORS.muted,
-      opacity: 0.4,
-    },
-
-    activeDot: {
-      width: activeDotSize,
-      height: activeDotSize,
-      borderRadius: activeDotSize / 2,
-      backgroundColor: COLORS.primary,
-      opacity: 1,
-    },
-  });
-};
+  activeDot: {
+    width: 20,
+    backgroundColor: theme.colors.primary,
+    opacity: 1,
+  },
+});

@@ -1,4 +1,5 @@
 import type { ComponentType, ReactNode } from "react";
+import { ComponentType, ReactNode } from "react";
 import { StyleProp, TextInputProps, ViewStyle } from "react-native";
 
 export type GetStartedIconProps = {
@@ -26,6 +27,7 @@ export type OnboardingPage = {
 };
 
 export type AppTextInputProps = TextInputProps & {
+export type CustomTextInputProps = TextInputProps & {
   label?: string;
   error?: string;
   helperText?: string;
@@ -34,3 +36,5 @@ export type AppTextInputProps = TextInputProps & {
   isPassword?: boolean;
   inputContainerStyle?: StyleProp<ViewStyle>;
 };
+}
+
