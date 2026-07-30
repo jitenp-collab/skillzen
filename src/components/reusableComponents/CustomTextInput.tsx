@@ -1,162 +1,149 @@
-import { forwardRef, ReactNode, useState } from "react";
+import React, { useState } from "react";
 import {
-  StyleProp,
-  StyleSheet,
+  View,
   Text,
   TextInput,
-  TextInputProps,
+  StyleSheet,
   TouchableOpacity,
-  View,
-  ViewStyle,
 } from "react-native";
+
 import { PasswordshowIcon, PasswordHideIcon } from "../../assets/svg/SvgIcons";
+import { AppTextInputProps } from "@/utils/types/Apptypes";
 import { theme } from "../../utils/theme/Theme";
 
-interface CustomTextInputProps extends TextInputProps {
-  label?: string;
-  error?: string;
-  helperText?: string;
-  leftIcon?: ReactNode;
-  containerStyle?: StyleProp<ViewStyle>;
-  isPassword?: boolean;
-}
+const AppTextInput = ({
+  label,
+  error,
+  helperText,
+  leftIcon,
+  containerStyle,
+  isPassword = false,
+  inputContainerStyle,
 
-const CustomTextInput = forwardRef<TextInput, CustomTextInputProps>(
-  (
-    {
-      label,
-      error,
-      helperText,
-      leftIcon,
-      containerStyle,
-      isPassword = false,
-      secureTextEntry,
-      onFocus,
-      onBlur,
-      style,
-      ...rest
-    },
-    ref
-  ) => {
-    const [isFocused, setIsFocused] = useState(false);
-    const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+  onFocus,
+  onBlur,
 
-    const handleFocus: TextInputProps["onFocus"] = (e) => {
-      setIsFocused(true);
-      onFocus?.(e);
-    };
+  ...props
+}: AppTextInputProps) => {
+  const [showPassword, setShowPassword] = useState(false);
 
-    const handleBlur: TextInputProps["onBlur"] = (e) => {
-      setIsFocused(false);
-      onBlur?.(e);
-    };
+  const [isFocused, setIsFocused] = useState(false);
 
-    const shouldHideText = isPassword ? !isPasswordVisible : secureTextEntry;
+  return (
+    <View style={[styles.container, containerStyle]}>
+      {label && <Text style={styles.label}>{label}</Text>}
 
-    const borderColor = error
-      ? theme.colors.danger
-      : isFocused
-      ? theme.colors.primary
-      : theme.colors.border;
+      <View
+        style={[
+          styles.inputContainer,
 
-    return (
-      <View style={[styles.wrapper, containerStyle]}>
-        {label ? <Text style={styles.label}>{label}</Text> : null}
+          isFocused && styles.focusedBorder,
 
-        <View
-          style={[
-            styles.inputContainer,
-            { borderColor },
-            isFocused && styles.inputContainerFocused,
-          ]}
-        >
-          {leftIcon ? <View style={styles.leftIcon}>{leftIcon}</View> : null}
+          error && styles.errorBorder,
 
-          <TextInput
-            ref={ref}
-            style={[styles.input, style]}
-            placeholderTextColor={theme.colors.placeholder}
-            selectionColor={theme.colors.primary}
-            secureTextEntry={shouldHideText}
-            onFocus={handleFocus}
-            onBlur={handleBlur}
-            {...rest}
-          />
+          inputContainerStyle,
+        ]}
+      >
+        {leftIcon && <View style={styles.leftIcon}>{leftIcon}</View>}
 
-          {isPassword ? (
-            <TouchableOpacity
-              onPress={() => setIsPasswordVisible((prev) => !prev)}
-              hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
-              style={styles.rightIcon}
-            >
-              {isPasswordVisible ? (
-                <PasswordHideIcon width={20} height={20} color={theme.colors.muted} />
-              ) : (
-                <PasswordshowIcon width={20} height={20} color={theme.colors.muted} />
-              )}
-            </TouchableOpacity>
-          ) : null}
-        </View>
+        <TextInput
+          style={styles.input}
+          secureTextEntry={isPassword && !showPassword}
+          placeholderTextColor={theme.colors.placeholder}
+          onFocus={(e) => {
+            setIsFocused(true);
 
-        {error ? (
-          <Text style={styles.errorText}>{error}</Text>
-        ) : helperText ? (
-          <Text style={styles.helperText}>{helperText}</Text>
-        ) : null}
+            onFocus?.(e);
+          }}
+          onBlur={(e) => {
+            setIsFocused(false);
+
+            onBlur?.(e);
+          }}
+          {...props}
+        />
+
+        {isPassword && (
+          <TouchableOpacity
+            onPress={() => setShowPassword(!showPassword)}
+            style={styles.eyeButton}
+          >
+            {showPassword ? (
+              <PasswordshowIcon color={theme.colors.muted} />
+            ) : (
+              <PasswordHideIcon color={theme.colors.muted} />
+            )}
+          </TouchableOpacity>
+        )}
       </View>
-    );
-  }
-);
 
-CustomTextInput.displayName = "CustomTextInput";
+      {error && <Text style={styles.errorText}>{error}</Text>}
 
-export default CustomTextInput;
+      {helperText && !error && (
+        <Text style={styles.helperText}>{helperText}</Text>
+      )}
+    </View>
+  );
+};
+
+export default AppTextInput;
 
 const styles = StyleSheet.create({
-  wrapper: {
-    marginBottom: theme.spacing.md,
+  container: {
+    width: "100%",
+    marginBottom: 16,
   },
+
   label: {
-    color: theme.colors.textSecondary,
-    fontSize: theme.fontSize.small,
-    marginBottom: theme.spacing.xs,
+    fontSize: 14,
     fontWeight: "500",
+    color: theme.colors.muted,
+    marginBottom: 8,
   },
+
   inputContainer: {
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: theme.colors.inputBackground,
+    height: 52,
     borderWidth: 1,
-    borderRadius: theme.radius.md,
-    paddingHorizontal: theme.spacing.md,
+    borderColor: theme.colors.border,
+    borderRadius: 12,
+    paddingHorizontal: 14,
+    backgroundColor: theme.colors.inputBackground,
   },
-  inputContainerFocused: {
-    shadowColor: theme.colors.primary,
-    shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0.25,
-    shadowRadius: 6,
-    elevation: 2,
+
+  focusedBorder: {
+    borderColor: theme.colors.primary,
   },
-  leftIcon: {
-    marginRight: theme.spacing.sm,
-  },
-  rightIcon: {
-    paddingLeft: theme.spacing.sm,
-  },
+
   input: {
     flex: 1,
-    paddingVertical: theme.spacing.sm + 4,
-    fontSize: theme.fontSize.body,
+    fontSize: 16,
     color: theme.colors.text,
+    paddingHorizontal: 10,
   },
+
+  leftIcon: {
+    marginRight: 8,
+  },
+
+  eyeButton: {
+    padding: 5,
+  },
+
+  errorBorder: {
+    borderColor: theme.colors.danger,
+  },
+
   errorText: {
     color: theme.colors.danger,
-    fontSize: theme.fontSize.caption,
-    marginTop: theme.spacing.xs,
+    fontSize: 12,
+    marginTop: 5,
   },
+
   helperText: {
     color: theme.colors.muted,
-    fontSize: theme.fontSize.caption,
-    marginTop: theme.spacing.xs,
+    fontSize: 12,
+    marginTop: 5,
   },
 });

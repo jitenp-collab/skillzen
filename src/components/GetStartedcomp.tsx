@@ -155,12 +155,12 @@ const GetStartedAnimation = () => {
 
   return (
     <SafeAreaView style={styles.safeArea}>
-      <Stack.Screen
+      {/* <Stack.Screen
         options={{
           headerShown: false,
           animation: "fade",
         }}
-      />
+      /> */}
 
       <StatusBar barStyle="light-content" backgroundColor={COLORS.background} />
 
