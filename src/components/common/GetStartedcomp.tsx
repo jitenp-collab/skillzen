@@ -11,14 +11,14 @@ import {
   View,
 } from "react-native";
 
-import { Stack, useRouter } from "expo-router";
 import { Feature } from "@/utils/types/Apptypes";
+import { Stack, useRouter } from "expo-router";
 
-import { pages } from "../assets/data/GetStartedData";
-import { theme } from "../utils/theme/Theme";
-import { ArrowIcon, RocketIcon, AppLogo } from "../assets/svg/SvgIcons";
+import { pages } from "../../assets/data/GetStartedData";
+import { AppLogo, ArrowIcon, RocketIcon } from "../../assets/svg/SvgIcons";
+import { theme } from "../../utils/theme/Theme";
 
-import AppButton from "@/components/common/AppButton";
+import AppButton from "@/components/reusableComponents/AppButton";
 
 const GetStartedAnimation = () => {
   const router = useRouter();
@@ -236,7 +236,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-//push
+  //push
   featureTextContainer: {
     flex: 1,
     marginLeft: 14,

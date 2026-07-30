@@ -2,7 +2,7 @@ import React from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
 import { theme } from "@/utils/theme/Theme";
-import { Props } from "@/utils/types/Apptypes";
+import { AppButtonProp } from "@/utils/types/Apptypes";
 
 const AppButton = ({
   title,
@@ -16,7 +16,8 @@ const AppButton = ({
   icon,
   disabled = false,
   style,
-}: Props) => {
+  fontweight = "800",
+}: AppButtonProp) => {
   return (
     <Pressable
       disabled={disabled}
@@ -39,6 +40,7 @@ const AppButton = ({
           {
             color: textColor,
             fontSize,
+            fontWeight: fontweight,
           },
         ]}
       >
@@ -61,6 +63,6 @@ const styles = StyleSheet.create({
   },
 
   text: {
-    fontWeight: "800",
+    // fontWeight: "800",
   },
 });
