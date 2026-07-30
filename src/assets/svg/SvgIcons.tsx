@@ -1,7 +1,7 @@
-import Svg, { Path } from "react-native-svg"
+import Svg, { Path, Circle } from "react-native-svg";
 
 export function AppLogo(props: any) {
-   return (
+  return (
     <Svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 58 52"
@@ -26,89 +26,44 @@ export function AppLogo(props: any) {
         strokeLinejoin="round"
       />
     </Svg>
-  )
+  );
 }
 
+export function PasswordshowIcon({ color = "#000", ...props }: any) {
+  return (
+    <Svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <Path
+        d="M1 12s4-8 11-8 11 8 11 8M1 12s4 8 11 8 11-8 11-8"
+        stroke={color}
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <Circle cx={12} cy={12} r={3} stroke={color} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+    </Svg>
+  );
+}
 
-// import React from 'react';
-// import Svg, { Path,SvgWithCss, } from 'react-native-svg';
-
-// type SkillZenLogoProps = {
-//   size?: number;
-//   color?: string;
-//   centerColor?: string;
-// };
-
-// const SkillZenLogo = ({
-//   size = 120,
-//   color = '#D7FF3F',
-//   centerColor = '#0B1020',
-// }: SkillZenLogoProps) => {
-//   return (
-//     <Svgwidth={size}
-//       height={size}
-//       viewBox="0 0 100 100"fill="none">      {/* Top-left leaf */}
-//       <Pathd="
-//           M47 48
-//           C36 42 25 31 24 18
-//           C23 9 28 4 35 5
-//           C47 6 58 18 63 31
-//           C54 31 48 37 47 48
-//           Z
-//         "fill={color}
-//       />
-//       {/* Right leaf */}
-//       <Pathd="
-//           M52 48
-//           C62 37 77 30 89 32
-//           C98 34 101 41 97 49
-//           C91 61 76 69 59 75
-//           C52 78 45 80 37 80
-//           C48 73 54 62 52 48
-//           Z
-//         "fill={color}
-//       />
-//       {/* Bottom-left orbit */}
-//       <Pathd="
-//           M48 56
-//           C38 46 25 43 14 48
-//           C5 52 3 60 8 67
-//           C15 77 31 82 49 80
-//           C39 86 23 88 11 82
-//           C-1 76 -4 64 2 55
-//           C10 43 29 39 48 56
-//           Z
-//         "fill={color}
-//       />
-//       {/* Small lower tail */}
-//       <Pathd="
-//           M54 78
-//           C62 84 72 87 81 85
-//           C78 93 67 95 58 91
-//           C53 89 50 85 48 82
-//           Z
-//         "fill={color}
-//       />
-//       {/* Dark heart-shaped centre */}
-//       <Pathd="
-//           M50 72
-//           C45 66 32 58 32 46
-//           C32 36 43 32 50 40
-//           C57 32 68 36 68 46
-//           C68 58 55 66 50 72
-//           Z
-//         "fill={centerColor}
-//       />
-//       {/* Centre four-point star */}
-//       <Pathd="
-//           M50 41
-//           C51.5 47 54 49.5 60 51
-//           C54 52.5 51.5 55 50 61
-//           C48.5 55 46 52.5 40 51
-//           C46 49.5 48.5 47 50 41
-//           Z
-//         "fill={color}
-//       /></Svg>  );
-// };
-// export default SkillZenLogo;
- 
+export function PasswordHideIcon(props: any) {
+  return (
+    <Svg
+    width="30px"
+      height="30px"
+      viewBox="0 0 28 28"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <Path
+        clipRule="evenodd"
+        d="M22.693 1.55a.794.794 0 00-1.093.297l-2.447 4.297c-1.667-.78-3.392-1.18-5.139-1.18-4.693 0-9.233 2.882-12.894 8.3l-.015.021-.012.019a.46.46 0 000 .552c2.7 4.013 5.884 6.641 9.255 7.746L8.4 25.022a.817.817 0 00.293 1.108l.347.203a.794.794 0 001.092-.297L23.332 2.86a.817.817 0 00-.293-1.108l-.346-.203zm-4.601 6.457c-1.357-.597-2.727-.888-4.078-.888-3.41 0-6.94 1.854-10.075 5.805-.3.38-.3.932 0 1.311 2.35 2.962 4.922 4.746 7.499 5.454l1.348-2.366c-1.54-.49-2.813-1.86-2.813-3.741 0-2.38 1.824-4.308 4.073-4.308 1.038 0 1.986.41 2.705 1.087l1.341-2.354zm-2.453 4.307c-.346-.537-.916-.886-1.593-.886-1.125 0-2.046.963-2.046 2.152 0 .786.843 1.705 1.902 1.782l1.737-3.048z"
+        fill="#000"
+        fillRule="evenodd"
+      />
+      <Path
+        d="M14.687 22.176c4.444-.261 8.719-3.107 12.2-8.245A.605.605 0 0027 13.58a.571.571 0 00-.104-.335c-1.338-1.977-2.794-3.616-4.33-4.9l-1.06 1.86c.883.76 1.747 1.665 2.583 2.719.301.38.301.932 0 1.311-2.521 3.178-5.299 5-8.064 5.592l-1.338 2.35z"
+        fill="#000"
+      />
+    </Svg>
+  );
+}

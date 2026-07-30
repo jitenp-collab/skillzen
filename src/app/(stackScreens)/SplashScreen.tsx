@@ -1,5 +1,5 @@
+import SplashScreenAnimation from "@/components/common/SplashScreenAnimation";
 import { StyleSheet } from "react-native";
-import SplashScreenAnimation from "@/components/SplashScreenAnimation";
 
 const SplashScreen = () => {
   return <SplashScreenAnimation />;
