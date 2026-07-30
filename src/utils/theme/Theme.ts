@@ -24,7 +24,7 @@ export const theme = {
         secondary: '#8B5CF6',
         secondarySoft: 'rgba(139, 92, 246, 0.14)',
         accent: '#22D3EE',
-        accentSoft: 'rgba(34, 211, 238, 0.14)',
+        accentSoft: 'rgba(34, 211, 238, 0.12)',
 
         // Status colors
 
