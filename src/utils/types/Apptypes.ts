@@ -25,6 +25,7 @@ export type OnboardingPage = {
   features: Feature[];
 };
 
+//Done
 export type Props = {
   title?: string;
   onPress?: () => void;
