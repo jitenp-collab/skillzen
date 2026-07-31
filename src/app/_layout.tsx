@@ -14,6 +14,7 @@ const _layout = () => {
           contentStyle: {
             backgroundColor: theme.colors.background
           },
+      
         }}
       />
     </SafeAreaProvider>
@@ -21,3 +22,4 @@ const _layout = () => {
 };
 
 export default _layout;
+

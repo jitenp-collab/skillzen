@@ -137,7 +137,7 @@ const LoginComponent = () => {
             fontweight="700"
             height={20}
             width="auto"
-            onPress={() => router.replace("/RegistrationScreen")}
+           onPress={() => router.replace("/(tabs)")}
           />
         </View>
       </ScrollView>

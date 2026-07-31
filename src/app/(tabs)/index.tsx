@@ -1,14 +1,21 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View } from "react-native";
+import React from "react";
+import HomeScreenHeadercomp from "@/components/common/HomeScreenHeadercomp";
+import BenefitsSection from "@/components/common/BenefitsSection";
 
 const index = () => {
   return (
-    <View>
-      <Text>index</Text>
+    <View style={styles.container}>
+      <HomeScreenHeadercomp />
+      <BenefitsSection />
     </View>
-  )
-}
+  );
+};
 
-export default index
+export default index;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  container: {
+    paddingHorizontal: 15,
+  },
+});
