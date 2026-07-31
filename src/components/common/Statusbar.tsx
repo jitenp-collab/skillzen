@@ -8,11 +8,11 @@ const StatusBarComponent = () => {
     <>
       <StatusBar
         // backgroundColor="transparent"
-        backgroundColor={"#09090F"}
+        backgroundColor="#0B1020"
         translucent
         barStyle={"default"}
       />
-      <View style={{ height: insets.top, backgroundColor: "#09090F" }} />
+      <View style={{ height: insets.top, backgroundColor: "#0B1020" }} />
     </>
   );
 };

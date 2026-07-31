@@ -1,9 +1,16 @@
 import { ComponentType, ReactNode } from "react";
-import { DimensionValue, StyleProp, TextInputProps, ViewStyle } from "react-native";
+import {
+  DimensionValue,
+  StyleProp,
+  TextInputProps,
+  TextStyle,
+  ViewStyle,
+} from "react-native";
 
 export type GetStartedIconProps = {
   size?: number;
   color: string;
+  strokeWidth?: number;
 };
 
 export type IconComponent = ComponentType<GetStartedIconProps>;
@@ -25,7 +32,6 @@ export type OnboardingPage = {
   features: Feature[];
 };
 
-//Done
 export type AppButtonProp = {
   title?: string;
   onPress?: () => void;
@@ -35,10 +41,15 @@ export type AppButtonProp = {
   textColor?: string;
   borderRadius?: number;
   fontSize?: number;
-  icon?: React.ReactNode;
+  icon?: ReactNode;
+  iconPosition?: "left" | "right";
   disabled?: boolean;
   style?: StyleProp<ViewStyle>;
-  fontweight?: any
+  borderwidth?: number;
+  bordercolor?: string;
+  textStyle?: StyleProp<TextStyle>;
+  fontweight?: TextStyle["fontWeight"];
+  hitSlop?: number;
 };
 
 export type CustomTextInputProps = TextInputProps & {
@@ -49,4 +60,27 @@ export type CustomTextInputProps = TextInputProps & {
   containerStyle?: StyleProp<ViewStyle>;
   isPassword?: boolean;
   inputContainerStyle?: StyleProp<ViewStyle>;
+};
+
+export type RegistrationFormValues = {
+  fullName: string;
+  email: string;
+  password: string;
+  confirmPassword: string;
+};
+
+export type RegistrationCompProps = {
+  onRegister?: (data: {
+    fullName: string;
+    email: string;
+    password: string;
+    confirmPassword: string;
+  }) => void;
+  onLoginPress?: () => void;
+  onGooglePress?: () => void;
+};
+
+export type LoginErrorsProps = {
+  email?: string;
+  password?: string;
 };

@@ -12,7 +12,7 @@ import {
 } from "react-native";
 
 import { Feature } from "@/utils/types/Apptypes";
-import { Stack, useRouter } from "expo-router";
+import { useRouter } from "expo-router";
 
 import { pages } from "../../assets/data/GetStartedData";
 import { AppLogo, ArrowIcon, RocketIcon } from "../../assets/svg/SvgIcons";
@@ -84,15 +84,8 @@ const GetStartedAnimation = () => {
 
   return (
     <View style={styles.safeArea}>
-      <Stack.Screen
-        options={{
-          headerShown: false,
-          animation: "fade",
-        }}
-      />
       <View style={styles.appHeader}>
         <AppLogo width={60} height={60} />
-
         <Text style={styles.appName}>SkillZen</Text>
       </View>
 
@@ -129,13 +122,14 @@ const GetStartedAnimation = () => {
 
       <View style={styles.footer}>
         <AppButton
+          fontweight={"700"}
           title={isLastPage ? "Get Started" : "Next"}
           onPress={handleButtonPress}
           icon={
             isLastPage ? (
-              <RocketIcon color={theme.colors.background} size={20} />
+              <RocketIcon color={theme.colors.background} />
             ) : (
-              <ArrowIcon color={theme.colors.background} size={20} />
+              <ArrowIcon color={theme.colors.background} />
             )
           }
         />
