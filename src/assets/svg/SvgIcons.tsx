@@ -154,7 +154,7 @@ export const LessonsIcon = ({ size = 22, color }: GetStartedIconProps) => {
 };
 
 // Practical tasks icon
-export const TasksIcon = ({ size = 22, color }: GetStartedIconProps) => {
+export const TabTasksIcon = ({ size = 22, color }: GetStartedIconProps) => {
   const strokeProps = getStrokeProps(color);
 
   return (
@@ -269,3 +269,114 @@ export function GoogleIcon(props: any) {
     </Svg>
   );
 }
+
+// Home icon - simple house outline
+export const HomeIcon = ({
+  size = 24,
+  color = "#8E8E93",
+  strokeWidth = 2,
+}: GetStartedIconProps) => (
+  <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+    <Path
+      d="M4 11L12 4L20 11V19C20 19.55 19.55 20 19 20H15V14H9V20H5C4.45 20 4 19.55 4 19V11Z"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinejoin="round"
+    />
+  </Svg>
+);
+
+// Topics icon - open book outline
+export const TopicsIcon = ({
+  size = 24,
+  color = "#8E8E93",
+  strokeWidth = 2,
+}: GetStartedIconProps) => (
+  <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+    <Path
+      d="M12 6C10.5 4.8 8.5 4 6 4C5 4 4 4.2 4 4.2V17.2C4 17.2 5 17 6 17C8.5 17 10.5 17.8 12 19"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <Path
+      d="M12 6C13.5 4.8 15.5 4 18 4C19 4 20 4.2 20 4.2V17.2C20 17.2 19 17 18 17C15.5 17 13.5 17.8 12 19V6Z"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </Svg>
+);
+
+// Tasks icon - checkmark
+export const TasksIcon = ({
+  size = 24,
+  color = "#8E8E93",
+  strokeWidth = 2.2,
+}: GetStartedIconProps) => (
+  <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+    <Path
+      d="M4 12.5L9 17.5L20 6.5"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </Svg>
+);
+
+// Analytics icon - simple bar chart
+export const AnalyticsIcon = ({
+  size = 24,
+  color = "#8E8E93",
+  strokeWidth = 2,
+}: GetStartedIconProps) => (
+  <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+    <Rect
+      x="4"
+      y="13"
+      width="3"
+      height="7"
+      rx="1"
+      stroke={color}
+      strokeWidth={strokeWidth}
+    />
+    <Rect
+      x="10.5"
+      y="8"
+      width="3"
+      height="12"
+      rx="1"
+      stroke={color}
+      strokeWidth={strokeWidth}
+    />
+    <Rect
+      x="17"
+      y="4"
+      width="3"
+      height="16"
+      rx="1"
+      stroke={color}
+      strokeWidth={strokeWidth}
+    />
+  </Svg>
+);
+
+// Profile icon - person outline
+export const ProfileIcon = ({
+  size = 24,
+  color = "#8E8E93",
+  strokeWidth = 2,
+}: GetStartedIconProps) => (
+  <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+    <Circle cx="12" cy="8" r="4" stroke={color} strokeWidth={strokeWidth} />
+    <Path
+      d="M4 20C4 16.5 7.5 14 12 14C16.5 14 20 16.5 20 20"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+    />
+  </Svg>
+);
