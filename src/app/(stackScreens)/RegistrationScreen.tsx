@@ -2,8 +2,7 @@ import React from "react";
 import { router } from "expo-router";
 
 import RegistrationComp from "@/components/common/RegistrationComp";
-
-import type { RegistrationFormValues } from "@/utils/types/Apptypes";
+import { RegistrationFormValues } from "@/utils/types/Apptypes";
 
 const RegistrationScreen = () => {
   const handleRegister = (values: RegistrationFormValues) => {
