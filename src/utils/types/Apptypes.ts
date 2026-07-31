@@ -78,3 +78,8 @@ export type RegistrationCompProps = {
   onLoginPress?: () => void;
   onGooglePress?: () => void;
 };
+
+export type LoginErrorsProps = {
+  email?: string;
+  password?: string;
+};

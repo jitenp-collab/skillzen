@@ -12,21 +12,17 @@ import { theme } from "@/utils/theme/Theme";
 import AppButton from "../reusableComponents/AppButton";
 import { GoogleIcon } from "../../assets/svg/SvgIcons";
 import { router } from "expo-router";
-
-type LoginErrors = {
-  email?: string;
-  password?: string;
-};
+import { LoginErrorsProps } from "@/utils/types/Apptypes";
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const LoginComponent = () => {
   const [password, setPassword] = useState("");
   const [email, setemail] = useState("");
-  const [errors, setErrors] = useState<LoginErrors>({});
+  const [errors, setErrors] = useState<LoginErrorsProps>({});
 
   const validate = (): boolean => {
-    const newErrors: LoginErrors = {};
+    const newErrors: LoginErrorsProps = {};
 
     if (!email.trim()) {
       newErrors.email = "Email is required";
@@ -156,6 +152,7 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     paddingHorizontal: 24,
     justifyContent: "center",
+    // alignItems: "center",
   },
   welcome: {
     textAlign: "center",
