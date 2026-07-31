@@ -51,7 +51,7 @@ const GetStartedAnimation = () => {
 
   const handleButtonPress = () => {
     if (isLastPage) {
-      router.replace("/loginScreen");
+      router.replace("/RegistrationScreen");
     } else {
       moveToPage(currentPage + 1);
     }
@@ -122,13 +122,14 @@ const GetStartedAnimation = () => {
 
       <View style={styles.footer}>
         <AppButton
+          fontweight={"700"}
           title={isLastPage ? "Get Started" : "Next"}
           onPress={handleButtonPress}
           icon={
             isLastPage ? (
-              <RocketIcon color={theme.colors.background} size={20} />
+              <RocketIcon color={theme.colors.background} />
             ) : (
-              <ArrowIcon color={theme.colors.background} size={20} />
+              <ArrowIcon color={theme.colors.background} />
             )
           }
         />

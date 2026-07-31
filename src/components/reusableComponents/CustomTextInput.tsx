@@ -1,14 +1,10 @@
 import React, { useState } from "react";
-import {
-  View,
-  Text,
-  TextInput,
-  StyleSheet
-} from "react-native";
+import { StyleSheet, Text, TextInput, View } from "react-native";
 
-import { PasswordshowIcon, PasswordHideIcon } from "../../assets/svg/SvgIcons";
+import { PasswordHideIcon, PasswordshowIcon } from "../../assets/svg/SvgIcons";
 import { theme } from "../../utils/theme/Theme";
-import { CustomTextInputProps } from "@/utils/types/Apptypes";
+
+import type { CustomTextInputProps } from "@/utils/types/Apptypes";
 import AppButton from "./AppButton";
 
 const AppTextInput = ({
@@ -19,81 +15,63 @@ const AppTextInput = ({
   containerStyle,
   isPassword = false,
   inputContainerStyle,
-
   onFocus,
   onBlur,
-
   ...props
 }: CustomTextInputProps) => {
   const [showPassword, setShowPassword] = useState(false);
-
   const [isFocused, setIsFocused] = useState(false);
+
+  const passwordIcon = showPassword ? (
+    <PasswordshowIcon color={theme.colors.muted} />
+  ) : (
+    <PasswordHideIcon color={theme.colors.muted} />
+  );
 
   return (
     <View style={[styles.container, containerStyle]}>
-      {label && <Text style={styles.label}>{label}</Text>}
+      {label ? <Text style={styles.label}>{label}</Text> : null}
 
       <View
         style={[
           styles.inputContainer,
-
-          isFocused && styles.focusedBorder,
-
           error && styles.errorBorder,
-
+          isFocused && styles.focusedBorder,
           inputContainerStyle,
         ]}
       >
-        {leftIcon && <View style={styles.leftIcon}>{leftIcon}</View>}
+        {leftIcon ? <View style={styles.leftIcon}>{leftIcon}</View> : null}
 
         <TextInput
           style={styles.input}
           secureTextEntry={isPassword && !showPassword}
           placeholderTextColor={theme.colors.placeholder}
-          onFocus={(e) => {
+          onFocus={(event) => {
             setIsFocused(true);
-
-            onFocus?.(e);
+            onFocus?.(event);
           }}
-          onBlur={(e) => {
+          onBlur={(event) => {
             setIsFocused(false);
-
-            onBlur?.(e);
+            onBlur?.(event);
           }}
           {...props}
         />
 
-        {isPassword && (
-          // <TouchableOpacity
-          //   onPress={() => setShowPassword(!showPassword)}
-          //   style={styles.eyeButton}
-          // >
-          //   {showPassword ? (
-          //     <PasswordshowIcon color={theme.colors.muted} />
-          //   ) : (
-          //     <PasswordHideIcon color={theme.colors.muted} />
-          //   )}
-          // </TouchableOpacity>
+        {isPassword ? (
           <AppButton
-            backgroundColor="#ffffff00"
-            onPress={() => setShowPassword(!showPassword)}
+            icon={passwordIcon}
             width="10%"
-            icon={
-              showPassword ? (
-                <PasswordshowIcon color={theme.colors.muted} />
-              ) : (
-                <PasswordHideIcon color={theme.colors.muted} />
-              )
-            }
+            backgroundColor={theme.colors.transparent}
+            onPress={() => setShowPassword((previous) => !previous)}
           />
-        )}
+        ) : null}
       </View>
 
-      {error && <Text style={styles.errorText}>{error}</Text>}
+      {error ? <Text style={styles.errorText}>{error}</Text> : null}
 
-      {helperText && !error && (
+      {helperText && !error ? (
         <Text style={styles.helperText}>{helperText}</Text>
-      )}
+      ) : null}
     </View>
   );
 };
@@ -103,24 +81,25 @@ export default AppTextInput;
 const styles = StyleSheet.create({
   container: {
     width: "100%",
-    marginBottom: 16,
+    marginBottom: 13,
   },
 
   label: {
-    fontSize: 14,
-    fontWeight: "500",
     color: theme.colors.muted,
-    marginBottom: 8,
+    fontSize: 13,
+    fontWeight: "500",
+    marginBottom: 6,
   },
 
   inputContainer: {
+    height: 46,
     flexDirection: "row",
     alignItems: "center",
-    height: 52,
     borderWidth: 1,
     borderColor: theme.colors.border,
-    borderRadius: 12,
-    paddingHorizontal: 14,
+    borderRadius: 10,
+    paddingLeft: 12,
+    paddingRight: 7,
     backgroundColor: theme.colors.inputBackground,
   },
 
@@ -128,34 +107,32 @@ const styles = StyleSheet.create({
     borderColor: theme.colors.primary,
   },
 
+  errorBorder: {
+    borderColor: theme.colors.danger,
+  },
+
   input: {
     flex: 1,
-    fontSize: 16,
+    height: "100%",
     color: theme.colors.text,
-    paddingHorizontal: 10,
+    fontSize: 14,
+    paddingHorizontal: 0,
+    paddingVertical: 0,
   },
 
   leftIcon: {
     marginRight: 8,
   },
 
-  eyeButton: {
-    padding: 5,
-  },
-
-  errorBorder: {
-    borderColor: theme.colors.danger,
-  },
-
   errorText: {
     color: theme.colors.danger,
-    fontSize: 12,
-    marginTop: 5,
+    fontSize: 11,
+    marginTop: 4,
   },
 
   helperText: {
     color: theme.colors.muted,
-    fontSize: 12,
-    marginTop: 5,
+    fontSize: 11,
+    marginTop: 4,
   },
 });
