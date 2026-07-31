@@ -84,9 +84,9 @@ export function PasswordHideIcon(props: any) {
     </Svg>
   );
 }
-const getStrokeProps = (color: string) => ({
+const getStrokeProps = (color: string, strokeWidth = 1.8) => ({
   stroke: color,
-  strokeWidth: 1.8,
+  strokeWidth,
   strokeLinecap: "round" as const,
   strokeLinejoin: "round" as const,
 });
@@ -198,8 +198,12 @@ export const GrowthIcon = ({ size = 22, color }: GetStartedIconProps) => {
 };
 
 // Next button arrow
-export const ArrowIcon = ({ size = 22, color }: GetStartedIconProps) => {
-  const strokeProps = getStrokeProps(color);
+export const ArrowIcon = ({
+  size = 22,
+  color,
+  strokeWidth = 3,
+}: GetStartedIconProps) => {
+  const strokeProps = getStrokeProps(color, strokeWidth);
 
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
@@ -211,8 +215,12 @@ export const ArrowIcon = ({ size = 22, color }: GetStartedIconProps) => {
 };
 
 // Get Started rocket icon
-export const RocketIcon = ({ size = 22, color }: GetStartedIconProps) => {
-  const strokeProps = getStrokeProps(color);
+export const RocketIcon = ({
+  size = 22,
+  color,
+  strokeWidth = 2,
+}: GetStartedIconProps) => {
+  const strokeProps = getStrokeProps(color, strokeWidth);
 
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
@@ -232,7 +240,7 @@ export const RocketIcon = ({ size = 22, color }: GetStartedIconProps) => {
   );
 };
 
-export function GoogleIcon(props:any) {
+export function GoogleIcon(props: any) {
   return (
     <Svg
       width="40px"
@@ -259,5 +267,5 @@ export function GoogleIcon(props:any) {
         fill="#EB4335"
       />
     </Svg>
-  )
+  );
 }
