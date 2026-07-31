@@ -45,8 +45,8 @@ export type AppButtonProp = {
   iconPosition?: "left" | "right";
   disabled?: boolean;
   style?: StyleProp<ViewStyle>;
-  borderwidth?: any
-  bordercolor?: any
+  borderwidth?: number;
+  bordercolor?: string;
   textStyle?: StyleProp<TextStyle>;
   fontweight?: TextStyle["fontWeight"];
   hitSlop?: number;
@@ -69,12 +69,13 @@ export type RegistrationFormValues = {
   confirmPassword: string;
 };
 
-export type RegistrationFormErrors = Partial<
-  Record<keyof RegistrationFormValues, string>
->;
-
 export type RegistrationCompProps = {
-  onRegister?: (values: RegistrationFormValues) => void;
+  onRegister?: (data: {
+    fullName: string;
+    email: string;
+    password: string;
+    confirmPassword: string;
+  }) => void;
   onLoginPress?: () => void;
   onGooglePress?: () => void;
 };

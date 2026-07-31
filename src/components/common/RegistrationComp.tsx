@@ -7,84 +7,64 @@ import {
   Text,
   View,
 } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 
 import { GoogleIcon } from "../../assets/svg/SvgIcons";
 import AppButton from "../reusableComponents/AppButton";
 import AppTextInput from "../reusableComponents/CustomTextInput";
 
 import { theme } from "@/utils/theme/Theme";
-import type {
-  RegistrationCompProps,
-  RegistrationFormErrors,
-  RegistrationFormValues,
-} from "@/utils/types/Apptypes";
-
-const initialValues: RegistrationFormValues = {
-  fullName: "",
-  email: "",
-  password: "",
-  confirmPassword: "",
-};
+import type { RegistrationCompProps } from "@/utils/types/Apptypes";
 
 const RegistrationComp = ({
   onRegister,
   onLoginPress,
   onGooglePress,
 }: RegistrationCompProps) => {
-  const [formValues, setFormValues] =
-    useState<RegistrationFormValues>(initialValues);
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
-  const [errors, setErrors] = useState<RegistrationFormErrors>({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const updateField = (field: keyof RegistrationFormValues, value: string) => {
-    setFormValues((previousValues) => ({
-      ...previousValues,
-      [field]: value,
-    }));
-
-    if (errors[field]) {
-      setErrors((previousErrors) => ({
-        ...previousErrors,
-        [field]: undefined,
-      }));
-    }
-  };
+  const [fullNameError, setFullNameError] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+  const [confirmPasswordError, setConfirmPasswordError] = useState("");
 
   const validateForm = () => {
-    const validationErrors: RegistrationFormErrors = {};
+    let isValid = true;
 
-    const trimmedName = formValues.fullName.trim();
-    const trimmedEmail = formValues.email.trim();
+    setFullNameError("");
+    setEmailError("");
+    setPasswordError("");
+    setConfirmPasswordError("");
 
-    if (!trimmedName) {
-      validationErrors.fullName = "Full name is required";
+    if (!fullName.trim()) {
+      setFullNameError("Full name is required");
+      isValid = false;
     }
 
-    if (!trimmedEmail) {
-      validationErrors.email = "Email is required";
-    } else {
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-      if (!emailPattern.test(trimmedEmail)) {
-        validationErrors.email = "Enter a valid email address";
-      }
+    if (!email.trim()) {
+      setEmailError("Email is required");
+      isValid = false;
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
+      setEmailError("Enter a valid email address");
+      isValid = false;
     }
 
-    if (!formValues.password) {
-      validationErrors.password = "Password is required";
+    if (!password) {
+      setPasswordError("Password is required");
+      isValid = false;
     }
 
-    if (!formValues.confirmPassword) {
-      validationErrors.confirmPassword = "Please confirm your password";
-    } else if (formValues.password !== formValues.confirmPassword) {
-      validationErrors.confirmPassword = "Passwords do not match";
+    if (!confirmPassword) {
+      setConfirmPasswordError("Please confirm your password");
+      isValid = false;
+    } else if (password !== confirmPassword) {
+      setConfirmPasswordError("Passwords do not match");
+      isValid = false;
     }
 
-    setErrors(validationErrors);
-
-    return Object.keys(validationErrors).length === 0;
+    return isValid;
   };
 
   const handleCreateAccount = () => {
@@ -92,19 +72,12 @@ const RegistrationComp = ({
       return;
     }
 
-    const cleanedValues: RegistrationFormValues = {
-      ...formValues,
-      fullName: formValues.fullName.trim(),
-      email: formValues.email.trim().toLowerCase(),
-    };
-
-    setIsSubmitting(true);
-
-    try {
-      onRegister?.(cleanedValues);
-    } finally {
-      setIsSubmitting(false);
-    }
+    onRegister?.({
+      fullName: fullName.trim(),
+      email: email.trim().toLowerCase(),
+      password,
+      confirmPassword,
+    });
   };
 
   return (
@@ -131,56 +104,67 @@ const RegistrationComp = ({
             <AppTextInput
               label="Full name"
               placeholder="Enter full name"
-              value={formValues.fullName}
-              error={errors.fullName}
+              value={fullName}
+              error={fullNameError}
               autoCapitalize="words"
               autoCorrect={false}
               returnKeyType="next"
-              onChangeText={(value) => updateField("fullName", value)}
+              onChangeText={(value) => {
+                setFullName(value);
+                setFullNameError("");
+              }}
             />
 
             <AppTextInput
               label="Email"
               placeholder="Enter your email"
-              value={formValues.email}
-              error={errors.email}
+              value={email}
+              error={emailError}
               keyboardType="email-address"
               autoCapitalize="none"
               autoCorrect={false}
               returnKeyType="next"
-              onChangeText={(value) => updateField("email", value)}
+              onChangeText={(value) => {
+                setEmail(value);
+                setEmailError("");
+              }}
             />
 
             <AppTextInput
               label="Password"
               placeholder="Enter your password"
-              value={formValues.password}
-              error={errors.password}
+              value={password}
+              error={passwordError}
               isPassword
               autoCapitalize="none"
               autoCorrect={false}
               returnKeyType="next"
-              onChangeText={(value) => updateField("password", value)}
+              onChangeText={(value) => {
+                setPassword(value);
+                setPasswordError("");
+              }}
             />
 
             <AppTextInput
               label="Confirm password"
               placeholder="Confirm your password"
-              value={formValues.confirmPassword}
-              error={errors.confirmPassword}
+              value={confirmPassword}
+              error={confirmPasswordError}
               isPassword
               autoCapitalize="none"
               autoCorrect={false}
               returnKeyType="done"
               onSubmitEditing={handleCreateAccount}
-              onChangeText={(value) => updateField("confirmPassword", value)}
+              onChangeText={(value) => {
+                setConfirmPassword(value);
+                setConfirmPasswordError("");
+              }}
             />
 
             <AppButton
-              title={isSubmitting ? "Creating Account..." : "Create Account"}
+              title="Create Account"
               height={46}
               fontSize={15}
-              disabled={isSubmitting}
               onPress={handleCreateAccount}
               style={styles.createAccountButton}
             />
