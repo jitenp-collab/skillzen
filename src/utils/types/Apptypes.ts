@@ -104,3 +104,36 @@ export type GlobalState = {
   isLoading: boolean;
   error: string | null;
 };
+// export type BenefitCardProps = {
+//   title: string;
+//   description: string;
+//   icon: IconComponent;
+//   image: string;
+// };
+
+
+
+export type BenefitVisualType =
+
+  | "certificate"
+
+  | "growth"
+
+  | "time"
+
+  | "community"
+
+  | "focus";
+ 
+export type BenefitCardProps = {
+
+  title: string;
+
+  description: string;
+
+  icon: IconComponent;
+
+  visualType: BenefitVisualType;
+
+};
+ 

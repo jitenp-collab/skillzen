@@ -1,4 +1,3 @@
-import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import LoginComponent from "@/components/common/LoginComponent";
 
@@ -8,4 +7,3 @@ const loginScreen = () => {
 
 export default loginScreen;
 
-const styles = StyleSheet.create({});

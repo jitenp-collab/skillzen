@@ -12,9 +12,21 @@ export default function TabLayout() {
         tabBarStyle: {
           backgroundColor: theme.colors.background,
           borderTopWidth: 0,
+
+          // iOS shadow
+          shadowColor: "#000",
+          shadowOffset: { width: 0, height: -2 },
+          shadowOpacity: 0.15,
+          shadowRadius: 6,
+
+          // Android shadow
+          elevation: 10,
         },
         tabBarLabelStyle: {
           fontSize: 11,
+        },
+        sceneStyle: {
+          backgroundColor: theme.colors.background,
         },
       }}
     >
