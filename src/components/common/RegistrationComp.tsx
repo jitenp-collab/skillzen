@@ -275,7 +275,7 @@ const styles = StyleSheet.create({
   },
 
   createAccountButton: {
-    marginTop: 2,
+    marginTop: 10,
   },
 
   dividerContainer: {

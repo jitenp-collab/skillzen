@@ -34,8 +34,8 @@ export function AppLogo(props: any) {
 export function PasswordshowIcon({ color = "#94A3B8", ...props }: any) {
   return (
     <Svg
-      width="25px"
-      height="25px"
+      width="18px"
+      height="18px"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -64,8 +64,8 @@ export function PasswordshowIcon({ color = "#94A3B8", ...props }: any) {
 export function PasswordHideIcon(props: any) {
   return (
     <Svg
-      width="28px"
-      height="28px"
+      width="20px"
+      height="20px"
       viewBox="0 0 28 28"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -243,8 +243,8 @@ export const RocketIcon = ({
 export function GoogleIcon(props: any) {
   return (
     <Svg
-      width="25px"
-      height="25px"
+      width="23px"
+      height="23px"
       viewBox="-3 0 262 262"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid"

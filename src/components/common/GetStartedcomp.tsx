@@ -12,7 +12,7 @@ import {
 } from "react-native";
 
 import { Feature } from "@/utils/types/Apptypes";
-import { Stack, useRouter } from "expo-router";
+import { useRouter } from "expo-router";
 
 import { pages } from "../../assets/data/GetStartedData";
 import { AppLogo, ArrowIcon, RocketIcon } from "../../assets/svg/SvgIcons";
@@ -51,7 +51,7 @@ const GetStartedAnimation = () => {
 
   const handleButtonPress = () => {
     if (isLastPage) {
-      router.replace("/RegistrationScreen");
+      router.replace("/loginScreen");
     } else {
       moveToPage(currentPage + 1);
     }
