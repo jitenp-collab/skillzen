@@ -84,15 +84,8 @@ const GetStartedAnimation = () => {
 
   return (
     <View style={styles.safeArea}>
-      <Stack.Screen
-        options={{
-          headerShown: false,
-          animation: "fade",
-        }}
-      />
       <View style={styles.appHeader}>
         <AppLogo width={60} height={60} />
-
         <Text style={styles.appName}>SkillZen</Text>
       </View>
 

@@ -17,6 +17,8 @@ const AppButton = ({
   disabled = false,
   style,
   fontweight = "800",
+  borderwidth,
+  bordercolor,
 }: AppButtonProp) => {
   return (
     <Pressable
@@ -30,10 +32,13 @@ const AppButton = ({
           backgroundColor,
           borderRadius,
           opacity: pressed || disabled ? 0.8 : 1,
+          borderWidth: borderwidth,
+          borderColor: bordercolor,
         },
         style,
       ]}
     >
+      {icon && <View>{icon}</View>}
       <Text
         style={[
           styles.text,
@@ -46,8 +51,6 @@ const AppButton = ({
       >
         {title}
       </Text>
-
-      {icon && <View>{icon}</View>}
     </Pressable>
   );
 };

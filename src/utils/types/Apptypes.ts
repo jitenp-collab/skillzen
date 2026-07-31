@@ -39,6 +39,8 @@ export type AppButtonProp = {
   disabled?: boolean;
   style?: StyleProp<ViewStyle>;
   fontweight?: any
+  borderwidth?: any
+  bordercolor?: any
 };
 
 export type CustomTextInputProps = TextInputProps & {

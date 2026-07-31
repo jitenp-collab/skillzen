@@ -3,13 +3,13 @@ import {
   View,
   Text,
   TextInput,
-  StyleSheet,
-  TouchableOpacity,
+  StyleSheet
 } from "react-native";
 
 import { PasswordshowIcon, PasswordHideIcon } from "../../assets/svg/SvgIcons";
 import { theme } from "../../utils/theme/Theme";
 import { CustomTextInputProps } from "@/utils/types/Apptypes";
+import AppButton from "./AppButton";
 
 const AppTextInput = ({
   label,
@@ -64,16 +64,28 @@ const AppTextInput = ({
         />
 
         {isPassword && (
-          <TouchableOpacity
+          // <TouchableOpacity
+          //   onPress={() => setShowPassword(!showPassword)}
+          //   style={styles.eyeButton}
+          // >
+          //   {showPassword ? (
+          //     <PasswordshowIcon color={theme.colors.muted} />
+          //   ) : (
+          //     <PasswordHideIcon color={theme.colors.muted} />
+          //   )}
+          // </TouchableOpacity>
+          <AppButton
+            backgroundColor="#ffffff00"
             onPress={() => setShowPassword(!showPassword)}
-            style={styles.eyeButton}
-          >
-            {showPassword ? (
-              <PasswordshowIcon color={theme.colors.muted} />
-            ) : (
-              <PasswordHideIcon color={theme.colors.muted} />
-            )}
-          </TouchableOpacity>
+            width="10%"
+            icon={
+              showPassword ? (
+                <PasswordshowIcon color={theme.colors.muted} />
+              ) : (
+                <PasswordHideIcon color={theme.colors.muted} />
+              )
+            }
+          />
         )}
       </View>
 
