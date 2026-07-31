@@ -80,7 +80,27 @@ export type RegistrationCompProps = {
   onGooglePress?: () => void;
 };
 
+export type LoginFormValues = {
+  email: string;
+  password: string;
+};
+
 export type LoginErrorsProps = {
   email?: string;
   password?: string;
+};
+
+export type User = {
+  id: string;
+  fullName: string;
+  email: string;
+  password: string;
+  userData: object[];
+};
+
+export type GlobalState = {
+  currentUser: User | null;
+  getStartedCompleted: boolean;
+  isLoading: boolean;
+  error: string | null;
 };

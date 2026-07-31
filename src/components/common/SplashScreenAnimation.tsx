@@ -1,15 +1,13 @@
 import { useRouter } from "expo-router";
 import { useEffect, useRef } from "react";
-import {
-  Animated,
-  Dimensions,
-  Easing,
-  StyleSheet,
-  View
-} from "react-native";
+import { Animated, Dimensions, Easing, StyleSheet, View } from "react-native";
 import Svg, { Circle, Defs, RadialGradient, Stop } from "react-native-svg";
 import { AppLogo } from "../../assets/svg/SvgIcons";
 import { theme } from "../../utils/theme/Theme";
+
+import { useDispatch } from "react-redux";
+import { loadAppData } from "@/redux/actions";
+import type { AppDispatch } from "@/redux/store";
 
 const { width, height } = Dimensions.get("window");
 const TRACK_WIDTH = width * 0.6;
@@ -29,6 +27,7 @@ const GLOW_SIZE = 100;
 
 const SplashScreenAnimation = () => {
   const route = useRouter();
+  const dispatch = useDispatch<AppDispatch>();
   const progress = useRef(new Animated.Value(0)).current;
   const screenOpacity = useRef(new Animated.Value(1)).current;
 
@@ -45,6 +44,7 @@ const SplashScreenAnimation = () => {
   const textTranslateY = useRef(new Animated.Value(8)).current;
 
   useEffect(() => {
+    const appDataPromise = dispatch(loadAppData()).unwrap();
     Animated.parallel([
       // logo fades in fast — the drop itself is the star of the show
       Animated.timing(logoOpacity, {
@@ -130,8 +130,16 @@ const SplashScreenAnimation = () => {
         duration: FADE_DURATION,
         easing: Easing.out(Easing.ease),
         useNativeDriver: true,
-      }).start(() => {
-        route.replace("/(stackScreens)/getStartedScreen");
+      }).start(async () => {
+
+        const appData = await appDataPromise;
+        if (appData.currentUser) {
+          route.replace("/(tabs)");
+        } else if (appData.getStartedCompleted) {
+          route.replace("/loginScreen");
+        } else {
+          route.replace("/(stackScreens)/getStartedScreen");
+        }
       });
     });
   }, []);
@@ -160,12 +168,28 @@ const SplashScreenAnimation = () => {
             },
           ]}
         >
-          <Svg width={GLOW_SIZE} height={GLOW_SIZE} viewBox={`0 0 ${GLOW_SIZE} ${GLOW_SIZE}`}>
+          <Svg
+            width={GLOW_SIZE}
+            height={GLOW_SIZE}
+            viewBox={`0 0 ${GLOW_SIZE} ${GLOW_SIZE}`}
+          >
             <Defs>
               <RadialGradient id="glowGradient" cx="50%" cy="50%" r="50%">
-                <Stop offset="0%" stopColor={theme.colors.primary} stopOpacity={0.5} />
-                <Stop offset="45%" stopColor={theme.colors.primary} stopOpacity={0.22} />
-                <Stop offset="100%" stopColor={theme.colors.primary} stopOpacity={0} />
+                <Stop
+                  offset="0%"
+                  stopColor={theme.colors.primary}
+                  stopOpacity={0.5}
+                />
+                <Stop
+                  offset="45%"
+                  stopColor={theme.colors.primary}
+                  stopOpacity={0.22}
+                />
+                <Stop
+                  offset="100%"
+                  stopColor={theme.colors.primary}
+                  stopOpacity={0}
+                />
               </RadialGradient>
             </Defs>
             <Circle

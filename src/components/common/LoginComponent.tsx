@@ -1,4 +1,5 @@
 import {
+  Alert,
   StyleSheet,
   View,
   ScrollView,
@@ -14,9 +15,14 @@ import { GoogleIcon } from "../../assets/svg/SvgIcons";
 import { router } from "expo-router";
 import { LoginErrorsProps } from "@/utils/types/Apptypes";
 
+import { useDispatch } from "react-redux";
+import { loginUser } from "@/redux/actions";
+import type { AppDispatch } from "@/redux/store";
+
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const LoginComponent = () => {
+  const dispatch = useDispatch<AppDispatch>();
   const [password, setPassword] = useState("");
   const [email, setemail] = useState("");
   const [errors, setErrors] = useState<LoginErrorsProps>({});
@@ -54,10 +60,25 @@ const LoginComponent = () => {
     }
   };
 
-  const handleSignIn = () => {
-    if (!validate()) return;
+  const handleSignIn = async () => {
+    if (!validate()) {
+      return;
+    }
 
-    // proceed with sign in
+    try {
+      await dispatch(
+        loginUser({
+          email: email.trim().toLowerCase(),
+          password,
+        })
+      ).unwrap();
+
+      router.replace("/(tabs)");
+    } catch (error) {
+      console.log("Login error:", error);
+
+      Alert.alert("Login failed", "Invalid email or password");
+    }
   };
 
   return (
