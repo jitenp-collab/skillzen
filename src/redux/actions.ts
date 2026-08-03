@@ -3,7 +3,6 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import {
   GoogleOneTapSignIn,
   isCancelledResponse,
-  isNoSavedCredentialFoundResponse,
   isSuccessResponse,
 } from "react-native-nitro-google-signin";
 

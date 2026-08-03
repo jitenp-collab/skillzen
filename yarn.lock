@@ -2384,7 +2384,11 @@ expo-web-browser@~57.0.2:
   resolved "https://registry.yarnpkg.com/expo-web-browser/-/expo-web-browser-57.0.2.tgz#37a9386069bbf0a35709b3f0b394f195dc1cd43a"
   integrity sha512-3vl5kvd7PB48ub6PpNIJUuPxO8xVa6D8RnIgNba6SXRwqFprOfeEZgwTgtm41kz0AAtvMOztUVNEUkwrHKjqMQ==
 
+<<<<<<< HEAD
 expo@^57.0.0:
+=======
+expo@~57.0.9:
+>>>>>>> 8d04410d12ba76f96772a52fe318584037dd9518
   version "57.0.9"
   resolved "https://registry.yarnpkg.com/expo/-/expo-57.0.9.tgz#7774b21c2a5f7c9d8e059da3c7b2a5246f4ebffb"
   integrity sha512-NDEvnU+vjRdMbtOyDC25OSok9/E97al97pyx+bMphQgNRGAED0D7oF8ha7oGYsLE+7jFzpPADVM9S60dGbpHIA==

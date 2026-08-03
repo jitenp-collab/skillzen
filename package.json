@@ -5,7 +5,7 @@
   "dependencies": {
     "@react-native-async-storage/async-storage": "2.2.0",
     "@reduxjs/toolkit": "^2.12.0",
-    "expo": "^57.0.0",
+    "expo": "~57.0.9",
     "expo-constants": "~57.0.8",
     "expo-dev-client": "~57.0.10",
     "expo-device": "~57.0.1",
@@ -36,7 +36,7 @@
     "react-native-worklets": "0.10.1",
     "react-redux": "^9.3.0"
   },
-  "expo": {
+   "expo": {
   "doctor": {
     "reactNativeDirectoryCheck": {
       "exclude": [
@@ -45,6 +45,7 @@
     }
   }
 },
+ 
   "devDependencies": {
     "@types/react": "~19.2.4",
     "typescript": "~6.0.3"
