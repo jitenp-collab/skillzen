@@ -404,7 +404,6 @@ export const NotificationIcon = ({
   </Svg>
 );
 
-
 export const HiIcon = ({
   size = 24,
   color = "#8E8E93",
@@ -556,3 +555,292 @@ export const TargetIcon = ({
     <Circle cx="12" cy="12" r="1" fill={color} />
   </Svg>
 );
+
+export const PencilIcon = ({
+  color = "#FFFFFF",
+  size = 18,
+}: {
+  color?: string;
+  size?: number;
+}) => {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path
+        d="M4 20H8L19 9C20.1 7.9 20.1 6.1 19 5C17.9 3.9 16.1 3.9 15 5L4 16V20Z"
+        stroke={color}
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <Path
+        d="M13.5 6.5L17.5 10.5"
+        stroke={color}
+        strokeWidth={2}
+        strokeLinecap="round"
+      />
+    </Svg>
+  );
+};
+
+export const LogoutIcon = ({
+  color = "#FF4D67",
+  size = 24,
+}: {
+  color?: string;
+  size?: number;
+}) => {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path
+        d="M10 5H6C4.9 5 4 5.9 4 7V17C4 18.1 4.9 19 6 19H10"
+        stroke={color}
+        strokeWidth={2}
+        strokeLinecap="round"
+      />
+
+      <Path
+        d="M13 8L17 12L13 16"
+        stroke={color}
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <Path d="M8 12H17" stroke={color} strokeWidth={2} strokeLinecap="round" />
+    </Svg>
+  );
+};
+
+export const CameraIcon = ({
+  color = "#D7FF3F",
+  size = 28,
+}: {
+  color?: string;
+  size?: number;
+}) => {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path
+        d="M4 7H7L8.5 5H15.5L17 7H20V19H4V7Z"
+        stroke={color}
+        strokeWidth={2}
+        strokeLinejoin="round"
+      />
+
+      <Circle cx={12} cy={13} r={3.5} stroke={color} strokeWidth={2} />
+    </Svg>
+  );
+};
+
+export const GalleryIcon = ({
+  color = "#D7FF3F",
+  size = 28,
+}: {
+  color?: string;
+  size?: number;
+}) => {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Rect
+        x={3}
+        y={4}
+        width={18}
+        height={16}
+        rx={2}
+        stroke={color}
+        strokeWidth={2}
+      />
+
+      <Circle cx={9} cy={9} r={1.5} fill={color} />
+
+      <Path
+        d="M5 18L10 13L13 16L15 14L19 18"
+        stroke={color}
+        strokeWidth={2}
+        strokeLinejoin="round"
+      />
+    </Svg>
+  );
+};
+
+export const DeleteIcon = ({
+  color = "#FF4D67",
+  size = 22,
+}: {
+  color?: string;
+  size?: number;
+}) => {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path d="M4 7H20" stroke={color} strokeWidth={2} strokeLinecap="round" />
+
+      <Path
+        d="M9 7V4H15V7"
+        stroke={color}
+        strokeWidth={2}
+        strokeLinejoin="round"
+      />
+
+      <Path
+        d="M6 7L7 21H17L18 7"
+        stroke={color}
+        strokeWidth={2}
+        strokeLinejoin="round"
+      />
+
+      <Path
+        d="M9 10V17M12 10V17M15 10V17"
+        stroke={color}
+        strokeWidth={2}
+        strokeLinecap="round"
+      />
+    </Svg>
+  );
+};
+
+export const ChevronRightIcon = ({
+  color = "#94A3B8",
+  size = 20,
+}: {
+  color?: string;
+  size?: number;
+}) => {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path
+        d="M9 6L15 12L9 18"
+        stroke={color}
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </Svg>
+  );
+};
+
+export const AchievementIcon = ({
+  color = "#F8FAFC",
+  size = 23,
+}: {
+  color?: string;
+  size?: number;
+}) => {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path
+        d="M8 4H16V9C16 11.2 14.2 13 12 13C9.8 13 8 11.2 8 9V4Z"
+        stroke={color}
+        strokeWidth={2}
+      />
+
+      <Path
+        d="M8 6H4V8C4 10.2 5.8 12 8 12"
+        stroke={color}
+        strokeWidth={2}
+        strokeLinecap="round"
+      />
+
+      <Path
+        d="M16 6H20V8C20 10.2 18.2 12 16 12"
+        stroke={color}
+        strokeWidth={2}
+        strokeLinecap="round"
+      />
+
+      <Path
+        d="M12 13V17M9 21H15M10 17H14"
+        stroke={color}
+        strokeWidth={2}
+        strokeLinecap="round"
+      />
+    </Svg>
+  );
+};
+
+export const BookmarkIcon = ({
+  color = "#F8FAFC",
+  size = 23,
+}: {
+  color?: string;
+  size?: number;
+}) => {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path
+        d="M6 4H18V20L12 16L6 20V4Z"
+        stroke={color}
+        strokeWidth={2}
+        strokeLinejoin="round"
+      />
+    </Svg>
+  );
+};
+
+export const DownloadIcon = ({
+  color = "#F8FAFC",
+  size = 23,
+}: {
+  color?: string;
+  size?: number;
+}) => {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path d="M5 8H19V20H5V8Z" stroke={color} strokeWidth={2} />
+
+      <Path d="M9 8V5H15V8" stroke={color} strokeWidth={2} />
+
+      <Path
+        d="M12 11V16M9.5 13.5L12 16L14.5 13.5"
+        stroke={color}
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </Svg>
+  );
+};
+
+export const SettingsIcon = ({
+  color = "#F8FAFC",
+  size = 23,
+}: {
+  color?: string;
+  size?: number;
+}) => {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Circle cx={12} cy={12} r={3} stroke={color} strokeWidth={2} />
+
+      <Path
+        d="M19 13.5V10.5L17 9.7L16.3 8L17.2 6L15.1 3.9L13.1 4.8L11.4 4.1L10.6 2H7.6L6.8 4.1L5.1 4.8L3.1 3.9L1 6L1.9 8L1.2 9.7L-0.8 10.5V13.5L1.2 14.3L1.9 16L1 18L3.1 20.1L5.1 19.2L6.8 19.9L7.6 22H10.6L11.4 19.9L13.1 19.2L15.1 20.1L17.2 18L16.3 16L17 14.3L19 13.5Z"
+        stroke={color}
+        strokeWidth={1.5}
+        strokeLinejoin="round"
+      />
+    </Svg>
+  );
+};
+
+export const HelpIcon = ({
+  color = "#F8FAFC",
+  size = 23,
+}: {
+  color?: string;
+  size?: number;
+}) => {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Circle cx={12} cy={12} r={9} stroke={color} strokeWidth={2} />
+
+      <Path
+        d="M9.8 9C9.8 7.7 10.8 6.8 12.2 6.8C13.6 6.8 14.6 7.7 14.6 9C14.6 10.2 13.9 10.8 13 11.4C12.3 11.9 12 12.3 12 13.2"
+        stroke={color}
+        strokeWidth={2}
+        strokeLinecap="round"
+      />
+
+      <Circle cx={12} cy={17} r={1} fill={color} />
+    </Svg>
+  );
+};

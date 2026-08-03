@@ -92,9 +92,6 @@ export type LoginErrorsProps = {
   password?: string;
 };
 
-
-
-
 export type BenefitVisualType =
   | "certificate"
   | "growth"
@@ -113,7 +110,10 @@ export type User = {
   id: string;
   fullName: string;
   email: string;
-  password: string;
+  password?: string;
+  photo?: string;
+  googlePhoto?: string;
+  loginType: "email" | "google";
   userData: object[];
 };
 
