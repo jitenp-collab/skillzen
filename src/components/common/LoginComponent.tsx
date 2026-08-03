@@ -16,7 +16,7 @@ import { router } from "expo-router";
 import { LoginErrorsProps } from "@/utils/types/Apptypes";
 
 import { useDispatch } from "react-redux";
-import { loginUser } from "@/redux/actions";
+import { googleSignInUser, loginUser } from "@/redux/actions";
 import type { AppDispatch } from "@/redux/store";
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -60,6 +60,21 @@ const LoginComponent = () => {
     }
   };
 
+  const handleGoogleSignIn = async () => {
+    try {
+      await dispatch(googleSignInUser()).unwrap();
+
+      router.replace("/(tabs)");
+    } catch (error) {
+      console.log("Google Sign-In error:", error);
+
+      Alert.alert(
+        "Google Sign-In failed",
+        error instanceof Error ? error.message : "Unable to sign in with Google"
+      );
+    }
+  };
+
   const handleSignIn = async () => {
     if (!validate()) {
       return;
@@ -77,7 +92,12 @@ const LoginComponent = () => {
     } catch (error) {
       console.log("Login error:", error);
 
-      Alert.alert("Login failed", "Invalid email or password");
+      const message =
+        error && typeof error === "object" && "message" in error
+          ? String(error.message)
+          : "Unable to login";
+
+      Alert.alert("Login failed", message);
     }
   };
 
@@ -146,6 +166,7 @@ const LoginComponent = () => {
             fontweight="600"
             fontSize={14}
             borderRadius={10}
+            onPress={handleGoogleSignIn}
           />
         </View>
         <View style={styles.box3}>

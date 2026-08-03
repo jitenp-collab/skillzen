@@ -90,23 +90,14 @@ export type LoginErrorsProps = {
   password?: string;
 };
 
-
-
-
 export type BenefitVisualType =
-
   | "certificate"
-
   | "growth"
-
   | "time"
-
   | "community"
-
   | "focus";
- 
-export type BenefitCardProps = {
 
+export type BenefitCardProps = {
   title: string;
 
   description: string;
@@ -114,14 +105,16 @@ export type BenefitCardProps = {
   icon: IconComponent;
 
   visualType: BenefitVisualType;
-
 };
- 
+
 export type User = {
   id: string;
   fullName: string;
   email: string;
-  password: string;
+  password?: string;
+  photo?: string;
+  googlePhoto?: string;
+  loginType: "email" | "google";
   userData: object[];
 };
 

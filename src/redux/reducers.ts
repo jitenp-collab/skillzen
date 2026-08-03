@@ -2,10 +2,12 @@ import { createSlice } from "@reduxjs/toolkit";
 
 import {
   completeGetStarted,
+  googleSignInUser,
   loadAppData,
   loginUser,
   logoutUser,
   registerUser,
+  updateProfilePhoto,
 } from "./actions";
 
 import type { GlobalState } from "@/utils/types/Apptypes";
@@ -68,6 +70,23 @@ const globalSlice = createSlice({
         state.error = action.error.message || "Unable to complete Get Started";
       })
 
+      // Google Sign-In
+      .addCase(googleSignInUser.pending, (state) => {
+        state.isLoading = true;
+        state.error = null;
+      })
+
+      .addCase(googleSignInUser.fulfilled, (state, action) => {
+        state.currentUser = action.payload;
+        state.isLoading = false;
+        state.error = null;
+      })
+
+      .addCase(googleSignInUser.rejected, (state, action) => {
+        state.isLoading = false;
+        state.error = action.error.message || "Google Sign-In failed";
+      })
+
       // Register user
       .addCase(registerUser.pending, (state) => {
         state.isLoading = true;
@@ -100,6 +119,23 @@ const globalSlice = createSlice({
         state.isLoading = false;
 
         state.error = action.error.message || "Login failed";
+      })
+
+      // Update profile photo
+      .addCase(updateProfilePhoto.pending, (state) => {
+        state.isLoading = true;
+        state.error = null;
+      })
+
+      .addCase(updateProfilePhoto.fulfilled, (state, action) => {
+        state.currentUser = action.payload;
+        state.isLoading = false;
+        state.error = null;
+      })
+
+      .addCase(updateProfilePhoto.rejected, (state, action) => {
+        state.isLoading = false;
+        state.error = action.error.message || "Unable to update profile photo";
       })
 
       // Logout user

@@ -4,8 +4,7 @@ import { router } from "expo-router";
 import { useDispatch } from "react-redux";
 
 import RegistrationComp from "@/components/common/RegistrationComp";
-import { registerUser } from "@/redux/actions";
-
+import { googleSignInUser, registerUser } from "@/redux/actions";
 import type { AppDispatch } from "@/redux/store";
 import type { RegistrationFormValues } from "@/utils/types/Apptypes";
 
@@ -28,8 +27,18 @@ const RegistrationScreen = () => {
     router.replace("/loginScreen");
   };
 
-  const handleGooglePress = () => {
-    // Google authentication will be added later.
+  const handleGooglePress = async () => {
+    try {
+      await dispatch(googleSignInUser()).unwrap();
+      router.replace("/(tabs)");
+    } catch (error) {
+      console.log("Google Sign-In error:", error);
+
+      Alert.alert(
+        "Google Sign-In failed",
+        error instanceof Error ? error.message : "Unable to sign in with Google"
+      );
+    }
   };
 
   return (
