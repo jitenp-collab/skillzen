@@ -16,5 +16,35 @@
     "title": "TypeScript",
     "description": "Type-safe JS",
     "image": "https://wallpaperaccess.com/full/7990027.png"
+  },
+  {
+    "id": "python",
+    "title": "Python",
+    "description": "General-purpose scripting & backend",
+    "image": "https://cdn.worldvectorlogo.com/logos/python-5.svg"
+  },
+  {
+    "id": "nodejs",
+    "title": "Node.js",
+    "description": "Server-side JavaScript runtime",
+    "image": "https://cdn.worldvectorlogo.com/logos/nodejs-1.svg"
+  },
+  {
+    "id": "redux",
+    "title": "Redux",
+    "description": "Predictable state management",
+    "image": "https://cdn.worldvectorlogo.com/logos/redux.svg"
+  },
+  {
+    "id": "expo",
+    "title": "Expo",
+    "description": "Toolchain for React Native apps",
+    "image": "https://cdn.worldvectorlogo.com/logos/expo-1.svg"
+  },
+  {
+    "id": "git",
+    "title": "Git",
+    "description": "Version control basics",
+    "image": "https://cdn.worldvectorlogo.com/logos/git-icon.svg"
   }
 ]
