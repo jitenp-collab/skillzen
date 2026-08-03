@@ -11,9 +11,6 @@
       "icon": "./assets/expo.icon",
       "bundleIdentifier": "com.anonymous.SkillZen"
     },
-    "splash": {
-      "backgroundColor": "#0B1020"
-    },
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
@@ -45,7 +42,9 @@
         {
           "iosUrlScheme": "com.googleusercontent.apps.795851833956-cseheloseoit8m5e63revm2oiiv6vf54"
         }
-      ]
+      ],
+      "expo-image",
+      "expo-status-bar"
     ],
     "experiments": {
       "typedRoutes": true,
