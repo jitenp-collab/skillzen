@@ -6,7 +6,7 @@ import { AppLogo } from "../../assets/svg/SvgIcons";
 import { theme } from "../../utils/theme/Theme";
 
 import { useDispatch } from "react-redux";
-import { loadAppData } from "@/redux/actions";
+import { GetCategories, loadAppData } from "@/redux/actions";
 import type { AppDispatch } from "@/redux/store";
 
 const { width, height } = Dimensions.get("window");
@@ -100,7 +100,7 @@ const SplashScreenAnimation = () => {
               easing: Easing.inOut(Easing.sin),
               useNativeDriver: true,
             }),
-          ])
+          ]),
         ),
       ]),
       Animated.timing(textOpacity, {
@@ -131,9 +131,9 @@ const SplashScreenAnimation = () => {
         easing: Easing.out(Easing.ease),
         useNativeDriver: true,
       }).start(async () => {
-
         const appData = await appDataPromise;
         if (appData.currentUser) {
+          dispatch(GetCategories()).unwrap();
           route.replace("/(tabs)");
         } else if (appData.getStartedCompleted) {
           route.replace("/loginScreen");

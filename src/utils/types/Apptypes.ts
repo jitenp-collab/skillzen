@@ -1,11 +1,13 @@
-import { ComponentType, ReactNode } from "react";
+import { ComponentType, ReactElement, ReactNode } from "react";
 import {
+  Animated,
   DimensionValue,
   StyleProp,
   TextInputProps,
   TextStyle,
   ViewStyle,
 } from "react-native";
+import { benefitsConfig } from "../constants/benefitsConfig";
 
 export type GetStartedIconProps = {
   size?: number;
@@ -94,29 +96,19 @@ export type LoginErrorsProps = {
 
 
 export type BenefitVisualType =
-
   | "certificate"
-
   | "growth"
-
   | "time"
-
   | "community"
-
   | "focus";
- 
+
 export type BenefitCardProps = {
-
   title: string;
-
   description: string;
-
   icon: IconComponent;
-
   visualType: BenefitVisualType;
-
 };
- 
+
 export type User = {
   id: string;
   fullName: string;
@@ -130,4 +122,82 @@ export type GlobalState = {
   getStartedCompleted: boolean;
   isLoading: boolean;
   error: string | null;
+
+  // content selection
+  categories?: Category[];
+  topics?: Topic[];
+  selectedCategoryId?: string | null;
+  view?: ContentView;
 };
+
+export type BenefitVisualProps = {
+  visualType: BenefitVisualType;
+  icon: IconComponent;
+};
+
+export type VisualColors = { color: string; softColor: string };
+
+export type VisualColorMap = {
+  certificate: VisualColors;
+  growth: VisualColors;
+  time: VisualColors;
+  community: VisualColors;
+  focus: VisualColors;
+};
+
+export type VisualRendererProps = {
+  Icon: IconComponent;
+  color: string;
+  softColor: string;
+};
+
+export type VisualRenderer = (props: VisualRendererProps) => ReactElement;
+
+export type VisualRendererMap = {
+  certificate: VisualRenderer;
+  growth: VisualRenderer;
+  time: VisualRenderer;
+  community: VisualRenderer;
+  focus: VisualRenderer;
+};
+
+type BenefitItem = (typeof benefitsConfig)[number];
+export type LoopedBenefitItem = BenefitItem & { uid: string };
+
+export type BenefitCardInternalProps = BenefitCardProps & {
+  index: number;
+  scrollX: Animated.Value;
+  cardWidth: number;
+  itemWidth: number;
+};
+
+
+export type ContentBlock =
+  | { type: "heading"; text: string }
+  | { type: "paragraph"; text: string }
+  | { type: "code"; code: string; language?: string }
+  | { type: "list"; items: string[] }
+  | { type: "note"; text: string };
+
+export type Topic = {
+  id: string;
+  categoryId: string;
+  order: number;
+  title: string;
+  content: ContentBlock[];
+};
+
+export type Category = {
+  id: string;
+  title: string;
+  description?: string;
+  image: string; // local require or remote URL
+};
+
+export type ContentData = {
+  categories: Category[];
+  topics: Topic[];
+};
+
+export type ContentView = "categories" | "topics";
+

@@ -82,7 +82,6 @@ const GetStartedAnimation = () => {
         >
           <FeatureIcon color={feature.iconColor} size={40} />
         </View>
-
         <View style={styles.featureTextContainer}>
           <Text style={styles.featureTitle}>{feature.title}</Text>
 

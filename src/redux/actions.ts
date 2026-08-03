@@ -1,5 +1,4 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-
 import { loadData, removeData, StoreData } from "@/services/AsynckStorage";
 
 import type {
@@ -13,6 +12,7 @@ import {
   REGISTERED_USERS_KEY,
 } from "@/utils/constants/AsyncStorageConfig";
 
+
 // Load saved app data
 export const loadAppData = createAsyncThunk("global/loadAppData", async () => {
   const registeredUsers: User[] = (await loadData(REGISTERED_USERS_KEY)) ?? [];
@@ -21,13 +21,15 @@ export const loadAppData = createAsyncThunk("global/loadAppData", async () => {
   const getStartedCompleted: boolean =
     (await loadData(GET_STARTED_KEY)) ?? false;
 
-  console.log("Total registered users:", registeredUsers.length);
-  console.log("Current logged-in user:", currentUser);
-  console.log("Get Started completed:", getStartedCompleted);
+  // console.log("Total registered users:", registeredUsers.length);
+  // console.log("Current logged-in user:", currentUser);
+  // console.log("Get Started completed:", getStartedCompleted);
+
 
   return {
     currentUser,
     getStartedCompleted,
+    
   };
 });
 
@@ -54,7 +56,7 @@ export const registerUser = createAsyncThunk(
     );
 
     if (userAlreadyExists) {
-      console.log("Registration failed: Email already exists");
+      // console.log("Registration failed: Email already exists");
 
       throw new Error("This email is already registered");
     }
@@ -72,9 +74,9 @@ export const registerUser = createAsyncThunk(
     await StoreData(REGISTERED_USERS_KEY, updatedUsers);
     await StoreData(CURRENT_USER_KEY, newUser);
 
-    console.log("User registered successfully:", newUser);
-    console.log("Total registered users:", updatedUsers.length);
-    console.log("Current logged-in user:", newUser);
+    // console.log("User registered successfully:", newUser);
+    // console.log("Total registered users:", updatedUsers.length);
+    // console.log("Current logged-in user:", newUser);
 
     return newUser;
   }
@@ -94,15 +96,15 @@ export const loginUser = createAsyncThunk(
     );
 
     if (!user) {
-      console.log("Login failed: Invalid email or password");
+      // console.log("Login failed: Invalid email or password");
 
       throw new Error("Invalid email or password");
     }
 
     await StoreData(CURRENT_USER_KEY, user);
 
-    console.log("User logged in successfully:", user);
-    console.log("Total registered users:", registeredUsers.length);
+    // console.log("User logged in successfully:", user);
+    // console.log("Total registered users:", registeredUsers.length);
 
     return user;
   }
@@ -114,8 +116,21 @@ export const logoutUser = createAsyncThunk("global/logoutUser", async () => {
 
   await removeData(CURRENT_USER_KEY);
 
-  console.log("User logged out:", currentUser);
-  console.log("Current logged-in user: null");
+  // console.log("User logged out:", currentUser);
+  // console.log("Current logged-in user: null");
 
   return null;
 });
+
+
+export const GetCategories = createAsyncThunk(
+  "get/categories",
+  async () => {
+    try {
+      return require("../assets/data/categories.json");
+    } catch (error) {
+      console.log("Error to fetch Categories");
+      return [];
+    }
+  }
+);

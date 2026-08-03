@@ -1,0 +1,12 @@
+[
+  {
+    "id": "js-variables",
+    "categoryId": "javascript",
+    "order": 1,
+    "title": "Variables",
+    "content": [
+      { "type": "heading", "text": "let, const, var" },
+      { "type": "paragraph", "text": "Variables store values that can be used and changed throughout your code." }
+    ]
+  }
+]

@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 import {
   completeGetStarted,
+  GetCategories,
   loadAppData,
   loginUser,
   logoutUser,
@@ -15,13 +16,13 @@ const initialState: GlobalState = {
   getStartedCompleted: false,
   isLoading: false,
   error: null,
+
+  categories: []
 };
 
 const globalSlice = createSlice({
   name: "global",
-
   initialState,
-
   reducers: {
     clearError: (state) => {
       state.error = null;
@@ -39,15 +40,12 @@ const globalSlice = createSlice({
 
       .addCase(loadAppData.fulfilled, (state, action) => {
         state.currentUser = action.payload.currentUser;
-
         state.getStartedCompleted = action.payload.getStartedCompleted;
-
         state.isLoading = false;
       })
 
       .addCase(loadAppData.rejected, (state, action) => {
         state.isLoading = false;
-
         state.error = action.error.message || "Unable to load app data";
       })
 
@@ -115,9 +113,24 @@ const globalSlice = createSlice({
 
       .addCase(logoutUser.rejected, (state, action) => {
         state.isLoading = false;
-
         state.error = action.error.message || "Logout failed";
-      });
+      })
+
+      // getting catogeries
+      .addCase(GetCategories.pending, (state) => {
+        state.isLoading = true;
+        state.error = null;
+      })
+
+      .addCase(GetCategories.fulfilled, (state, action) => {
+        state.categories = action.payload;
+        state.isLoading = false;
+      })
+
+      .addCase(GetCategories.rejected, (state, action) => {
+        state.isLoading = false;
+        state.error = action.error.message || "Unable to fetch categories";
+      })
   },
 });
 

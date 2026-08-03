@@ -1,0 +1,23 @@
+[
+  {
+    "id": "rn-components",
+    "categoryId": "react-native",
+    "order": 1,
+    "title": "Components",
+    "content": [
+      { "type": "heading", "text": "What is a Component?" },
+      { "type": "paragraph", "text": "A component is a reusable, self-contained piece of UI." },
+      { "type": "code", "code": "const Hello = () => <Text>Hello</Text>;", "language": "tsx" }
+    ]
+  },
+  {
+    "id": "rn-props",
+    "categoryId": "react-native",
+    "order": 2,
+    "title": "Props",
+    "content": [
+      { "type": "heading", "text": "Passing Data with Props" },
+      { "type": "paragraph", "text": "Props let a parent component pass data into a child component." }
+    ]
+  }
+]
