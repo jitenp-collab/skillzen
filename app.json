@@ -8,10 +8,8 @@
     "scheme": "skillzen",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
-    },
-    "splash":{
-      "backgroundColor":"#0B1020"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.anonymous.SkillZen"
     },
     "android": {
       "adaptiveIcon": {
@@ -38,7 +36,15 @@
         }
       ],
       "expo-font",
-      "expo-web-browser"
+      "expo-web-browser",
+      [
+        "react-native-nitro-google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.795851833956-cseheloseoit8m5e63revm2oiiv6vf54"
+        }
+      ],
+      "expo-image",
+      "expo-status-bar"
     ],
     "experiments": {
       "typedRoutes": true,

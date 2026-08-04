@@ -1,0 +1,142 @@
+[
+  {
+    "id": "nodejs-introduction",
+    "title": "Introduction to Node.js",
+    "image": "https://img.icons8.com/color/512/nodejs.png",
+    "totalLessonsOfTopic": 5,
+    "progress": 0
+  },
+  {
+    "id": "nodejs-setup",
+    "title": "Node.js Setup and First Program",
+    "image": "https://img.icons8.com/color/512/nodejs.png",
+    "totalLessonsOfTopic": 5,
+    "progress": 0
+  },
+  {
+    "id": "nodejs-modules",
+    "title": "Node.js Modules",
+    "image": "https://img.icons8.com/color/512/nodejs.png",
+    "totalLessonsOfTopic": 8,
+    "progress": 0
+  },
+  {
+    "id": "nodejs-npm",
+    "title": "NPM and Package Management",
+    "image": "https://img.icons8.com/color/512/nodejs.png",
+    "totalLessonsOfTopic": 7,
+    "progress": 0
+  },
+  {
+    "id": "nodejs-file-system",
+    "title": "File System and Path Modules",
+    "image": "https://img.icons8.com/color/512/nodejs.png",
+    "totalLessonsOfTopic": 9,
+    "progress": 0
+  },
+  {
+    "id": "nodejs-events",
+    "title": "Events and Event Emitter",
+    "image": "https://img.icons8.com/color/512/nodejs.png",
+    "totalLessonsOfTopic": 7,
+    "progress": 0
+  },
+  {
+    "id": "nodejs-streams",
+    "title": "Buffers and Streams",
+    "image": "https://img.icons8.com/color/512/nodejs.png",
+    "totalLessonsOfTopic": 8,
+    "progress": 0
+  },
+  {
+    "id": "nodejs-http",
+    "title": "Creating HTTP Servers",
+    "image": "https://img.icons8.com/color/512/nodejs.png",
+    "totalLessonsOfTopic": 8,
+    "progress": 0
+  },
+  {
+    "id": "nodejs-express",
+    "title": "Express.js Fundamentals",
+    "image": "https://img.icons8.com/color/512/nodejs.png",
+    "totalLessonsOfTopic": 12,
+    "progress": 0
+  },
+  {
+    "id": "nodejs-rest-api",
+    "title": "REST API Development",
+    "image": "https://img.icons8.com/color/512/nodejs.png",
+    "totalLessonsOfTopic": 12,
+    "progress": 0
+  },
+  {
+    "id": "nodejs-middleware",
+    "title": "Middleware",
+    "image": "https://img.icons8.com/color/512/nodejs.png",
+    "totalLessonsOfTopic": 8,
+    "progress": 0
+  },
+  {
+    "id": "nodejs-validation",
+    "title": "Request Validation and Error Handling",
+    "image": "https://img.icons8.com/color/512/nodejs.png",
+    "totalLessonsOfTopic": 9,
+    "progress": 0
+  },
+  {
+    "id": "nodejs-authentication",
+    "title": "Authentication and Authorization",
+    "image": "https://img.icons8.com/color/512/nodejs.png",
+    "totalLessonsOfTopic": 12,
+    "progress": 0
+  },
+  {
+    "id": "nodejs-database",
+    "title": "Database Integration",
+    "image": "https://img.icons8.com/color/512/nodejs.png",
+    "totalLessonsOfTopic": 12,
+    "progress": 0
+  },
+  {
+    "id": "nodejs-file-upload",
+    "title": "File Upload and Email Services",
+    "image": "https://img.icons8.com/color/512/nodejs.png",
+    "totalLessonsOfTopic": 9,
+    "progress": 0
+  },
+  {
+    "id": "nodejs-environment",
+    "title": "Environment Variables and Configuration",
+    "image": "https://img.icons8.com/color/512/nodejs.png",
+    "totalLessonsOfTopic": 6,
+    "progress": 0
+  },
+  {
+    "id": "nodejs-event-loop",
+    "title": "Event Loop and Async Programming",
+    "image": "https://img.icons8.com/color/512/nodejs.png",
+    "totalLessonsOfTopic": 9,
+    "progress": 0
+  },
+  {
+    "id": "nodejs-websockets",
+    "title": "WebSockets and Real-Time Apps",
+    "image": "https://img.icons8.com/color/512/nodejs.png",
+    "totalLessonsOfTopic": 8,
+    "progress": 0
+  },
+  {
+    "id": "nodejs-testing",
+    "title": "Testing and Debugging",
+    "image": "https://img.icons8.com/color/512/nodejs.png",
+    "totalLessonsOfTopic": 8,
+    "progress": 0
+  },
+  {
+    "id": "nodejs-deployment",
+    "title": "Performance and Deployment",
+    "image": "https://img.icons8.com/color/512/nodejs.png",
+    "totalLessonsOfTopic": 9,
+    "progress": 0
+  }
+]

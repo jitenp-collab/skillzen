@@ -1,14 +1,9 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import HomeComponent from "@/components/common/HomeComponent";
 
 const index = () => {
-  return (
-    <View>
-      <Text>index</Text>
-    </View>
-  )
-}
+  return <HomeComponent />;
+};
 
-export default index
+export default index;
 
-const styles = StyleSheet.create({})
+

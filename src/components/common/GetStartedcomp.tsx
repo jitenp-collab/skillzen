@@ -12,7 +12,7 @@ import {
 } from "react-native";
 
 import { Feature } from "@/utils/types/Apptypes";
-import { useRouter } from "expo-router";
+import { Stack, useRouter } from "expo-router";
 
 import { pages } from "../../assets/data/GetStartedData";
 import { AppLogo, ArrowIcon, RocketIcon } from "../../assets/svg/SvgIcons";
@@ -20,8 +20,13 @@ import { theme } from "../../utils/theme/Theme";
 
 import AppButton from "@/components/reusableComponents/AppButton";
 
+import { useDispatch } from "react-redux";
+import { completeGetStarted } from "@/redux/actions";
+import type { AppDispatch } from "@/redux/store";
+
 const GetStartedAnimation = () => {
   const router = useRouter();
+  const dispatch = useDispatch<AppDispatch>();
   const { width } = useWindowDimensions();
 
   const scrollViewRef = useRef<ScrollView>(null);
@@ -49,9 +54,14 @@ const GetStartedAnimation = () => {
     setCurrentPage(pageIndex);
   };
 
-  const handleButtonPress = () => {
+  const handleButtonPress = async () => {
     if (isLastPage) {
-      router.replace("/loginScreen");
+      try {
+        await dispatch(completeGetStarted()).unwrap();
+        router.replace("/loginScreen");
+      } catch (error) {
+        console.log("Get Started error:", error);
+      }
     } else {
       moveToPage(currentPage + 1);
     }
@@ -72,7 +82,6 @@ const GetStartedAnimation = () => {
         >
           <FeatureIcon color={feature.iconColor} size={40} />
         </View>
-
         <View style={styles.featureTextContainer}>
           <Text style={styles.featureTitle}>{feature.title}</Text>
 
@@ -84,8 +93,15 @@ const GetStartedAnimation = () => {
 
   return (
     <View style={styles.safeArea}>
+      <Stack.Screen
+        options={{
+          headerShown: false,
+          animation: "fade",
+        }}
+      />
       <View style={styles.appHeader}>
         <AppLogo width={60} height={60} />
+
         <Text style={styles.appName}>SkillZen</Text>
       </View>
 

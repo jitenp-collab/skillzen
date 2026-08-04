@@ -54,6 +54,9 @@ const RegistrationComp = ({
     if (!password) {
       setPasswordError("Password is required");
       isValid = false;
+    } else if (password.length < 6) {
+      setPasswordError("Password must be at least 6 characters");
+      isValid = false;
     }
 
     if (!confirmPassword) {
@@ -231,7 +234,6 @@ const styles = StyleSheet.create({
 
   content: {
     width: "100%",
-    maxWidth: 420,
     alignSelf: "center",
   },
 

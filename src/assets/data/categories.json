@@ -1,0 +1,50 @@
+[
+  {
+    "id": "react-native ",
+    "title": "React Native CLI ",
+    "description": "Core RN concepts",
+    "image": "https://www.chopdawg.com/wp-content/uploads/2025/07/07-React-Native-vs-Native-App-Development_-Which-Should-You-Choose_-1.png"
+  },
+  {
+    "id": "javascript",
+    "title": "JavaScript",
+    "description": "JS fundamentals",
+    "image": "https://read.learnyard.com/content/images/2024/07/logo.png"
+  },
+  {
+    "id": "typescript",
+    "title": "TypeScript",
+    "description": "Type-safe JS",
+    "image": "https://wallpaperaccess.com/full/7990027.png"
+  },
+  {
+    "id": "python",
+    "title": "Python",
+    "description": "General-purpose scripting & backend",
+    "image": "https://miro.medium.com/1*qSL-bGmBaj_TyZXQ8XWpbA.jpeg"
+  },
+  {
+    "id": "nodejs",
+    "title": "Node.js",
+    "description": "Server-side JavaScript runtime",
+    "image": "https://webandcrafts.com/_next/image?url=https%3A%2F%2Fadmin.wac.co%2Fuploads%2FNode_js_Architecture_A_Comprehensive_Guide_1_af37a73e1e.png&w=4500&q=90"
+  },
+  {
+    "id": "redux",
+    "title": "Redux",
+    "description": "Predictable state management",
+    "image": "https://hybridheroes.de/blog/content/images/2024/01/redux-toolkit.jpg"
+  },
+  {
+    "id": "expo",
+    "title": "Expo",
+    "description": "Toolchain for React Native apps",
+    "image": "https://notificare.com/static/08e587971af3313079db68d8d2b4d446/d0198/react-native-and-expo-cover.jpg"
+  },
+  {
+    "id": "git",
+    "title": "Git",
+    "description": "Version control basics",
+    "image": "https://i.cdn.newsbytesapp.com/images/l58420260411155753.png"
+  }
+]

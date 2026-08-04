@@ -1,0 +1,121 @@
+[
+  {
+    "id": "redux-introduction",
+    "title": "Introduction to Redux",
+    "image": "https://img.icons8.com/color/1200/redux.jpg",
+    "totalLessonsOfTopic": 5,
+    "progress": 0
+  },
+  {
+    "id": "redux-core-concepts",
+    "title": "Redux Core Concepts",
+    "image": "https://img.icons8.com/color/1200/redux.jpg",
+    "totalLessonsOfTopic": 6,
+    "progress": 0
+  },
+  {
+    "id": "redux-store",
+    "title": "Redux Store",
+    "image": "https://img.icons8.com/color/1200/redux.jpg",
+    "totalLessonsOfTopic": 6,
+    "progress": 0
+  },
+  {
+    "id": "redux-actions-reducers",
+    "title": "Actions and Reducers",
+    "image": "https://img.icons8.com/color/1200/redux.jpg",
+    "totalLessonsOfTopic": 8,
+    "progress": 0
+  },
+  {
+    "id": "redux-provider",
+    "title": "Provider and React Redux Setup",
+    "image": "https://img.icons8.com/color/1200/redux.jpg",
+    "totalLessonsOfTopic": 6,
+    "progress": 0
+  },
+  {
+    "id": "redux-hooks",
+    "title": "useSelector and useDispatch",
+    "image": "https://img.icons8.com/color/1200/redux.jpg",
+    "totalLessonsOfTopic": 8,
+    "progress": 0
+  },
+  {
+    "id": "redux-selectors",
+    "title": "Selectors and Derived State",
+    "image": "https://img.icons8.com/color/1200/redux.jpg",
+    "totalLessonsOfTopic": 7,
+    "progress": 0
+  },
+  {
+    "id": "redux-toolkit",
+    "title": "Redux Toolkit Setup",
+    "image": "https://img.icons8.com/color/1200/redux.jpg",
+    "totalLessonsOfTopic": 7,
+    "progress": 0
+  },
+  {
+    "id": "redux-create-slice",
+    "title": "CreateSlice",
+    "image": "https://img.icons8.com/color/1200/redux.jpg",
+    "totalLessonsOfTopic": 9,
+    "progress": 0
+  },
+  {
+    "id": "redux-async-thunk",
+    "title": "CreateAsyncThunk",
+    "image": "https://img.icons8.com/color/1200/redux.jpg",
+    "totalLessonsOfTopic": 10,
+    "progress": 0
+  },
+  {
+    "id": "redux-middleware",
+    "title": "Redux Middleware",
+    "image": "https://img.icons8.com/color/1200/redux.jpg",
+    "totalLessonsOfTopic": 8,
+    "progress": 0
+  },
+  {
+    "id": "redux-rtk-query",
+    "title": "RTK Query",
+    "image": "https://img.icons8.com/color/1200/redux.jpg",
+    "totalLessonsOfTopic": 12,
+    "progress": 0
+  },
+  {
+    "id": "redux-entity-adapter",
+    "title": "Entity Adapter and Normalized State",
+    "image": "https://img.icons8.com/color/1200/redux.jpg",
+    "totalLessonsOfTopic": 8,
+    "progress": 0
+  },
+  {
+    "id": "redux-persistence",
+    "title": "Redux State Persistence",
+    "image": "https://img.icons8.com/color/1200/redux.jpg",
+    "totalLessonsOfTopic": 7,
+    "progress": 0
+  },
+  {
+    "id": "redux-performance",
+    "title": "Redux Performance Optimization",
+    "image": "https://img.icons8.com/color/1200/redux.jpg",
+    "totalLessonsOfTopic": 7,
+    "progress": 0
+  },
+  {
+    "id": "redux-testing",
+    "title": "Redux Testing and DevTools",
+    "image": "https://img.icons8.com/color/1200/redux.jpg",
+    "totalLessonsOfTopic": 8,
+    "progress": 0
+  },
+  {
+    "id": "redux-architecture",
+    "title": "Redux Project Architecture",
+    "image": "https://img.icons8.com/color/1200/redux.jpg",
+    "totalLessonsOfTopic": 7,
+    "progress": 0
+  }
+]

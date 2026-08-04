@@ -1,4 +1,5 @@
 import {
+  Alert,
   StyleSheet,
   View,
   ScrollView,
@@ -14,9 +15,14 @@ import { GoogleIcon } from "../../assets/svg/SvgIcons";
 import { router } from "expo-router";
 import { LoginErrorsProps } from "@/utils/types/Apptypes";
 
+import { useDispatch } from "react-redux";
+import { googleSignInUser, loginUser } from "@/redux/actions";
+import type { AppDispatch } from "@/redux/store";
+
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const LoginComponent = () => {
+  const dispatch = useDispatch<AppDispatch>();
   const [password, setPassword] = useState("");
   const [email, setemail] = useState("");
   const [errors, setErrors] = useState<LoginErrorsProps>({});
@@ -54,10 +60,45 @@ const LoginComponent = () => {
     }
   };
 
-  const handleSignIn = () => {
-    if (!validate()) return;
+  const handleGoogleSignIn = async () => {
+    try {
+      await dispatch(googleSignInUser()).unwrap();
 
-    // proceed with sign in
+      router.replace("/(tabs)");
+    } catch (error) {
+      console.log("Google Sign-In error:", error);
+
+      Alert.alert(
+        "Google Sign-In failed",
+        error instanceof Error ? error.message : "Unable to sign in with Google"
+      );
+    }
+  };
+
+  const handleSignIn = async () => {
+    if (!validate()) {
+      return;
+    }
+
+    try {
+      await dispatch(
+        loginUser({
+          email: email.trim().toLowerCase(),
+          password,
+        })
+      ).unwrap();
+
+      router.replace("/(tabs)");
+    } catch (error) {
+      console.log("Login error:", error);
+
+      const message =
+        error && typeof error === "object" && "message" in error
+          ? String(error.message)
+          : "Unable to login";
+
+      Alert.alert("Login failed", message);
+    }
   };
 
   return (
@@ -125,6 +166,7 @@ const LoginComponent = () => {
             fontweight="600"
             fontSize={14}
             borderRadius={10}
+            onPress={handleGoogleSignIn}
           />
         </View>
         <View style={styles.box3}>
