@@ -7,7 +7,6 @@ import { Category } from "@/utils/types/Apptypes";
 import CategoryCard from "./CategoryCard";
 
 const CategoriesComp = () => {
-
   const { categories } = useSelector((state: RootState) => state.global);
 
   const handlePress = useCallback((cat: Category) => {
@@ -15,18 +14,25 @@ const CategoriesComp = () => {
   }, []);
 
   return (
-    <ScrollView
-      showsVerticalScrollIndicator={false}
-      contentContainerStyle={styles.container}
-      overScrollMode="never"
-      bounces
-    >
+    <>
       <Text style={styles.heading}>Categories</Text>
 
-      {categories?.map((cat: Category, i: number) => (
-        <CategoryCard key={cat.id} item={cat} index={i} onPress={handlePress} />
-      ))}
-    </ScrollView>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={styles.container}
+        overScrollMode="never"
+        bounces
+      >
+        {categories?.map((cat: Category, i: number) => (
+          <CategoryCard
+            key={cat.id}
+            item={cat}
+            index={i}
+            onPress={handlePress}
+          />
+        ))}
+      </ScrollView>
+    </>
   );
 };
 
@@ -34,7 +40,7 @@ export default CategoriesComp;
 
 const styles = StyleSheet.create({
   container: {
-    paddingBottom: 160,
+    paddingBottom: 200,
   },
   heading: {
     color: theme.colors.text,
