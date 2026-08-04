@@ -8,6 +8,7 @@ import {
   ViewStyle,
 } from "react-native";
 import { benefitsConfig } from "../constants/benefitsConfig";
+import { jsx } from "react/jsx-runtime";
 
 export type GetStartedIconProps = {
   size?: number;
@@ -99,12 +100,12 @@ export type BenefitVisualType =
   | "community"
   | "focus";
 
-export type BenefitCardProps = {
-  title: string;
-  description: string;
-  icon: IconComponent;
-  visualType: BenefitVisualType;
-};
+// export type BenefitCardProps = {
+//   title: string;
+//   description: string;
+//   icon: IconComponent;
+//   visualType: BenefitVisualType;
+// };
 
 export type User = {
   id: string;
@@ -130,9 +131,16 @@ export type GlobalState = {
   view?: ContentView;
 };
 
-export type BenefitVisualProps = {
-  visualType: BenefitVisualType;
-  icon: IconComponent;
+export type BenefitCardProps = {
+  title: string;
+  description: string;
+
+  icon: React.ComponentType<{
+    size?: number;
+    color: string;
+    strokeWidth?: number;
+  }>;
+  cardWidth: number;
 };
 
 export type VisualColors = { color: string; softColor: string };
@@ -161,15 +169,11 @@ export type VisualRendererMap = {
   focus: VisualRenderer;
 };
 
-type BenefitItem = (typeof benefitsConfig)[number];
+// type BenefitItem = (typeof benefitsConfig)[number];
+
 export type LoopedBenefitItem = BenefitItem & { uid: string };
 
-export type BenefitCardInternalProps = BenefitCardProps & {
-  index: number;
-  scrollX: Animated.Value;
-  cardWidth: number;
-  itemWidth: number;
-};
+
 
 
 export type ContentBlock =
@@ -192,6 +196,7 @@ export type Category = {
   title: string;
   description?: string;
   image: string; // local require or remote URL
+    meta?: string;
 };
 
 export type ContentData = {
@@ -201,3 +206,10 @@ export type ContentData = {
 
 export type ContentView = "categories" | "topics";
 
+export type BenefitItem = {
+  id: string;
+  title: string;
+  description: string;
+  icon: (props: GetStartedIconProps) => ReactElement;
+  visualType: string;
+};

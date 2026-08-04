@@ -54,11 +54,8 @@ export const registerUser = createAsyncThunk(
   async (values: RegistrationFormValues) => {
     const registeredUsers: User[] =
       (await loadData(REGISTERED_USERS_KEY)) ?? [];
-
     const email = values.email.trim().toLowerCase();
-
     const existingUser = registeredUsers.find((user) => user.email === email);
-
     if (existingUser?.loginType === "google") {
       throw new Error(
         "This email is registered with Google. Please use Google Sign-In."
