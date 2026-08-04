@@ -1,5 +1,5 @@
 import { useCallback } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 import Animated, { FadeInDown } from "react-native-reanimated";
 import { useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
@@ -17,17 +17,24 @@ const CategoriesComp = () => {
   }, []);
 
   return (
-    <Animated.View entering={FadeInDown.delay(SECTION_ENTRY_DELAY).duration(300)}>
+    <Animated.View
+      entering={FadeInDown.delay(SECTION_ENTRY_DELAY).duration(300)}
+    >
       <Text style={styles.heading}>Categories</Text>
-
-      {categories?.map((cat: Category, i: number) => (
-        <CategoryCard
-          key={cat.id}
-          item={cat}
-          index={i}
-          onPress={handlePress}
-        />
-      ))}
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={styles.ScrollCOntainer}
+        scrollEventThrottle={30}
+      >
+        {categories?.map((cat: Category, i: number) => (
+          <CategoryCard
+            key={cat.id}
+            item={cat}
+            index={i}
+            onPress={handlePress}
+          />
+        ))}
+      </ScrollView>
     </Animated.View>
   );
 };
@@ -41,5 +48,8 @@ const styles = StyleSheet.create({
     fontWeight: "800",
     letterSpacing: -0.5,
     marginBottom: theme.spacing.md,
+  },
+  ScrollCOntainer: {
+    paddingBottom: 400,
   },
 });
