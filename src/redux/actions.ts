@@ -13,14 +13,15 @@ import type {
   RegistrationFormValues,
   User,
 } from "@/utils/types/Apptypes";
-
-const REGISTERED_USERS_KEY = "registeredUsers";
-const CURRENT_USER_KEY = "currentUser";
-const GET_STARTED_KEY = "getStartedCompleted";
+import {
+  CURRENT_USER_KEY,
+  GET_STARTED_KEY,
+  REGISTERED_USERS_KEY,
+} from "@/utils/constants/AsyncStorageConfig";
+import { webclientID } from "@/utils/constants/WebclientID";
 
 GoogleOneTapSignIn.configure({
-  webClientId:
-    "795851833956-0r5bq3ena4ki09pb5vfcofjqrnf6cqq8.apps.googleusercontent.com",
+  webClientId: webclientID,
   autoSelectOnSignIn: false,
 });
 
@@ -34,7 +35,6 @@ export const loadAppData = createAsyncThunk("global/loadAppData", async () => {
   return {
     currentUser,
     getStartedCompleted,
-    
   };
 });
 
@@ -235,15 +235,11 @@ export const logoutUser = createAsyncThunk("global/logoutUser", async () => {
   return null;
 });
 
-
-export const GetCategories = createAsyncThunk(
-  "get/categories",
-  async () => {
-    try {
-      return require("../assets/data/categories.json");
-    } catch (error) {
-      console.log("Error to fetch Categories");
-      return [];
-    }
+export const GetCategories = createAsyncThunk("get/categories", async () => {
+  try {
+    return require("../assets/data/categories.json");
+  } catch (error) {
+    console.log("Error to fetch Categories");
+    return [];
   }
-);
+});

@@ -234,7 +234,6 @@ const styles = StyleSheet.create({
 
   content: {
     width: "100%",
-    maxWidth: 420,
     alignSelf: "center",
   },
 
