@@ -1,14 +1,11 @@
 import { ComponentType, ReactElement, ReactNode } from "react";
 import {
-  Animated,
   DimensionValue,
   StyleProp,
   TextInputProps,
   TextStyle,
   ViewStyle,
 } from "react-native";
-import { benefitsConfig } from "../constants/benefitsConfig";
-import { jsx } from "react/jsx-runtime";
 
 export type GetStartedIconProps = {
   size?: number;
@@ -204,25 +201,13 @@ export type ContentData = {
   topics: Topic[];
 };
 
-export type ProfileCompProps = {
-  currentUser: User;
-  isPhotoModalVisible: boolean;
-
-  onOpenPhotoModal: () => void;
-  onClosePhotoModal: () => void;
-
-  onTakePhoto: () => void;
-  onSelectFromGallery: () => void;
-  onDeletePhoto: () => void;
-  onLogout: () => void;
-};
-
 export type ContentView = "categories" | "topics";
 
 export type BenefitItem = {
   id: string;
   title: string;
   description: string;
-  icon: (props: GetStartedIconProps) => ReactElement;
+  icon: (props: GetStartedIconProps) => ReactElement
   visualType: string;
 };
+
