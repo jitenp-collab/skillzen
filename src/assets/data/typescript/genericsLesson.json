@@ -1,0 +1,79 @@
+[
+  {
+    "id": "ts-generics-lesson-1",
+    "topicId": "ts-generics",
+    "lessonNumber": 1,
+    "title": "What are Generics?",
+    "overview": "Generics allow developers to create reusable components, functions, and classes that work with different types while maintaining type safety.",
+    "example": {
+      "title": "Generic Example",
+      "content": "function identity<T>(value:T):T {\n return value;\n}"
+    }
+  },
+  {
+    "id": "ts-generics-lesson-2",
+    "topicId": "ts-generics",
+    "lessonNumber": 2,
+    "title": "Generic Functions",
+    "overview": "Generic functions use type parameters to accept different types of arguments while preserving the relationship between input and output types.",
+    "example": {
+      "title": "Generic Function",
+      "content": "function getValue<T>(value:T){\n return value;\n}\n\ngetValue<string>('Hello');\ngetValue<number>(100);"
+    }
+  },
+  {
+    "id": "ts-generics-lesson-3",
+    "topicId": "ts-generics",
+    "lessonNumber": 3,
+    "title": "Generic Arrays",
+    "overview": "Generics can define the type of values stored inside arrays. This provides reusable array structures.",
+    "example": {
+      "title": "Generic Array",
+      "content": "let numbers: Array<number> = [1,2,3];\n\nlet names: Array<string> = ['A','B'];"
+    }
+  },
+  {
+    "id": "ts-generics-lesson-4",
+    "topicId": "ts-generics",
+    "lessonNumber": 4,
+    "title": "Generic Interfaces",
+    "overview": "Interfaces can use generics to create flexible structures that work with different data types.",
+    "example": {
+      "title": "Generic Interface",
+      "content": "interface Response<T>{\n data:T;\n status:number;\n}"
+    }
+  },
+  {
+    "id": "ts-generics-lesson-5",
+    "topicId": "ts-generics",
+    "lessonNumber": 5,
+    "title": "Generic Constraints",
+    "overview": "Generic constraints limit the types that can be used with a generic. They ensure that required properties or behaviors exist.",
+    "example": {
+      "title": "Generic Constraint",
+      "content": "function length<T extends {length:number}>(value:T){\n return value.length;\n}"
+    }
+  },
+  {
+    "id": "ts-generics-lesson-6",
+    "topicId": "ts-generics",
+    "lessonNumber": 6,
+    "title": "Generics in React Native",
+    "overview": "Generics are useful in React Native for creating reusable components, API response types, hooks, and utility functions.",
+    "example": {
+      "title": "React Native Example",
+      "content": "const useData = <T>(data:T) => {\n return data;\n};"
+    }
+  },
+  {
+    "id": "ts-generics-lesson-7",
+    "topicId": "ts-generics",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned how generics create reusable and type-safe code using generic functions, arrays, interfaces, constraints, and React Native examples.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Generics create reusable code.\n✔ They maintain type safety.\n✔ Used heavily in advanced TypeScript projects.\n✔ Common in React Native development."
+    }
+  }
+]

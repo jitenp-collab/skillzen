@@ -1,0 +1,68 @@
+[
+  {
+    "id": "redux-store-lesson-1",
+    "topicId": "redux-store",
+    "lessonNumber": 1,
+    "title": "Understanding Redux Store",
+    "overview": "The Redux Store contains the complete state of an application. It acts as a single source of truth for managing shared data.",
+    "example": {
+      "title": "Create Store Concept",
+      "content": "Application State\n        ↓\nRedux Store\n        ↓\nComponents Access Data"
+    }
+  },
+  {
+    "id": "redux-store-lesson-2",
+    "topicId": "redux-store",
+    "lessonNumber": 2,
+    "title": "Creating a Redux Store",
+    "overview": "A Redux store is created using configuration functions. In modern applications, Redux Toolkit is commonly used for store creation.",
+    "example": {
+      "title": "Store Example",
+      "content": "const store = configureStore({\n reducer: {\n  user: userReducer\n }\n});"
+    }
+  },
+  {
+    "id": "redux-store-lesson-3",
+    "topicId": "redux-store",
+    "lessonNumber": 3,
+    "title": "Single Source of Truth",
+    "overview": "Redux follows the principle that the complete application state should be stored in one centralized store.",
+    "example": {
+      "title": "Single Store",
+      "content": "Redux Store\n ├── User State\n ├── Product State\n └── App Settings"
+    }
+  },
+  {
+    "id": "redux-store-lesson-4",
+    "topicId": "redux-store",
+    "lessonNumber": 4,
+    "title": "Accessing Store Data",
+    "overview": "Components can access Redux store data using React Redux hooks like useSelector.",
+    "example": {
+      "title": "useSelector Example",
+      "content": "const user = useSelector(\n state => state.user\n);"
+    }
+  },
+  {
+    "id": "redux-store-lesson-5",
+    "topicId": "redux-store",
+    "lessonNumber": 5,
+    "title": "Updating Store Data",
+    "overview": "Store data is updated by dispatching actions that are handled by reducers.",
+    "example": {
+      "title": "Update Flow",
+      "content": "Component\n ↓\ndispatch(action)\n ↓\nReducer\n ↓\nStore Updated"
+    }
+  },
+  {
+    "id": "redux-store-lesson-6",
+    "topicId": "redux-store",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned about Redux Store, creating a store, single source of truth, accessing data, and updating state.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Store contains application state.\n✔ One store manages global data.\n✔ useSelector reads data.\n✔ Dispatch updates data."
+    }
+  }
+]

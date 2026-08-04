@@ -1,0 +1,79 @@
+[
+  {
+    "id": "nodejs-authentication-lesson-1",
+    "topicId": "nodejs-authentication",
+    "lessonNumber": 1,
+    "title": "Introduction to Authentication",
+    "overview": "Authentication is the process of verifying the identity of a user before allowing access to an application.",
+    "example": {
+      "title": "Authentication Flow",
+      "content": "User Login\n ↓\nVerify Credentials\n ↓\nAllow Access"
+    }
+  },
+  {
+    "id": "nodejs-authentication-lesson-2",
+    "topicId": "nodejs-authentication",
+    "lessonNumber": 2,
+    "title": "Authentication vs Authorization",
+    "overview": "Authentication verifies who the user is, while authorization determines what actions the user can perform.",
+    "example": {
+      "title": "Difference",
+      "content": "Authentication:\nWho are you?\n\nAuthorization:\nWhat can you access?"
+    }
+  },
+  {
+    "id": "nodejs-authentication-lesson-3",
+    "topicId": "nodejs-authentication",
+    "lessonNumber": 3,
+    "title": "Password Hashing",
+    "overview": "Passwords should never be stored as plain text. Hashing converts passwords into secure encrypted values.",
+    "example": {
+      "title": "Hashing Example",
+      "content": "Password\n ↓\nHash Algorithm\n ↓\nStored Hash Value"
+    }
+  },
+  {
+    "id": "nodejs-authentication-lesson-4",
+    "topicId": "nodejs-authentication",
+    "lessonNumber": 4,
+    "title": "JWT Authentication",
+    "overview": "JSON Web Token (JWT) is a popular method for securely transmitting user information between client and server.",
+    "example": {
+      "title": "JWT Flow",
+      "content": "Login\n ↓\nGenerate Token\n ↓\nSend Token\n ↓\nVerify Token"
+    }
+  },
+  {
+    "id": "nodejs-authentication-lesson-5",
+    "topicId": "nodejs-authentication",
+    "lessonNumber": 5,
+    "title": "Protecting Routes",
+    "overview": "Protected routes allow access only to authenticated users by verifying tokens or user sessions.",
+    "example": {
+      "title": "Protected Route",
+      "content": "Request\n ↓\nCheck Token\n ↓\nAllow / Reject Access"
+    }
+  },
+  {
+    "id": "nodejs-authentication-lesson-6",
+    "topicId": "nodejs-authentication",
+    "lessonNumber": 6,
+    "title": "Role Based Authorization",
+    "overview": "Role-based authorization controls access based on user roles such as admin, user, or moderator.",
+    "example": {
+      "title": "Roles Example",
+      "content": "Admin → Manage Users\nUser → View Data\nModerator → Manage Content"
+    }
+  },
+  {
+    "id": "nodejs-authentication-lesson-7",
+    "topicId": "nodejs-authentication",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned authentication, authorization, password security, JWT tokens, protected routes, and role-based access control.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Authentication verifies identity.\n✔ Authorization controls permissions.\n✔ JWT secures API access.\n✔ Roles define user permissions."
+    }
+  }
+]

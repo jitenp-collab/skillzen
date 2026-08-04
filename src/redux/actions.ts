@@ -247,34 +247,35 @@ export const SelectCaogery = createAsyncThunk(
     try {
       switch (Catogery) {
         case "React Native CLI":
-          return require("../assets/data/topics/reactNativeTopics.json");
+          return require("../assets/data/reactNativeCli/reactNativeCliTopics.json");
 
         case "JavaScript":
-          return require("../assets/data/topics/javascriptTopics.json");
+          return require("../assets/data/javascript/javascriptTopics.json");
 
         case "TypeScript":
-          return require("../assets/data/topics/typescriptTopics.json");
+          return require("../assets/data/typescript/typescriptTopics.json");
 
         case "Python":
-          return require("../assets/data/topics/pythonTopics.json");
+          return require("../assets/data/python/pythonTopics.json");
 
         case "Node.js":
-          return require("../assets/data/topics/nodejsTopics.json");
+          return require("../assets/data/nodejs/nodejsTopics.json");
 
         case "Redux":
-          return require("../assets/data/topics/reduxTopics.json");
+          return require("../assets/data/redux/reduxTopics.json");
 
         case "Expo":
-          return require("../assets/data/topics/expoTopics.json");
+          return require("../assets/data/expo/expoTopics.json");
 
         case "Git":
-          return require("../assets/data/topics/gitTopics.json");
+          return require("../assets/data/git/gitTopics.json");
 
-        default: return require("../assets/data/topics/reactNativeTopics.json");
+        default:
+          return require("../assets/data/reactNativeCli/reactNativeCliTopics.json");
       }
     } catch (error) {
       console.log("Error to fetch Category");
-      return require("../assets/data/topics/reactNativeTopics.json");
+      return require("../assets/data/reactNativeCli/reactNativeCliTopics.json");
     }
   }
 );

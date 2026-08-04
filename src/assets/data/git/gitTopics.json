@@ -1,0 +1,56 @@
+[
+  {
+    "id": "git-introduction",
+    "title": "Introduction to Git",
+    "icon": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+    "totalLessons": 6
+  },
+  {
+    "id": "git-installation",
+    "title": "Git Installation and Setup",
+    "icon": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+    "totalLessons": 6
+  },
+  {
+    "id": "git-basics",
+    "title": "Git Basic Commands",
+    "icon": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+    "totalLessons": 8
+  },
+  {
+    "id": "git-branching",
+    "title": "Git Branching",
+    "icon": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+    "totalLessons": 7
+  },
+  {
+    "id": "git-merge",
+    "title": "Git Merge and Conflict Resolution",
+    "icon": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+    "totalLessons": 7
+  },
+  {
+    "id": "git-github",
+    "title": "GitHub Basics",
+    "icon": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+    "totalLessons": 8
+  },
+  {
+    "id": "git-workflow",
+    "title": "Git Workflow",
+    "icon": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+    "totalLessons": 6
+  },
+  {
+    "id": "git-advanced",
+    "title": "Advanced Git",
+    "icon": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+    "totalLessons": 8
+  },
+  {
+    "id": "git-best-practices",
+    "title": "Git Best Practices",
+    "icon": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+    "totalLessons": 6
+  }
+]

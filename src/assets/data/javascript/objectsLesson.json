@@ -1,0 +1,79 @@
+[
+  {
+    "id": "js-objects-lesson-1",
+    "topicId": "js-objects",
+    "lessonNumber": 1,
+    "title": "What are Objects?",
+    "overview": "Objects are data structures used to store related information in key-value pairs. They are commonly used to represent real-world entities in JavaScript applications.",
+    "example": {
+      "title": "Object Example",
+      "content": "const user = {\n name: 'Manthan',\n age: 25\n};\n\nconsole.log(user.name);"
+    }
+  },
+  {
+    "id": "js-objects-lesson-2",
+    "topicId": "js-objects",
+    "lessonNumber": 2,
+    "title": "Creating and Accessing Objects",
+    "overview": "Objects can be created using curly braces. Values inside objects are accessed using dot notation or bracket notation.",
+    "example": {
+      "title": "Access Object Values",
+      "content": "const person = {\n name: 'John'\n};\n\nconsole.log(person.name);\n\nconsole.log(person['name']);"
+    }
+  },
+  {
+    "id": "js-objects-lesson-3",
+    "topicId": "js-objects",
+    "lessonNumber": 3,
+    "title": "Adding and Updating Object Properties",
+    "overview": "Object properties can be added or updated after an object is created by assigning new values to keys.",
+    "example": {
+      "title": "Update Object",
+      "content": "const user = {\n name: 'Manthan'\n};\n\nuser.age = 25;\n\nuser.name = 'New Name';"
+    }
+  },
+  {
+    "id": "js-objects-lesson-4",
+    "topicId": "js-objects",
+    "lessonNumber": 4,
+    "title": "Object Methods",
+    "overview": "Functions stored inside objects are called methods. They allow objects to perform actions using their stored data.",
+    "example": {
+      "title": "Object Method Example",
+      "content": "const user = {\n name:'Manthan',\n greet(){\n  console.log('Hello');\n }\n};\n\nuser.greet();"
+    }
+  },
+  {
+    "id": "js-objects-lesson-5",
+    "topicId": "js-objects",
+    "lessonNumber": 5,
+    "title": "Object Destructuring",
+    "overview": "Object destructuring allows developers to extract properties from objects and store them directly in variables using a shorter syntax.",
+    "example": {
+      "title": "Destructuring Example",
+      "content": "const user = {\n name:'Manthan',\n age:25\n};\n\nconst {name, age} = user;"
+    }
+  },
+  {
+    "id": "js-objects-lesson-6",
+    "topicId": "js-objects",
+    "lessonNumber": 6,
+    "title": "Object Utility Methods",
+    "overview": "JavaScript provides built-in methods to work with objects, such as getting keys, values, and entries.",
+    "example": {
+      "title": "Object Methods",
+      "content": "Object.keys(obj)\nObject.values(obj)\nObject.entries(obj)"
+    }
+  },
+  {
+    "id": "js-objects-lesson-7",
+    "topicId": "js-objects",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned how objects store data, access and modify properties, create methods, use destructuring, and work with built-in object methods.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Objects store data as key-value pairs.\n✔ Properties can be added or updated.\n✔ Objects can contain methods.\n✔ Destructuring extracts values easily.\n✔ Object methods help manage data."
+    }
+  }
+]

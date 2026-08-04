@@ -1,0 +1,57 @@
+[
+  {
+    "id": "python-installation-setup-lesson-1",
+    "topicId": "python-installation-setup",
+    "lessonNumber": 1,
+    "title": "Installing Python",
+    "overview": "Python can be installed from the official Python website. Installing Python also provides tools like the Python interpreter and package manager pip.",
+    "example": {
+      "title": "Check Python Installation",
+      "content": "Open terminal:\n\npython --version\n\nExample output:\nPython 3.x.x"
+    }
+  },
+  {
+    "id": "python-installation-setup-lesson-2",
+    "topicId": "python-installation-setup",
+    "lessonNumber": 2,
+    "title": "Python Interpreter",
+    "overview": "The Python interpreter executes Python code line by line. It converts Python instructions into actions performed by the computer.",
+    "example": {
+      "title": "Run Python Code",
+      "content": "python\n\n>>> print('Hello Python')"
+    }
+  },
+  {
+    "id": "python-installation-setup-lesson-3",
+    "topicId": "python-installation-setup",
+    "lessonNumber": 3,
+    "title": "Installing Packages with pip",
+    "overview": "pip is Python's package manager used to install external libraries and frameworks required for development.",
+    "example": {
+      "title": "pip Example",
+      "content": "Install package:\n\npip install package_name\n\nExample:\npip install requests"
+    }
+  },
+  {
+    "id": "python-installation-setup-lesson-4",
+    "topicId": "python-installation-setup",
+    "lessonNumber": 4,
+    "title": "Python Development Environment",
+    "overview": "Developers use code editors and IDEs to write Python programs. Popular choices include VS Code, PyCharm, and Jupyter Notebook.",
+    "example": {
+      "title": "Common Tools",
+      "content": "✔ VS Code\n✔ PyCharm\n✔ Jupyter Notebook\n✔ Python Extension"
+    }
+  },
+  {
+    "id": "python-installation-setup-lesson-5",
+    "topicId": "python-installation-setup",
+    "lessonNumber": 5,
+    "title": "Running a Python File",
+    "overview": "Python programs are stored with the .py extension. These files can be executed using the Python interpreter.",
+    "example": {
+      "title": "Run Python File",
+      "content": "Create:\napp.py\n\nCode:\nprint('Hello Python')\n\nRun:\npython app.py"
+    }
+  }
+]

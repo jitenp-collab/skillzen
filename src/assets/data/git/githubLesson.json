@@ -1,0 +1,90 @@
+[
+  {
+    "id": "git-github-lesson-1",
+    "topicId": "git-github",
+    "lessonNumber": 1,
+    "title": "Introduction to GitHub",
+    "overview": "GitHub is a cloud-based platform that hosts Git repositories and helps developers collaborate on projects.",
+    "example": {
+      "title": "GitHub Purpose",
+      "content": "Local Repository\n ↓\nPush Code\n ↓\nGitHub Repository"
+    }
+  },
+  {
+    "id": "git-github-lesson-2",
+    "topicId": "git-github",
+    "lessonNumber": 2,
+    "title": "Creating a GitHub Repository",
+    "overview": "A GitHub repository stores project code online and provides collaboration features.",
+    "example": {
+      "title": "Repository Creation",
+      "content": "GitHub Account\n ↓\nCreate Repository\n ↓\nAdd Project Code"
+    }
+  },
+  {
+    "id": "git-github-lesson-3",
+    "topicId": "git-github",
+    "lessonNumber": 3,
+    "title": "Connecting Local Repository with GitHub",
+    "overview": "A local Git repository can be connected to GitHub using a remote repository URL.",
+    "example": {
+      "title": "Add Remote",
+      "content": "git remote add origin repository-url"
+    }
+  },
+  {
+    "id": "git-github-lesson-4",
+    "topicId": "git-github",
+    "lessonNumber": 4,
+    "title": "Git Push Command",
+    "overview": "The git push command uploads local commits to a remote GitHub repository.",
+    "example": {
+      "title": "Push Code",
+      "content": "git push origin main"
+    }
+  },
+  {
+    "id": "git-github-lesson-5",
+    "topicId": "git-github",
+    "lessonNumber": 5,
+    "title": "Git Pull Command",
+    "overview": "The git pull command downloads the latest changes from a remote repository.",
+    "example": {
+      "title": "Pull Changes",
+      "content": "git pull origin main"
+    }
+  },
+  {
+    "id": "git-github-lesson-6",
+    "topicId": "git-github",
+    "lessonNumber": 6,
+    "title": "Fork and Clone",
+    "overview": "Fork creates a personal copy of a repository, while clone downloads a repository to your local machine.",
+    "example": {
+      "title": "Clone Repository",
+      "content": "git clone repository-url"
+    }
+  },
+  {
+    "id": "git-github-lesson-7",
+    "topicId": "git-github",
+    "lessonNumber": 7,
+    "title": "Pull Requests",
+    "overview": "Pull requests allow developers to propose changes and review code before merging into the main branch.",
+    "example": {
+      "title": "Pull Request Flow",
+      "content": "Create Branch\n ↓\nMake Changes\n ↓\nCreate Pull Request\n ↓\nReview & Merge"
+    }
+  },
+  {
+    "id": "git-github-lesson-8",
+    "topicId": "git-github",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You learned about GitHub repositories, remote connections, push, pull, clone, fork, and pull requests.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ GitHub hosts repositories.\n✔ Push uploads changes.\n✔ Pull downloads changes.\n✔ PRs help collaboration."
+    }
+  }
+]

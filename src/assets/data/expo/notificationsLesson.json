@@ -1,0 +1,79 @@
+[
+  {
+    "id": "expo-notifications-lesson-1",
+    "topicId": "expo-notifications",
+    "lessonNumber": 1,
+    "title": "Introduction to Push Notifications",
+    "overview": "Push notifications allow applications to send messages and updates to users even when the app is not currently open.",
+    "example": {
+      "title": "Notification Flow",
+      "content": "Server\n ↓\nNotification Service\n ↓\nUser Device\n ↓\nNotification Display"
+    }
+  },
+  {
+    "id": "expo-notifications-lesson-2",
+    "topicId": "expo-notifications",
+    "lessonNumber": 2,
+    "title": "Installing Expo Notifications",
+    "overview": "Expo Notifications library provides APIs to create, receive, and handle notifications in Expo applications.",
+    "example": {
+      "title": "Installation",
+      "content": "npx expo install expo-notifications"
+    }
+  },
+  {
+    "id": "expo-notifications-lesson-3",
+    "topicId": "expo-notifications",
+    "lessonNumber": 3,
+    "title": "Requesting Notification Permission",
+    "overview": "Applications need user permission before sending or receiving push notifications.",
+    "example": {
+      "title": "Permission Flow",
+      "content": "Request Permission\n ↓\nUser Allows\n ↓\nEnable Notifications"
+    }
+  },
+  {
+    "id": "expo-notifications-lesson-4",
+    "topicId": "expo-notifications",
+    "lessonNumber": 4,
+    "title": "Getting Push Token",
+    "overview": "A push token identifies a specific device and is required to send notifications to that device.",
+    "example": {
+      "title": "Token Example",
+      "content": "Device\n ↓\nGenerate Token\n ↓\nSend Token to Server"
+    }
+  },
+  {
+    "id": "expo-notifications-lesson-5",
+    "topicId": "expo-notifications",
+    "lessonNumber": 5,
+    "title": "Handling Notifications",
+    "overview": "Expo allows applications to handle notifications when they are received, opened, or interacted with.",
+    "example": {
+      "title": "Notification Events",
+      "content": "Notification Received\n ↓\nListener Triggered\n ↓\nPerform Action"
+    }
+  },
+  {
+    "id": "expo-notifications-lesson-6",
+    "topicId": "expo-notifications",
+    "lessonNumber": 6,
+    "title": "Local Notifications",
+    "overview": "Local notifications are created directly from the device without requiring a remote server.",
+    "example": {
+      "title": "Local Notification Example",
+      "content": "Schedule Reminder\n ↓\nDevice Creates Notification\n ↓\nUser Receives Alert"
+    }
+  },
+  {
+    "id": "expo-notifications-lesson-7",
+    "topicId": "expo-notifications",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned notification setup, permissions, tokens, handling events, and local notifications using Expo.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Permissions are required.\n✔ Tokens identify devices.\n✔ Notifications improve user engagement."
+    }
+  }
+]

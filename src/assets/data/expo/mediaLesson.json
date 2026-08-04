@@ -1,0 +1,79 @@
+[
+  {
+    "id": "expo-media-lesson-1",
+    "topicId": "expo-media",
+    "lessonNumber": 1,
+    "title": "Introduction to Media Handling",
+    "overview": "Expo provides libraries to work with images, videos, audio, and other media features in mobile applications.",
+    "example": {
+      "title": "Media Flow",
+      "content": "User\n ↓\nSelect Media\n ↓\nExpo Media API\n ↓\nDisplay / Process Media"
+    }
+  },
+  {
+    "id": "expo-media-lesson-2",
+    "topicId": "expo-media",
+    "lessonNumber": 2,
+    "title": "Image Picker",
+    "overview": "Expo Image Picker allows users to select images and videos from the device gallery or capture them using the camera.",
+    "example": {
+      "title": "Image Picker Example",
+      "content": "import * as ImagePicker from 'expo-image-picker';\n\nImagePicker.launchImageLibraryAsync();"
+    }
+  },
+  {
+    "id": "expo-media-lesson-3",
+    "topicId": "expo-media",
+    "lessonNumber": 3,
+    "title": "Displaying Images",
+    "overview": "Images can be displayed using React Native Image component with local assets or remote URLs.",
+    "example": {
+      "title": "Image Display",
+      "content": "<Image\n source={{uri:'imageUrl'}}\n/>"
+    }
+  },
+  {
+    "id": "expo-media-lesson-4",
+    "topicId": "expo-media",
+    "lessonNumber": 4,
+    "title": "Audio Playback",
+    "overview": "Expo Audio provides tools to play, control, and manage audio files inside applications.",
+    "example": {
+      "title": "Audio Example",
+      "content": "import { Audio } from 'expo-av';\n\nAudio.Sound.createAsync(source);"
+    }
+  },
+  {
+    "id": "expo-media-lesson-5",
+    "topicId": "expo-media",
+    "lessonNumber": 5,
+    "title": "Video Playback",
+    "overview": "Expo applications can play videos using available media libraries and control playback behavior.",
+    "example": {
+      "title": "Video Example",
+      "content": "import { Video } from 'expo-av';\n\n<Video\n source={videoSource}\n/>"
+    }
+  },
+  {
+    "id": "expo-media-lesson-6",
+    "topicId": "expo-media",
+    "lessonNumber": 6,
+    "title": "Media Permissions",
+    "overview": "Media access requires user permissions before accessing camera, gallery, microphone, or storage features.",
+    "example": {
+      "title": "Permission Flow",
+      "content": "Request Permission\n ↓\nUser Approval\n ↓\nAccess Media"
+    }
+  },
+  {
+    "id": "expo-media-lesson-7",
+    "topicId": "expo-media",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned how Expo handles images, audio, videos, media selection, and required permissions.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Image Picker selects media.\n✔ Audio manages sound.\n✔ Video handles playback.\n✔ Permissions protect user privacy."
+    }
+  }
+]

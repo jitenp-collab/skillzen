@@ -1,0 +1,79 @@
+[
+  {
+    "id": "expo-components-lesson-1",
+    "topicId": "expo-components",
+    "lessonNumber": 1,
+    "title": "Introduction to Expo Components",
+    "overview": "Expo provides many built-in components and libraries that help developers access mobile features and create user interfaces faster.",
+    "example": {
+      "title": "Component Usage",
+      "content": "Expo Component\n ↓\nUI / Device Feature\n ↓\nMobile Application"
+    }
+  },
+  {
+    "id": "expo-components-lesson-2",
+    "topicId": "expo-components",
+    "lessonNumber": 2,
+    "title": "View and Text Components",
+    "overview": "View and Text are basic React Native components used to create layouts and display text content.",
+    "example": {
+      "title": "View and Text Example",
+      "content": "import { View, Text } from 'react-native';\n\n<View>\n <Text>Hello Expo</Text>\n</View>"
+    }
+  },
+  {
+    "id": "expo-components-lesson-3",
+    "topicId": "expo-components",
+    "lessonNumber": 3,
+    "title": "Image Component",
+    "overview": "The Image component is used to display local or remote images inside an Expo application.",
+    "example": {
+      "title": "Image Example",
+      "content": "import { Image } from 'react-native';\n\n<Image\n source={{uri:'image_url'}}\n/>"
+    }
+  },
+  {
+    "id": "expo-components-lesson-4",
+    "topicId": "expo-components",
+    "lessonNumber": 4,
+    "title": "Pressable and Touchable Components",
+    "overview": "Pressable and Touchable components are used to handle user interactions like button presses and gestures.",
+    "example": {
+      "title": "Pressable Example",
+      "content": "import { Pressable } from 'react-native';\n\n<Pressable onPress={handleClick}>\n <Text>Click</Text>\n</Pressable>"
+    }
+  },
+  {
+    "id": "expo-components-lesson-5",
+    "topicId": "expo-components",
+    "lessonNumber": 5,
+    "title": "Expo Vector Icons",
+    "overview": "Expo provides icon libraries that allow developers to use ready-made icons in their applications.",
+    "example": {
+      "title": "Icon Example",
+      "content": "import { Ionicons } from '@expo/vector-icons';\n\n<Ionicons\n name='home'\n size={24}\n/>"
+    }
+  },
+  {
+    "id": "expo-components-lesson-6",
+    "topicId": "expo-components",
+    "lessonNumber": 6,
+    "title": "Reusable Components",
+    "overview": "Reusable components improve code organization by allowing the same UI elements to be used in multiple screens.",
+    "example": {
+      "title": "Component Structure",
+      "content": "components/\n ├── Button.tsx\n ├── Card.tsx\n └── Header.tsx"
+    }
+  },
+  {
+    "id": "expo-components-lesson-7",
+    "topicId": "expo-components",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned about common Expo and React Native components, user interaction components, icons, and reusable UI design.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Components build UI.\n✔ Pressable handles actions.\n✔ Images display media.\n✔ Reusable components improve structure."
+    }
+  }
+]

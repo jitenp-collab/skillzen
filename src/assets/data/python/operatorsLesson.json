@@ -1,0 +1,68 @@
+[
+  {
+    "id": "python-operators-lesson-1",
+    "topicId": "python-operators",
+    "lessonNumber": 1,
+    "title": "What are Operators?",
+    "overview": "Operators are symbols or keywords used to perform operations on values and variables. Python provides different types of operators for calculations, comparisons, and logic.",
+    "example": {
+      "title": "Operator Example",
+      "content": "a = 10\nb = 5\n\nprint(a + b)"
+    }
+  },
+  {
+    "id": "python-operators-lesson-2",
+    "topicId": "python-operators",
+    "lessonNumber": 2,
+    "title": "Arithmetic Operators",
+    "overview": "Arithmetic operators are used to perform mathematical calculations like addition, subtraction, multiplication, and division.",
+    "example": {
+      "title": "Arithmetic Example",
+      "content": "+  Addition\n-  Subtraction\n*  Multiplication\n/  Division\n%  Modulus\n** Power\n// Floor Division"
+    }
+  },
+  {
+    "id": "python-operators-lesson-3",
+    "topicId": "python-operators",
+    "lessonNumber": 3,
+    "title": "Comparison Operators",
+    "overview": "Comparison operators compare two values and return a boolean result (True or False).",
+    "example": {
+      "title": "Comparison Example",
+      "content": "x = 10\n\nprint(x > 5)\n\nOutput:\nTrue"
+    }
+  },
+  {
+    "id": "python-operators-lesson-4",
+    "topicId": "python-operators",
+    "lessonNumber": 4,
+    "title": "Logical Operators",
+    "overview": "Logical operators are used to combine multiple conditions. Python provides and, or, and not operators.",
+    "example": {
+      "title": "Logical Example",
+      "content": "age = 20\n\nif age > 18 and age < 60:\n    print('Allowed')"
+    }
+  },
+  {
+    "id": "python-operators-lesson-5",
+    "topicId": "python-operators",
+    "lessonNumber": 5,
+    "title": "Assignment Operators",
+    "overview": "Assignment operators are used to assign values to variables and update existing values.",
+    "example": {
+      "title": "Assignment Example",
+      "content": "x = 10\n\nx += 5\n\nprint(x)\n\nOutput:\n15"
+    }
+  },
+  {
+    "id": "python-operators-lesson-6",
+    "topicId": "python-operators",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned different Python operators including arithmetic, comparison, logical, and assignment operators used for performing operations on data.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Arithmetic operators perform calculations.\n✔ Comparison operators compare values.\n✔ Logical operators combine conditions.\n✔ Assignment operators update variables."
+    }
+  }
+]

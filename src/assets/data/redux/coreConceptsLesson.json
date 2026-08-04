@@ -1,0 +1,79 @@
+[
+  {
+    "id": "redux-core-concepts-lesson-1",
+    "topicId": "redux-core-concepts",
+    "lessonNumber": 1,
+    "title": "Redux Store",
+    "overview": "The Redux Store is a centralized place where the complete application state is stored and managed.",
+    "example": {
+      "title": "Store Example",
+      "content": "Store\n {\n  user: {},\n  products: [],\n  settings: {}\n}"
+    }
+  },
+  {
+    "id": "redux-core-concepts-lesson-2",
+    "topicId": "redux-core-concepts",
+    "lessonNumber": 2,
+    "title": "Actions",
+    "overview": "Actions are plain JavaScript objects that describe what change should happen in the application state.",
+    "example": {
+      "title": "Action Example",
+      "content": "const action = {\n type: 'ADD_USER',\n payload: userData\n};"
+    }
+  },
+  {
+    "id": "redux-core-concepts-lesson-3",
+    "topicId": "redux-core-concepts",
+    "lessonNumber": 3,
+    "title": "Reducers",
+    "overview": "Reducers are pure functions that receive the current state and an action, then return a new updated state.",
+    "example": {
+      "title": "Reducer Example",
+      "content": "function reducer(state, action) {\n return newState;\n}"
+    }
+  },
+  {
+    "id": "redux-core-concepts-lesson-4",
+    "topicId": "redux-core-concepts",
+    "lessonNumber": 4,
+    "title": "Dispatch",
+    "overview": "Dispatch is used to send actions to the Redux store to trigger state updates.",
+    "example": {
+      "title": "Dispatch Example",
+      "content": "dispatch({\n type:'INCREMENT'\n});"
+    }
+  },
+  {
+    "id": "redux-core-concepts-lesson-5",
+    "topicId": "redux-core-concepts",
+    "lessonNumber": 5,
+    "title": "State Management Flow",
+    "overview": "Redux follows a predictable flow where actions are dispatched, reducers process changes, and the store updates the state.",
+    "example": {
+      "title": "Complete Flow",
+      "content": "Component\n ↓\nDispatch\n ↓\nAction\n ↓\nReducer\n ↓\nStore\n ↓\nComponent Update"
+    }
+  },
+  {
+    "id": "redux-core-concepts-lesson-6",
+    "topicId": "redux-core-concepts",
+    "lessonNumber": 6,
+    "title": "Immutable State",
+    "overview": "Redux requires state updates without directly modifying the existing state object. A new state object should be returned.",
+    "example": {
+      "title": "Immutable Update",
+      "content": "Wrong:\nstate.count++\n\nCorrect:\nreturn {...state, count: state.count + 1}"
+    }
+  },
+  {
+    "id": "redux-core-concepts-lesson-7",
+    "topicId": "redux-core-concepts",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned the main Redux concepts including store, actions, reducers, dispatch, state flow, and immutable updates.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Store holds state.\n✔ Actions describe changes.\n✔ Reducers update state.\n✔ Dispatch sends actions."
+    }
+  }
+]

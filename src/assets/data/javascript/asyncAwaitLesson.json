@@ -1,0 +1,57 @@
+[
+  {
+    "id": "js-async-await-lesson-1",
+    "topicId": "js-async-await",
+    "lessonNumber": 1,
+    "title": "What is Async Await?",
+    "overview": "Async and await are modern JavaScript features used to handle asynchronous operations. They make asynchronous code easier to read and write compared to Promise chaining.",
+    "example": {
+      "title": "Async Await Example",
+      "content": "async function getData(){\n const result = await fetchData();\n console.log(result);\n}"
+    }
+  },
+  {
+    "id": "js-async-await-lesson-2",
+    "topicId": "js-async-await",
+    "lessonNumber": 2,
+    "title": "async Keyword",
+    "overview": "The async keyword is used before a function to make it return a Promise automatically. It allows the use of await inside that function.",
+    "example": {
+      "title": "async Function",
+      "content": "async function hello(){\n return 'Hello';\n}"
+    }
+  },
+  {
+    "id": "js-async-await-lesson-3",
+    "topicId": "js-async-await",
+    "lessonNumber": 3,
+    "title": "await Keyword",
+    "overview": "The await keyword pauses the execution of an async function until a Promise is resolved. It allows asynchronous code to look like synchronous code.",
+    "example": {
+      "title": "await Example",
+      "content": "async function fetchUser(){\n const response = await fetch(url);\n const data = await response.json();\n}"
+    }
+  },
+  {
+    "id": "js-async-await-lesson-4",
+    "topicId": "js-async-await",
+    "lessonNumber": 4,
+    "title": "Error Handling with try catch",
+    "overview": "try...catch is used with async await to handle errors that may occur during asynchronous operations.",
+    "example": {
+      "title": "try catch Example",
+      "content": "async function loadData(){\n try{\n  const data = await fetchData();\n }catch(error){\n  console.log(error);\n }\n}"
+    }
+  },
+  {
+    "id": "js-async-await-lesson-5",
+    "topicId": "js-async-await",
+    "lessonNumber": 5,
+    "title": "Topic Summary",
+    "overview": "You learned how async and await simplify asynchronous JavaScript, how to use async functions, await Promises, and handle errors using try...catch.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ async creates Promise-based functions.\n✔ await waits for Promise results.\n✔ Makes async code easier to read.\n✔ try...catch handles errors."
+    }
+  }
+]

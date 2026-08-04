@@ -1,0 +1,90 @@
+[
+  {
+    "id": "expo-routing-lesson-1",
+    "topicId": "expo-routing",
+    "lessonNumber": 1,
+    "title": "Introduction to Expo Router",
+    "overview": "Expo Router is a file-based routing system for Expo applications that simplifies navigation by creating routes from files and folders.",
+    "example": {
+      "title": "File Based Routing",
+      "content": "app/\n ├── index.tsx\n ├── profile.tsx\n └── settings.tsx\n\nEach file becomes a route."
+    }
+  },
+  {
+    "id": "expo-routing-lesson-2",
+    "topicId": "expo-routing",
+    "lessonNumber": 2,
+    "title": "File Based Navigation",
+    "overview": "Expo Router automatically creates navigation routes based on the file structure inside the app directory.",
+    "example": {
+      "title": "Route Example",
+      "content": "app/home.tsx\n\nURL:\n/home"
+    }
+  },
+  {
+    "id": "expo-routing-lesson-3",
+    "topicId": "expo-routing",
+    "lessonNumber": 3,
+    "title": "Stack Navigation",
+    "overview": "Stack navigation displays screens on top of each other and provides back navigation between screens.",
+    "example": {
+      "title": "Stack Example",
+      "content": "Home Screen\n ↓\nDetails Screen\n ↓\nProfile Screen"
+    }
+  },
+  {
+    "id": "expo-routing-lesson-4",
+    "topicId": "expo-routing",
+    "lessonNumber": 4,
+    "title": "Tabs Navigation",
+    "overview": "Tabs navigation allows users to switch between major sections of an application using a tab bar.",
+    "example": {
+      "title": "Tabs Structure",
+      "content": "app/\n └── (tabs)/\n      ├── index.tsx\n      ├── profile.tsx\n      └── settings.tsx"
+    }
+  },
+  {
+    "id": "expo-routing-lesson-5",
+    "topicId": "expo-routing",
+    "lessonNumber": 5,
+    "title": "Dynamic Routes",
+    "overview": "Dynamic routes allow screens to receive changing values such as IDs or parameters from the URL.",
+    "example": {
+      "title": "Dynamic Route Example",
+      "content": "app/user/[id].tsx\n\n/user/101\n/user/102"
+    }
+  },
+  {
+    "id": "expo-routing-lesson-6",
+    "topicId": "expo-routing",
+    "lessonNumber": 6,
+    "title": "Navigation Methods",
+    "overview": "Expo Router provides methods to move between screens, replace routes, and go back.",
+    "example": {
+      "title": "Navigation Example",
+      "content": "router.push('/profile');\nrouter.back();\nrouter.replace('/login');"
+    }
+  },
+  {
+    "id": "expo-routing-lesson-7",
+    "topicId": "expo-routing",
+    "lessonNumber": 7,
+    "title": "Route Groups",
+    "overview": "Route groups organize screens without affecting the actual URL structure.",
+    "example": {
+      "title": "Route Group Example",
+      "content": "app/\n ├── (auth)/\n │    ├── login.tsx\n │    └── signup.tsx\n └── (main)/"
+    }
+  },
+  {
+    "id": "expo-routing-lesson-8",
+    "topicId": "expo-routing",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You learned Expo Router basics including file-based routing, stacks, tabs, dynamic routes, and navigation methods.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Files create routes.\n✔ Stack manages screen flow.\n✔ Tabs manage sections.\n✔ Dynamic routes handle parameters."
+    }
+  }
+]

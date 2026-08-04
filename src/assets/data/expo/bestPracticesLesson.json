@@ -1,0 +1,68 @@
+[
+  {
+    "id": "expo-best-practices-lesson-1",
+    "topicId": "expo-best-practices",
+    "lessonNumber": 1,
+    "title": "Organizing Expo Projects",
+    "overview": "A clean project structure helps maintain Expo applications as they grow and makes development easier.",
+    "example": {
+      "title": "Recommended Structure",
+      "content": "src/\n ├── components/\n ├── screens/\n ├── hooks/\n ├── services/\n └── utils/"
+    }
+  },
+  {
+    "id": "expo-best-practices-lesson-2",
+    "topicId": "expo-best-practices",
+    "lessonNumber": 2,
+    "title": "Managing Dependencies",
+    "overview": "Using compatible package versions and Expo recommended installation commands helps avoid build issues.",
+    "example": {
+      "title": "Dependency Management",
+      "content": "Use:\nnpx expo install package-name\n\nInstead of manually choosing versions."
+    }
+  },
+  {
+    "id": "expo-best-practices-lesson-3",
+    "topicId": "expo-best-practices",
+    "lessonNumber": 3,
+    "title": "Handling Permissions Properly",
+    "overview": "Applications should request permissions only when needed and handle denied permissions gracefully.",
+    "example": {
+      "title": "Permission Practice",
+      "content": "User Action\n ↓\nRequest Permission\n ↓\nAllow / Deny\n ↓\nHandle Result"
+    }
+  },
+  {
+    "id": "expo-best-practices-lesson-4",
+    "topicId": "expo-best-practices",
+    "lessonNumber": 4,
+    "title": "Performance Optimization",
+    "overview": "Optimizing components, images, and application logic improves Expo app performance.",
+    "example": {
+      "title": "Optimization Tips",
+      "content": "✔ Optimize images\n✔ Use FlatList\n✔ Avoid unnecessary renders\n✔ Lazy load screens"
+    }
+  },
+  {
+    "id": "expo-best-practices-lesson-5",
+    "topicId": "expo-best-practices",
+    "lessonNumber": 5,
+    "title": "Production Ready Expo Apps",
+    "overview": "Production applications require proper testing, error handling, configuration, and build management.",
+    "example": {
+      "title": "Production Checklist",
+      "content": "Testing\n ↓\nConfiguration\n ↓\nBuild\n ↓\nRelease"
+    }
+  },
+  {
+    "id": "expo-best-practices-lesson-6",
+    "topicId": "expo-best-practices",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned best practices for Expo project structure, dependencies, permissions, performance, and production releases.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Keep projects organized.\n✔ Manage packages correctly.\n✔ Optimize performance.\n✔ Test before release."
+    }
+  }
+]

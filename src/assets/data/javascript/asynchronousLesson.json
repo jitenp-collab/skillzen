@@ -1,0 +1,90 @@
+[
+  {
+    "id": "js-asynchronous-lesson-1",
+    "topicId": "js-asynchronous",
+    "lessonNumber": 1,
+    "title": "What is Asynchronous JavaScript?",
+    "overview": "Asynchronous JavaScript allows tasks to run independently without blocking the execution of other code. It helps applications handle time-consuming operations efficiently.",
+    "example": {
+      "title": "Asynchronous Example",
+      "content": "console.log('Start');\n\nsetTimeout(() => {\n console.log('Task Completed');\n}, 2000);\n\nconsole.log('End');"
+    }
+  },
+  {
+    "id": "js-asynchronous-lesson-2",
+    "topicId": "js-asynchronous",
+    "lessonNumber": 2,
+    "title": "Synchronous vs Asynchronous",
+    "overview": "Synchronous code executes line by line and waits for each task to complete. Asynchronous code allows other tasks to continue while waiting for a time-consuming operation.",
+    "example": {
+      "title": "Comparison",
+      "content": "Synchronous:\nTask 1 → Task 2 → Task 3\n\nAsynchronous:\nTask 1 → Start Task 2 → Task 3 → Task 2 completes later"
+    }
+  },
+  {
+    "id": "js-asynchronous-lesson-3",
+    "topicId": "js-asynchronous",
+    "lessonNumber": 3,
+    "title": "JavaScript Event Loop",
+    "overview": "The event loop allows JavaScript to handle asynchronous operations even though JavaScript runs on a single thread. It manages execution between the call stack and callback queues.",
+    "example": {
+      "title": "Event Loop Flow",
+      "content": "Call Stack\n      ↓\nWeb APIs\n      ↓\nCallback Queue\n      ↓\nEvent Loop"
+    }
+  },
+  {
+    "id": "js-asynchronous-lesson-4",
+    "topicId": "js-asynchronous",
+    "lessonNumber": 4,
+    "title": "setTimeout and setInterval",
+    "overview": "setTimeout executes a function after a specified delay, while setInterval repeatedly executes a function at a fixed time interval.",
+    "example": {
+      "title": "Timer Example",
+      "content": "setTimeout(() => {\n console.log('Hello');\n}, 1000);\n\nsetInterval(() => {\n console.log('Running');\n}, 2000);"
+    }
+  },
+  {
+    "id": "js-asynchronous-lesson-5",
+    "topicId": "js-asynchronous",
+    "lessonNumber": 5,
+    "title": "Callbacks",
+    "overview": "Callbacks are functions passed as arguments to other functions and executed after a task completes. They were one of the first ways to handle asynchronous operations.",
+    "example": {
+      "title": "Callback Example",
+      "content": "function fetchData(callback){\n callback();\n}\n\nfetchData(() => console.log('Data received'));"
+    }
+  },
+  {
+    "id": "js-asynchronous-lesson-6",
+    "topicId": "js-asynchronous",
+    "lessonNumber": 6,
+    "title": "Callback Problems",
+    "overview": "Using many nested callbacks can make code difficult to read and maintain. This problem is known as callback hell.",
+    "example": {
+      "title": "Callback Hell",
+      "content": "Task 1\n ↓\nTask 2\n ↓\nTask 3\n ↓\nTask 4"
+    }
+  },
+  {
+    "id": "js-asynchronous-lesson-7",
+    "topicId": "js-asynchronous",
+    "lessonNumber": 7,
+    "title": "Asynchronous JavaScript in React Native",
+    "overview": "React Native applications use asynchronous operations for tasks like API calls, file handling, storage operations, and background processes.",
+    "example": {
+      "title": "React Native Example",
+      "content": "fetch('https://api.example.com/data')\n.then(response => response.json())\n.then(data => console.log(data));"
+    }
+  },
+  {
+    "id": "js-asynchronous-lesson-8",
+    "topicId": "js-asynchronous",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You learned how asynchronous JavaScript works, the difference between synchronous and asynchronous code, event loop, timers, callbacks, and its usage in React Native.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Async code does not block execution.\n✔ Event loop manages async tasks.\n✔ Timers execute delayed tasks.\n✔ Callbacks handle completed operations.\n✔ React Native uses async operations frequently."
+    }
+  }
+]

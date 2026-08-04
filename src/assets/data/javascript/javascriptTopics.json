@@ -1,0 +1,98 @@
+[
+  {
+    "id": "js-introduction",
+    "title": "Introduction to JavaScript",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 6
+  },
+  {
+    "id": "js-variables",
+    "title": "Variables & Data Types",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 7
+  },
+  {
+    "id": "js-operators",
+    "title": "Operators",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 5
+  },
+  {
+    "id": "js-conditions",
+    "title": "Conditional Statements",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 6
+  },
+  {
+    "id": "js-loops",
+    "title": "Loops",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 6
+  },
+  {
+    "id": "js-functions",
+    "title": "Functions",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 8
+  },
+  {
+    "id": "js-arrays",
+    "title": "Arrays",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 8
+  },
+  {
+    "id": "js-objects",
+    "title": "Objects",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 7
+  },
+  {
+    "id": "js-es6",
+    "title": "ES6 Features",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 10
+  },
+  {
+    "id": "js-dom",
+    "title": "DOM Basics",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 6
+  },
+  {
+    "id": "js-asynchronous",
+    "title": "Asynchronous JavaScript",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 8
+  },
+  {
+    "id": "js-promises",
+    "title": "Promises",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 6
+  },
+  {
+    "id": "js-async-await",
+    "title": "Async Await",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 5
+  },
+  {
+    "id": "js-error-handling",
+    "title": "Error Handling",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 5
+  },
+  {
+    "id": "js-modules",
+    "title": "Modules",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 5
+  },
+  {
+    "id": "js-best-practices",
+    "title": "JavaScript Best Practices",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 6
+  }
+]

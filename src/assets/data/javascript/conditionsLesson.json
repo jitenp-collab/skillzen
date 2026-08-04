@@ -1,0 +1,68 @@
+[
+  {
+    "id": "js-conditions-lesson-1",
+    "topicId": "js-conditions",
+    "lessonNumber": 1,
+    "title": "What are Conditional Statements?",
+    "overview": "Conditional statements allow JavaScript programs to make decisions based on different conditions. They execute specific code when a condition is true or false.",
+    "example": {
+      "title": "Conditional Example",
+      "content": "const age = 18;\n\nif(age >= 18){\n  console.log('Allowed');\n}"
+    }
+  },
+  {
+    "id": "js-conditions-lesson-2",
+    "topicId": "js-conditions",
+    "lessonNumber": 2,
+    "title": "if Statement",
+    "overview": "The if statement executes a block of code only when the given condition evaluates to true.",
+    "example": {
+      "title": "if Example",
+      "content": "let isLoggedIn = true;\n\nif(isLoggedIn){\n console.log('Welcome User');\n}"
+    }
+  },
+  {
+    "id": "js-conditions-lesson-3",
+    "topicId": "js-conditions",
+    "lessonNumber": 3,
+    "title": "if...else Statement",
+    "overview": "The if...else statement is used when we want to execute one block of code when a condition is true and another block when the condition is false.",
+    "example": {
+      "title": "if...else Example",
+      "content": "const passwordCorrect = false;\n\nif(passwordCorrect){\n console.log('Login Success');\n}else{\n console.log('Invalid Password');\n}"
+    }
+  },
+  {
+    "id": "js-conditions-lesson-4",
+    "topicId": "js-conditions",
+    "lessonNumber": 4,
+    "title": "else if Statement",
+    "overview": "The else if statement is used when multiple conditions need to be checked. JavaScript evaluates conditions from top to bottom.",
+    "example": {
+      "title": "else if Example",
+      "content": "const marks = 80;\n\nif(marks >= 90){\n console.log('A');\n}else if(marks >= 70){\n console.log('B');\n}else{\n console.log('C');\n}"
+    }
+  },
+  {
+    "id": "js-conditions-lesson-5",
+    "topicId": "js-conditions",
+    "lessonNumber": 5,
+    "title": "Switch Statement",
+    "overview": "The switch statement is used to execute different code blocks based on different possible values. It is useful when checking multiple fixed conditions.",
+    "example": {
+      "title": "Switch Example",
+      "content": "const day = 'Monday';\n\nswitch(day){\n case 'Monday':\n  console.log('Start Week');\n  break;\n}"
+    }
+  },
+  {
+    "id": "js-conditions-lesson-6",
+    "topicId": "js-conditions",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned how conditional statements help JavaScript make decisions using if, if...else, else if, and switch statements.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Conditions control program flow.\n✔ if runs code when condition is true.\n✔ else handles false conditions.\n✔ else if checks multiple conditions.\n✔ switch handles multiple fixed cases."
+    }
+  }
+]

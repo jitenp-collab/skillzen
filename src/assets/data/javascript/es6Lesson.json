@@ -1,0 +1,112 @@
+[
+  {
+    "id": "js-es6-lesson-1",
+    "topicId": "js-es6",
+    "lessonNumber": 1,
+    "title": "What is ES6?",
+    "overview": "ES6 (ECMAScript 2015) is a major update to JavaScript that introduced new features to make code cleaner, shorter, and easier to maintain.",
+    "example": {
+      "title": "ES6 Features",
+      "content": "Major ES6 features:\n• let and const\n• Arrow functions\n• Template literals\n• Destructuring\n• Classes\n• Modules"
+    }
+  },
+  {
+    "id": "js-es6-lesson-2",
+    "topicId": "js-es6",
+    "lessonNumber": 2,
+    "title": "let and const",
+    "overview": "ES6 introduced let and const for better variable declaration. They provide block scope and replace many use cases of var.",
+    "example": {
+      "title": "let and const Example",
+      "content": "let count = 10;\nconst name = 'React Native';"
+    }
+  },
+  {
+    "id": "js-es6-lesson-3",
+    "topicId": "js-es6",
+    "lessonNumber": 3,
+    "title": "Arrow Functions",
+    "overview": "Arrow functions provide a shorter syntax for writing functions and are commonly used in modern JavaScript and React Native development.",
+    "example": {
+      "title": "Arrow Function",
+      "content": "const add = (a,b) => a + b;"
+    }
+  },
+  {
+    "id": "js-es6-lesson-4",
+    "topicId": "js-es6",
+    "lessonNumber": 4,
+    "title": "Template Literals",
+    "overview": "Template literals allow developers to create strings using backticks and insert variables directly using interpolation.",
+    "example": {
+      "title": "Template Literal Example",
+      "content": "const name = 'Manthan';\n\nconsole.log(`Hello ${name}`);"
+    }
+  },
+  {
+    "id": "js-es6-lesson-5",
+    "topicId": "js-es6",
+    "lessonNumber": 5,
+    "title": "Destructuring Assignment",
+    "overview": "Destructuring allows extracting values from arrays and objects into separate variables using a simple syntax.",
+    "example": {
+      "title": "Destructuring Example",
+      "content": "const user = {name:'Manthan'};\n\nconst {name} = user;"
+    }
+  },
+  {
+    "id": "js-es6-lesson-6",
+    "topicId": "js-es6",
+    "lessonNumber": 6,
+    "title": "Spread Operator",
+    "overview": "The spread operator allows copying or expanding elements from arrays and objects. It is widely used in React and React Native.",
+    "example": {
+      "title": "Spread Example",
+      "content": "const numbers = [1,2,3];\n\nconst copy = [...numbers];"
+    }
+  },
+  {
+    "id": "js-es6-lesson-7",
+    "topicId": "js-es6",
+    "lessonNumber": 7,
+    "title": "Rest Operator",
+    "overview": "The rest operator collects multiple values into a single array or object. It is useful when handling dynamic data.",
+    "example": {
+      "title": "Rest Example",
+      "content": "function sum(...numbers){\n console.log(numbers);\n}"
+    }
+  },
+  {
+    "id": "js-es6-lesson-8",
+    "topicId": "js-es6",
+    "lessonNumber": 8,
+    "title": "Classes in JavaScript",
+    "overview": "ES6 introduced classes as a cleaner way to create objects and implement object-oriented programming concepts.",
+    "example": {
+      "title": "Class Example",
+      "content": "class User {\n constructor(name){\n  this.name=name;\n }\n}"
+    }
+  },
+  {
+    "id": "js-es6-lesson-9",
+    "topicId": "js-es6",
+    "lessonNumber": 9,
+    "title": "Modules Import and Export",
+    "overview": "ES6 modules allow JavaScript code to be divided into multiple files using export and import statements.",
+    "example": {
+      "title": "Module Example",
+      "content": "export default App;\n\nimport App from './App';"
+    }
+  },
+  {
+    "id": "js-es6-lesson-10",
+    "topicId": "js-es6",
+    "lessonNumber": 10,
+    "title": "Topic Summary",
+    "overview": "You learned important ES6 features including let, const, arrow functions, template literals, destructuring, spread, rest, classes, and modules.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ ES6 modernized JavaScript.\n✔ let and const replaced var.\n✔ Arrow functions simplify functions.\n✔ Spread and rest handle data easily.\n✔ Modules organize code."
+    }
+  }
+]

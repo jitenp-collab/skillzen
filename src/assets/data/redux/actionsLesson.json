@@ -1,0 +1,57 @@
+[
+  {
+    "id": "redux-actions-lesson-1",
+    "topicId": "redux-actions",
+    "lessonNumber": 1,
+    "title": "What are Actions?",
+    "overview": "Actions are JavaScript objects that describe an event or change that needs to happen in the Redux state.",
+    "example": {
+      "title": "Action Structure",
+      "content": "const action = {\n type: 'ADD_TASK'\n};"
+    }
+  },
+  {
+    "id": "redux-actions-lesson-2",
+    "topicId": "redux-actions",
+    "lessonNumber": 2,
+    "title": "Action Types",
+    "overview": "Action types are string constants that identify what kind of state update should be performed.",
+    "example": {
+      "title": "Action Type Example",
+      "content": "const ADD_USER = 'ADD_USER';\n\n{\n type: ADD_USER\n}"
+    }
+  },
+  {
+    "id": "redux-actions-lesson-3",
+    "topicId": "redux-actions",
+    "lessonNumber": 3,
+    "title": "Payload in Actions",
+    "overview": "Payload contains the data that needs to be sent along with an action to update the Redux state.",
+    "example": {
+      "title": "Payload Example",
+      "content": "{\n type:'ADD_USER',\n payload:{name:'John'}\n}"
+    }
+  },
+  {
+    "id": "redux-actions-lesson-4",
+    "topicId": "redux-actions",
+    "lessonNumber": 4,
+    "title": "Action Creators",
+    "overview": "Action creators are functions that create and return action objects. They make actions reusable and organized.",
+    "example": {
+      "title": "Action Creator Example",
+      "content": "const addUser = (user)=>({\n type:'ADD_USER',\n payload:user\n});"
+    }
+  },
+  {
+    "id": "redux-actions-lesson-5",
+    "topicId": "redux-actions",
+    "lessonNumber": 5,
+    "title": "Topic Summary",
+    "overview": "You learned about Redux actions, action types, payloads, and action creators used for managing state changes.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Actions describe changes.\n✔ Type identifies action.\n✔ Payload carries data.\n✔ Action creators generate actions."
+    }
+  }
+]

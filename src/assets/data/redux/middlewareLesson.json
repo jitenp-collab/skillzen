@@ -1,0 +1,57 @@
+[
+  {
+    "id": "redux-middleware-lesson-1",
+    "topicId": "redux-middleware",
+    "lessonNumber": 1,
+    "title": "What is Redux Middleware?",
+    "overview": "Middleware is a layer between dispatching an action and reaching the reducer. It is used for handling additional logic like API calls, logging, and authentication.",
+    "example": {
+      "title": "Middleware Flow",
+      "content": "Component\n ↓\nDispatch Action\n ↓\nMiddleware\n ↓\nReducer\n ↓\nStore"
+    }
+  },
+  {
+    "id": "redux-middleware-lesson-2",
+    "topicId": "redux-middleware",
+    "lessonNumber": 2,
+    "title": "Why Use Middleware?",
+    "overview": "Middleware allows Redux to handle operations that cannot be performed directly inside reducers, such as asynchronous tasks.",
+    "example": {
+      "title": "Middleware Uses",
+      "content": "✔ API requests\n✔ Logging actions\n✔ Error handling\n✔ Authentication checks"
+    }
+  },
+  {
+    "id": "redux-middleware-lesson-3",
+    "topicId": "redux-middleware",
+    "lessonNumber": 3,
+    "title": "Redux Thunk Middleware",
+    "overview": "Redux Thunk allows action creators to return functions and handle asynchronous operations before dispatching normal actions.",
+    "example": {
+      "title": "Thunk Middleware",
+      "content": "dispatch(fetchUsers())\n\nMiddleware handles API call\n\nThen dispatches result action"
+    }
+  },
+  {
+    "id": "redux-middleware-lesson-4",
+    "topicId": "redux-middleware",
+    "lessonNumber": 4,
+    "title": "Custom Middleware",
+    "overview": "Developers can create custom middleware to add application-specific logic during the Redux data flow.",
+    "example": {
+      "title": "Custom Middleware Example",
+      "content": "const logger = store => next => action => {\n console.log(action);\n return next(action);\n};"
+    }
+  },
+  {
+    "id": "redux-middleware-lesson-5",
+    "topicId": "redux-middleware",
+    "lessonNumber": 5,
+    "title": "Topic Summary",
+    "overview": "You learned how Redux middleware works, why it is needed, and how it helps handle async operations and additional logic.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Middleware sits between action and reducer.\n✔ Handles extra logic.\n✔ Thunk handles async operations.\n✔ Custom middleware can be created."
+    }
+  }
+]

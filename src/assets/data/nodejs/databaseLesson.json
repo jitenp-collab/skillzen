@@ -1,0 +1,79 @@
+[
+  {
+    "id": "nodejs-database-lesson-1",
+    "topicId": "nodejs-database",
+    "lessonNumber": 1,
+    "title": "Introduction to Databases",
+    "overview": "Databases are used to store, organize, and manage application data. Node.js applications commonly connect with databases to save and retrieve information.",
+    "example": {
+      "title": "Database Usage",
+      "content": "Application\n ↓\nNode.js Backend\n ↓\nDatabase\n ↓\nStored Data"
+    }
+  },
+  {
+    "id": "nodejs-database-lesson-2",
+    "topicId": "nodejs-database",
+    "lessonNumber": 2,
+    "title": "Types of Databases",
+    "overview": "Databases are mainly divided into SQL and NoSQL databases. Each type stores and manages data differently.",
+    "example": {
+      "title": "Database Types",
+      "content": "SQL:\nMySQL\nPostgreSQL\n\nNoSQL:\nMongoDB\nFirebase"
+    }
+  },
+  {
+    "id": "nodejs-database-lesson-3",
+    "topicId": "nodejs-database",
+    "lessonNumber": 3,
+    "title": "Connecting Node.js with Database",
+    "overview": "Node.js uses database drivers or libraries to establish communication between the application and database.",
+    "example": {
+      "title": "Connection Flow",
+      "content": "Node.js\n ↓\nDatabase Driver\n ↓\nDatabase Server"
+    }
+  },
+  {
+    "id": "nodejs-database-lesson-4",
+    "topicId": "nodejs-database",
+    "lessonNumber": 4,
+    "title": "MongoDB with Node.js",
+    "overview": "MongoDB is a popular NoSQL database commonly used with Node.js applications because it stores data in JSON-like documents.",
+    "example": {
+      "title": "MongoDB Document",
+      "content": "{\n \"name\":\"Manthan\",\n \"age\":25\n}"
+    }
+  },
+  {
+    "id": "nodejs-database-lesson-5",
+    "topicId": "nodejs-database",
+    "lessonNumber": 5,
+    "title": "Using Mongoose",
+    "overview": "Mongoose is an Object Data Modeling library that helps Node.js applications interact with MongoDB easily.",
+    "example": {
+      "title": "Mongoose Schema",
+      "content": "const UserSchema = new mongoose.Schema({\n name:String\n});"
+    }
+  },
+  {
+    "id": "nodejs-database-lesson-6",
+    "topicId": "nodejs-database",
+    "lessonNumber": 6,
+    "title": "CRUD Operations",
+    "overview": "CRUD operations represent the basic database actions: Create, Read, Update, and Delete data.",
+    "example": {
+      "title": "CRUD",
+      "content": "Create → Add data\nRead → Get data\nUpdate → Modify data\nDelete → Remove data"
+    }
+  },
+  {
+    "id": "nodejs-database-lesson-7",
+    "topicId": "nodejs-database",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned database concepts, database types, connecting Node.js with databases, MongoDB, Mongoose, and CRUD operations.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Databases store application data.\n✔ Node.js connects using drivers.\n✔ MongoDB stores documents.\n✔ CRUD manages data operations."
+    }
+  }
+]

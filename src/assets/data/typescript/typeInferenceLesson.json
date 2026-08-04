@@ -1,0 +1,57 @@
+[
+  {
+    "id": "ts-type-inference-lesson-1",
+    "topicId": "ts-type-inference",
+    "lessonNumber": 1,
+    "title": "What is Type Inference?",
+    "overview": "Type inference is a TypeScript feature where the compiler automatically determines the type of a variable based on its assigned value.",
+    "example": {
+      "title": "Inference Example",
+      "content": "let name = 'Manthan';\n\nTypeScript automatically detects:\n\nname: string"
+    }
+  },
+  {
+    "id": "ts-type-inference-lesson-2",
+    "topicId": "ts-type-inference",
+    "lessonNumber": 2,
+    "title": "Implicit Type Inference",
+    "overview": "When a variable is initialized with a value, TypeScript automatically assigns the appropriate type without requiring manual type declaration.",
+    "example": {
+      "title": "Implicit Type",
+      "content": "let age = 25;\n\nTypeScript understands:\n\nage: number"
+    }
+  },
+  {
+    "id": "ts-type-inference-lesson-3",
+    "topicId": "ts-type-inference",
+    "lessonNumber": 3,
+    "title": "Inference in Functions",
+    "overview": "TypeScript can infer function return types based on the returned value. This reduces unnecessary type writing.",
+    "example": {
+      "title": "Function Inference",
+      "content": "function add(a:number,b:number){\n return a+b;\n}\n\nReturn type is automatically inferred as number."
+    }
+  },
+  {
+    "id": "ts-type-inference-lesson-4",
+    "topicId": "ts-type-inference",
+    "lessonNumber": 4,
+    "title": "When to Add Explicit Types",
+    "overview": "Although TypeScript can infer many types, developers should add explicit types when working with function parameters, complex objects, or shared code.",
+    "example": {
+      "title": "Explicit Type Example",
+      "content": "function greet(name: string){\n console.log(name);\n}"
+    }
+  },
+  {
+    "id": "ts-type-inference-lesson-5",
+    "topicId": "ts-type-inference",
+    "lessonNumber": 5,
+    "title": "Topic Summary",
+    "overview": "You learned how TypeScript automatically detects types, where inference works, and when developers should manually define types.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ TypeScript can detect types automatically.\n✔ Inference reduces unnecessary code.\n✔ Explicit types improve clarity in complex cases."
+    }
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "python-introduction",
+    "title": "Introduction to Python",
+    "icon": "https://miro.medium.com/1*qSL-bGmBaj_TyZXQ8XWpbA.jpeg",
+    "totalLessons": 6
+  },
+  {
+    "id": "python-installation-setup",
+    "title": "Python Installation & Setup",
+    "icon": "https://miro.medium.com/1*qSL-bGmBaj_TyZXQ8XWpbA.jpeg",
+    "totalLessons": 5
+  },
+  {
+    "id": "python-syntax",
+    "title": "Python Syntax & Basics",
+    "icon": "https://miro.medium.com/1*qSL-bGmBaj_TyZXQ8XWpbA.jpeg",
+    "totalLessons": 8
+  },
+  {
+    "id": "python-variables-data-types",
+    "title": "Variables & Data Types",
+    "icon": "https://miro.medium.com/1*qSL-bGmBaj_TyZXQ8XWpbA.jpeg",
+    "totalLessons": 8
+  },
+  {
+    "id": "python-operators",
+    "title": "Operators",
+    "icon": "https://miro.medium.com/1*qSL-bGmBaj_TyZXQ8XWpbA.jpeg",
+    "totalLessons": 6
+  },
+  {
+    "id": "python-conditions-loops",
+    "title": "Conditional Statements & Loops",
+    "icon": "https://miro.medium.com/1*qSL-bGmBaj_TyZXQ8XWpbA.jpeg",
+    "totalLessons": 8
+  },
+  {
+    "id": "python-functions",
+    "title": "Functions",
+    "icon": "https://miro.medium.com/1*qSL-bGmBaj_TyZXQ8XWpbA.jpeg",
+    "totalLessons": 7
+  },
+  {
+    "id": "python-data-structures",
+    "title": "Python Data Structures",
+    "icon": "https://miro.medium.com/1*qSL-bGmBaj_TyZXQ8XWpbA.jpeg",
+    "totalLessons": 9
+  },
+  {
+    "id": "python-oops",
+    "title": "Object Oriented Programming",
+    "icon": "https://miro.medium.com/1*qSL-bGmBaj_TyZXQ8XWpbA.jpeg",
+    "totalLessons": 8
+  },
+  {
+    "id": "python-file-handling",
+    "title": "File Handling",
+    "icon": "https://miro.medium.com/1*qSL-bGmBaj_TyZXQ8XWpbA.jpeg",
+    "totalLessons": 5
+  },
+  {
+    "id": "python-exception-handling",
+    "title": "Exception Handling",
+    "icon": "https://miro.medium.com/1*qSL-bGmBaj_TyZXQ8XWpbA.jpeg",
+    "totalLessons": 5
+  },
+  {
+    "id": "python-modules-packages",
+    "title": "Modules & Packages",
+    "icon": "https://miro.medium.com/1*qSL-bGmBaj_TyZXQ8XWpbA.jpeg",
+    "totalLessons": 6
+  },
+  {
+    "id": "python-api-backend",
+    "title": "Python API & Backend Basics",
+    "icon": "https://miro.medium.com/1*qSL-bGmBaj_TyZXQ8XWpbA.jpeg",
+    "totalLessons": 7
+  },
+  {
+    "id": "python-best-practices",
+    "title": "Python Best Practices",
+    "icon": "https://miro.medium.com/1*qSL-bGmBaj_TyZXQ8XWpbA.jpeg",
+    "totalLessons": 6
+  }
+]

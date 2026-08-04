@@ -1,0 +1,91 @@
+[
+  {
+    "id": "ts-basic-types-lesson-1",
+    "topicId": "ts-basic-types",
+    "lessonNumber": 1,
+    "title": "What are Types in TypeScript?",
+    "overview": "Types define what kind of value a variable can store. TypeScript uses types to prevent invalid values and catch errors during development.",
+    "example": {
+      "title": "Type Example",
+      "content": "let username: string = 'Manthan';\nlet age: number = 25;"
+    }
+  },
+  {
+    "id": "ts-basic-types-lesson-2",
+    "topicId": "ts-basic-types",
+    "lessonNumber": 2,
+    "title": "String Type",
+    "overview": "The string type is used for storing text values. It allows TypeScript to ensure that only string values are assigned.",
+    "example": {
+      "title": "String Example",
+      "content": "let name: string = 'React Native';"
+    }
+  },
+  {
+    "id": "ts-basic-types-lesson-3",
+    "topicId": "ts-basic-types",
+    "lessonNumber": 3,
+    "title": "Number Type",
+    "overview": "The number type is used for integer and decimal values in TypeScript.",
+    "example": {
+      "title": "Number Example",
+      "content": "let count: number = 10;\nlet price: number = 99.99;"
+    }
+  },
+  {
+    "id": "ts-basic-types-lesson-4",
+    "topicId": "ts-basic-types",
+    "lessonNumber": 4,
+    "title": "Boolean Type",
+    "overview": "The boolean type stores true or false values. It is commonly used for conditions and application states.",
+    "example": {
+      "title": "Boolean Example",
+      "content": "let isLoggedIn: boolean = true;"
+    }
+  },
+  {
+    "id": "ts-basic-types-lesson-5",
+    "topicId": "ts-basic-types",
+    "lessonNumber": 5,
+    "title": "Array Type",
+    "overview": "Arrays can be typed to define what type of values they can contain. This prevents adding incorrect data into arrays.",
+    "example": {
+      "title": "Array Example",
+      "content": "let names: string[] = ['John','Manthan'];\n\nlet numbers: number[] = [1,2,3];"
+    }
+  },
+  {
+    "id": "ts-basic-types-lesson-6",
+    "topicId": "ts-basic-types",
+    "lessonNumber": 6,
+    "title": "Tuple Type",
+    "overview": "A tuple is an array with a fixed number of elements where each element has a specific type.",
+    "example": {
+      "title": "Tuple Example",
+      "content": "let user: [string, number] = ['Manthan',25];"
+    }
+  },
+  {
+    "id": "ts-basic-types-lesson-7",
+    "topicId": "ts-basic-types",
+    "lessonNumber": 7,
+    "title": "Any and Unknown Types",
+    "overview": "The any type disables type checking, while unknown is safer because the value must be checked before use.",
+    "example": {
+      "title": "Any vs Unknown",
+      "content": "let value: any = 10;\n\nlet data: unknown = 'Hello';"
+    }
+  },
+  {
+    "id": "ts-basic-types-lesson-8",
+    "topicId": "ts-basic-types",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You learned TypeScript basic types including string, number, boolean, arrays, tuples, any, and unknown types.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Types define allowed values.\n✔ string stores text.\n✔ number stores numeric values.\n✔ boolean stores true/false.\n✔ Arrays and tuples provide structured data."
+    }
+  }
+]
+     

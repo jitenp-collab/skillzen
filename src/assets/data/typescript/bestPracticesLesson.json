@@ -1,0 +1,68 @@
+[
+  {
+    "id": "ts-best-practices-lesson-1",
+    "topicId": "ts-best-practices",
+    "lessonNumber": 1,
+    "title": "Always Use Proper Types",
+    "overview": "Using proper types improves code safety and readability. Avoid using unnecessary any types because they remove TypeScript benefits.",
+    "example": {
+      "title": "Avoid Any",
+      "content": "Bad:\nlet data:any;\n\nGood:\nlet data:string;"
+    }
+  },
+  {
+    "id": "ts-best-practices-lesson-2",
+    "topicId": "ts-best-practices",
+    "lessonNumber": 2,
+    "title": "Prefer Interfaces and Type Aliases",
+    "overview": "Interfaces and type aliases help create reusable structures for objects, API responses, and application data.",
+    "example": {
+      "title": "Reusable Types",
+      "content": "interface User {\n id:number;\n name:string;\n}"
+    }
+  },
+  {
+    "id": "ts-best-practices-lesson-3",
+    "topicId": "ts-best-practices",
+    "lessonNumber": 3,
+    "title": "Enable Strict Mode",
+    "overview": "Strict mode enables advanced type checking and helps identify potential issues during development.",
+    "example": {
+      "title": "tsconfig Setting",
+      "content": "{\n \"compilerOptions\": {\n  \"strict\": true\n }\n}"
+    }
+  },
+  {
+    "id": "ts-best-practices-lesson-4",
+    "topicId": "ts-best-practices",
+    "lessonNumber": 4,
+    "title": "Avoid Duplicate Types",
+    "overview": "Reusable types should be created in separate files and shared across the application instead of rewriting the same structures.",
+    "example": {
+      "title": "Types Folder",
+      "content": "src\n └── types\n      └── user.ts\n      └── api.ts"
+    }
+  },
+  {
+    "id": "ts-best-practices-lesson-5",
+    "topicId": "ts-best-practices",
+    "lessonNumber": 5,
+    "title": "TypeScript Project Organization",
+    "overview": "A well-organized TypeScript project separates components, types, services, hooks, and utilities for better maintainability.",
+    "example": {
+      "title": "Project Structure",
+      "content": "src\n ├── components\n ├── screens\n ├── hooks\n ├── types\n └── services"
+    }
+  },
+  {
+    "id": "ts-best-practices-lesson-6",
+    "topicId": "ts-best-practices",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned important TypeScript practices including proper typing, reusable structures, strict mode, organization, and maintainable coding patterns.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Avoid unnecessary any.\n✔ Create reusable types.\n✔ Use strict mode.\n✔ Keep project structure clean.\n✔ Write maintainable TypeScript code."
+    }
+  }
+]

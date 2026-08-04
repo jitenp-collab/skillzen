@@ -1,0 +1,68 @@
+[
+  {
+    "id": "expo-introduction-lesson-1",
+    "topicId": "expo-introduction",
+    "lessonNumber": 1,
+    "title": "What is Expo?",
+    "overview": "Expo is a framework built on top of React Native that provides tools, libraries, and services to simplify mobile app development.",
+    "example": {
+      "title": "Expo Purpose",
+      "content": "React Native\n      ↓\nExpo Framework\n      ↓\nMobile Application"
+    }
+  },
+  {
+    "id": "expo-introduction-lesson-2",
+    "topicId": "expo-introduction",
+    "lessonNumber": 2,
+    "title": "Expo vs React Native CLI",
+    "overview": "Expo provides a managed workflow with built-in tools, while React Native CLI gives more control over native Android and iOS projects.",
+    "example": {
+      "title": "Comparison",
+      "content": "Expo:\n✔ Faster setup\n✔ Built-in APIs\n✔ Easier development\n\nReact Native CLI:\n✔ Full native control\n✔ Custom native code"
+    }
+  },
+  {
+    "id": "expo-introduction-lesson-3",
+    "topicId": "expo-introduction",
+    "lessonNumber": 3,
+    "title": "Expo Managed Workflow",
+    "overview": "The managed workflow allows developers to build apps without directly managing native Android and iOS folders.",
+    "example": {
+      "title": "Managed Workflow",
+      "content": "JavaScript / TypeScript Code\n          ↓\nExpo Tools\n          ↓\nAndroid & iOS App"
+    }
+  },
+  {
+    "id": "expo-introduction-lesson-4",
+    "topicId": "expo-introduction",
+    "lessonNumber": 4,
+    "title": "Expo Go Application",
+    "overview": "Expo Go allows developers to preview and test Expo applications instantly on physical devices without creating a native build.",
+    "example": {
+      "title": "Expo Go Flow",
+      "content": "Write Code\n ↓\nStart Expo Server\n ↓\nScan QR Code\n ↓\nRun App"
+    }
+  },
+  {
+    "id": "expo-introduction-lesson-5",
+    "topicId": "expo-introduction",
+    "lessonNumber": 5,
+    "title": "Expo SDK",
+    "overview": "Expo SDK provides ready-to-use libraries for accessing device features like camera, notifications, location, and sensors.",
+    "example": {
+      "title": "Expo SDK Examples",
+      "content": "expo-camera\nexpo-location\nexpo-notifications\nexpo-file-system"
+    }
+  },
+  {
+    "id": "expo-introduction-lesson-6",
+    "topicId": "expo-introduction",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned what Expo is, its benefits, workflow types, Expo Go, and Expo SDK libraries.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Expo simplifies React Native development.\n✔ Expo provides ready-made APIs.\n✔ Expo Go helps test apps quickly."
+    }
+  }
+]

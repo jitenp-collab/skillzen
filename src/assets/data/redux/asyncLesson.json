@@ -1,0 +1,79 @@
+[
+  {
+    "id": "redux-async-lesson-1",
+    "topicId": "redux-async",
+    "lessonNumber": 1,
+    "title": "Introduction to Async Redux",
+    "overview": "Async operations in Redux are used when the application needs to perform tasks that take time, such as API calls, file operations, or database requests.",
+    "example": {
+      "title": "Async Flow",
+      "content": "Component\n ↓\nAsync Request\n ↓\nAPI Response\n ↓\nUpdate Store"
+    }
+  },
+  {
+    "id": "redux-async-lesson-2",
+    "topicId": "redux-async",
+    "lessonNumber": 2,
+    "title": "Why Async Handling is Needed",
+    "overview": "Redux reducers are synchronous, so asynchronous operations need middleware to handle delayed responses.",
+    "example": {
+      "title": "Sync vs Async",
+      "content": "Synchronous:\nAction → Reducer → State\n\nAsynchronous:\nAction → Middleware → API → Reducer → State"
+    }
+  },
+  {
+    "id": "redux-async-lesson-3",
+    "topicId": "redux-async",
+    "lessonNumber": 3,
+    "title": "Redux Thunk",
+    "overview": "Redux Thunk is middleware that allows action creators to return functions instead of only objects, making API calls possible.",
+    "example": {
+      "title": "Thunk Example",
+      "content": "const fetchUsers = () => async dispatch => {\n const data = await api.get('/users');\n dispatch(setUsers(data));\n};"
+    }
+  },
+  {
+    "id": "redux-async-lesson-4",
+    "topicId": "redux-async",
+    "lessonNumber": 4,
+    "title": "createAsyncThunk",
+    "overview": "Redux Toolkit provides createAsyncThunk to simplify handling API requests with pending, fulfilled, and rejected states.",
+    "example": {
+      "title": "createAsyncThunk Example",
+      "content": "export const fetchUsers = createAsyncThunk(\n 'users/fetch',\n async()=>{\n  const response = await api.get('/users');\n  return response.data;\n }\n);"
+    }
+  },
+  {
+    "id": "redux-async-lesson-5",
+    "topicId": "redux-async",
+    "lessonNumber": 5,
+    "title": "Handling Loading and Error States",
+    "overview": "Async operations should manage loading, success, and error states to provide a better user experience.",
+    "example": {
+      "title": "Async States",
+      "content": "idle\n ↓\nloading\n ↓\nsuccess / error"
+    }
+  },
+  {
+    "id": "redux-async-lesson-6",
+    "topicId": "redux-async",
+    "lessonNumber": 6,
+    "title": "API Data Flow with Redux",
+    "overview": "Redux stores API data globally so multiple components can access the same data without repeated requests.",
+    "example": {
+      "title": "API Flow",
+      "content": "Component\n ↓\ndispatch(fetchData())\n ↓\nAPI Call\n ↓\nSlice Update\n ↓\nUI Update"
+    }
+  },
+  {
+    "id": "redux-async-lesson-7",
+    "topicId": "redux-async",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned how Redux handles asynchronous operations using middleware, Redux Thunk, createAsyncThunk, and API state management.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Redux is synchronous by default.\n✔ Middleware handles async work.\n✔ createAsyncThunk manages API calls.\n✔ Loading and errors should be handled."
+    }
+  }
+]

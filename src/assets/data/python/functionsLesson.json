@@ -1,0 +1,79 @@
+[
+  {
+    "id": "python-functions-lesson-1",
+    "topicId": "python-functions",
+    "lessonNumber": 1,
+    "title": "What are Functions?",
+    "overview": "Functions are reusable blocks of code that perform a specific task. They help organize code and avoid repeating the same logic multiple times.",
+    "example": {
+      "title": "Function Example",
+      "content": "def greet():\n    print('Hello Python')\n\ngreet()"
+    }
+  },
+  {
+    "id": "python-functions-lesson-2",
+    "topicId": "python-functions",
+    "lessonNumber": 2,
+    "title": "Creating and Calling Functions",
+    "overview": "Functions are created using the def keyword and executed by calling their name followed by parentheses.",
+    "example": {
+      "title": "Creating Function",
+      "content": "def welcome():\n    print('Welcome')\n\nwelcome()"
+    }
+  },
+  {
+    "id": "python-functions-lesson-3",
+    "topicId": "python-functions",
+    "lessonNumber": 3,
+    "title": "Function Parameters",
+    "overview": "Parameters allow functions to receive values from outside. They make functions more flexible and reusable.",
+    "example": {
+      "title": "Parameter Example",
+      "content": "def greet(name):\n    print(name)\n\ngreet('Manthan')"
+    }
+  },
+  {
+    "id": "python-functions-lesson-4",
+    "topicId": "python-functions",
+    "lessonNumber": 4,
+    "title": "Return Values",
+    "overview": "Functions can return results using the return keyword. Returned values can be stored in variables or used in calculations.",
+    "example": {
+      "title": "Return Example",
+      "content": "def add(a,b):\n    return a+b\n\nresult = add(5,10)"
+    }
+  },
+  {
+    "id": "python-functions-lesson-5",
+    "topicId": "python-functions",
+    "lessonNumber": 5,
+    "title": "Default Arguments",
+    "overview": "Default arguments provide a default value to parameters when no value is passed during function calling.",
+    "example": {
+      "title": "Default Argument Example",
+      "content": "def greet(name='User'):\n    print(name)\n\ngreet()"
+    }
+  },
+  {
+    "id": "python-functions-lesson-6",
+    "topicId": "python-functions",
+    "lessonNumber": 6,
+    "title": "Lambda Functions",
+    "overview": "Lambda functions are small anonymous functions written in a single line. They are useful for simple operations.",
+    "example": {
+      "title": "Lambda Example",
+      "content": "add = lambda a,b: a+b\n\nprint(add(5,3))"
+    }
+  },
+  {
+    "id": "python-functions-lesson-7",
+    "topicId": "python-functions",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned how to create functions, pass parameters, return values, use default arguments, and create lambda functions in Python.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Functions reuse code.\n✔ def creates functions.\n✔ Parameters pass data.\n✔ return sends results.\n✔ Lambda creates small functions."
+    }
+  }
+]

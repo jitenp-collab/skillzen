@@ -1,0 +1,68 @@
+[
+  {
+    "id": "redux-best-practices-lesson-1",
+    "topicId": "redux-best-practices",
+    "lessonNumber": 1,
+    "title": "Organizing Redux Code",
+    "overview": "A proper Redux structure keeps application logic organized and makes the code easier to maintain.",
+    "example": {
+      "title": "Recommended Structure",
+      "content": "redux/\n ├── store/\n ├── slices/\n ├── selectors/\n └── hooks/"
+    }
+  },
+  {
+    "id": "redux-best-practices-lesson-2",
+    "topicId": "redux-best-practices",
+    "lessonNumber": 2,
+    "title": "Keep State Minimal",
+    "overview": "Only store necessary data in Redux. Derived or temporary values should usually be calculated inside components.",
+    "example": {
+      "title": "State Management",
+      "content": "Store:\nUser data\nAuthentication status\n\nComponent:\nInput values\nTemporary UI state"
+    }
+  },
+  {
+    "id": "redux-best-practices-lesson-3",
+    "topicId": "redux-best-practices",
+    "lessonNumber": 3,
+    "title": "Avoid Direct State Mutation",
+    "overview": "Redux state should not be modified directly. Always create updates through reducers or Redux Toolkit logic.",
+    "example": {
+      "title": "Immutable Update",
+      "content": "Wrong:\nstate.user.name='John'\n\nCorrect:\nreturn {...state,user:{name:'John'}}"
+    }
+  },
+  {
+    "id": "redux-best-practices-lesson-4",
+    "topicId": "redux-best-practices",
+    "lessonNumber": 4,
+    "title": "Use Selectors",
+    "overview": "Selectors provide a reusable way to access specific parts of Redux state and keep components cleaner.",
+    "example": {
+      "title": "Selector Example",
+      "content": "const selectUser = state => state.user;\n\nuseSelector(selectUser);"
+    }
+  },
+  {
+    "id": "redux-best-practices-lesson-5",
+    "topicId": "redux-best-practices",
+    "lessonNumber": 5,
+    "title": "Redux Performance Optimization",
+    "overview": "Proper state design, selectors, and avoiding unnecessary updates help improve Redux application performance.",
+    "example": {
+      "title": "Performance Tips",
+      "content": "✔ Split slices\n✔ Use memoized selectors\n✔ Avoid unnecessary re-renders"
+    }
+  },
+  {
+    "id": "redux-best-practices-lesson-6",
+    "topicId": "redux-best-practices",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned Redux best practices including code organization, state design, selectors, immutability, and performance optimization.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Organize Redux properly.\n✔ Keep state simple.\n✔ Use selectors.\n✔ Optimize performance."
+    }
+  }
+]

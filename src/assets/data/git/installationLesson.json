@@ -1,0 +1,68 @@
+[
+  {
+    "id": "git-installation-lesson-1",
+    "topicId": "git-installation",
+    "lessonNumber": 1,
+    "title": "Installing Git",
+    "overview": "Git needs to be installed on the system before using Git commands for version control.",
+    "example": {
+      "title": "Check Git Installation",
+      "content": "git --version"
+    }
+  },
+  {
+    "id": "git-installation-lesson-2",
+    "topicId": "git-installation",
+    "lessonNumber": 2,
+    "title": "Git Configuration",
+    "overview": "Git configuration stores user information used for identifying commits.",
+    "example": {
+      "title": "Configure Git User",
+      "content": "git config --global user.name \"Your Name\"\n\ngit config --global user.email \"email@example.com\""
+    }
+  },
+  {
+    "id": "git-installation-lesson-3",
+    "topicId": "git-installation",
+    "lessonNumber": 3,
+    "title": "Git Configuration Levels",
+    "overview": "Git provides different configuration levels to control settings globally or for specific repositories.",
+    "example": {
+      "title": "Configuration Levels",
+      "content": "System:\nAll users\n\nGlobal:\nCurrent user\n\nLocal:\nCurrent repository"
+    }
+  },
+  {
+    "id": "git-installation-lesson-4",
+    "topicId": "git-installation",
+    "lessonNumber": 4,
+    "title": "Creating First Git Repository",
+    "overview": "A Git repository is created inside a project folder to start tracking file changes.",
+    "example": {
+      "title": "Initialize Repository",
+      "content": "cd project-folder\n\ngit init"
+    }
+  },
+  {
+    "id": "git-installation-lesson-5",
+    "topicId": "git-installation",
+    "lessonNumber": 5,
+    "title": "Checking Repository Status",
+    "overview": "Git status shows the current state of files and changes inside a repository.",
+    "example": {
+      "title": "Status Command",
+      "content": "git status"
+    }
+  },
+  {
+    "id": "git-installation-lesson-6",
+    "topicId": "git-installation",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned how to install Git, configure user details, create repositories, and check repository status.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Install Git.\n✔ Configure user.\n✔ Initialize repository.\n✔ Check status."
+    }
+  }
+]

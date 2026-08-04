@@ -1,0 +1,68 @@
+[
+  {
+    "id": "ts-introduction-lesson-1",
+    "topicId": "ts-introduction",
+    "lessonNumber": 1,
+    "title": "What is TypeScript?",
+    "overview": "TypeScript is a programming language developed by Microsoft that is built on top of JavaScript. It adds static typing features to JavaScript, which helps developers catch errors early and write more reliable code.",
+    "example": {
+      "title": "TypeScript Example",
+      "content": "let username: string = 'Manthan';\n\nconsole.log(username);"
+    }
+  },
+  {
+    "id": "ts-introduction-lesson-2",
+    "topicId": "ts-introduction",
+    "lessonNumber": 2,
+    "title": "Why Do We Use TypeScript?",
+    "overview": "TypeScript improves JavaScript development by providing type checking, better code suggestions, and easier code maintenance, especially in large applications.",
+    "example": {
+      "title": "Benefits of TypeScript",
+      "content": "✔ Finds errors before running code\n✔ Better autocomplete\n✔ Improves code readability\n✔ Helps maintain large projects"
+    }
+  },
+  {
+    "id": "ts-introduction-lesson-3",
+    "topicId": "ts-introduction",
+    "lessonNumber": 3,
+    "title": "JavaScript vs TypeScript",
+    "overview": "JavaScript is dynamically typed, while TypeScript adds static typing. TypeScript code is converted into JavaScript before execution.",
+    "example": {
+      "title": "Comparison",
+      "content": "JavaScript:\nlet age = 25;\n\nTypeScript:\nlet age: number = 25;"
+    }
+  },
+  {
+    "id": "ts-introduction-lesson-4",
+    "topicId": "ts-introduction",
+    "lessonNumber": 4,
+    "title": "How TypeScript Works",
+    "overview": "TypeScript code cannot run directly in browsers or React Native. It is first compiled into JavaScript using the TypeScript compiler.",
+    "example": {
+      "title": "TypeScript Flow",
+      "content": "TypeScript Code\n        ↓\nTypeScript Compiler\n        ↓\nJavaScript Code\n        ↓\nApplication"
+    }
+  },
+  {
+    "id": "ts-introduction-lesson-5",
+    "topicId": "ts-introduction",
+    "lessonNumber": 5,
+    "title": "TypeScript in React Native",
+    "overview": "TypeScript is widely used in React Native applications to provide type safety for components, props, navigation, API responses, and application logic.",
+    "example": {
+      "title": "React Native Type Example",
+      "content": "type User = {\n name: string;\n age: number;\n};"
+    }
+  },
+  {
+    "id": "ts-introduction-lesson-6",
+    "topicId": "ts-introduction",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned what TypeScript is, why it is used, how it differs from JavaScript, how it works, and why it is useful in React Native development.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ TypeScript adds types to JavaScript.\n✔ It catches errors early.\n✔ TypeScript compiles into JavaScript.\n✔ It improves React Native development."
+    }
+  }
+]

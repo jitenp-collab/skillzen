@@ -1,0 +1,86 @@
+[
+  {
+    "id": "redux-introduction",
+    "title": "Introduction to Redux",
+    "icon": "https://hybridheroes.de/blog/content/images/2024/01/redux-toolkit.jpg",
+    "totalLessons": 6
+  },
+  {
+    "id": "redux-core-concepts",
+    "title": "Redux Core Concepts",
+    "icon": "https://hybridheroes.de/blog/content/images/2024/01/redux-toolkit.jpg",
+    "totalLessons": 7
+  },
+  {
+    "id": "redux-store",
+    "title": "Redux Store",
+    "icon": "https://hybridheroes.de/blog/content/images/2024/01/redux-toolkit.jpg",
+    "totalLessons": 6
+  },
+  {
+    "id": "redux-actions",
+    "title": "Actions & Action Creators",
+    "icon": "https://hybridheroes.de/blog/content/images/2024/01/redux-toolkit.jpg",
+    "totalLessons": 5
+  },
+  {
+    "id": "redux-reducers",
+    "title": "Reducers",
+    "icon": "https://hybridheroes.de/blog/content/images/2024/01/redux-toolkit.jpg",
+    "totalLessons": 6
+  },
+  {
+    "id": "redux-dispatch",
+    "title": "Dispatch & Data Flow",
+    "icon": "https://hybridheroes.de/blog/content/images/2024/01/redux-toolkit.jpg",
+    "totalLessons": 6
+  },
+  {
+    "id": "redux-react-integration",
+    "title": "Redux with React",
+    "icon": "https://hybridheroes.de/blog/content/images/2024/01/redux-toolkit.jpg",
+    "totalLessons": 7
+  },
+  {
+    "id": "redux-react-redux",
+    "title": "React Redux Library",
+    "icon": "https://hybridheroes.de/blog/content/images/2024/01/redux-toolkit.jpg",
+    "totalLessons": 7
+  },
+  {
+    "id": "redux-hooks",
+    "title": "useSelector & useDispatch",
+    "icon": "https://hybridheroes.de/blog/content/images/2024/01/redux-toolkit.jpg",
+    "totalLessons": 6
+  },
+  {
+    "id": "redux-toolkit",
+    "title": "Redux Toolkit",
+    "icon": "https://hybridheroes.de/blog/content/images/2024/01/redux-toolkit.jpg",
+    "totalLessons": 8
+  },
+  {
+    "id": "redux-slices",
+    "title": "Slices in Redux Toolkit",
+    "icon": "https://hybridheroes.de/blog/content/images/2024/01/redux-toolkit.jpg",
+    "totalLessons": 6
+  },
+  {
+    "id": "redux-async",
+    "title": "Async Operations",
+    "icon": "https://hybridheroes.de/blog/content/images/2024/01/redux-toolkit.jpg",
+    "totalLessons": 7
+  },
+  {
+    "id": "redux-middleware",
+    "title": "Redux Middleware",
+    "icon": "https://hybridheroes.de/blog/content/images/2024/01/redux-toolkit.jpg",
+    "totalLessons": 5
+  },
+  {
+    "id": "redux-best-practices",
+    "title": "Redux Best Practices",
+    "icon": "https://hybridheroes.de/blog/content/images/2024/01/redux-toolkit.jpg",
+    "totalLessons": 6
+  }
+]

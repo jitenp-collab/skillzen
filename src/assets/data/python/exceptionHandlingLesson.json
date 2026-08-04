@@ -1,0 +1,57 @@
+[
+  {
+    "id": "python-exception-handling-lesson-1",
+    "topicId": "python-exception-handling",
+    "lessonNumber": 1,
+    "title": "What is Exception Handling?",
+    "overview": "Exception handling is a way to manage runtime errors in a program without stopping its execution. Python uses try and except blocks to handle errors.",
+    "example": {
+      "title": "Exception Example",
+      "content": "try:\n    print(10 / 0)\nexcept:\n    print('Error occurred')"
+    }
+  },
+  {
+    "id": "python-exception-handling-lesson-2",
+    "topicId": "python-exception-handling",
+    "lessonNumber": 2,
+    "title": "try and except Block",
+    "overview": "The try block contains code that may cause an error, while the except block handles the error when it occurs.",
+    "example": {
+      "title": "try except Example",
+      "content": "try:\n    number = int(input())\nexcept:\n    print('Invalid input')"
+    }
+  },
+  {
+    "id": "python-exception-handling-lesson-3",
+    "topicId": "python-exception-handling",
+    "lessonNumber": 3,
+    "title": "Handling Specific Exceptions",
+    "overview": "Python allows handling specific types of errors instead of catching all exceptions. This makes error handling more accurate.",
+    "example": {
+      "title": "Specific Exception Example",
+      "content": "try:\n    result = 10 / 0\nexcept ZeroDivisionError:\n    print('Cannot divide by zero')"
+    }
+  },
+  {
+    "id": "python-exception-handling-lesson-4",
+    "topicId": "python-exception-handling",
+    "lessonNumber": 4,
+    "title": "finally and else Blocks",
+    "overview": "The finally block always executes, while the else block runs only when no exception occurs.",
+    "example": {
+      "title": "finally Example",
+      "content": "try:\n    print('Success')\nexcept:\n    print('Error')\nfinally:\n    print('Completed')"
+    }
+  },
+  {
+    "id": "python-exception-handling-lesson-5",
+    "topicId": "python-exception-handling",
+    "lessonNumber": 5,
+    "title": "Topic Summary",
+    "overview": "You learned how Python handles errors using try, except, else, and finally blocks to create safer applications.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ try contains risky code.\n✔ except handles errors.\n✔ else runs without errors.\n✔ finally always executes."
+    }
+  }
+]

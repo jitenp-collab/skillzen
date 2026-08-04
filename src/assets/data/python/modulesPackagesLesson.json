@@ -1,0 +1,68 @@
+[
+  {
+    "id": "python-modules-packages-lesson-1",
+    "topicId": "python-modules-packages",
+    "lessonNumber": 1,
+    "title": "What are Modules?",
+    "overview": "A module is a Python file that contains reusable code such as functions, variables, and classes. Modules help organize large applications into smaller files.",
+    "example": {
+      "title": "Creating a Module",
+      "content": "math_utils.py\n\n def add(a,b):\n    return a+b"
+    }
+  },
+  {
+    "id": "python-modules-packages-lesson-2",
+    "topicId": "python-modules-packages",
+    "lessonNumber": 2,
+    "title": "Importing Modules",
+    "overview": "Python allows importing modules to use their functions and variables in another file.",
+    "example": {
+      "title": "Import Example",
+      "content": "import math\n\nprint(math.sqrt(25))"
+    }
+  },
+  {
+    "id": "python-modules-packages-lesson-3",
+    "topicId": "python-modules-packages",
+    "lessonNumber": 3,
+    "title": "Different Import Methods",
+    "overview": "Python provides different ways to import modules including importing the complete module or specific functions from a module.",
+    "example": {
+      "title": "Import Methods",
+      "content": "import math\n\nfrom math import sqrt\n\nfrom math import *"
+    }
+  },
+  {
+    "id": "python-modules-packages-lesson-4",
+    "topicId": "python-modules-packages",
+    "lessonNumber": 4,
+    "title": "What are Packages?",
+    "overview": "A package is a collection of related Python modules organized inside a directory. Packages help manage larger projects.",
+    "example": {
+      "title": "Package Structure",
+      "content": "my_package/\n ├── module1.py\n └── module2.py"
+    }
+  },
+  {
+    "id": "python-modules-packages-lesson-5",
+    "topicId": "python-modules-packages",
+    "lessonNumber": 5,
+    "title": "Installing External Packages",
+    "overview": "Python uses pip to install third-party packages created by the developer community.",
+    "example": {
+      "title": "pip Example",
+      "content": "pip install requests\n\nimport requests"
+    }
+  },
+  {
+    "id": "python-modules-packages-lesson-6",
+    "topicId": "python-modules-packages",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned how Python modules and packages organize reusable code and how external packages can be installed using pip.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Modules contain reusable code.\n✔ Packages group modules.\n✔ import uses modules.\n✔ pip installs external packages."
+    }
+  }
+]

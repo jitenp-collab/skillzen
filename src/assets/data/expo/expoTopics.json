@@ -1,0 +1,86 @@
+[
+  {
+    "id": "expo-introduction",
+    "title": "Introduction to Expo",
+    "icon": "https://static.expo.dev/static/images/logo.png",
+    "totalLessons": 6
+  },
+  {
+    "id": "expo-setup",
+    "title": "Expo Setup and Installation",
+    "icon": "https://static.expo.dev/static/images/logo.png",
+    "totalLessons": 7
+  },
+  {
+    "id": "expo-project-structure",
+    "title": "Expo Project Structure",
+    "icon": "https://static.expo.dev/static/images/logo.png",
+    "totalLessons": 6
+  },
+  {
+    "id": "expo-routing",
+    "title": "Expo Router Navigation",
+    "icon": "https://static.expo.dev/static/images/logo.png",
+    "totalLessons": 8
+  },
+  {
+    "id": "expo-components",
+    "title": "Expo Components",
+    "icon": "https://static.expo.dev/static/images/logo.png",
+    "totalLessons": 7
+  },
+  {
+    "id": "expo-apis",
+    "title": "Expo APIs",
+    "icon": "https://static.expo.dev/static/images/logo.png",
+    "totalLessons": 10
+  },
+  {
+    "id": "expo-media",
+    "title": "Media Handling in Expo",
+    "icon": "https://static.expo.dev/static/images/logo.png",
+    "totalLessons": 7
+  },
+  {
+    "id": "expo-device-features",
+    "title": "Device Features",
+    "icon": "https://static.expo.dev/static/images/logo.png",
+    "totalLessons": 8
+  },
+  {
+    "id": "expo-notifications",
+    "title": "Push Notifications",
+    "icon": "https://static.expo.dev/static/images/logo.png",
+    "totalLessons": 7
+  },
+  {
+    "id": "expo-storage",
+    "title": "Storage Solutions",
+    "icon": "https://static.expo.dev/static/images/logo.png",
+    "totalLessons": 6
+  },
+  {
+    "id": "expo-build-deployment",
+    "title": "Build and Deployment",
+    "icon": "https://static.expo.dev/static/images/logo.png",
+    "totalLessons": 8
+  },
+  {
+    "id": "expo-eas",
+    "title": "EAS Services",
+    "icon": "https://static.expo.dev/static/images/logo.png",
+    "totalLessons": 7
+  },
+  {
+    "id": "expo-config",
+    "title": "Expo Configuration",
+    "icon": "https://static.expo.dev/static/images/logo.png",
+    "totalLessons": 6
+  },
+  {
+    "id": "expo-best-practices",
+    "title": "Expo Best Practices",
+    "icon": "https://static.expo.dev/static/images/logo.png",
+    "totalLessons": 6
+  }
+]

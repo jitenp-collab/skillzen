@@ -1,0 +1,90 @@
+[
+  {
+    "id": "python-variables-data-types-lesson-1",
+    "topicId": "python-variables-data-types",
+    "lessonNumber": 1,
+    "title": "What are Variables?",
+    "overview": "Variables are containers used to store data values in Python. Unlike many languages, Python does not require declaring the variable type explicitly.",
+    "example": {
+      "title": "Variable Example",
+      "content": "name = 'Manthan'\nage = 25\n\nprint(name)"
+    }
+  },
+  {
+    "id": "python-variables-data-types-lesson-2",
+    "topicId": "python-variables-data-types",
+    "lessonNumber": 2,
+    "title": "Creating Variables",
+    "overview": "Variables are created automatically when a value is assigned to them. The variable name should be meaningful and follow Python naming rules.",
+    "example": {
+      "title": "Creating Variables",
+      "content": "username = 'developer'\nscore = 100\nis_active = True"
+    }
+  },
+  {
+    "id": "python-variables-data-types-lesson-3",
+    "topicId": "python-variables-data-types",
+    "lessonNumber": 3,
+    "title": "String Data Type",
+    "overview": "Strings are used to store text values. They are written inside single or double quotes.",
+    "example": {
+      "title": "String Example",
+      "content": "language = 'Python'\nmessage = \"Hello World\""
+    }
+  },
+  {
+    "id": "python-variables-data-types-lesson-4",
+    "topicId": "python-variables-data-types",
+    "lessonNumber": 4,
+    "title": "Numeric Data Types",
+    "overview": "Python supports numeric types including integers, floating point numbers, and complex numbers.",
+    "example": {
+      "title": "Number Example",
+      "content": "age = 25\nprice = 99.99"
+    }
+  },
+  {
+    "id": "python-variables-data-types-lesson-5",
+    "topicId": "python-variables-data-types",
+    "lessonNumber": 5,
+    "title": "Boolean Data Type",
+    "overview": "Boolean values represent True or False. They are commonly used in conditions and decision-making.",
+    "example": {
+      "title": "Boolean Example",
+      "content": "is_logged_in = True\nhas_permission = False"
+    }
+  },
+  {
+    "id": "python-variables-data-types-lesson-6",
+    "topicId": "python-variables-data-types",
+    "lessonNumber": 6,
+    "title": "Checking Data Types",
+    "overview": "Python provides the type() function to check the data type of a variable.",
+    "example": {
+      "title": "type() Example",
+      "content": "name = 'Python'\n\nprint(type(name))\n\nOutput:\n<class 'str'>"
+    }
+  },
+  {
+    "id": "python-variables-data-types-lesson-7",
+    "topicId": "python-variables-data-types",
+    "lessonNumber": 7,
+    "title": "Type Conversion",
+    "overview": "Type conversion allows changing a value from one data type to another using built-in Python functions.",
+    "example": {
+      "title": "Type Conversion Example",
+      "content": "age = '25'\nnumber = int(age)\n\nprint(number)"
+    }
+  },
+  {
+    "id": "python-variables-data-types-lesson-8",
+    "topicId": "python-variables-data-types",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You learned how variables work in Python, different data types, checking types, and converting values between types.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Variables store data.\n✔ Python uses dynamic typing.\n✔ Common types are string, number, and boolean.\n✔ type() checks data type.\n✔ Type conversion changes values."
+    }
+  }
+]
