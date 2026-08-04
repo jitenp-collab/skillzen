@@ -79,7 +79,7 @@ const CategoryCard = memo(
     const iconChipStyle = useAnimatedStyle(() => ({
       transform: [{ scale: buttonPressed.value ? 1.12 : 1 }],
     }));
-   
+
     const shimmerStyle = useAnimatedStyle(() => {
       const translateX = interpolate(
         shimmerProgress.value,
@@ -114,7 +114,7 @@ const CategoryCard = memo(
         withTiming(0, { duration: 150 }),
       );
       onPress(item);
-      console.log(item.title);
+      console.log(item);
       
     };
 

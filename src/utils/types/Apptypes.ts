@@ -97,13 +97,6 @@ export type BenefitVisualType =
   | "community"
   | "focus";
 
-// export type BenefitCardProps = {
-//   title: string;
-//   description: string;
-//   icon: IconComponent;
-//   visualType: BenefitVisualType;
-// };
-
 export type User = {
   id: string;
   fullName: string;
@@ -113,6 +106,14 @@ export type User = {
   googlePhoto?: string;
   loginType: "email" | "google";
   userData: object[];
+};
+
+export type TopicListItem = {
+  id: string;
+  title: string;
+  image: string;
+  totalLessonsOfTopic: number;
+  progress: number;
 };
 
 export type GlobalState = {
@@ -126,6 +127,7 @@ export type GlobalState = {
   topics?: Topic[];
   selectedCategoryId?: string | null;
   view?: ContentView;
+  selectedCatogery?: TopicListItem[] | null
 };
 
 export type BenefitCardProps = {
@@ -166,7 +168,6 @@ export type VisualRendererMap = {
   focus: VisualRenderer;
 };
 
-// type BenefitItem = (typeof benefitsConfig)[number];
 
 export type LoopedBenefitItem = BenefitItem & { uid: string };
 
@@ -190,8 +191,8 @@ export type Category = {
   id: string;
   title: string;
   description?: string;
-  image: string; 
-    meta?: string;
+  image: string;
+  meta?: string;
 };
 
 export type ContentData = {
@@ -216,10 +217,9 @@ export type SearchBarProps = {
   placeholder?: string;
   containerStyle?: StyleProp<ViewStyle>;
   autoFocus?: boolean;
-  onFocusChange?: (focused: boolean) => void; // NEW
+  onFocusChange?: (focused: boolean) => void;
 };
 
 export type CategoriesCompProps = {
   searchQuery?: string;
 };
-

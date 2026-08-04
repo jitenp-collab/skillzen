@@ -270,12 +270,11 @@ export const SelectCaogery = createAsyncThunk(
         case "Git":
           return require("../assets/data/topics/gitTopics.json");
 
-        case "React Native CLI":
         default: return require("../assets/data/topics/reactNativeTopics.json");
       }
     } catch (error) {
       console.log("Error to fetch Category");
-      return require("../../assets/Translater/catogery.json");
+      return require("../assets/data/topics/reactNativeTopics.json");
     }
   }
 );

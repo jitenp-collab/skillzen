@@ -1,14 +1,16 @@
-import { StyleSheet, Text, View } from "react-native";
-import React from "react";
+import { StyleSheet, View } from "react-native";
+import TopickeComp from "@/components/common/TopickeComp";
 
 const topics = () => {
   return (
-    <View>
-      <Text>topics</Text>
+    <View style={styles.container}>
+      <TopickeComp />
     </View>
   );
 };
 
 export default topics;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: { flex: 1 },
+});
