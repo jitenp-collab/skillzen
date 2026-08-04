@@ -1,0 +1,90 @@
+[
+  {
+    "id": "rn-cli-environment-setup-lesson-1",
+    "topicId": "rn-cli-environment-setup",
+    "lessonNumber": 1,
+    "title": "Environment Setup Overview",
+    "overview": "Before building React Native applications, you need to install and configure the required development tools. A proper environment setup ensures that you can create, run, debug, and build Android and iOS applications without issues.",
+    "example": {
+      "title": "Required Tools",
+      "content": "Node.js\nJava JDK\nAndroid Studio\nAndroid SDK\nReact Native CLI\nCode Editor (VS Code)"
+    }
+  },
+  {
+    "id": "rn-cli-environment-setup-lesson-2",
+    "topicId": "rn-cli-environment-setup",
+    "lessonNumber": 2,
+    "title": "Installing Node.js",
+    "overview": "Node.js is required to run JavaScript outside the browser and manage project dependencies. It also installs npm, which is used to install React Native packages and libraries.",
+    "example": {
+      "title": "Verify Installation",
+      "content": "node -v\nnpm -v"
+    }
+  },
+  {
+    "id": "rn-cli-environment-setup-lesson-3",
+    "topicId": "rn-cli-environment-setup",
+    "lessonNumber": 3,
+    "title": "Installing Java JDK",
+    "overview": "Java Development Kit (JDK) is required to build Android applications because Gradle uses Java during the build process. Without JDK, Android projects cannot be compiled.",
+    "example": {
+      "title": "Verify Java Installation",
+      "content": "java -version\njavac -version"
+    }
+  },
+  {
+    "id": "rn-cli-environment-setup-lesson-4",
+    "topicId": "rn-cli-environment-setup",
+    "lessonNumber": 4,
+    "title": "Installing Android Studio",
+    "overview": "Android Studio is the official IDE for Android development. It provides the Android SDK, SDK Manager, Emulator, and build tools required for developing and testing React Native Android applications.",
+    "example": {
+      "title": "Components to Install",
+      "content": "Android SDK\nAndroid SDK Platform\nAndroid SDK Build Tools\nAndroid Emulator\nAndroid Virtual Device (AVD)"
+    }
+  },
+  {
+    "id": "rn-cli-environment-setup-lesson-5",
+    "topicId": "rn-cli-environment-setup",
+    "lessonNumber": 5,
+    "title": "Setting Environment Variables",
+    "overview": "Environment variables allow your operating system to locate Java, Android SDK, and platform tools from any terminal window. Correct configuration is necessary for React Native CLI to build Android applications successfully.",
+    "example": {
+      "title": "Common Environment Variables",
+      "content": "JAVA_HOME\nANDROID_HOME\nPATH"
+    }
+  },
+  {
+    "id": "rn-cli-environment-setup-lesson-6",
+    "topicId": "rn-cli-environment-setup",
+    "lessonNumber": 6,
+    "title": "Creating Your First React Native CLI Project",
+    "overview": "After installing all required tools, you can create your first React Native CLI project. This command generates the Android and iOS project structure along with all necessary configuration files.",
+    "example": {
+      "title": "Create Project",
+      "content": "npx @react-native-community/cli init MyFirstApp"
+    }
+  },
+  {
+    "id": "rn-cli-environment-setup-lesson-7",
+    "topicId": "rn-cli-environment-setup",
+    "lessonNumber": 7,
+    "title": "Running Your First Application",
+    "overview": "Once your project is created, start Metro Bundler and launch the application on an Android emulator or a connected physical device. Make sure the emulator is running or USB debugging is enabled on your device.",
+    "example": {
+      "title": "Run Commands",
+      "content": "npx react-native start\n\nnpx react-native run-android"
+    }
+  },
+  {
+    "id": "rn-cli-environment-setup-lesson-8",
+    "topicId": "rn-cli-environment-setup",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You have completed the environment setup for React Native CLI. You learned about the tools required, how to install Node.js, Java JDK, Android Studio, configure environment variables, create your first project, and run it successfully.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Install Node.js\n✔ Install Java JDK\n✔ Install Android Studio\n✔ Configure JAVA_HOME and ANDROID_HOME\n✔ Create a project\n✔ Run the application"
+    }
+  }
+]

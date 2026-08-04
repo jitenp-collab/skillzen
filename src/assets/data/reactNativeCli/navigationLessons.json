@@ -1,0 +1,101 @@
+[
+  {
+    "id": "rn-cli-navigation-lesson-1",
+    "topicId": "rn-cli-navigation",
+    "lessonNumber": 1,
+    "title": "What is Navigation?",
+    "overview": "Navigation allows users to move between different screens in a React Native application. It manages screen transitions, routes, and navigation history.",
+    "example": {
+      "title": "Navigation Example",
+      "content": "Common screens:\n• Login Screen\n• Home Screen\n• Profile Screen\n• Settings Screen"
+    }
+  },
+  {
+    "id": "rn-cli-navigation-lesson-2",
+    "topicId": "rn-cli-navigation",
+    "lessonNumber": 2,
+    "title": "React Navigation Library",
+    "overview": "React Navigation is the most commonly used navigation library in React Native. It provides tools to create stack, tab, and drawer navigation systems.",
+    "example": {
+      "title": "Installation",
+      "content": "npm install @react-navigation/native\n\nReact Navigation provides:\n• Stack Navigator\n• Tab Navigator\n• Drawer Navigator"
+    }
+  },
+  {
+    "id": "rn-cli-navigation-lesson-3",
+    "topicId": "rn-cli-navigation",
+    "lessonNumber": 3,
+    "title": "Navigation Container",
+    "overview": "NavigationContainer manages the navigation state of the application. It should wrap the complete navigation structure and is usually added in the App component.",
+    "example": {
+      "title": "NavigationContainer Example",
+      "content": "import { NavigationContainer } from '@react-navigation/native';\n\n<NavigationContainer>\n  <AppNavigator />\n</NavigationContainer>"
+    }
+  },
+  {
+    "id": "rn-cli-navigation-lesson-4",
+    "topicId": "rn-cli-navigation",
+    "lessonNumber": 4,
+    "title": "Stack Navigation",
+    "overview": "Stack Navigation allows users to move between screens in a stack format. New screens are added on top of previous screens and users can go back to the previous screen.",
+    "example": {
+      "title": "Stack Example",
+      "content": "Login\n  ↓\nHome\n  ↓\nProfile\n\nUser can navigate back through the stack."
+    }
+  },
+  {
+    "id": "rn-cli-navigation-lesson-5",
+    "topicId": "rn-cli-navigation",
+    "lessonNumber": 5,
+    "title": "Navigating Between Screens",
+    "overview": "The navigation object provides methods to move between screens. The navigate method is used to open another screen.",
+    "example": {
+      "title": "Navigate Example",
+      "content": "navigation.navigate('Profile');"
+    }
+  },
+  {
+    "id": "rn-cli-navigation-lesson-6",
+    "topicId": "rn-cli-navigation",
+    "lessonNumber": 6,
+    "title": "Passing Parameters Between Screens",
+    "overview": "Navigation allows passing data from one screen to another using parameters. This is useful when a screen needs information from the previous screen.",
+    "example": {
+      "title": "Passing Params",
+      "content": "navigation.navigate('Profile', {\n userId: 101\n});"
+    }
+  },
+  {
+    "id": "rn-cli-navigation-lesson-7",
+    "topicId": "rn-cli-navigation",
+    "lessonNumber": 7,
+    "title": "Tab Navigation",
+    "overview": "Tab navigation is used when an application has multiple main sections. Users can switch between screens using tabs at the bottom or top of the application.",
+    "example": {
+      "title": "Tab Example",
+      "content": "Common Tabs:\n• Home\n• Search\n• Profile\n• Settings"
+    }
+  },
+  {
+    "id": "rn-cli-navigation-lesson-8",
+    "topicId": "rn-cli-navigation",
+    "lessonNumber": 8,
+    "title": "Drawer Navigation",
+    "overview": "Drawer navigation provides a side menu that allows users to access different sections of an application. It is commonly used for applications with many screens.",
+    "example": {
+      "title": "Drawer Example",
+      "content": "Drawer Menu:\n• Dashboard\n• Profile\n• Notifications\n• Logout"
+    }
+  },
+  {
+    "id": "rn-cli-navigation-lesson-9",
+    "topicId": "rn-cli-navigation",
+    "lessonNumber": 9,
+    "title": "Topic Summary",
+    "overview": "You learned how navigation works in React Native, how to use React Navigation, create stack, tab, and drawer navigation, move between screens, and pass data between screens.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Navigation manages screen movement.\n✔ NavigationContainer manages navigation state.\n✔ Stack handles screen history.\n✔ Tabs switch main sections.\n✔ Params pass data between screens."
+    }
+  }
+]

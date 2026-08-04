@@ -1,121 +1,122 @@
 [
   {
-    "id": "typescript-introduction",
+    "id": "ts-introduction",
     "title": "Introduction to TypeScript",
-    "image": "https://img.icons8.com/color/512/typescript.png",
-    "totalLessonsOfTopic": 5,
-    "progress": 0
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 5
   },
   {
-    "id": "typescript-setup",
-    "title": "TypeScript Setup and Configuration",
-    "image": "https://img.icons8.com/color/512/typescript.png",
-    "totalLessonsOfTopic": 6,
-    "progress": 0
+    "id": "ts-installation",
+    "title": "Installing TypeScript",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 4
   },
   {
-    "id": "typescript-basic-types",
+    "id": "ts-basic-types",
     "title": "Basic Types",
-    "image": "https://img.icons8.com/color/512/typescript.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 7
   },
   {
-    "id": "typescript-arrays-tuples",
-    "title": "Arrays and Tuples",
-    "image": "https://img.icons8.com/color/512/typescript.png",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
+    "id": "ts-type-inference",
+    "title": "Type Inference",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 4
   },
   {
-    "id": "typescript-objects",
-    "title": "Objects and Object Types",
-    "image": "https://img.icons8.com/color/512/typescript.png",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
+    "id": "ts-arrays-tuples",
+    "title": "Arrays & Tuples",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 6
   },
   {
-    "id": "typescript-functions",
-    "title": "Functions and Function Types",
-    "image": "https://img.icons8.com/color/512/typescript.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "id": "ts-enums",
+    "title": "Enums",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 4
   },
   {
-    "id": "typescript-interface-type",
-    "title": "Interfaces and Type Aliases",
-    "image": "https://img.icons8.com/color/512/typescript.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "id": "ts-objects",
+    "title": "Objects",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 6
   },
   {
-    "id": "typescript-union-intersection",
-    "title": "Union and Intersection Types",
-    "image": "https://img.icons8.com/color/512/typescript.png",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
+    "id": "ts-type-aliases",
+    "title": "Type Aliases",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 5
   },
   {
-    "id": "typescript-narrowing",
-    "title": "Type Narrowing and Type Guards",
-    "image": "https://img.icons8.com/color/512/typescript.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "id": "ts-interfaces",
+    "title": "Interfaces",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 7
   },
   {
-    "id": "typescript-special-types",
-    "title": "Any, Unknown, Never and Void",
-    "image": "https://img.icons8.com/color/512/typescript.png",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
+    "id": "ts-functions",
+    "title": "Functions",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 6
   },
   {
-    "id": "typescript-generics",
+    "id": "ts-generics",
     "title": "Generics",
-    "image": "https://img.icons8.com/color/512/typescript.png",
-    "totalLessonsOfTopic": 9,
-    "progress": 0
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 7
   },
   {
-    "id": "typescript-classes",
-    "title": "Classes and OOP",
-    "image": "https://img.icons8.com/color/512/typescript.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "id": "ts-union-types",
+    "title": "Union Types",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 5
   },
   {
-    "id": "typescript-keyof-typeof",
-    "title": "Keyof and Typeof Operators",
-    "image": "https://img.icons8.com/color/512/typescript.png",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
+    "id": "ts-intersection-types",
+    "title": "Intersection Types",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 5
   },
   {
-    "id": "typescript-utility-types",
+    "id": "ts-type-assertions",
+    "title": "Type Assertions",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 4
+  },
+  {
+    "id": "ts-utility-types",
     "title": "Utility Types",
-    "image": "https://img.icons8.com/color/512/typescript.png",
-    "totalLessonsOfTopic": 10,
-    "progress": 0
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 6
   },
   {
-    "id": "typescript-mapped-types",
-    "title": "Mapped and Conditional Types",
-    "image": "https://img.icons8.com/color/512/typescript.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "id": "ts-classes",
+    "title": "Classes",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 7
   },
   {
-    "id": "typescript-modules",
-    "title": "Modules and Namespaces",
-    "image": "https://img.icons8.com/color/512/typescript.png",
-    "totalLessonsOfTopic": 6,
-    "progress": 0
+    "id": "ts-modules",
+    "title": "Modules",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 5
   },
   {
-    "id": "typescript-react-native",
+    "id": "ts-declaration-files",
+    "title": "Declaration Files",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 4
+  },
+  {
+    "id": "ts-react-native",
     "title": "TypeScript with React Native",
-    "image": "https://img.icons8.com/color/512/typescript.png",
-    "totalLessonsOfTopic": 12,
-    "progress": 0
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 8
+  },
+  {
+    "id": "ts-best-practices",
+    "title": "TypeScript Best Practices",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 5
   }
 ]

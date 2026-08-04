@@ -1,0 +1,57 @@
+[
+  {
+    "id": "rn-cli-introduction-lesson-1",
+    "topicId": "rn-cli-introduction",
+    "lessonNumber": 1,
+    "title": "What is React Native?",
+    "overview": "React Native is an open-source framework developed by Meta that allows developers to build native Android and iOS applications using JavaScript or TypeScript. Instead of writing separate code for each platform, developers can use a single codebase while React Native renders real native UI components, providing users with a smooth and native-like experience.",
+    "example": {
+      "title": "Your First React Native Component",
+      "content": "import { View, Text } from 'react-native';\n\nexport default function App() {\n  return (\n    <View>\n      <Text>Hello React Native!</Text>\n    </View>\n  );\n}"
+    }
+  },
+  {
+    "id": "rn-cli-introduction-lesson-2",
+    "topicId": "rn-cli-introduction",
+    "lessonNumber": 2,
+    "title": "History of React Native",
+    "overview": "React Native was introduced by Meta in 2015 after engineers looked for a way to build mobile applications using the same principles as React. Since then, it has become one of the most popular frameworks for cross-platform mobile development and is trusted by companies worldwide.",
+    "example": {
+      "title": "Timeline",
+      "content": "React Native was announced by Meta in 2015. Since then, thousands of companies and developers have adopted it to build Android and iOS applications from a single codebase."
+    }
+  },
+  {
+    "id": "rn-cli-introduction-lesson-3",
+    "topicId": "rn-cli-introduction",
+    "lessonNumber": 3,
+    "title": "Why Should You Learn React Native?",
+    "overview": "React Native is widely used in the mobile development industry because it allows developers to build applications for both Android and iOS using one codebase. Learning React Native opens opportunities to create real-world applications while reducing development time and maintenance effort.",
+    "example": {
+      "title": "Real-World Example",
+      "content": "Imagine a startup wants both an Android app and an iPhone app. Instead of hiring two separate development teams, they can build most of the application using React Native, saving both time and money."
+    }
+  },
+  {
+    "id": "rn-cli-introduction-lesson-4",
+    "topicId": "rn-cli-introduction",
+    "lessonNumber": 4,
+    "title": "Advantages of React Native",
+    "overview": "React Native offers many advantages including code reusability, faster development with Fast Refresh, access to native device features, excellent community support, and the ability to build high-performance mobile applications using familiar JavaScript and TypeScript syntax.",
+    "example": {
+      "title": "Key Benefits",
+      "content": "• Single codebase for Android and iOS\n• Faster development\n• Native user interface\n• Large community support\n• Reusable components\n• Easy maintenance"
+    }
+  },
+  {
+    "id": "rn-cli-introduction-lesson-5",
+    "topicId": "rn-cli-introduction",
+    "lessonNumber": 5,
+    "title": "Topic Summary",
+    "overview": "Congratulations! You have completed the Introduction to React Native topic. You now know what React Native is, its history, why developers use it, and its major advantages. These concepts provide the foundation for understanding how React Native works internally in the next topic.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ React Native was developed by Meta.\n✔ It uses JavaScript or TypeScript.\n✔ One codebase can build Android and iOS apps.\n✔ It renders native UI components.\n✔ It is widely used in the industry."
+    }
+  }
+]

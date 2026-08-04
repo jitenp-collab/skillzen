@@ -1,0 +1,90 @@
+[
+  {
+    "id": "rn-cli-flexbox-lesson-1",
+    "topicId": "rn-cli-flexbox",
+    "lessonNumber": 1,
+    "title": "What is Flexbox?",
+    "overview": "Flexbox is a layout system used in React Native to arrange components inside a container. It helps create flexible and responsive layouts by controlling the size, direction, and alignment of elements.",
+    "example": {
+      "title": "Flexbox Basic Example",
+      "content": "<View style={{flex: 1}}>\n  <Text>Hello Flexbox</Text>\n</View>"
+    }
+  },
+  {
+    "id": "rn-cli-flexbox-lesson-2",
+    "topicId": "rn-cli-flexbox",
+    "lessonNumber": 2,
+    "title": "Understanding flex Property",
+    "overview": "The flex property defines how much available space a component should take inside its parent container. It allows components to grow and adjust according to screen size.",
+    "example": {
+      "title": "Flex Example",
+      "content": "const styles = StyleSheet.create({\n container: {\n  flex: 1\n }\n});"
+    }
+  },
+  {
+    "id": "rn-cli-flexbox-lesson-3",
+    "topicId": "rn-cli-flexbox",
+    "lessonNumber": 3,
+    "title": "flexDirection",
+    "overview": "flexDirection determines the direction in which child components are arranged. React Native uses column as the default direction, placing items vertically.",
+    "example": {
+      "title": "flexDirection Values",
+      "content": "flexDirection: 'column'\n\nflexDirection: 'row'"
+    }
+  },
+  {
+    "id": "rn-cli-flexbox-lesson-4",
+    "topicId": "rn-cli-flexbox",
+    "lessonNumber": 4,
+    "title": "justifyContent",
+    "overview": "justifyContent controls the alignment of children along the main axis. It is used to distribute space and position components inside a container.",
+    "example": {
+      "title": "justifyContent Example",
+      "content": "justifyContent: 'center'\njustifyContent: 'space-between'\njustifyContent: 'space-around'"
+    }
+  },
+  {
+    "id": "rn-cli-flexbox-lesson-5",
+    "topicId": "rn-cli-flexbox",
+    "lessonNumber": 5,
+    "title": "alignItems",
+    "overview": "alignItems controls the alignment of children along the opposite axis. It is commonly used to center or position components horizontally.",
+    "example": {
+      "title": "alignItems Example",
+      "content": "const styles = StyleSheet.create({\n container: {\n  alignItems: 'center'\n }\n});"
+    }
+  },
+  {
+    "id": "rn-cli-flexbox-lesson-6",
+    "topicId": "rn-cli-flexbox",
+    "lessonNumber": 6,
+    "title": "flexWrap and Multiple Rows",
+    "overview": "flexWrap allows child components to move into a new row or column when there is not enough available space. It is useful for layouts containing multiple items.",
+    "example": {
+      "title": "flexWrap Example",
+      "content": "const styles = StyleSheet.create({\n container: {\n  flexWrap: 'wrap'\n }\n});"
+    }
+  },
+  {
+    "id": "rn-cli-flexbox-lesson-7",
+    "topicId": "rn-cli-flexbox",
+    "lessonNumber": 7,
+    "title": "Gap, Margin and Padding with Flexbox",
+    "overview": "Spacing properties like gap, margin, and padding help create proper distance between components while using Flexbox layouts.",
+    "example": {
+      "title": "Spacing Example",
+      "content": "const styles = StyleSheet.create({\n container: {\n  gap: 10,\n  padding: 20\n }\n});"
+    }
+  },
+  {
+    "id": "rn-cli-flexbox-lesson-8",
+    "topicId": "rn-cli-flexbox",
+    "lessonNumber": 8,
+    "title": "Creating Responsive Layouts Using Flexbox",
+    "overview": "Flexbox helps create layouts that work across different screen sizes and devices. Using flex values, alignment properties, and flexible dimensions makes applications responsive.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ flex controls available space.\n✔ flexDirection controls layout direction.\n✔ justifyContent manages main axis alignment.\n✔ alignItems manages cross axis alignment.\n✔ Flexbox creates responsive UI."
+    }
+  }
+]

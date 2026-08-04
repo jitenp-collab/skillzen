@@ -1,0 +1,68 @@
+[
+  {
+    "id": "rn-cli-best-practices-lesson-1",
+    "topicId": "rn-cli-best-practices",
+    "lessonNumber": 1,
+    "title": "What are React Native Best Practices?",
+    "overview": "Best practices are recommended approaches that help developers write clean, maintainable, scalable, and high-performance React Native applications.",
+    "example": {
+      "title": "Why Best Practices Matter",
+      "content": "Benefits:\n• Better code organization\n• Easier debugging\n• Improved performance\n• Maintainable applications"
+    }
+  },
+  {
+    "id": "rn-cli-best-practices-lesson-2",
+    "topicId": "rn-cli-best-practices",
+    "lessonNumber": 2,
+    "title": "Project Structure and Organization",
+    "overview": "A proper project structure keeps files organized and makes applications easier to maintain as they grow. Developers should separate components, screens, services, assets, and utilities.",
+    "example": {
+      "title": "Recommended Structure",
+      "content": "src/\n ├── components\n ├── screens\n ├── navigation\n ├── services\n ├── utils\n └── assets"
+    }
+  },
+  {
+    "id": "rn-cli-best-practices-lesson-3",
+    "topicId": "rn-cli-best-practices",
+    "lessonNumber": 3,
+    "title": "Reusable Components",
+    "overview": "Reusable components reduce code duplication and improve consistency across the application. Components should be designed to handle different data using props.",
+    "example": {
+      "title": "Reusable Component Example",
+      "content": "Instead of creating multiple buttons:\n\nCreate one Button component and pass:\n• title\n• color\n• onPress"
+    }
+  },
+  {
+    "id": "rn-cli-best-practices-lesson-4",
+    "topicId": "rn-cli-best-practices",
+    "lessonNumber": 4,
+    "title": "Performance Optimization",
+    "overview": "Optimizing React Native applications improves speed, reduces unnecessary renders, and provides a better user experience.",
+    "example": {
+      "title": "Optimization Techniques",
+      "content": "✔ Use FlatList for large lists.\n✔ Avoid unnecessary re-renders.\n✔ Optimize images.\n✔ Use memoization when required."
+    }
+  },
+  {
+    "id": "rn-cli-best-practices-lesson-5",
+    "topicId": "rn-cli-best-practices",
+    "lessonNumber": 5,
+    "title": "Code Quality and Maintenance",
+    "overview": "Writing clean and consistent code makes applications easier to understand and maintain. Developers should follow naming conventions, remove unused code, and keep logic separated.",
+    "example": {
+      "title": "Code Quality Rules",
+      "content": "✔ Use meaningful names.\n✔ Keep components small.\n✔ Separate business logic.\n✔ Maintain consistent formatting."
+    }
+  },
+  {
+    "id": "rn-cli-best-practices-lesson-6",
+    "topicId": "rn-cli-best-practices",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned important React Native best practices including project organization, reusable components, performance optimization, and writing clean maintainable code.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Organize project properly.\n✔ Create reusable components.\n✔ Optimize application performance.\n✔ Write clean and maintainable code.\n✔ Follow consistent coding practices."
+    }
+  }
+]

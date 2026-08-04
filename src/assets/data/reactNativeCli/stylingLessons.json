@@ -1,0 +1,90 @@
+[
+  {
+    "id": "rn-cli-styling-lesson-1",
+    "topicId": "rn-cli-styling",
+    "lessonNumber": 1,
+    "title": "What is Styling in React Native?",
+    "overview": "Styling in React Native is used to control the appearance of components. It helps developers define colors, sizes, spacing, layouts, and visual properties to create user interfaces.",
+    "example": {
+      "title": "Basic Styling",
+      "content": "const styles = StyleSheet.create({\n  text: {\n    color: 'blue',\n    fontSize: 20\n  }\n});"
+    }
+  },
+  {
+    "id": "rn-cli-styling-lesson-2",
+    "topicId": "rn-cli-styling",
+    "lessonNumber": 2,
+    "title": "Using Style Prop",
+    "overview": "The style prop is used to apply styles to React Native components. Styles can be written inline or by using a StyleSheet object.",
+    "example": {
+      "title": "Style Prop Example",
+      "content": "<Text style={{fontSize: 18, color: 'red'}}>\n Hello React Native\n</Text>"
+    }
+  },
+  {
+    "id": "rn-cli-styling-lesson-3",
+    "topicId": "rn-cli-styling",
+    "lessonNumber": 3,
+    "title": "StyleSheet API",
+    "overview": "StyleSheet API allows developers to create reusable styles outside the component. It improves code organization and makes styling easier to manage.",
+    "example": {
+      "title": "StyleSheet Example",
+      "content": "const styles = StyleSheet.create({\n container: {\n  flex: 1\n }\n});"
+    }
+  },
+  {
+    "id": "rn-cli-styling-lesson-4",
+    "topicId": "rn-cli-styling",
+    "lessonNumber": 4,
+    "title": "Colors and Background Styling",
+    "overview": "React Native allows customization of text and component colors using properties like color and backgroundColor.",
+    "example": {
+      "title": "Color Example",
+      "content": "backgroundColor: 'black'\ncolor: 'white'"
+    }
+  },
+  {
+    "id": "rn-cli-styling-lesson-5",
+    "topicId": "rn-cli-styling",
+    "lessonNumber": 5,
+    "title": "Dimensions and Sizing",
+    "overview": "Width and height properties are used to control component sizes. React Native supports fixed values as well as flexible layouts.",
+    "example": {
+      "title": "Size Example",
+      "content": "width: 200,\nheight: 100"
+    }
+  },
+  {
+    "id": "rn-cli-styling-lesson-6",
+    "topicId": "rn-cli-styling",
+    "lessonNumber": 6,
+    "title": "Spacing: Margin and Padding",
+    "overview": "Margin creates space outside a component while padding creates space inside a component. These properties help create clean layouts.",
+    "example": {
+      "title": "Spacing Example",
+      "content": "margin: 10,\npadding: 20"
+    }
+  },
+  {
+    "id": "rn-cli-styling-lesson-7",
+    "topicId": "rn-cli-styling",
+    "lessonNumber": 7,
+    "title": "Borders and Shadows",
+    "overview": "Borders and shadows improve the visual appearance of components by adding separation, rounded corners, and depth effects.",
+    "example": {
+      "title": "Border Example",
+      "content": "borderWidth: 1,\nborderRadius: 10"
+    }
+  },
+  {
+    "id": "rn-cli-styling-lesson-8",
+    "topicId": "rn-cli-styling",
+    "lessonNumber": 8,
+    "title": "Styling Best Practices",
+    "overview": "Good styling practices include using reusable styles, keeping styles organized, avoiding repeated code, and creating responsive layouts.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Use StyleSheet for reusable styles.\n✔ Keep styles separate from UI code.\n✔ Use Flexbox for layouts.\n✔ Create responsive designs."
+    }
+  }
+]

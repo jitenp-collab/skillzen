@@ -1,0 +1,79 @@
+[
+  {
+    "id": "rn-cli-async-storage-lesson-1",
+    "topicId": "rn-cli-async-storage",
+    "lessonNumber": 1,
+    "title": "What is Async Storage?",
+    "overview": "Async Storage is a local storage solution in React Native that allows applications to store small amounts of data on the user's device. The stored data remains available even after closing and reopening the application.",
+    "example": {
+      "title": "Common Uses",
+      "content": "Async Storage is used for:\n• Saving user preferences\n• Storing login information\n• Keeping app settings\n• Saving temporary data"
+    }
+  },
+  {
+    "id": "rn-cli-async-storage-lesson-2",
+    "topicId": "rn-cli-async-storage",
+    "lessonNumber": 2,
+    "title": "Installing Async Storage",
+    "overview": "Async Storage is provided as a separate community package in React Native. It needs to be installed before using it inside an application.",
+    "example": {
+      "title": "Installation",
+      "content": "npm install @react-native-async-storage/async-storage\n\nor\n\nyarn add @react-native-async-storage/async-storage"
+    }
+  },
+  {
+    "id": "rn-cli-async-storage-lesson-3",
+    "topicId": "rn-cli-async-storage",
+    "lessonNumber": 3,
+    "title": "Storing Data with Async Storage",
+    "overview": "The setItem method is used to store data in Async Storage. Data is stored in key-value format and values must be saved as strings.",
+    "example": {
+      "title": "setItem Example",
+      "content": "import AsyncStorage from '@react-native-async-storage/async-storage';\n\nawait AsyncStorage.setItem('username', 'Manthan');"
+    }
+  },
+  {
+    "id": "rn-cli-async-storage-lesson-4",
+    "topicId": "rn-cli-async-storage",
+    "lessonNumber": 4,
+    "title": "Getting Data from Async Storage",
+    "overview": "The getItem method is used to retrieve stored data from Async Storage. It returns the stored value using the provided key.",
+    "example": {
+      "title": "getItem Example",
+      "content": "const username = await AsyncStorage.getItem('username');\n\nconsole.log(username);"
+    }
+  },
+  {
+    "id": "rn-cli-async-storage-lesson-5",
+    "topicId": "rn-cli-async-storage",
+    "lessonNumber": 5,
+    "title": "Updating and Removing Data",
+    "overview": "Async Storage allows updating existing values by using setItem again with the same key. Data can also be removed using the removeItem method.",
+    "example": {
+      "title": "Update and Remove",
+      "content": "Update:\nawait AsyncStorage.setItem('name', 'New Name');\n\nRemove:\nawait AsyncStorage.removeItem('name');"
+    }
+  },
+  {
+    "id": "rn-cli-async-storage-lesson-6",
+    "topicId": "rn-cli-async-storage",
+    "lessonNumber": 6,
+    "title": "Storing Objects and Arrays",
+    "overview": "Async Storage only stores strings, so objects and arrays need to be converted into JSON format before saving and converted back after retrieving.",
+    "example": {
+      "title": "JSON Storage Example",
+      "content": "Save:\nJSON.stringify(userData)\n\nRetrieve:\nJSON.parse(data)"
+    }
+  },
+  {
+    "id": "rn-cli-async-storage-lesson-7",
+    "topicId": "rn-cli-async-storage",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned how Async Storage works, how to install it, store and retrieve data, update and remove values, and handle objects and arrays using JSON conversion.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Async Storage stores local data.\n✔ Data is stored as key-value pairs.\n✔ setItem saves data.\n✔ getItem retrieves data.\n✔ JSON.stringify and JSON.parse handle objects."
+    }
+  }
+]

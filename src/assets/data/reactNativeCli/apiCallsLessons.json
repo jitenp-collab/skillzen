@@ -1,0 +1,90 @@
+[
+  {
+    "id": "rn-cli-api-calls-lesson-1",
+    "topicId": "rn-cli-api-calls",
+    "lessonNumber": 1,
+    "title": "What are API Calls?",
+    "overview": "API calls allow a React Native application to communicate with external servers and exchange data. They are commonly used to fetch, send, update, and delete information from a backend.",
+    "example": {
+      "title": "Real World Examples",
+      "content": "API Usage:\n• Login authentication\n• Fetching user profiles\n• Loading product lists\n• Sending form data"
+    }
+  },
+  {
+    "id": "rn-cli-api-calls-lesson-2",
+    "topicId": "rn-cli-api-calls",
+    "lessonNumber": 2,
+    "title": "HTTP Methods",
+    "overview": "HTTP methods define the type of operation performed between the application and the server. Different methods are used for different data operations.",
+    "example": {
+      "title": "Common HTTP Methods",
+      "content": "GET - Fetch data\nPOST - Create new data\nPUT - Update existing data\nDELETE - Remove data"
+    }
+  },
+  {
+    "id": "rn-cli-api-calls-lesson-3",
+    "topicId": "rn-cli-api-calls",
+    "lessonNumber": 3,
+    "title": "Using Fetch API",
+    "overview": "Fetch API is a built-in JavaScript method used to make network requests. It allows React Native applications to communicate with APIs and receive responses.",
+    "example": {
+      "title": "Fetch Example",
+      "content": "fetch('https://api.example.com/users')\n.then(response => response.json())\n.then(data => console.log(data));"
+    }
+  },
+  {
+    "id": "rn-cli-api-calls-lesson-4",
+    "topicId": "rn-cli-api-calls",
+    "lessonNumber": 4,
+    "title": "Using Axios for API Requests",
+    "overview": "Axios is a popular library used for making API requests. It provides simpler syntax, automatic JSON handling, and better error handling compared to Fetch.",
+    "example": {
+      "title": "Axios Example",
+      "content": "axios.get('https://api.example.com/users')\n.then(response => {\n console.log(response.data);\n});"
+    }
+  },
+  {
+    "id": "rn-cli-api-calls-lesson-5",
+    "topicId": "rn-cli-api-calls",
+    "lessonNumber": 5,
+    "title": "Handling API Response",
+    "overview": "After an API request is completed, the application receives a response. Developers need to handle success responses, errors, and loading states properly.",
+    "example": {
+      "title": "Response Handling",
+      "content": "API States:\n• Loading\n• Success\n• Error\n• Empty Data"
+    }
+  },
+  {
+    "id": "rn-cli-api-calls-lesson-6",
+    "topicId": "rn-cli-api-calls",
+    "lessonNumber": 6,
+    "title": "Async Await with API Calls",
+    "overview": "Async await provides a cleaner way to handle asynchronous API operations. It makes API code easier to read compared to multiple promise chains.",
+    "example": {
+      "title": "Async Await Example",
+      "content": "const getUsers = async () => {\n const response = await fetch(url);\n const data = await response.json();\n};"
+    }
+  },
+  {
+    "id": "rn-cli-api-calls-lesson-7",
+    "topicId": "rn-cli-api-calls",
+    "lessonNumber": 7,
+    "title": "API Calls with useEffect",
+    "overview": "useEffect is commonly used to perform API calls when a component loads. It allows fetching data automatically when the screen is opened.",
+    "example": {
+      "title": "useEffect API Example",
+      "content": "useEffect(() => {\n fetchUsers();\n}, []);"
+    }
+  },
+  {
+    "id": "rn-cli-api-calls-lesson-8",
+    "topicId": "rn-cli-api-calls",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You learned how API calls work, HTTP methods, Fetch and Axios usage, handling responses, using async await, and integrating API calls with React Native components.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ APIs connect apps with servers.\n✔ GET fetches data.\n✔ POST sends data.\n✔ Axios simplifies requests.\n✔ Async await handles API operations."
+    }
+  }
+]
