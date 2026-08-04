@@ -190,7 +190,7 @@ export type Category = {
   id: string;
   title: string;
   description?: string;
-  image: string; // local require or remote URL
+  image: string; 
     meta?: string;
 };
 
@@ -208,3 +208,18 @@ export type BenefitItem = {
   icon: (props: GetStartedIconProps) => ReactElement
   visualType: string;
 };
+
+export type SearchBarProps = {
+  value: string;
+  onChangeText: (text: string) => void;
+  onClear?: () => void;
+  placeholder?: string;
+  containerStyle?: StyleProp<ViewStyle>;
+  autoFocus?: boolean;
+  onFocusChange?: (focused: boolean) => void; // NEW
+};
+
+export type CategoriesCompProps = {
+  searchQuery?: string;
+};
+

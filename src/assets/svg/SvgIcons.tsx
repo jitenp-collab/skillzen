@@ -844,3 +844,42 @@ export const HelpIcon = ({
     </Svg>
   );
 };
+
+export const SearchIcon = ({
+  color,
+  size = 20,
+}: {
+  color: string;
+  size?: number;
+}) => (
+  <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+    <Circle cx="11" cy="11" r="7" stroke={color} strokeWidth={2} />
+    <Line
+      x1="21"
+      y1="21"
+      x2="16.65"
+      y2="16.65"
+      stroke={color}
+      strokeWidth={2}
+      strokeLinecap="round"
+    />
+  </Svg>
+);
+
+export const ClearIcon = ({
+  color,
+  size = 22,
+}: {
+  color: string;
+  size?: number;
+}) => (
+  <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+    <Circle cx="12" cy="12" r="10" fill={color} opacity={0.15} />
+    <Path
+      d="M8 8L16 16M16 8L8 16"
+      stroke={color}
+      strokeWidth={2}
+      strokeLinecap="round"
+    />
+  </Svg>
+);

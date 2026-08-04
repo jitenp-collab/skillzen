@@ -240,3 +240,4 @@ export const GetCategories = createAsyncThunk("get/categories", async () => {
     return [];
   }
 });
+

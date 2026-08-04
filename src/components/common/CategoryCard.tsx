@@ -22,9 +22,6 @@ const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 
 const BUTTON_WIDTH = 85;
 const SHIMMER_WIDTH = 34;
-// Full distance the streak travels: starts fully off the left edge,
-// ends fully off the right edge — so it's invisible at both ends of
-// the loop and the reset never shows as a visible cut/pop.
 const SHIMMER_TRAVEL = BUTTON_WIDTH + SHIMMER_WIDTH * 2;
 const SWEEP_DURATION = 1100;
 const HOLD_DURATION = 1400;
@@ -43,8 +40,6 @@ const CategoryCard = memo(
   }) => {
     const pressed = useSharedValue(0);
     const buttonPressed = useSharedValue(0);
-    // Single 0→1 progress that loops forever; withRepeat resets it to 0
-    // automatically at the top of each cycle — no manual reset needed.
     const shimmerProgress = useSharedValue(0);
     const iconNudge = useSharedValue(0);
 
@@ -84,11 +79,7 @@ const CategoryCard = memo(
     const iconChipStyle = useAnimatedStyle(() => ({
       transform: [{ scale: buttonPressed.value ? 1.12 : 1 }],
     }));
-
-    // Streak only moves + fades during the sweep fraction of the cycle;
-    // during the hold fraction it's clamped at fully faded-out and
-    // fully off the right edge — so nothing visible happens until the
-    // next sweep starts, and the loop-around is invisible either way.
+   
     const shimmerStyle = useAnimatedStyle(() => {
       const translateX = interpolate(
         shimmerProgress.value,
