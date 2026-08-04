@@ -111,9 +111,8 @@ export type User = {
 export type TopicListItem = {
   id: string;
   title: string;
-  image: string;
-  totalLessonsOfTopic: number;
-  progress: number;
+  icon: string;
+  totalLessons: number;
 };
 
 export type GlobalState = {

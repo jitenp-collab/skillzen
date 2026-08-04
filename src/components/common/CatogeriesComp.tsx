@@ -21,7 +21,12 @@ const CategoriesComp = ({ searchQuery = "" }: CategoriesCompProps) => {
     async (cat: Category) => {
       try {
         await dispatch(SelectCaogery(cat.title)).unwrap();
-        router.navigate("/(tabs)/topics");
+        router.navigate({
+          pathname: "/(tabs)/topics",
+          params: {
+            categoryTitle: cat.title,
+          },
+        });
       } catch (err) {
         console.log("Failed to select category:", err);
       }

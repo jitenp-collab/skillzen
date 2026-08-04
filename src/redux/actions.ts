@@ -247,7 +247,7 @@ export const SelectCaogery = createAsyncThunk(
     try {
       switch (Catogery) {
         case "React Native CLI":
-          return require("../assets/data/topics/reactNativeTopics.json");
+          return require("../assets/data/reactNativeCli/reactNativeCliTopics.json");
 
         case "JavaScript":
           return require("../assets/data/topics/javascriptTopics.json");
