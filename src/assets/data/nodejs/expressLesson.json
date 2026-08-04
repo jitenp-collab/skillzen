@@ -1,0 +1,90 @@
+[
+  {
+    "id": "nodejs-express-lesson-1",
+    "topicId": "nodejs-express",
+    "lessonNumber": 1,
+    "title": "What is Express.js?",
+    "overview": "Express.js is a lightweight web framework built on Node.js. It simplifies creating servers, APIs, routes, and middleware.",
+    "example": {
+      "title": "Express Usage",
+      "content": "✔ Create servers\n✔ Build REST APIs\n✔ Handle routes\n✔ Manage requests and responses"
+    }
+  },
+  {
+    "id": "nodejs-express-lesson-2",
+    "topicId": "nodejs-express",
+    "lessonNumber": 2,
+    "title": "Installing Express",
+    "overview": "Express is installed as an external npm package and added as a dependency in a Node.js project.",
+    "example": {
+      "title": "Install Express",
+      "content": "npm install express"
+    }
+  },
+  {
+    "id": "nodejs-express-lesson-3",
+    "topicId": "nodejs-express",
+    "lessonNumber": 3,
+    "title": "Creating Express Server",
+    "overview": "Express provides methods to create a server that listens for client requests and sends responses.",
+    "example": {
+      "title": "Express Server Example",
+      "content": "const express = require('express');\n\nconst app = express();\n\napp.listen(3000);"
+    }
+  },
+  {
+    "id": "nodejs-express-lesson-4",
+    "topicId": "nodejs-express",
+    "lessonNumber": 4,
+    "title": "Express Routing",
+    "overview": "Routing defines how an application responds to different URLs and HTTP methods.",
+    "example": {
+      "title": "Route Example",
+      "content": "app.get('/users',(req,res)=>{\n res.send('Users');\n});"
+    }
+  },
+  {
+    "id": "nodejs-express-lesson-5",
+    "topicId": "nodejs-express",
+    "lessonNumber": 5,
+    "title": "Request and Response Objects",
+    "overview": "Express provides request and response objects to access incoming data and send responses back to clients.",
+    "example": {
+      "title": "req and res Example",
+      "content": "app.get('/',(req,res)=>{\n res.json({message:'Hello'});\n});"
+    }
+  },
+  {
+    "id": "nodejs-express-lesson-6",
+    "topicId": "nodejs-express",
+    "lessonNumber": 6,
+    "title": "Middleware in Express",
+    "overview": "Middleware functions execute between receiving a request and sending a response. They are used for authentication, logging, and data processing.",
+    "example": {
+      "title": "Middleware Example",
+      "content": "app.use((req,res,next)=>{\n console.log('Request received');\n next();\n});"
+    }
+  },
+  {
+    "id": "nodejs-express-lesson-7",
+    "topicId": "nodejs-express",
+    "lessonNumber": 7,
+    "title": "Express Router",
+    "overview": "Express Router helps organize routes into separate files, making large applications easier to maintain.",
+    "example": {
+      "title": "Router Example",
+      "content": "const router = express.Router();\n\nrouter.get('/users',getUsers);"
+    }
+  },
+  {
+    "id": "nodejs-express-lesson-8",
+    "topicId": "nodejs-express",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You learned Express.js basics including server creation, routing, request handling, middleware, and route organization.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Express simplifies Node.js development.\n✔ Routes handle requests.\n✔ Middleware processes requests.\n✔ Router organizes APIs."
+    }
+  }
+]

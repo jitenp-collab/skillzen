@@ -1,0 +1,68 @@
+[
+  {
+    "id": "redux-slices-lesson-1",
+    "topicId": "redux-slices",
+    "lessonNumber": 1,
+    "title": "What is a Slice?",
+    "overview": "A slice is a collection of Redux state, reducers, and actions for a specific feature of an application.",
+    "example": {
+      "title": "Slice Structure",
+      "content": "User Slice\n ├── State\n ├── Reducers\n └── Actions"
+    }
+  },
+  {
+    "id": "redux-slices-lesson-2",
+    "topicId": "redux-slices",
+    "lessonNumber": 2,
+    "title": "Creating a Slice",
+    "overview": "Redux Toolkit provides createSlice() to create a slice with initial state, reducers, and automatically generated actions.",
+    "example": {
+      "title": "createSlice Example",
+      "content": "const userSlice = createSlice({\n name:'user',\n initialState:{name:''},\n reducers:{}\n});"
+    }
+  },
+  {
+    "id": "redux-slices-lesson-3",
+    "topicId": "redux-slices",
+    "lessonNumber": 3,
+    "title": "Slice State",
+    "overview": "Each slice manages its own part of the application state. This keeps state organized and easier to maintain.",
+    "example": {
+      "title": "Initial State Example",
+      "content": "initialState:{\n user:null,\n isLoggedIn:false\n}"
+    }
+  },
+  {
+    "id": "redux-slices-lesson-4",
+    "topicId": "redux-slices",
+    "lessonNumber": 4,
+    "title": "Slice Reducers",
+    "overview": "Reducers inside a slice define how the state changes when specific actions are dispatched.",
+    "example": {
+      "title": "Reducer Example",
+      "content": "reducers:{\n login:(state,action)=>{\n  state.user = action.payload;\n }\n}"
+    }
+  },
+  {
+    "id": "redux-slices-lesson-5",
+    "topicId": "redux-slices",
+    "lessonNumber": 5,
+    "title": "Exporting Actions and Reducers",
+    "overview": "Slices automatically generate action creators which can be exported and used inside components.",
+    "example": {
+      "title": "Export Example",
+      "content": "export const { login } = userSlice.actions;\n\nexport default userSlice.reducer;"
+    }
+  },
+  {
+    "id": "redux-slices-lesson-6",
+    "topicId": "redux-slices",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned how slices organize Redux logic using state, reducers, and generated actions with createSlice.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Slice manages feature state.\n✔ createSlice creates reducers and actions.\n✔ Slices keep Redux code organized."
+    }
+  }
+]

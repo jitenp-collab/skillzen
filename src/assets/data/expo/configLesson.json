@@ -1,0 +1,68 @@
+[
+  {
+    "id": "expo-config-lesson-1",
+    "topicId": "expo-config",
+    "lessonNumber": 1,
+    "title": "Introduction to Expo Configuration",
+    "overview": "Expo configuration files define application settings such as app name, version, icons, permissions, and build information.",
+    "example": {
+      "title": "Configuration Flow",
+      "content": "Configuration File\n ↓\nExpo Tools\n ↓\nApplication Settings"
+    }
+  },
+  {
+    "id": "expo-config-lesson-2",
+    "topicId": "expo-config",
+    "lessonNumber": 2,
+    "title": "app.json File",
+    "overview": "app.json is a static configuration file used to define basic Expo application settings.",
+    "example": {
+      "title": "app.json Example",
+      "content": "{\n \"expo\": {\n  \"name\":\"MyApp\",\n  \"version\":\"1.0.0\"\n }\n}"
+    }
+  },
+  {
+    "id": "expo-config-lesson-3",
+    "topicId": "expo-config",
+    "lessonNumber": 3,
+    "title": "app.config.js File",
+    "overview": "app.config.js allows dynamic configuration using JavaScript logic and environment variables.",
+    "example": {
+      "title": "Dynamic Config",
+      "content": "export default {\n expo:{\n  name:'MyApp'\n }\n};"
+    }
+  },
+  {
+    "id": "expo-config-lesson-4",
+    "topicId": "expo-config",
+    "lessonNumber": 4,
+    "title": "App Permissions Configuration",
+    "overview": "Expo configuration is used to define required permissions for features like camera, location, and notifications.",
+    "example": {
+      "title": "Permission Example",
+      "content": "android.permissions:\n[\n 'CAMERA',\n 'LOCATION'\n]"
+    }
+  },
+  {
+    "id": "expo-config-lesson-5",
+    "topicId": "expo-config",
+    "lessonNumber": 5,
+    "title": "Environment Variables",
+    "overview": "Environment variables allow applications to store different values for development, testing, and production environments.",
+    "example": {
+      "title": "Environment Example",
+      "content": "Development:\nAPI_URL=localhost\n\nProduction:\nAPI_URL=server.com"
+    }
+  },
+  {
+    "id": "expo-config-lesson-6",
+    "topicId": "expo-config",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned about Expo configuration files, app settings, permissions, dynamic configuration, and environment variables.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ app.json stores settings.\n✔ app.config.js supports logic.\n✔ Permissions are configured.\n✔ Environment values manage builds."
+    }
+  }
+]

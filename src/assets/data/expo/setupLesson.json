@@ -1,0 +1,79 @@
+[
+  {
+    "id": "expo-setup-lesson-1",
+    "topicId": "expo-setup",
+    "lessonNumber": 1,
+    "title": "Installing Node.js",
+    "overview": "Node.js is required to run Expo tools and install project dependencies using package managers like npm or yarn.",
+    "example": {
+      "title": "Check Node Installation",
+      "content": "node -v\nnpm -v"
+    }
+  },
+  {
+    "id": "expo-setup-lesson-2",
+    "topicId": "expo-setup",
+    "lessonNumber": 2,
+    "title": "Installing Expo CLI",
+    "overview": "Expo CLI provides commands to create, run, and manage Expo applications.",
+    "example": {
+      "title": "Install Expo CLI",
+      "content": "npm install -g expo-cli"
+    }
+  },
+  {
+    "id": "expo-setup-lesson-3",
+    "topicId": "expo-setup",
+    "lessonNumber": 3,
+    "title": "Creating an Expo Project",
+    "overview": "Expo provides commands to create a new React Native application with the required configuration.",
+    "example": {
+      "title": "Create Project",
+      "content": "npx create-expo-app MyApp\n\ncd MyApp"
+    }
+  },
+  {
+    "id": "expo-setup-lesson-4",
+    "topicId": "expo-setup",
+    "lessonNumber": 4,
+    "title": "Running Expo Application",
+    "overview": "Expo development server allows you to run your application on emulator, simulator, or physical device.",
+    "example": {
+      "title": "Start Development Server",
+      "content": "npx expo start"
+    }
+  },
+  {
+    "id": "expo-setup-lesson-5",
+    "topicId": "expo-setup",
+    "lessonNumber": 5,
+    "title": "Running on Physical Device",
+    "overview": "Expo allows developers to test applications on real devices using Expo Go by scanning a QR code.",
+    "example": {
+      "title": "Device Testing",
+      "content": "Start Expo Server\n ↓\nScan QR Code\n ↓\nOpen App in Expo Go"
+    }
+  },
+  {
+    "id": "expo-setup-lesson-6",
+    "topicId": "expo-setup",
+    "lessonNumber": 6,
+    "title": "Expo Project Configuration",
+    "overview": "Expo projects use configuration files to manage application settings like name, version, icons, and permissions.",
+    "example": {
+      "title": "Configuration File",
+      "content": "app.json\n\n{\n  \"name\":\"MyApp\",\n  \"version\":\"1.0.0\"\n}"
+    }
+  },
+  {
+    "id": "expo-setup-lesson-7",
+    "topicId": "expo-setup",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned how to install Expo tools, create projects, run applications, test on devices, and configure Expo apps.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Install Node.js.\n✔ Create Expo project.\n✔ Run with expo start.\n✔ Configure using app.json."
+    }
+  }
+]

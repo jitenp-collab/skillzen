@@ -1,0 +1,68 @@
+[
+  {
+    "id": "ts-unions-intersections-lesson-1",
+    "topicId": "ts-unions-intersections",
+    "lessonNumber": 1,
+    "title": "What are Union Types?",
+    "overview": "Union types allow a variable to store more than one possible type. They are created using the pipe (|) operator.",
+    "example": {
+      "title": "Union Type Example",
+      "content": "let id: string | number;\n\nid = 'user123';\nid = 101;"
+    }
+  },
+  {
+    "id": "ts-unions-intersections-lesson-2",
+    "topicId": "ts-unions-intersections",
+    "lessonNumber": 2,
+    "title": "Using Union Types in Functions",
+    "overview": "Union types can be used in function parameters when a function should accept multiple types of values.",
+    "example": {
+      "title": "Function Union Example",
+      "content": "function printId(id: string | number){\n console.log(id);\n}"
+    }
+  },
+  {
+    "id": "ts-unions-intersections-lesson-3",
+    "topicId": "ts-unions-intersections",
+    "lessonNumber": 3,
+    "title": "Type Narrowing",
+    "overview": "Type narrowing allows TypeScript to determine the exact type of a union value before performing operations on it.",
+    "example": {
+      "title": "Type Narrowing Example",
+      "content": "function print(value:string | number){\n if(typeof value === 'string'){\n  value.toUpperCase();\n }\n}"
+    }
+  },
+  {
+    "id": "ts-unions-intersections-lesson-4",
+    "topicId": "ts-unions-intersections",
+    "lessonNumber": 4,
+    "title": "What are Intersection Types?",
+    "overview": "Intersection types combine multiple types into one. A value must contain all properties from the combined types.",
+    "example": {
+      "title": "Intersection Example",
+      "content": "type User = {\n name:string;\n};\n\ntype Admin = {\n role:string;\n};\n\ntype AdminUser = User & Admin;"
+    }
+  },
+  {
+    "id": "ts-unions-intersections-lesson-5",
+    "topicId": "ts-unions-intersections",
+    "lessonNumber": 5,
+    "title": "Union vs Intersection Types",
+    "overview": "Union types allow multiple possible types, while intersection types combine multiple types into a single type.",
+    "example": {
+      "title": "Comparison",
+      "content": "Union:\nstring | number\n(One of these types)\n\nIntersection:\nUser & Admin\n(Both types together)"
+    }
+  },
+  {
+    "id": "ts-unions-intersections-lesson-6",
+    "topicId": "ts-unions-intersections",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned how union and intersection types work, how to handle multiple types, narrow values, and combine custom types in TypeScript.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Union uses | operator.\n✔ Allows multiple possible types.\n✔ Intersection uses & operator.\n✔ Combines multiple types together."
+    }
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "js-functions-lesson-1",
+    "topicId": "js-functions",
+    "lessonNumber": 1,
+    "title": "What are Functions?",
+    "overview": "Functions are reusable blocks of code that perform a specific task. They help organize code, reduce repetition, and make applications easier to maintain.",
+    "example": {
+      "title": "Function Example",
+      "content": "function greet(){\n console.log('Hello');\n}\n\ngreet();"
+    }
+  },
+  {
+    "id": "js-functions-lesson-2",
+    "topicId": "js-functions",
+    "lessonNumber": 2,
+    "title": "Creating and Calling Functions",
+    "overview": "A function needs to be created before it can be used. Calling a function executes the code written inside it.",
+    "example": {
+      "title": "Create Function",
+      "content": "function add(){\n console.log(10 + 5);\n}\n\nadd();"
+    }
+  },
+  {
+    "id": "js-functions-lesson-3",
+    "topicId": "js-functions",
+    "lessonNumber": 3,
+    "title": "Function Parameters and Arguments",
+    "overview": "Parameters allow functions to receive values, while arguments are the actual values passed when calling a function.",
+    "example": {
+      "title": "Parameters Example",
+      "content": "function greet(name){\n console.log(name);\n}\n\ngreet('Manthan');"
+    }
+  },
+  {
+    "id": "js-functions-lesson-4",
+    "topicId": "js-functions",
+    "lessonNumber": 4,
+    "title": "Return Statement",
+    "overview": "The return statement sends a value back from a function. Returned values can be stored in variables or used in other operations.",
+    "example": {
+      "title": "Return Example",
+      "content": "function sum(a,b){\n return a+b;\n}\n\nconst result = sum(5,10);"
+    }
+  },
+  {
+    "id": "js-functions-lesson-5",
+    "topicId": "js-functions",
+    "lessonNumber": 5,
+    "title": "Arrow Functions",
+    "overview": "Arrow functions provide a shorter syntax for writing functions. They were introduced in ES6 and are commonly used in modern JavaScript applications.",
+    "example": {
+      "title": "Arrow Function Example",
+      "content": "const add = (a,b) => {\n return a+b;\n};"
+    }
+  },
+  {
+    "id": "js-functions-lesson-6",
+    "topicId": "js-functions",
+    "lessonNumber": 6,
+    "title": "Anonymous Functions",
+    "overview": "Anonymous functions are functions without a name. They are commonly used as callbacks and passed directly as arguments to other functions.",
+    "example": {
+      "title": "Anonymous Function Example",
+      "content": "setTimeout(function(){\n console.log('Hello');\n},1000);"
+    }
+  },
+  {
+    "id": "js-functions-lesson-7",
+    "topicId": "js-functions",
+    "lessonNumber": 7,
+    "title": "Callback Functions",
+    "overview": "A callback function is a function passed as an argument to another function and executed later when a specific operation completes.",
+    "example": {
+      "title": "Callback Example",
+      "content": "function process(callback){\n callback();\n}\n\nprocess(()=>console.log('Done'));"
+    }
+  },
+  {
+    "id": "js-functions-lesson-8",
+    "topicId": "js-functions",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You learned about functions, creating and calling functions, parameters, return values, arrow functions, anonymous functions, and callbacks.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Functions make code reusable.\n✔ Parameters receive data.\n✔ Return sends data back.\n✔ Arrow functions provide shorter syntax.\n✔ Callbacks execute functions later."
+    }
+  }
+]

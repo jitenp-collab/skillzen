@@ -1,0 +1,90 @@
+[
+  {
+    "id": "expo-device-features-lesson-1",
+    "topicId": "expo-device-features",
+    "lessonNumber": 1,
+    "title": "Introduction to Device Features",
+    "overview": "Expo provides APIs that allow applications to interact with hardware features available on mobile devices.",
+    "example": {
+      "title": "Device Feature Access",
+      "content": "Application\n ↓\nExpo API\n ↓\nDevice Hardware"
+    }
+  },
+  {
+    "id": "expo-device-features-lesson-2",
+    "topicId": "expo-device-features",
+    "lessonNumber": 2,
+    "title": "Device Information API",
+    "overview": "Expo Device API provides information about the physical device such as model, operating system, and device type.",
+    "example": {
+      "title": "Device Example",
+      "content": "import * as Device from 'expo-device';\n\nDevice.modelName;"
+    }
+  },
+  {
+    "id": "expo-device-features-lesson-3",
+    "topicId": "expo-device-features",
+    "lessonNumber": 3,
+    "title": "Battery Information",
+    "overview": "Battery APIs allow applications to access battery level and charging status information.",
+    "example": {
+      "title": "Battery Example",
+      "content": "Battery Level\n ↓\nDisplay Status\n ↓\nUser Information"
+    }
+  },
+  {
+    "id": "expo-device-features-lesson-4",
+    "topicId": "expo-device-features",
+    "lessonNumber": 4,
+    "title": "Haptics and Vibration",
+    "overview": "Expo Haptics provides vibration feedback to improve user interaction experiences.",
+    "example": {
+      "title": "Haptic Example",
+      "content": "import * as Haptics from 'expo-haptics';\n\nHaptics.impactAsync();"
+    }
+  },
+  {
+    "id": "expo-device-features-lesson-5",
+    "topicId": "expo-device-features",
+    "lessonNumber": 5,
+    "title": "Screen Orientation",
+    "overview": "Expo Screen Orientation API allows applications to control and detect device screen orientation changes.",
+    "example": {
+      "title": "Orientation Example",
+      "content": "Portrait\n ↓\nLandscape\n ↓\nOrientation Change"
+    }
+  },
+  {
+    "id": "expo-device-features-lesson-6",
+    "topicId": "expo-device-features",
+    "lessonNumber": 6,
+    "title": "Network Information",
+    "overview": "Network APIs help applications detect internet connectivity and network status.",
+    "example": {
+      "title": "Network Flow",
+      "content": "Check Connection\n ↓\nWiFi / Mobile Data\n ↓\nUpdate UI"
+    }
+  },
+  {
+    "id": "expo-device-features-lesson-7",
+    "topicId": "expo-device-features",
+    "lessonNumber": 7,
+    "title": "Biometric Authentication",
+    "overview": "Expo Local Authentication allows applications to use device security features like fingerprint and face recognition.",
+    "example": {
+      "title": "Biometric Flow",
+      "content": "User Request\n ↓\nFingerprint / Face Scan\n ↓\nAuthentication Result"
+    }
+  },
+  {
+    "id": "expo-device-features-lesson-8",
+    "topicId": "expo-device-features",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You learned how Expo accesses device information, battery, haptics, orientation, network, and biometric features.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Expo provides hardware access.\n✔ Device APIs require permissions.\n✔ Hardware features improve app experience."
+    }
+  }
+]

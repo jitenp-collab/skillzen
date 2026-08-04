@@ -1,0 +1,68 @@
+[
+  {
+    "id": "nodejs-events-lesson-1",
+    "topicId": "nodejs-events",
+    "lessonNumber": 1,
+    "title": "Introduction to Events in Node.js",
+    "overview": "Events are actions or occurrences that happen during program execution. Node.js uses an event-driven architecture to handle asynchronous operations.",
+    "example": {
+      "title": "Event Examples",
+      "content": "✔ User request\n✔ File completed loading\n✔ Server started\n✔ Data received"
+    }
+  },
+  {
+    "id": "nodejs-events-lesson-2",
+    "topicId": "nodejs-events",
+    "lessonNumber": 2,
+    "title": "EventEmitter Module",
+    "overview": "The EventEmitter class is provided by Node.js to create, listen, and trigger custom events.",
+    "example": {
+      "title": "EventEmitter Example",
+      "content": "const EventEmitter = require('events');\n\nconst event = new EventEmitter();"
+    }
+  },
+  {
+    "id": "nodejs-events-lesson-3",
+    "topicId": "nodejs-events",
+    "lessonNumber": 3,
+    "title": "Creating and Listening to Events",
+    "overview": "Events are created using emit() and handled using listener functions with on().",
+    "example": {
+      "title": "Create Event Example",
+      "content": "event.on('message',()=>{\n console.log('Message received');\n});\n\nevent.emit('message');"
+    }
+  },
+  {
+    "id": "nodejs-events-lesson-4",
+    "topicId": "nodejs-events",
+    "lessonNumber": 4,
+    "title": "Understanding Event Loop",
+    "overview": "The event loop manages asynchronous tasks and allows Node.js to execute non-blocking operations efficiently.",
+    "example": {
+      "title": "Event Loop Flow",
+      "content": "Call Stack\n ↓\nAsync APIs\n ↓\nCallback Queue\n ↓\nEvent Loop"
+    }
+  },
+  {
+    "id": "nodejs-events-lesson-5",
+    "topicId": "nodejs-events",
+    "lessonNumber": 5,
+    "title": "Callbacks and Event Handling",
+    "overview": "Callbacks are functions passed to other functions and executed after an asynchronous operation completes.",
+    "example": {
+      "title": "Callback Example",
+      "content": "function getData(callback){\n callback();\n}"
+    }
+  },
+  {
+    "id": "nodejs-events-lesson-6",
+    "topicId": "nodejs-events",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned how Node.js handles events using EventEmitter, listeners, emitters, callbacks, and the event loop.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Node.js is event-driven.\n✔ EventEmitter creates events.\n✔ emit triggers events.\n✔ Event loop handles async tasks."
+    }
+  }
+]

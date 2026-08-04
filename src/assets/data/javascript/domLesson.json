@@ -1,0 +1,68 @@
+[
+  {
+    "id": "js-dom-lesson-1",
+    "topicId": "js-dom",
+    "lessonNumber": 1,
+    "title": "What is DOM?",
+    "overview": "DOM (Document Object Model) is a programming interface that represents an HTML document as a tree of objects. JavaScript can use DOM to read, modify, and interact with web pages.",
+    "example": {
+      "title": "DOM Example",
+      "content": "document.getElementById('title');"
+    }
+  },
+  {
+    "id": "js-dom-lesson-2",
+    "topicId": "js-dom",
+    "lessonNumber": 2,
+    "title": "Selecting DOM Elements",
+    "overview": "JavaScript provides different methods to select HTML elements from the DOM. These elements can then be modified using JavaScript.",
+    "example": {
+      "title": "Selection Methods",
+      "content": "document.getElementById()\ndocument.querySelector()\ndocument.querySelectorAll()"
+    }
+  },
+  {
+    "id": "js-dom-lesson-3",
+    "topicId": "js-dom",
+    "lessonNumber": 3,
+    "title": "Changing DOM Content",
+    "overview": "JavaScript can modify the text and content of HTML elements dynamically using DOM properties.",
+    "example": {
+      "title": "Change Content",
+      "content": "document.getElementById('text').innerText = 'Hello';"
+    }
+  },
+  {
+    "id": "js-dom-lesson-4",
+    "topicId": "js-dom",
+    "lessonNumber": 4,
+    "title": "Changing Styles Using DOM",
+    "overview": "JavaScript can modify the styles of HTML elements by accessing their style properties through the DOM.",
+    "example": {
+      "title": "Style Change Example",
+      "content": "element.style.color = 'red';"
+    }
+  },
+  {
+    "id": "js-dom-lesson-5",
+    "topicId": "js-dom",
+    "lessonNumber": 5,
+    "title": "DOM Events",
+    "overview": "DOM events allow JavaScript to respond to user actions like clicks, typing, mouse movements, and other interactions.",
+    "example": {
+      "title": "Event Example",
+      "content": "button.addEventListener('click', () => {\n console.log('Clicked');\n});"
+    }
+  },
+  {
+    "id": "js-dom-lesson-6",
+    "topicId": "js-dom",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned what DOM is, how JavaScript interacts with HTML elements, selecting elements, changing content, updating styles, and handling events.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ DOM represents HTML as objects.\n✔ JavaScript can modify webpage content.\n✔ Elements can be selected using DOM methods.\n✔ Events make pages interactive."
+    }
+  }
+]

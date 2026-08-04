@@ -1,0 +1,68 @@
+[
+  {
+    "id": "nodejs-npm-lesson-1",
+    "topicId": "nodejs-npm",
+    "lessonNumber": 1,
+    "title": "What is NPM?",
+    "overview": "NPM (Node Package Manager) is the default package manager for Node.js. It allows developers to install, manage, and share JavaScript packages.",
+    "example": {
+      "title": "NPM Purpose",
+      "content": "✔ Install packages\n✔ Manage dependencies\n✔ Run scripts\n✔ Share packages"
+    }
+  },
+  {
+    "id": "nodejs-npm-lesson-2",
+    "topicId": "nodejs-npm",
+    "lessonNumber": 2,
+    "title": "Understanding package.json",
+    "overview": "The package.json file contains project information, scripts, dependencies, and configuration required for a Node.js project.",
+    "example": {
+      "title": "package.json Example",
+      "content": "{\n  \"name\": \"my-app\",\n  \"version\": \"1.0.0\",\n  \"dependencies\": {}\n}"
+    }
+  },
+  {
+    "id": "nodejs-npm-lesson-3",
+    "topicId": "nodejs-npm",
+    "lessonNumber": 3,
+    "title": "Installing Packages",
+    "overview": "NPM allows developers to install external packages that provide additional functionality to applications.",
+    "example": {
+      "title": "Install Package",
+      "content": "npm install express"
+    }
+  },
+  {
+    "id": "nodejs-npm-lesson-4",
+    "topicId": "nodejs-npm",
+    "lessonNumber": 4,
+    "title": "Dependencies and DevDependencies",
+    "overview": "Dependencies are packages required for application execution, while devDependencies are used only during development.",
+    "example": {
+      "title": "Dependency Types",
+      "content": "dependencies → Required in production\n\ndevDependencies → Development tools"
+    }
+  },
+  {
+    "id": "nodejs-npm-lesson-5",
+    "topicId": "nodejs-npm",
+    "lessonNumber": 5,
+    "title": "NPM Scripts",
+    "overview": "NPM scripts allow developers to create shortcuts for frequently used commands like starting applications or running tests.",
+    "example": {
+      "title": "Script Example",
+      "content": "\"scripts\": {\n  \"start\": \"node app.js\"\n}"
+    }
+  },
+  {
+    "id": "nodejs-npm-lesson-6",
+    "topicId": "nodejs-npm",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned how NPM manages packages, dependencies, project configuration, and automation scripts in Node.js applications.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ NPM manages packages.\n✔ package.json stores project details.\n✔ npm install adds packages.\n✔ Scripts automate commands."
+    }
+  }
+]

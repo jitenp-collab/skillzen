@@ -1,0 +1,79 @@
+[
+  {
+    "id": "ts-functions-lesson-1",
+    "topicId": "ts-functions",
+    "lessonNumber": 1,
+    "title": "Functions with TypeScript",
+    "overview": "TypeScript allows developers to define types for function parameters and return values. This helps prevent incorrect data from being passed into functions.",
+    "example": {
+      "title": "Function Type Example",
+      "content": "function add(a: number, b: number): number {\n return a + b;\n}"
+    }
+  },
+  {
+    "id": "ts-functions-lesson-2",
+    "topicId": "ts-functions",
+    "lessonNumber": 2,
+    "title": "Typing Function Parameters",
+    "overview": "Function parameters can have specific types to ensure that functions receive the correct type of values.",
+    "example": {
+      "title": "Parameter Types",
+      "content": "function greet(name: string){\n console.log(`Hello ${name}`);\n}"
+    }
+  },
+  {
+    "id": "ts-functions-lesson-3",
+    "topicId": "ts-functions",
+    "lessonNumber": 3,
+    "title": "Function Return Types",
+    "overview": "Return types define what type of value a function will return. TypeScript can infer return types, but developers can also specify them manually.",
+    "example": {
+      "title": "Return Type Example",
+      "content": "function multiply(a:number,b:number): number {\n return a*b;\n}"
+    }
+  },
+  {
+    "id": "ts-functions-lesson-4",
+    "topicId": "ts-functions",
+    "lessonNumber": 4,
+    "title": "Optional Parameters",
+    "overview": "Optional parameters allow a function argument to be omitted. They are defined by adding a question mark after the parameter name.",
+    "example": {
+      "title": "Optional Parameter",
+      "content": "function user(name:string, age?:number){\n console.log(name, age);\n}"
+    }
+  },
+  {
+    "id": "ts-functions-lesson-5",
+    "topicId": "ts-functions",
+    "lessonNumber": 5,
+    "title": "Default Parameters",
+    "overview": "Default parameters provide a default value when an argument is not passed to a function.",
+    "example": {
+      "title": "Default Parameter",
+      "content": "function welcome(name:string='Guest'){\n console.log(name);\n}"
+    }
+  },
+  {
+    "id": "ts-functions-lesson-6",
+    "topicId": "ts-functions",
+    "lessonNumber": 6,
+    "title": "Arrow Functions in TypeScript",
+    "overview": "Arrow functions can also use TypeScript types for parameters and return values. They are commonly used in React Native components.",
+    "example": {
+      "title": "Arrow Function Example",
+      "content": "const add = (a:number,b:number):number => {\n return a+b;\n};"
+    }
+  },
+  {
+    "id": "ts-functions-lesson-7",
+    "topicId": "ts-functions",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned how to use TypeScript with functions, including parameter types, return types, optional parameters, default values, and arrow functions.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Functions can have typed parameters.\n✔ Return types define output values.\n✔ Optional parameters use ?.\n✔ TypeScript improves function safety."
+    }
+  }
+]

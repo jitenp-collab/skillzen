@@ -1,0 +1,57 @@
+[
+  {
+    "id": "js-operators-lesson-1",
+    "topicId": "js-operators",
+    "lessonNumber": 1,
+    "title": "What are Operators?",
+    "overview": "Operators are symbols or keywords used to perform operations on values and variables. They are used for calculations, comparisons, assignments, and logical operations in JavaScript.",
+    "example": {
+      "title": "Operator Example",
+      "content": "const sum = 10 + 5;\n\nconsole.log(sum);\n\nOutput:\n15"
+    }
+  },
+  {
+    "id": "js-operators-lesson-2",
+    "topicId": "js-operators",
+    "lessonNumber": 2,
+    "title": "Arithmetic Operators",
+    "overview": "Arithmetic operators are used to perform mathematical calculations like addition, subtraction, multiplication, division, and finding the remainder.",
+    "example": {
+      "title": "Arithmetic Operators",
+      "content": "+  Addition\n-  Subtraction\n*  Multiplication\n/  Division\n%  Modulus\n\nExample:\n10 + 5 = 15"
+    }
+  },
+  {
+    "id": "js-operators-lesson-3",
+    "topicId": "js-operators",
+    "lessonNumber": 3,
+    "title": "Assignment Operators",
+    "overview": "Assignment operators are used to assign or update values stored in variables. The simple assignment operator is equal (=), while other operators combine assignment with calculations.",
+    "example": {
+      "title": "Assignment Example",
+      "content": "let count = 10;\n\ncount += 5;\n\nconsole.log(count);\n\nOutput:\n15"
+    }
+  },
+  {
+    "id": "js-operators-lesson-4",
+    "topicId": "js-operators",
+    "lessonNumber": 4,
+    "title": "Comparison and Logical Operators",
+    "overview": "Comparison operators compare values and return true or false. Logical operators are used to combine multiple conditions.",
+    "example": {
+      "title": "Comparison Example",
+      "content": "Comparison:\n==\n===\n!=\n>\n<\n\nLogical:\n&&\n||\n!"
+    }
+  },
+  {
+    "id": "js-operators-lesson-5",
+    "topicId": "js-operators",
+    "lessonNumber": 5,
+    "title": "Topic Summary",
+    "overview": "You learned what operators are and how arithmetic, assignment, comparison, and logical operators are used in JavaScript applications.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Operators perform operations on values.\n✔ Arithmetic operators handle calculations.\n✔ Assignment operators update values.\n✔ Comparison operators return true or false.\n✔ Logical operators combine conditions."
+    }
+  }
+]

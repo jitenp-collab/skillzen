@@ -1,0 +1,57 @@
+[
+  {
+    "id": "js-error-handling-lesson-1",
+    "topicId": "js-error-handling",
+    "lessonNumber": 1,
+    "title": "What is Error Handling?",
+    "overview": "Error handling is the process of identifying and managing errors in a program. It prevents applications from crashing and helps provide better user experiences.",
+    "example": {
+      "title": "Error Example",
+      "content": "try {\n // risky code\n} catch(error) {\n // handle error\n}"
+    }
+  },
+  {
+    "id": "js-error-handling-lesson-2",
+    "topicId": "js-error-handling",
+    "lessonNumber": 2,
+    "title": "try...catch Statement",
+    "overview": "The try...catch statement is used to handle runtime errors. Code inside try is executed, and if an error occurs, catch handles that error.",
+    "example": {
+      "title": "try...catch Example",
+      "content": "try {\n const result = undefined.value;\n} catch(error) {\n console.log(error.message);\n}"
+    }
+  },
+  {
+    "id": "js-error-handling-lesson-3",
+    "topicId": "js-error-handling",
+    "lessonNumber": 3,
+    "title": "throw Statement",
+    "overview": "The throw statement allows developers to create custom errors manually when specific conditions are not satisfied.",
+    "example": {
+      "title": "throw Example",
+      "content": "const age = 15;\n\nif(age < 18){\n throw new Error('Not allowed');\n}"
+    }
+  },
+  {
+    "id": "js-error-handling-lesson-4",
+    "topicId": "js-error-handling",
+    "lessonNumber": 4,
+    "title": "Error Handling in Async Code",
+    "overview": "Errors in asynchronous operations can be handled using try...catch with async await or using catch with Promises.",
+    "example": {
+      "title": "Async Error Handling",
+      "content": "async function load(){\n try{\n  await fetchData();\n }catch(error){\n  console.log(error);\n }\n}"
+    }
+  },
+  {
+    "id": "js-error-handling-lesson-5",
+    "topicId": "js-error-handling",
+    "lessonNumber": 5,
+    "title": "Topic Summary",
+    "overview": "You learned how JavaScript handles errors using try...catch, throw statements, and error handling techniques for asynchronous operations.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Error handling prevents crashes.\n✔ try runs risky code.\n✔ catch handles errors.\n✔ throw creates custom errors.\n✔ Async errors can be handled with try...catch."
+    }
+  }
+]

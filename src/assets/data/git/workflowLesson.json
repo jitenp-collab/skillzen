@@ -1,0 +1,68 @@
+[
+  {
+    "id": "git-workflow-lesson-1",
+    "topicId": "git-workflow",
+    "lessonNumber": 1,
+    "title": "Introduction to Git Workflow",
+    "overview": "Git workflow defines the process developers follow to manage code changes from development to deployment.",
+    "example": {
+      "title": "Basic Workflow",
+      "content": "Create Branch\n ↓\nWrite Code\n ↓\nCommit Changes\n ↓\nPush Code\n ↓\nMerge"
+    }
+  },
+  {
+    "id": "git-workflow-lesson-2",
+    "topicId": "git-workflow",
+    "lessonNumber": 2,
+    "title": "Feature Branch Workflow",
+    "overview": "Feature branch workflow allows developers to create separate branches for new features.",
+    "example": {
+      "title": "Feature Flow",
+      "content": "Main Branch\n ↓\nFeature Branch\n ↓\nDevelopment\n ↓\nMerge"
+    }
+  },
+  {
+    "id": "git-workflow-lesson-3",
+    "topicId": "git-workflow",
+    "lessonNumber": 3,
+    "title": "Git Flow Workflow",
+    "overview": "Git Flow is a structured branching model that uses branches like feature, develop, release, and main.",
+    "example": {
+      "title": "Git Flow Branches",
+      "content": "main\n |\ndevelop\n |\nfeature\n |\nrelease"
+    }
+  },
+  {
+    "id": "git-workflow-lesson-4",
+    "topicId": "git-workflow",
+    "lessonNumber": 4,
+    "title": "Team Collaboration Workflow",
+    "overview": "Teams use Git workflows to organize code reviews, changes, and releases efficiently.",
+    "example": {
+      "title": "Team Flow",
+      "content": "Developer\n ↓\nBranch\n ↓\nPull Request\n ↓\nCode Review\n ↓\nMerge"
+    }
+  },
+  {
+    "id": "git-workflow-lesson-5",
+    "topicId": "git-workflow",
+    "lessonNumber": 5,
+    "title": "Commit Best Practices",
+    "overview": "Good commits should be small, meaningful, and describe the changes clearly.",
+    "example": {
+      "title": "Good Commit Messages",
+      "content": "Good:\nAdd user login validation\n\nBad:\nUpdated code"
+    }
+  },
+  {
+    "id": "git-workflow-lesson-6",
+    "topicId": "git-workflow",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned different Git workflows, branching strategies, collaboration process, and commit practices.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Use branches for features.\n✔ Review code before merging.\n✔ Keep commits meaningful."
+    }
+  }
+]

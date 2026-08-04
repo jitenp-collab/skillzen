@@ -1,0 +1,68 @@
+[
+  {
+    "id": "ts-classes-lesson-1",
+    "topicId": "ts-classes",
+    "lessonNumber": 1,
+    "title": "Classes in TypeScript",
+    "overview": "Classes in TypeScript are blueprints for creating objects. They support object-oriented programming concepts like properties, methods, inheritance, and access modifiers.",
+    "example": {
+      "title": "Class Example",
+      "content": "class User {\n name:string;\n\n constructor(name:string){\n  this.name = name;\n }\n}"
+    }
+  },
+  {
+    "id": "ts-classes-lesson-2",
+    "topicId": "ts-classes",
+    "lessonNumber": 2,
+    "title": "Class Properties and Methods",
+    "overview": "Classes can contain properties to store data and methods to define behaviors. TypeScript allows defining types for both.",
+    "example": {
+      "title": "Properties and Methods",
+      "content": "class User {\n name:string;\n\n greet():void {\n  console.log(this.name);\n }\n}"
+    }
+  },
+  {
+    "id": "ts-classes-lesson-3",
+    "topicId": "ts-classes",
+    "lessonNumber": 3,
+    "title": "Access Modifiers",
+    "overview": "Access modifiers control where class members can be accessed. TypeScript provides public, private, and protected modifiers.",
+    "example": {
+      "title": "Access Modifier Example",
+      "content": "class User {\n private password:string;\n public name:string;\n protected id:number;\n}"
+    }
+  },
+  {
+    "id": "ts-classes-lesson-4",
+    "topicId": "ts-classes",
+    "lessonNumber": 4,
+    "title": "Inheritance in TypeScript",
+    "overview": "Inheritance allows one class to reuse properties and methods from another class using the extends keyword.",
+    "example": {
+      "title": "Inheritance Example",
+      "content": "class Admin extends User {\n role:string;\n}"
+    }
+  },
+  {
+    "id": "ts-classes-lesson-5",
+    "topicId": "ts-classes",
+    "lessonNumber": 5,
+    "title": "Classes in React Native",
+    "overview": "Although functional components are common today, TypeScript classes help understand object-oriented concepts and are useful when working with existing class-based code.",
+    "example": {
+      "title": "Class Usage",
+      "content": "Classes are useful for:\n• Data models\n• Services\n• Utility classes\n• Object-oriented logic"
+    }
+  },
+  {
+    "id": "ts-classes-lesson-6",
+    "topicId": "ts-classes",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned how classes work in TypeScript, including properties, methods, access modifiers, inheritance, and their usage in application development.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Classes create objects.\n✔ Properties store data.\n✔ Methods define behavior.\n✔ Access modifiers control visibility.\n✔ Inheritance improves code reuse."
+    }
+  }
+]

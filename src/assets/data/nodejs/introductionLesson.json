@@ -1,0 +1,68 @@
+[
+  {
+    "id": "nodejs-introduction-lesson-1",
+    "topicId": "nodejs-introduction",
+    "lessonNumber": 1,
+    "title": "What is Node.js?",
+    "overview": "Node.js is a JavaScript runtime environment that allows developers to execute JavaScript code outside the browser. It is mainly used for building fast and scalable backend applications.",
+    "example": {
+      "title": "Node.js Usage",
+      "content": "✔ Backend APIs\n✔ Web Servers\n✔ Real-time Applications\n✔ Command Line Tools"
+    }
+  },
+  {
+    "id": "nodejs-introduction-lesson-2",
+    "topicId": "nodejs-introduction",
+    "lessonNumber": 2,
+    "title": "Why Use Node.js?",
+    "overview": "Node.js allows developers to use JavaScript for both frontend and backend development. Its non-blocking architecture makes it efficient for handling many requests.",
+    "example": {
+      "title": "Node.js Benefits",
+      "content": "✔ Single programming language\n✔ High performance\n✔ Large package ecosystem\n✔ Real-time support"
+    }
+  },
+  {
+    "id": "nodejs-introduction-lesson-3",
+    "topicId": "nodejs-introduction",
+    "lessonNumber": 3,
+    "title": "Node.js vs Browser JavaScript",
+    "overview": "Browser JavaScript runs inside web browsers, while Node.js runs JavaScript on the server side with access to system resources.",
+    "example": {
+      "title": "Comparison",
+      "content": "Browser JS:\n- DOM access\n- Runs in browser\n\nNode.js:\n- Server-side execution\n- File system access"
+    }
+  },
+  {
+    "id": "nodejs-introduction-lesson-4",
+    "topicId": "nodejs-introduction",
+    "lessonNumber": 4,
+    "title": "Features of Node.js",
+    "overview": "Node.js provides several features that make it suitable for modern backend development.",
+    "example": {
+      "title": "Node.js Features",
+      "content": "✔ Event-driven architecture\n✔ Non-blocking I/O\n✔ Fast execution\n✔ Cross-platform support"
+    }
+  },
+  {
+    "id": "nodejs-introduction-lesson-5",
+    "topicId": "nodejs-introduction",
+    "lessonNumber": 5,
+    "title": "Where Node.js is Used",
+    "overview": "Node.js is commonly used for APIs, real-time applications, streaming services, and backend systems.",
+    "example": {
+      "title": "Real World Uses",
+      "content": "✔ Chat applications\n✔ REST APIs\n✔ Online games\n✔ Streaming platforms"
+    }
+  },
+  {
+    "id": "nodejs-introduction-lesson-6",
+    "topicId": "nodejs-introduction",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned what Node.js is, why it is used, how it differs from browser JavaScript, and where it is applied.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Node.js runs JavaScript outside browsers.\n✔ Used for backend development.\n✔ Uses event-driven architecture.\n✔ Supports scalable applications."
+    }
+  }
+]

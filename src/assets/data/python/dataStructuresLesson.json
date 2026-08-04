@@ -1,0 +1,101 @@
+[
+  {
+    "id": "python-data-structures-lesson-1",
+    "topicId": "python-data-structures",
+    "lessonNumber": 1,
+    "title": "Introduction to Python Data Structures",
+    "overview": "Data structures are ways to organize and store data efficiently. Python provides built-in structures like lists, tuples, sets, and dictionaries.",
+    "example": {
+      "title": "Common Data Structures",
+      "content": "✔ List\n✔ Tuple\n✔ Set\n✔ Dictionary"
+    }
+  },
+  {
+    "id": "python-data-structures-lesson-2",
+    "topicId": "python-data-structures",
+    "lessonNumber": 2,
+    "title": "Lists in Python",
+    "overview": "Lists are ordered and mutable collections that can store multiple values of different data types.",
+    "example": {
+      "title": "List Example",
+      "content": "numbers = [1, 2, 3, 4]\n\nnumbers.append(5)"
+    }
+  },
+  {
+    "id": "python-data-structures-lesson-3",
+    "topicId": "python-data-structures",
+    "lessonNumber": 3,
+    "title": "List Methods",
+    "overview": "Python lists provide built-in methods to add, remove, sort, and modify elements.",
+    "example": {
+      "title": "List Methods",
+      "content": "append()\nremove()\npop()\nsort()\nreverse()"
+    }
+  },
+  {
+    "id": "python-data-structures-lesson-4",
+    "topicId": "python-data-structures",
+    "lessonNumber": 4,
+    "title": "Tuples in Python",
+    "overview": "Tuples are ordered collections similar to lists but they are immutable, meaning their values cannot be changed after creation.",
+    "example": {
+      "title": "Tuple Example",
+      "content": "colors = ('red','blue','green')"
+    }
+  },
+  {
+    "id": "python-data-structures-lesson-5",
+    "topicId": "python-data-structures",
+    "lessonNumber": 5,
+    "title": "Sets in Python",
+    "overview": "Sets are unordered collections that store unique values. They are useful for removing duplicate data.",
+    "example": {
+      "title": "Set Example",
+      "content": "numbers = {1,2,3,3}\n\nOutput:\n{1,2,3}"
+    }
+  },
+  {
+    "id": "python-data-structures-lesson-6",
+    "topicId": "python-data-structures",
+    "lessonNumber": 6,
+    "title": "Dictionaries in Python",
+    "overview": "Dictionaries store data in key-value pairs. They are commonly used for structured data.",
+    "example": {
+      "title": "Dictionary Example",
+      "content": "user = {\n 'name':'Manthan',\n 'age':25\n}"
+    }
+  },
+  {
+    "id": "python-data-structures-lesson-7",
+    "topicId": "python-data-structures",
+    "lessonNumber": 7,
+    "title": "Nested Data Structures",
+    "overview": "Python allows combining data structures together, such as lists inside dictionaries or dictionaries inside lists.",
+    "example": {
+      "title": "Nested Example",
+      "content": "users = [\n {\n  'name':'John'\n }\n]"
+    }
+  },
+  {
+    "id": "python-data-structures-lesson-8",
+    "topicId": "python-data-structures",
+    "lessonNumber": 8,
+    "title": "Choosing the Right Data Structure",
+    "overview": "Different data structures are useful for different situations depending on whether you need ordering, uniqueness, or key-based access.",
+    "example": {
+      "title": "Selection Guide",
+      "content": "List → Ordered data\nTuple → Fixed data\nSet → Unique values\nDictionary → Key-value data"
+    }
+  },
+  {
+    "id": "python-data-structures-lesson-9",
+    "topicId": "python-data-structures",
+    "lessonNumber": 9,
+    "title": "Topic Summary",
+    "overview": "You learned Python's main data structures including lists, tuples, sets, dictionaries, their features, and when to use them.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Lists are mutable.\n✔ Tuples are immutable.\n✔ Sets store unique values.\n✔ Dictionaries store key-value pairs."
+    }
+  }
+]

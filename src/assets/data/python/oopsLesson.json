@@ -1,0 +1,90 @@
+[
+  {
+    "id": "python-oops-lesson-1",
+    "topicId": "python-oops",
+    "lessonNumber": 1,
+    "title": "Introduction to OOP",
+    "overview": "Object Oriented Programming is a programming approach based on objects and classes. It helps organize code by combining data and behavior together.",
+    "example": {
+      "title": "OOP Concepts",
+      "content": "✔ Class\n✔ Object\n✔ Inheritance\n✔ Encapsulation\n✔ Polymorphism"
+    }
+  },
+  {
+    "id": "python-oops-lesson-2",
+    "topicId": "python-oops",
+    "lessonNumber": 2,
+    "title": "Classes in Python",
+    "overview": "A class is a blueprint used to create objects. It defines properties and behaviors that objects will have.",
+    "example": {
+      "title": "Class Example",
+      "content": "class User:\n    name = 'Manthan'"
+    }
+  },
+  {
+    "id": "python-oops-lesson-3",
+    "topicId": "python-oops",
+    "lessonNumber": 3,
+    "title": "Objects in Python",
+    "overview": "Objects are instances of classes. They contain data and can access methods defined inside their class.",
+    "example": {
+      "title": "Object Example",
+      "content": "class User:\n    pass\n\nuser1 = User()"
+    }
+  },
+  {
+    "id": "python-oops-lesson-4",
+    "topicId": "python-oops",
+    "lessonNumber": 4,
+    "title": "Constructors in Python",
+    "overview": "Constructors initialize object data when an object is created. Python uses the __init__ method as a constructor.",
+    "example": {
+      "title": "Constructor Example",
+      "content": "class User:\n    def __init__(self,name):\n        self.name = name"
+    }
+  },
+  {
+    "id": "python-oops-lesson-5",
+    "topicId": "python-oops",
+    "lessonNumber": 5,
+    "title": "Inheritance in Python",
+    "overview": "Inheritance allows one class to reuse properties and methods from another class. It helps reduce duplicate code.",
+    "example": {
+      "title": "Inheritance Example",
+      "content": "class Admin(User):\n    pass"
+    }
+  },
+  {
+    "id": "python-oops-lesson-6",
+    "topicId": "python-oops",
+    "lessonNumber": 6,
+    "title": "Encapsulation in Python",
+    "overview": "Encapsulation protects object data by controlling how it can be accessed and modified.",
+    "example": {
+      "title": "Encapsulation Example",
+      "content": "class Account:\n    __balance = 0"
+    }
+  },
+  {
+    "id": "python-oops-lesson-7",
+    "topicId": "python-oops",
+    "lessonNumber": 7,
+    "title": "Polymorphism in Python",
+    "overview": "Polymorphism allows different classes to provide their own implementation of the same method.",
+    "example": {
+      "title": "Polymorphism Example",
+      "content": "class Dog:\n    def sound(self):\n        return 'Bark'\n\nclass Cat:\n    def sound(self):\n        return 'Meow'"
+    }
+  },
+  {
+    "id": "python-oops-lesson-8",
+    "topicId": "python-oops",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You learned the fundamentals of Object Oriented Programming in Python including classes, objects, constructors, inheritance, encapsulation, and polymorphism.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Classes create objects.\n✔ Objects store data and behavior.\n✔ Inheritance enables reuse.\n✔ Encapsulation protects data.\n✔ Polymorphism allows flexibility."
+    }
+  }
+]

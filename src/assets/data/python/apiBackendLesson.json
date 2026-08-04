@@ -1,0 +1,79 @@
+[
+  {
+    "id": "python-api-backend-lesson-1",
+    "topicId": "python-api-backend",
+    "lessonNumber": 1,
+    "title": "Introduction to Python Backend",
+    "overview": "Python can be used for backend development to create server-side applications, APIs, and web services. It handles business logic and communication between frontend and databases.",
+    "example": {
+      "title": "Backend Responsibilities",
+      "content": "✔ Handle requests\n✔ Process data\n✔ Connect databases\n✔ Return responses"
+    }
+  },
+  {
+    "id": "python-api-backend-lesson-2",
+    "topicId": "python-api-backend",
+    "lessonNumber": 2,
+    "title": "What is an API?",
+    "overview": "An API allows different applications to communicate with each other by sending requests and receiving responses.",
+    "example": {
+      "title": "API Flow",
+      "content": "Client → Request → API Server → Response → Client"
+    }
+  },
+  {
+    "id": "python-api-backend-lesson-3",
+    "topicId": "python-api-backend",
+    "lessonNumber": 3,
+    "title": "Introduction to Flask",
+    "overview": "Flask is a lightweight Python web framework used to create APIs and web applications with simple configuration.",
+    "example": {
+      "title": "Flask API Example",
+      "content": "from flask import Flask\n\napp = Flask(__name__)\n\n@app.route('/')\ndef home():\n    return 'Hello API'"
+    }
+  },
+  {
+    "id": "python-api-backend-lesson-4",
+    "topicId": "python-api-backend",
+    "lessonNumber": 4,
+    "title": "Creating API Routes",
+    "overview": "Routes define different endpoints where clients can send requests to access backend functionality.",
+    "example": {
+      "title": "Route Example",
+      "content": "@app.route('/users')\ndef users():\n    return {'users':[]}"
+    }
+  },
+  {
+    "id": "python-api-backend-lesson-5",
+    "topicId": "python-api-backend",
+    "lessonNumber": 5,
+    "title": "Handling API Requests",
+    "overview": "Backend applications handle different HTTP methods like GET, POST, PUT, and DELETE to perform operations on data.",
+    "example": {
+      "title": "HTTP Methods",
+      "content": "GET → Fetch data\nPOST → Create data\nPUT → Update data\nDELETE → Remove data"
+    }
+  },
+  {
+    "id": "python-api-backend-lesson-6",
+    "topicId": "python-api-backend",
+    "lessonNumber": 6,
+    "title": "Connecting Python with Databases",
+    "overview": "Python backend applications can connect with databases to store and retrieve application data.",
+    "example": {
+      "title": "Database Usage",
+      "content": "Python Backend\n      ↓\nDatabase\n      ↓\nStored Application Data"
+    }
+  },
+  {
+    "id": "python-api-backend-lesson-7",
+    "topicId": "python-api-backend",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned the basics of Python backend development, APIs, Flask, routes, HTTP methods, and database communication.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Python can build backend systems.\n✔ APIs connect applications.\n✔ Flask creates APIs.\n✔ HTTP methods manage data."
+    }
+  }
+]

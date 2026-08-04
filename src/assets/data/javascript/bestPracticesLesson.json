@@ -1,0 +1,68 @@
+[
+  {
+    "id": "js-best-practices-lesson-1",
+    "topicId": "js-best-practices",
+    "lessonNumber": 1,
+    "title": "Writing Clean JavaScript Code",
+    "overview": "Clean code is easy to read, understand, and maintain. Good JavaScript practices help developers create reliable and scalable applications.",
+    "example": {
+      "title": "Clean Code Example",
+      "content": "Use meaningful names:\n\nconst userName = 'Manthan';\n\nInstead of:\n\nconst x = 'Manthan';"
+    }
+  },
+  {
+    "id": "js-best-practices-lesson-2",
+    "topicId": "js-best-practices",
+    "lessonNumber": 2,
+    "title": "Using let and const Properly",
+    "overview": "Modern JavaScript applications should prefer const by default and use let only when a value needs to change. Avoid using var in new projects.",
+    "example": {
+      "title": "Variable Practice",
+      "content": "const name = 'React Native';\nlet count = 0;\n\nAvoid:\nvar value = 10;"
+    }
+  },
+  {
+    "id": "js-best-practices-lesson-3",
+    "topicId": "js-best-practices",
+    "lessonNumber": 3,
+    "title": "Avoiding Code Duplication",
+    "overview": "Repeating the same code multiple times makes applications harder to maintain. Reusable functions and components help avoid duplication.",
+    "example": {
+      "title": "Reusable Function",
+      "content": "function calculateTotal(price, tax){\n return price + tax;\n}"
+    }
+  },
+  {
+    "id": "js-best-practices-lesson-4",
+    "topicId": "js-best-practices",
+    "lessonNumber": 4,
+    "title": "Handling Errors Properly",
+    "overview": "Applications should handle unexpected situations properly using error handling techniques instead of allowing crashes.",
+    "example": {
+      "title": "Error Handling",
+      "content": "try {\n // risky operation\n} catch(error) {\n console.log(error);\n}"
+    }
+  },
+  {
+    "id": "js-best-practices-lesson-5",
+    "topicId": "js-best-practices",
+    "lessonNumber": 5,
+    "title": "Writing Maintainable Code",
+    "overview": "Maintainable code follows consistent formatting, uses reusable logic, and keeps functions small and focused on one responsibility.",
+    "example": {
+      "title": "Maintainable Code Rules",
+      "content": "✔ Use meaningful names\n✔ Keep functions small\n✔ Avoid unnecessary complexity\n✔ Write reusable logic"
+    }
+  },
+  {
+    "id": "js-best-practices-lesson-6",
+    "topicId": "js-best-practices",
+    "lessonNumber": 6,
+    "title": "JavaScript Category Summary",
+    "overview": "You completed JavaScript fundamentals including syntax, variables, functions, arrays, objects, ES6 features, asynchronous programming, modules, and coding practices.",
+    "example": {
+      "title": "Final Revision",
+      "content": "✔ JavaScript is the foundation of React Native.\n✔ ES6 features improve modern development.\n✔ Async programming handles complex operations.\n✔ Clean code improves application quality."
+    }
+  }
+]

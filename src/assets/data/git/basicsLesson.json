@@ -1,0 +1,90 @@
+[
+  {
+    "id": "git-basics-lesson-1",
+    "topicId": "git-basics",
+    "lessonNumber": 1,
+    "title": "Git Add Command",
+    "overview": "The git add command moves changes from the working directory to the staging area before committing.",
+    "example": {
+      "title": "Add Files",
+      "content": "git add filename\n\nor\n\ngit add ."
+    }
+  },
+  {
+    "id": "git-basics-lesson-2",
+    "topicId": "git-basics",
+    "lessonNumber": 2,
+    "title": "Git Commit Command",
+    "overview": "A commit saves the staged changes as a snapshot in the Git repository history.",
+    "example": {
+      "title": "Create Commit",
+      "content": "git commit -m \"Added login feature\""
+    }
+  },
+  {
+    "id": "git-basics-lesson-3",
+    "topicId": "git-basics",
+    "lessonNumber": 3,
+    "title": "Git Log Command",
+    "overview": "Git log displays the history of commits made in a repository.",
+    "example": {
+      "title": "View History",
+      "content": "git log"
+    }
+  },
+  {
+    "id": "git-basics-lesson-4",
+    "topicId": "git-basics",
+    "lessonNumber": 4,
+    "title": "Git Diff Command",
+    "overview": "Git diff shows the differences between files before committing changes.",
+    "example": {
+      "title": "View Changes",
+      "content": "git diff"
+    }
+  },
+  {
+    "id": "git-basics-lesson-5",
+    "topicId": "git-basics",
+    "lessonNumber": 5,
+    "title": "Git Remove Command",
+    "overview": "Git rm removes files from the working directory and stages the removal.",
+    "example": {
+      "title": "Remove File",
+      "content": "git rm fileName"
+    }
+  },
+  {
+    "id": "git-basics-lesson-6",
+    "topicId": "git-basics",
+    "lessonNumber": 6,
+    "title": "Git Restore Command",
+    "overview": "Git restore is used to discard changes or restore files to previous states.",
+    "example": {
+      "title": "Restore File",
+      "content": "git restore filename"
+    }
+  },
+  {
+    "id": "git-basics-lesson-7",
+    "topicId": "git-basics",
+    "lessonNumber": 7,
+    "title": "Git Ignore File",
+    "overview": "The .gitignore file tells Git which files or folders should not be tracked.",
+    "example": {
+      "title": ".gitignore Example",
+      "content": "node_modules/\n.env\nbuild/"
+    }
+  },
+  {
+    "id": "git-basics-lesson-8",
+    "topicId": "git-basics",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You learned essential Git commands used for adding, saving, checking, and managing project changes.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ git add stages changes.\n✔ git commit saves changes.\n✔ git log shows history.\n✔ .gitignore excludes files."
+    }
+  }
+]

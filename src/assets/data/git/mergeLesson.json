@@ -1,0 +1,79 @@
+[
+  {
+    "id": "git-merge-lesson-1",
+    "topicId": "git-merge",
+    "lessonNumber": 1,
+    "title": "Introduction to Git Merge",
+    "overview": "Git merge combines changes from one branch into another branch.",
+    "example": {
+      "title": "Merge Concept",
+      "content": "Feature Branch\n      ↓\n    Merge\n      ↓\nMain Branch"
+    }
+  },
+  {
+    "id": "git-merge-lesson-2",
+    "topicId": "git-merge",
+    "lessonNumber": 2,
+    "title": "Performing a Merge",
+    "overview": "The merge command combines another branch's changes with the current branch.",
+    "example": {
+      "title": "Merge Command",
+      "content": "git checkout main\n\ngit merge feature-login"
+    }
+  },
+  {
+    "id": "git-merge-lesson-3",
+    "topicId": "git-merge",
+    "lessonNumber": 3,
+    "title": "Fast Forward Merge",
+    "overview": "A fast-forward merge happens when the target branch has no new commits and Git can simply move the branch pointer forward.",
+    "example": {
+      "title": "Fast Forward",
+      "content": "Main\n |\n A\n |\n B\n |\n C\n\nPointer moves forward"
+    }
+  },
+  {
+    "id": "git-merge-lesson-4",
+    "topicId": "git-merge",
+    "lessonNumber": 4,
+    "title": "Merge Conflicts",
+    "overview": "A merge conflict occurs when Git cannot automatically combine changes made in the same part of a file.",
+    "example": {
+      "title": "Conflict Situation",
+      "content": "Branch A\n   |\nSame File Changed\n   |\nBranch B\n\n= Merge Conflict"
+    }
+  },
+  {
+    "id": "git-merge-lesson-5",
+    "topicId": "git-merge",
+    "lessonNumber": 5,
+    "title": "Resolving Merge Conflicts",
+    "overview": "Conflicts are resolved by manually choosing the correct changes and committing the final version.",
+    "example": {
+      "title": "Conflict Resolution Flow",
+      "content": "Find Conflict\n ↓\nEdit File\n ↓\nAdd Changes\n ↓\nCommit"
+    }
+  },
+  {
+    "id": "git-merge-lesson-6",
+    "topicId": "git-merge",
+    "lessonNumber": 6,
+    "title": "Abort Merge",
+    "overview": "Git allows developers to cancel a merge operation if conflicts cannot be resolved.",
+    "example": {
+      "title": "Abort Merge Command",
+      "content": "git merge --abort"
+    }
+  },
+  {
+    "id": "git-merge-lesson-7",
+    "topicId": "git-merge",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned how merging works, different merge types, conflicts, and ways to resolve or cancel merges.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Merge combines branches.\n✔ Conflicts require manual fixes.\n✔ Resolved conflicts need a commit."
+    }
+  }
+]

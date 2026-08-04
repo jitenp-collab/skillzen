@@ -1,0 +1,68 @@
+[
+  {
+    "id": "js-introduction-lesson-1",
+    "topicId": "js-introduction",
+    "lessonNumber": 1,
+    "title": "What is JavaScript?",
+    "overview": "JavaScript is a high-level programming language used to create interactive and dynamic applications. It is mainly used for web development, but it is also used in mobile applications, backend development, and many other areas.",
+    "example": {
+      "title": "JavaScript Example",
+      "content": "console.log('Hello JavaScript');"
+    }
+  },
+  {
+    "id": "js-introduction-lesson-2",
+    "topicId": "js-introduction",
+    "lessonNumber": 2,
+    "title": "Why Do We Use JavaScript?",
+    "overview": "JavaScript is used to add functionality and behavior to applications. It allows developers to handle user interactions, update data, communicate with servers, and build complete applications.",
+    "example": {
+      "title": "Real World Uses",
+      "content": "JavaScript is used for:\n• Web applications\n• Mobile apps using React Native\n• Backend development using Node.js\n• Browser interactions"
+    }
+  },
+  {
+    "id": "js-introduction-lesson-3",
+    "topicId": "js-introduction",
+    "lessonNumber": 3,
+    "title": "How JavaScript Works",
+    "overview": "JavaScript code is executed by JavaScript engines such as Chrome's V8 engine. The engine converts JavaScript code into instructions that computers can understand.",
+    "example": {
+      "title": "JavaScript Execution",
+      "content": "JavaScript Code\n        ↓\nJavaScript Engine\n        ↓\nOutput"
+    }
+  },
+  {
+    "id": "js-introduction-lesson-4",
+    "topicId": "js-introduction",
+    "lessonNumber": 4,
+    "title": "JavaScript in React Native",
+    "overview": "React Native uses JavaScript to create mobile applications. JavaScript handles application logic, state management, user interactions, and communication with native components.",
+    "example": {
+      "title": "React Native Example",
+      "content": "const message = 'Hello React Native';\n\nconsole.log(message);"
+    }
+  },
+  {
+    "id": "js-introduction-lesson-5",
+    "topicId": "js-introduction",
+    "lessonNumber": 5,
+    "title": "JavaScript Syntax Basics",
+    "overview": "JavaScript syntax defines the rules for writing JavaScript code. It includes variables, statements, functions, comments, and expressions.",
+    "example": {
+      "title": "Syntax Example",
+      "content": "const name = 'Manthan';\n\nconsole.log(name);"
+    }
+  },
+  {
+    "id": "js-introduction-lesson-6",
+    "topicId": "js-introduction",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned what JavaScript is, why it is used, how JavaScript works, its role in React Native, and the basics of JavaScript syntax.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ JavaScript is a programming language.\n✔ Used for frontend, backend, and mobile apps.\n✔ React Native uses JavaScript for app logic.\n✔ JavaScript runs using a JavaScript engine."
+    }
+  }
+]

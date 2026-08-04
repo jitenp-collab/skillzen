@@ -1,0 +1,112 @@
+[
+  {
+    "id": "expo-apis-lesson-1",
+    "topicId": "expo-apis",
+    "lessonNumber": 1,
+    "title": "Introduction to Expo APIs",
+    "overview": "Expo APIs provide ready-to-use libraries that allow applications to access device features without writing native code.",
+    "example": {
+      "title": "Expo API Concept",
+      "content": "React Native App\n ↓\nExpo API\n ↓\nDevice Feature"
+    }
+  },
+  {
+    "id": "expo-apis-lesson-2",
+    "topicId": "expo-apis",
+    "lessonNumber": 2,
+    "title": "Camera API",
+    "overview": "Expo Camera API allows applications to access the device camera and capture photos or videos.",
+    "example": {
+      "title": "Camera Usage",
+      "content": "import { CameraView } from 'expo-camera';\n\n<CameraView />"
+    }
+  },
+  {
+    "id": "expo-apis-lesson-3",
+    "topicId": "expo-apis",
+    "lessonNumber": 3,
+    "title": "Location API",
+    "overview": "Expo Location API provides access to device location services and GPS information.",
+    "example": {
+      "title": "Location Example",
+      "content": "import * as Location from 'expo-location';\n\nLocation.getCurrentPositionAsync();"
+    }
+  },
+  {
+    "id": "expo-apis-lesson-4",
+    "topicId": "expo-apis",
+    "lessonNumber": 4,
+    "title": "File System API",
+    "overview": "Expo File System API allows applications to read, write, and manage files on the device.",
+    "example": {
+      "title": "File System Example",
+      "content": "import * as FileSystem from 'expo-file-system';\n\nFileSystem.documentDirectory;"
+    }
+  },
+  {
+    "id": "expo-apis-lesson-5",
+    "topicId": "expo-apis",
+    "lessonNumber": 5,
+    "title": "Sharing API",
+    "overview": "Expo Sharing API allows users to share files or content with other applications installed on the device.",
+    "example": {
+      "title": "Sharing Example",
+      "content": "import * as Sharing from 'expo-sharing';\n\nSharing.shareAsync(fileUri);"
+    }
+  },
+  {
+    "id": "expo-apis-lesson-6",
+    "topicId": "expo-apis",
+    "lessonNumber": 6,
+    "title": "Contacts API",
+    "overview": "Expo Contacts API allows applications to access and manage contact information with user permission.",
+    "example": {
+      "title": "Contacts Example",
+      "content": "import * as Contacts from 'expo-contacts';\n\nContacts.getContactsAsync();"
+    }
+  },
+  {
+    "id": "expo-apis-lesson-7",
+    "topicId": "expo-apis",
+    "lessonNumber": 7,
+    "title": "Clipboard API",
+    "overview": "Expo Clipboard API allows applications to copy and read text from the device clipboard.",
+    "example": {
+      "title": "Clipboard Example",
+      "content": "import * as Clipboard from 'expo-clipboard';\n\nClipboard.setStringAsync('Hello');"
+    }
+  },
+  {
+    "id": "expo-apis-lesson-8",
+    "topicId": "expo-apis",
+    "lessonNumber": 8,
+    "title": "Sensors API",
+    "overview": "Expo Sensors API provides access to device hardware sensors like accelerometer and gyroscope.",
+    "example": {
+      "title": "Sensor Example",
+      "content": "import { Accelerometer } from 'expo-sensors';\n\nAccelerometer.addListener(data => {});"
+    }
+  },
+  {
+    "id": "expo-apis-lesson-9",
+    "topicId": "expo-apis",
+    "lessonNumber": 9,
+    "title": "Permissions Handling",
+    "overview": "Expo APIs often require permissions before accessing device features. Applications should request and handle permissions properly.",
+    "example": {
+      "title": "Permission Flow",
+      "content": "Request Permission\n ↓\nUser Allows\n ↓\nAccess Device Feature"
+    }
+  },
+  {
+    "id": "expo-apis-lesson-10",
+    "topicId": "expo-apis",
+    "lessonNumber": 10,
+    "title": "Topic Summary",
+    "overview": "You learned about important Expo APIs including camera, location, files, sharing, contacts, sensors, and permissions.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Expo APIs access device features.\n✔ Permissions are required.\n✔ APIs reduce native development effort."
+    }
+  }
+]

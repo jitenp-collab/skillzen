@@ -1,0 +1,68 @@
+[
+  {
+    "id": "git-best-practices-lesson-1",
+    "topicId": "git-best-practices",
+    "lessonNumber": 1,
+    "title": "Meaningful Commit Messages",
+    "overview": "Commit messages should clearly describe what changes were made so the project history remains understandable.",
+    "example": {
+      "title": "Commit Example",
+      "content": "Good:\nAdd user authentication flow\n\nBad:\nChanges done"
+    }
+  },
+  {
+    "id": "git-best-practices-lesson-2",
+    "topicId": "git-best-practices",
+    "lessonNumber": 2,
+    "title": "Keep Commits Small",
+    "overview": "Small commits are easier to review, debug, and understand compared to large unrelated changes.",
+    "example": {
+      "title": "Better Practice",
+      "content": "Separate commits:\n\n1. Add UI\n2. Add Validation\n3. Connect API"
+    }
+  },
+  {
+    "id": "git-best-practices-lesson-3",
+    "topicId": "git-best-practices",
+    "lessonNumber": 3,
+    "title": "Branch Management",
+    "overview": "Using proper branch naming and removing unused branches keeps repositories organized.",
+    "example": {
+      "title": "Branch Naming",
+      "content": "feature/profile-screen\nbugfix/login-error\nrelease/v1.0"
+    }
+  },
+  {
+    "id": "git-best-practices-lesson-4",
+    "topicId": "git-best-practices",
+    "lessonNumber": 4,
+    "title": "Avoid Committing Sensitive Data",
+    "overview": "Sensitive information like passwords, API keys, and environment files should never be committed.",
+    "example": {
+      "title": "Use Git Ignore",
+      "content": ".env\ncredentials.json\nsecret-files/"
+    }
+  },
+  {
+    "id": "git-best-practices-lesson-5",
+    "topicId": "git-best-practices",
+    "lessonNumber": 5,
+    "title": "Regular Pull and Updates",
+    "overview": "Keeping the local repository updated helps avoid conflicts and keeps developers synchronized.",
+    "example": {
+      "title": "Update Flow",
+      "content": "git pull\n ↓\nMake Changes\n ↓\nCommit\n ↓\nPush"
+    }
+  },
+  {
+    "id": "git-best-practices-lesson-6",
+    "topicId": "git-best-practices",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned Git practices for better commits, branches, security, collaboration, and repository management.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Write clear commits.\n✔ Protect sensitive data.\n✔ Keep branches clean.\n✔ Sync regularly."
+    }
+  }
+]

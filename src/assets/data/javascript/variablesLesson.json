@@ -1,0 +1,79 @@
+[
+  {
+    "id": "js-variables-lesson-1",
+    "topicId": "js-variables",
+    "lessonNumber": 1,
+    "title": "What are Variables?",
+    "overview": "Variables are containers used to store data values in JavaScript. They allow developers to save and reuse information throughout an application.",
+    "example": {
+      "title": "Variable Example",
+      "content": "let username = 'Manthan';\n\nconsole.log(username);"
+    }
+  },
+  {
+    "id": "js-variables-lesson-2",
+    "topicId": "js-variables",
+    "lessonNumber": 2,
+    "title": "Declaring Variables",
+    "overview": "JavaScript provides three keywords to declare variables: var, let, and const. Each keyword has different behavior and usage.",
+    "example": {
+      "title": "Variable Declaration",
+      "content": "var oldValue = 10;\nlet count = 20;\nconst name = 'React Native';"
+    }
+  },
+  {
+    "id": "js-variables-lesson-3",
+    "topicId": "js-variables",
+    "lessonNumber": 3,
+    "title": "Difference Between var, let, and const",
+    "overview": "var is the older way of declaring variables, while let and const were introduced in ES6. Modern JavaScript mostly uses let and const because they provide better scope control.",
+    "example": {
+      "title": "Comparison",
+      "content": "var:\n• Function scoped\n\nlet:\n• Block scoped\n• Value can be changed\n\nconst:\n• Block scoped\n• Value cannot be reassigned"
+    }
+  },
+  {
+    "id": "js-variables-lesson-4",
+    "topicId": "js-variables",
+    "lessonNumber": 4,
+    "title": "Primitive Data Types",
+    "overview": "Primitive data types store simple values directly. JavaScript has several primitive types including string, number, boolean, undefined, null, bigint, and symbol.",
+    "example": {
+      "title": "Primitive Types",
+      "content": "String: 'Hello'\nNumber: 100\nBoolean: true\nUndefined: undefined\nNull: null"
+    }
+  },
+  {
+    "id": "js-variables-lesson-5",
+    "topicId": "js-variables",
+    "lessonNumber": 5,
+    "title": "Non-Primitive Data Types",
+    "overview": "Non-primitive data types store collections of data and more complex values. Objects and arrays are commonly used non-primitive types.",
+    "example": {
+      "title": "Object and Array",
+      "content": "Object:\nconst user = {name:'Manthan'};\n\nArray:\nconst numbers = [1,2,3];"
+    }
+  },
+  {
+    "id": "js-variables-lesson-6",
+    "topicId": "js-variables",
+    "lessonNumber": 6,
+    "title": "Type Checking with typeof",
+    "overview": "The typeof operator is used to check the data type of a JavaScript value. It returns the type as a string.",
+    "example": {
+      "title": "typeof Example",
+      "content": "const age = 25;\n\nconsole.log(typeof age);\n\nOutput:\nnumber"
+    }
+  },
+  {
+    "id": "js-variables-lesson-7",
+    "topicId": "js-variables",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned about variables, variable declarations, differences between var, let, and const, primitive and non-primitive data types, and checking types using typeof.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Variables store data.\n✔ Use let and const in modern JavaScript.\n✔ JavaScript has primitive and non-primitive types.\n✔ typeof checks the data type."
+    }
+  }
+]

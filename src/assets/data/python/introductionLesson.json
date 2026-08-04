@@ -1,0 +1,68 @@
+[
+  {
+    "id": "python-introduction-lesson-1",
+    "topicId": "python-introduction",
+    "lessonNumber": 1,
+    "title": "What is Python?",
+    "overview": "Python is a high-level, interpreted programming language known for its simple syntax and readability. It is widely used for web development, automation, data science, artificial intelligence, and scripting.",
+    "example": {
+      "title": "Python Example",
+      "content": "print('Hello Python')"
+    }
+  },
+  {
+    "id": "python-introduction-lesson-2",
+    "topicId": "python-introduction",
+    "lessonNumber": 2,
+    "title": "Why Do We Use Python?",
+    "overview": "Python is popular because it is easy to learn, has a large community, and provides many libraries for different types of development.",
+    "example": {
+      "title": "Python Uses",
+      "content": "✔ Web Development\n✔ Data Science\n✔ Artificial Intelligence\n✔ Automation\n✔ Backend Development"
+    }
+  },
+  {
+    "id": "python-introduction-lesson-3",
+    "topicId": "python-introduction",
+    "lessonNumber": 3,
+    "title": "Features of Python",
+    "overview": "Python provides features like simple syntax, interpreted execution, dynamic typing, object-oriented programming support, and a large collection of libraries.",
+    "example": {
+      "title": "Python Features",
+      "content": "✔ Easy Syntax\n✔ Cross Platform\n✔ Open Source\n✔ Large Library Support\n✔ Object Oriented"
+    }
+  },
+  {
+    "id": "python-introduction-lesson-4",
+    "topicId": "python-introduction",
+    "lessonNumber": 4,
+    "title": "Python vs Other Languages",
+    "overview": "Python focuses on simplicity and productivity compared to languages like Java and C++. Its syntax requires fewer lines of code for many tasks.",
+    "example": {
+      "title": "Comparison",
+      "content": "Python:\nprint('Hello')\n\nJava:\nSystem.out.println('Hello');"
+    }
+  },
+  {
+    "id": "python-introduction-lesson-5",
+    "topicId": "python-introduction",
+    "lessonNumber": 5,
+    "title": "Where Python is Used",
+    "overview": "Python is used in many industries including software development, machine learning, automation, cybersecurity, and backend systems.",
+    "example": {
+      "title": "Real World Usage",
+      "content": "• Instagram Backend\n• Machine Learning Models\n• Automation Scripts\n• Data Analysis"
+    }
+  },
+  {
+    "id": "python-introduction-lesson-6",
+    "topicId": "python-introduction",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned what Python is, why it is popular, its features, comparisons with other languages, and real-world applications.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Python is a high-level language.\n✔ It has simple syntax.\n✔ Used in web, AI, automation, and data science.\n✔ Easy to learn and powerful."
+    }
+  }
+]

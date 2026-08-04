@@ -1,0 +1,68 @@
+[
+  {
+    "id": "redux-dispatch-lesson-1",
+    "topicId": "redux-dispatch",
+    "lessonNumber": 1,
+    "title": "What is Dispatch?",
+    "overview": "Dispatch is a Redux function used to send actions to the store. It starts the process of updating application state.",
+    "example": {
+      "title": "Dispatch Example",
+      "content": "dispatch({\n type:'INCREMENT'\n});"
+    }
+  },
+  {
+    "id": "redux-dispatch-lesson-2",
+    "topicId": "redux-dispatch",
+    "lessonNumber": 2,
+    "title": "How Dispatch Works",
+    "overview": "When dispatch is called, the action is sent to reducers. Reducers process the action and update the store.",
+    "example": {
+      "title": "Dispatch Flow",
+      "content": "Component\n ↓\nDispatch\n ↓\nAction\n ↓\nReducer\n ↓\nStore Update"
+    }
+  },
+  {
+    "id": "redux-dispatch-lesson-3",
+    "topicId": "redux-dispatch",
+    "lessonNumber": 3,
+    "title": "Dispatching Actions from Components",
+    "overview": "React components can trigger Redux state changes by using dispatch with actions.",
+    "example": {
+      "title": "useDispatch Example",
+      "content": "const dispatch = useDispatch();\n\ndispatch(addUser(user));"
+    }
+  },
+  {
+    "id": "redux-dispatch-lesson-4",
+    "topicId": "redux-dispatch",
+    "lessonNumber": 4,
+    "title": "Synchronous Data Flow",
+    "overview": "Redux normally follows synchronous data flow where actions immediately reach reducers and update the store.",
+    "example": {
+      "title": "Synchronous Flow",
+      "content": "Action\n ↓\nReducer\n ↓\nUpdated State"
+    }
+  },
+  {
+    "id": "redux-dispatch-lesson-5",
+    "topicId": "redux-dispatch",
+    "lessonNumber": 5,
+    "title": "Asynchronous Dispatch",
+    "overview": "Async operations like API calls require middleware such as Redux Thunk to dispatch actions after completing asynchronous tasks.",
+    "example": {
+      "title": "Async Flow",
+      "content": "API Call\n ↓\nThunk\n ↓\nDispatch Success Action\n ↓\nUpdate Store"
+    }
+  },
+  {
+    "id": "redux-dispatch-lesson-6",
+    "topicId": "redux-dispatch",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned how dispatch sends actions, how Redux data flows, and how synchronous and asynchronous updates work.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Dispatch sends actions.\n✔ Reducers handle actions.\n✔ Store updates state.\n✔ Middleware handles async work."
+    }
+  }
+]
