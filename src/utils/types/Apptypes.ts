@@ -171,8 +171,6 @@ export type VisualRendererMap = {
 export type LoopedBenefitItem = BenefitItem & { uid: string };
 
 
-
-
 export type ContentBlock =
   | { type: "heading"; text: string }
   | { type: "paragraph"; text: string }
@@ -210,4 +208,3 @@ export type BenefitItem = {
   icon: (props: GetStartedIconProps) => ReactElement
   visualType: string;
 };
-
