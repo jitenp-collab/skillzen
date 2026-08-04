@@ -114,6 +114,8 @@ const CategoryCard = memo(
         withTiming(0, { duration: 150 }),
       );
       onPress(item);
+      console.log(item.title);
+      
     };
 
     return (

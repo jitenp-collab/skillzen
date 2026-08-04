@@ -241,3 +241,41 @@ export const GetCategories = createAsyncThunk("get/categories", async () => {
   }
 });
 
+export const SelectCaogery = createAsyncThunk(
+  "get/catogery",
+  async (Catogery: string) => {
+    try {
+      switch (Catogery) {
+        case "React Native CLI":
+          return require("../assets/data/topics/reactNativeTopics.json");
+
+        case "JavaScript":
+          return require("../assets/data/topics/javascriptTopics.json");
+
+        case "TypeScript":
+          return require("../assets/data/topics/typescriptTopics.json");
+
+        case "Python":
+          return require("../assets/data/topics/pythonTopics.json");
+
+        case "Node.js":
+          return require("../assets/data/topics/nodejsTopics.json");
+
+        case "Redux":
+          return require("../assets/data/topics/reduxTopics.json");
+
+        case "Expo":
+          return require("../assets/data/topics/expoTopics.json");
+
+        case "Git":
+          return require("../assets/data/topics/gitTopics.json");
+
+        case "React Native CLI":
+        default: return require("../assets/data/topics/reactNativeTopics.json");
+      }
+    } catch (error) {
+      console.log("Error to fetch Category");
+      return require("../../assets/Translater/catogery.json");
+    }
+  }
+);
