@@ -204,6 +204,19 @@ export type ContentData = {
   topics: Topic[];
 };
 
+export type ProfileCompProps = {
+  currentUser: User;
+  isPhotoModalVisible: boolean;
+
+  onOpenPhotoModal: () => void;
+  onClosePhotoModal: () => void;
+
+  onTakePhoto: () => void;
+  onSelectFromGallery: () => void;
+  onDeletePhoto: () => void;
+  onLogout: () => void;
+};
+
 export type ContentView = "categories" | "topics";
 
 export type BenefitItem = {

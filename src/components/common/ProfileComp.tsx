@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Image,
   Modal,
@@ -12,7 +11,7 @@ import {
 import AppButton from "@/components/reusableComponents/AppButton";
 
 import { theme } from "@/utils/theme/Theme";
-import type { User } from "@/utils/types/Apptypes";
+import type { ProfileCompProps, User } from "@/utils/types/Apptypes";
 import {
   PencilIcon,
   AchievementIcon,
@@ -26,19 +25,6 @@ import {
   GalleryIcon,
   DeleteIcon,
 } from "../../assets/svg/SvgIcons";
-
-type ProfileCompProps = {
-  currentUser: User;
-  isPhotoModalVisible: boolean;
-
-  onOpenPhotoModal: () => void;
-  onClosePhotoModal: () => void;
-
-  onTakePhoto: () => void;
-  onSelectFromGallery: () => void;
-  onDeletePhoto: () => void;
-  onLogout: () => void;
-};
 
 const ProfileComp = ({
   currentUser,
@@ -467,7 +453,6 @@ const styles = StyleSheet.create({
   },
 
   logoutButton: {
-    //     marginTop: 2,
     justifyContent: "flex-start",
     paddingHorizontal: 16,
   },
