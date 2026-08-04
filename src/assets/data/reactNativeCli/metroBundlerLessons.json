@@ -1,0 +1,57 @@
+[
+  {
+    "id": "rn-cli-metro-bundler-lesson-1",
+    "topicId": "rn-cli-metro-bundler",
+    "lessonNumber": 1,
+    "title": "What is Metro Bundler?",
+    "overview": "Metro Bundler is the JavaScript bundler used by React Native. It reads your application's source code, combines all JavaScript files and dependencies into a single bundle, and serves it to your application during development. Metro also supports Fast Refresh, allowing changes to appear instantly without rebuilding the entire application.",
+    "example": {
+      "title": "Starting Metro Bundler",
+      "content": "npx react-native start"
+    }
+  },
+  {
+    "id": "rn-cli-metro-bundler-lesson-2",
+    "topicId": "rn-cli-metro-bundler",
+    "lessonNumber": 2,
+    "title": "How Metro Bundler Works",
+    "overview": "When you start Metro Bundler, it scans your project, resolves all imported files, bundles them together, and serves them to your application. Every time you save a file, Metro detects the change, rebuilds only the affected files, and updates the application automatically.",
+    "example": {
+      "title": "Metro Workflow",
+      "content": "Write Code → Save File → Metro Bundles Changes → App Updates Automatically"
+    }
+  },
+  {
+    "id": "rn-cli-metro-bundler-lesson-3",
+    "topicId": "rn-cli-metro-bundler",
+    "lessonNumber": 3,
+    "title": "Fast Refresh",
+    "overview": "Fast Refresh is a feature provided by Metro that updates your application immediately after you save changes. It helps developers test UI updates quickly without restarting the entire application, making development much faster.",
+    "example": {
+      "title": "Real-World Example",
+      "content": "You change the text inside a <Text> component and press Save. Within a second, the updated text appears in the app without reinstalling or rebuilding it."
+    }
+  },
+  {
+    "id": "rn-cli-metro-bundler-lesson-4",
+    "topicId": "rn-cli-metro-bundler",
+    "lessonNumber": 4,
+    "title": "Clearing Metro Cache",
+    "overview": "Sometimes Metro may continue using old cached files, leading to unexpected errors. Clearing the Metro cache forces it to rebuild everything from scratch, which often resolves these issues.",
+    "example": {
+      "title": "Clear Metro Cache",
+      "content": "npx react-native start --reset-cache"
+    }
+  },
+  {
+    "id": "rn-cli-metro-bundler-lesson-5",
+    "topicId": "rn-cli-metro-bundler",
+    "lessonNumber": 5,
+    "title": "Topic Summary",
+    "overview": "You learned what Metro Bundler is, how it bundles JavaScript files, how Fast Refresh improves development speed, and how to clear the Metro cache when troubleshooting issues.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Metro bundles JavaScript files.\n✔ It serves the bundle to your app.\n✔ Fast Refresh updates the app instantly.\n✔ Use --reset-cache to clear Metro's cache."
+    }
+  }
+]

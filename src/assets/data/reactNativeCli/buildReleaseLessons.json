@@ -1,0 +1,90 @@
+[
+  {
+    "id": "rn-cli-build-release-lesson-1",
+    "topicId": "rn-cli-build-release",
+    "lessonNumber": 1,
+    "title": "What is Build and Release?",
+    "overview": "Build and release is the process of preparing a React Native application for production and making it available to users through platforms like Google Play Store and Apple App Store.",
+    "example": {
+      "title": "Build Process",
+      "content": "Development Code\n      ↓\nProduction Build\n      ↓\nApp Store Release"
+    }
+  },
+  {
+    "id": "rn-cli-build-release-lesson-2",
+    "topicId": "rn-cli-build-release",
+    "lessonNumber": 2,
+    "title": "Debug vs Release Build",
+    "overview": "React Native provides different build modes. Debug builds are used during development with debugging features enabled, while release builds are optimized for production users.",
+    "example": {
+      "title": "Difference",
+      "content": "Debug Build:\n• Development purpose\n• Debug tools enabled\n• Not optimized\n\nRelease Build:\n• Production purpose\n• Optimized performance\n• Debugging disabled"
+    }
+  },
+  {
+    "id": "rn-cli-build-release-lesson-3",
+    "topicId": "rn-cli-build-release",
+    "lessonNumber": 3,
+    "title": "Android Build Process",
+    "overview": "Android builds are created using Gradle. React Native CLI uses Android Studio configuration and Gradle files to generate APK or AAB files.",
+    "example": {
+      "title": "Android Build Commands",
+      "content": "./gradlew assembleRelease\n\nor\n\n./gradlew bundleRelease"
+    }
+  },
+  {
+    "id": "rn-cli-build-release-lesson-4",
+    "topicId": "rn-cli-build-release",
+    "lessonNumber": 4,
+    "title": "Generating APK and AAB",
+    "overview": "APK files are used for directly installing Android applications, while AAB files are the recommended format for publishing applications on Google Play Store.",
+    "example": {
+      "title": "Build Files",
+      "content": "APK:\n• Install directly on devices\n\nAAB:\n• Used for Play Store publishing"
+    }
+  },
+  {
+    "id": "rn-cli-build-release-lesson-5",
+    "topicId": "rn-cli-build-release",
+    "lessonNumber": 5,
+    "title": "App Signing",
+    "overview": "App signing verifies the identity of the application developer. Android and iOS require signed applications before publishing them to their stores.",
+    "example": {
+      "title": "Android Signing",
+      "content": "Signing Process:\n• Generate Keystore\n• Configure Gradle\n• Create Signed Build"
+    }
+  },
+  {
+    "id": "rn-cli-build-release-lesson-6",
+    "topicId": "rn-cli-build-release",
+    "lessonNumber": 6,
+    "title": "Environment Configuration",
+    "overview": "Production applications often require different configurations such as API URLs, keys, and environment-specific settings. Environment variables help manage these values safely.",
+    "example": {
+      "title": "Environment Example",
+      "content": "Development:\nAPI_URL = localhost\n\nProduction:\nAPI_URL = production-server"
+    }
+  },
+  {
+    "id": "rn-cli-build-release-lesson-7",
+    "topicId": "rn-cli-build-release",
+    "lessonNumber": 7,
+    "title": "Publishing Application",
+    "overview": "After creating a release build, applications can be published to app stores. Developers need to provide app details, screenshots, descriptions, and required configurations.",
+    "example": {
+      "title": "Publishing Steps",
+      "content": "1. Create release build\n2. Sign application\n3. Upload to store\n4. Submit for review"
+    }
+  },
+  {
+    "id": "rn-cli-build-release-lesson-8",
+    "topicId": "rn-cli-build-release",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You learned how React Native applications are built and released, the difference between debug and release builds, Android build process, signing, configuration, and publishing applications.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Release builds are optimized for users.\n✔ APK installs directly on devices.\n✔ AAB is used for Play Store.\n✔ App signing is required for publishing.\n✔ Production builds require proper configuration."
+    }
+  }
+]

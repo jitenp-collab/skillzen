@@ -2,148 +2,139 @@
   {
     "id": "git-introduction",
     "title": "Introduction to Git",
-    "image": "https://img.icons8.com/color/512/git.png",
-    "totalLessonsOfTopic": 5,
-    "progress": 0
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 4
   },
   {
     "id": "git-installation",
-    "title": "Git Installation and Configuration",
-    "image": "https://img.icons8.com/color/512/git.png",
-    "totalLessonsOfTopic": 6,
-    "progress": 0
+    "title": "Installing Git",
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 3
+  },
+  {
+    "id": "git-configuration",
+    "title": "Git Configuration",
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 4
   },
   {
     "id": "git-repository",
-    "title": "Git Repository and Init",
-    "image": "https://img.icons8.com/color/512/git.png",
-    "totalLessonsOfTopic": 6,
-    "progress": 0
+    "title": "Understanding Repositories",
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 4
   },
   {
-    "id": "git-clone-status",
-    "title": "Clone and Status",
-    "image": "https://img.icons8.com/color/512/git.png",
-    "totalLessonsOfTopic": 6,
-    "progress": 0
+    "id": "git-init",
+    "title": "git init",
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 3
   },
   {
-    "id": "git-staging",
-    "title": "Staging and Committing Changes",
-    "image": "https://img.icons8.com/color/512/git.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "id": "git-clone",
+    "title": "git clone",
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 3
   },
   {
-    "id": "git-history-diff",
-    "title": "Git History and Diff",
-    "image": "https://img.icons8.com/color/512/git.png",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
+    "id": "git-status",
+    "title": "git status",
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 3
+  },
+  {
+    "id": "git-add",
+    "title": "git add",
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 4
+  },
+  {
+    "id": "git-commit",
+    "title": "git commit",
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 5
+  },
+  {
+    "id": "git-log",
+    "title": "git log",
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 4
   },
   {
     "id": "git-branches",
-    "title": "Branches and Branch Management",
-    "image": "https://img.icons8.com/color/512/git.png",
-    "totalLessonsOfTopic": 9,
-    "progress": 0
+    "title": "Branches",
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 6
+  },
+  {
+    "id": "git-checkout-switch",
+    "title": "git checkout & git switch",
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 4
   },
   {
     "id": "git-merge",
-    "title": "Merge and Conflict Resolution",
-    "image": "https://img.icons8.com/color/512/git.png",
-    "totalLessonsOfTopic": 10,
-    "progress": 0
+    "title": "git merge",
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 5
+  },
+  {
+    "id": "git-rebase",
+    "title": "git rebase",
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 5
+  },
+  {
+    "id": "git-stash",
+    "title": "git stash",
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 4
   },
   {
     "id": "git-remote",
     "title": "Remote Repositories",
-    "image": "https://img.icons8.com/color/512/git.png",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
-  },
-  {
-    "id": "git-push-pull",
-    "title": "Push, Pull and Fetch",
-    "image": "https://img.icons8.com/color/512/git.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 5
   },
   {
     "id": "git-github",
-    "title": "GitHub and Collaboration",
-    "image": "https://img.icons8.com/color/512/git.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "title": "Working with GitHub",
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 6
   },
   {
-    "id": "git-fork-pull-request",
-    "title": "Forks and Pull Requests",
-    "image": "https://img.icons8.com/color/512/git.png",
-    "totalLessonsOfTopic": 9,
-    "progress": 0
+    "id": "git-pull-push",
+    "title": "git pull & git push",
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 5
   },
   {
-    "id": "git-stash",
-    "title": "Git Stash",
-    "image": "https://img.icons8.com/color/512/git.png",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
+    "id": "git-pull-requests",
+    "title": "Pull Requests",
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 5
   },
   {
-    "id": "git-reset-revert",
-    "title": "Reset, Restore and Revert",
-    "image": "https://img.icons8.com/color/512/git.png",
-    "totalLessonsOfTopic": 9,
-    "progress": 0
+    "id": "git-conflicts",
+    "title": "Resolving Merge Conflicts",
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 6
   },
   {
-    "id": "git-rebase",
-    "title": "Git Rebase",
-    "image": "https://img.icons8.com/color/512/git.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
-  },
-  {
-    "id": "git-cherry-pick",
-    "title": "Cherry-Pick",
-    "image": "https://img.icons8.com/color/512/git.png",
-    "totalLessonsOfTopic": 6,
-    "progress": 0
+    "id": "git-ignore",
+    "title": ".gitignore",
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 3
   },
   {
     "id": "git-tags",
-    "title": "Tags and Releases",
-    "image": "https://img.icons8.com/color/512/git.png",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
+    "title": "Git Tags",
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 4
   },
   {
-    "id": "git-gitignore",
-    "title": "Gitignore and Git LFS",
-    "image": "https://img.icons8.com/color/512/git.png",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
-  },
-  {
-    "id": "git-workflows",
-    "title": "Git Workflows and Best Practices",
-    "image": "https://img.icons8.com/color/512/git.png",
-    "totalLessonsOfTopic": 9,
-    "progress": 0
-  },
-  {
-    "id": "git-hooks",
-    "title": "Git Hooks and Automation",
-    "image": "https://img.icons8.com/color/512/git.png",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
-  },
-  {
-    "id": "git-recovery",
-    "title": "Git Recovery and Troubleshooting",
-    "image": "https://img.icons8.com/color/512/git.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "id": "git-best-practices",
+    "title": "Git Best Practices",
+    "icon": "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    "totalLessons": 5
   }
 ]

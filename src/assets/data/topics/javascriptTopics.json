@@ -1,114 +1,134 @@
 [
   {
-    "id": "javascript-introduction",
-    "title": "JavaScript Introduction",
-    "image": "https://img.icons8.com/color/512/javascript.png",
-    "totalLessonsOfTopic": 5,
-    "progress": 0
+    "id": "js-introduction",
+    "title": "Introduction to JavaScript",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 5
   },
   {
-    "id": "javascript-variables",
-    "title": "Variables and Constants",
-    "image": "https://img.icons8.com/color/512/javascript.png",
-    "totalLessonsOfTopic": 6,
-    "progress": 0
+    "id": "js-variables",
+    "title": "Variables",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 5
   },
   {
-    "id": "javascript-data-types",
+    "id": "js-data-types",
     "title": "Data Types",
-    "image": "https://img.icons8.com/color/512/javascript.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 6
   },
   {
-    "id": "javascript-operators",
+    "id": "js-operators",
     "title": "Operators",
-    "image": "https://img.icons8.com/color/512/javascript.png",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 5
   },
   {
-    "id": "javascript-conditions",
+    "id": "js-type-conversion",
+    "title": "Type Conversion",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 4
+  },
+  {
+    "id": "js-strings",
+    "title": "Strings",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 6
+  },
+  {
+    "id": "js-numbers-math",
+    "title": "Numbers & Math",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 5
+  },
+  {
+    "id": "js-arrays",
+    "title": "Arrays",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 8
+  },
+  {
+    "id": "js-objects",
+    "title": "Objects",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 8
+  },
+  {
+    "id": "js-functions",
+    "title": "Functions",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 7
+  },
+  {
+    "id": "js-arrow-functions",
+    "title": "Arrow Functions",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 4
+  },
+  {
+    "id": "js-scope",
+    "title": "Scope",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 5
+  },
+  {
+    "id": "js-conditionals",
     "title": "Conditional Statements",
-    "image": "https://img.icons8.com/color/512/javascript.png",
-    "totalLessonsOfTopic": 6,
-    "progress": 0
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 5
   },
   {
-    "id": "javascript-loops",
+    "id": "js-loops",
     "title": "Loops",
-    "image": "https://img.icons8.com/color/512/javascript.png",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 6
   },
   {
-    "id": "javascript-functions",
-    "title": "Functions, Scope and Hoisting",
-    "image": "https://img.icons8.com/color/512/javascript.png",
-    "totalLessonsOfTopic": 10,
-    "progress": 0
+    "id": "js-array-methods",
+    "title": "Array Methods",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 8
   },
   {
-    "id": "javascript-arrays",
-    "title": "Arrays and Array Methods",
-    "image": "https://img.icons8.com/color/512/javascript.png",
-    "totalLessonsOfTopic": 12,
-    "progress": 0
+    "id": "js-es6-features",
+    "title": "ES6 Features",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 7
   },
   {
-    "id": "javascript-objects",
-    "title": "Objects and JSON",
-    "image": "https://img.icons8.com/color/512/javascript.png",
-    "totalLessonsOfTopic": 10,
-    "progress": 0
+    "id": "js-modules",
+    "title": "Modules",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 4
   },
   {
-    "id": "javascript-strings",
-    "title": "Strings and String Methods",
-    "image": "https://img.icons8.com/color/512/javascript.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "id": "js-promises",
+    "title": "Promises",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 6
   },
   {
-    "id": "javascript-es6",
-    "title": "Modern JavaScript ES6+",
-    "image": "https://img.icons8.com/color/512/javascript.png",
-    "totalLessonsOfTopic": 12,
-    "progress": 0
+    "id": "js-async-await",
+    "title": "Async / Await",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 5
   },
   {
-    "id": "javascript-oops",
-    "title": "Classes and OOP",
-    "image": "https://img.icons8.com/color/512/javascript.png",
-    "totalLessonsOfTopic": 9,
-    "progress": 0
-  },
-  {
-    "id": "javascript-async",
-    "title": "Callbacks, Promises and Async Await",
-    "image": "https://img.icons8.com/color/512/javascript.png",
-    "totalLessonsOfTopic": 10,
-    "progress": 0
-  },
-  {
-    "id": "javascript-modules",
-    "title": "JavaScript Modules",
-    "image": "https://img.icons8.com/color/512/javascript.png",
-    "totalLessonsOfTopic": 6,
-    "progress": 0
-  },
-  {
-    "id": "javascript-error-handling",
+    "id": "js-error-handling",
     "title": "Error Handling",
-    "image": "https://img.icons8.com/color/512/javascript.png",
-    "totalLessonsOfTopic": 6,
-    "progress": 0
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 5
   },
   {
-    "id": "javascript-advanced",
-    "title": "Advanced JavaScript Concepts",
-    "image": "https://img.icons8.com/color/512/javascript.png",
-    "totalLessonsOfTopic": 10,
-    "progress": 0
+    "id": "js-local-storage",
+    "title": "Local Storage",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 4
+  },
+  {
+    "id": "js-best-practices",
+    "title": "JavaScript Best Practices",
+    "icon": "https://read.learnyard.com/content/images/2024/07/logo.png",
+    "totalLessons": 5
   }
 ]

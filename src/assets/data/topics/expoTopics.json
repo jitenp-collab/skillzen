@@ -2,162 +2,121 @@
   {
     "id": "expo-introduction",
     "title": "Introduction to Expo",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 5,
-    "progress": 0
+    "icon": "https://cdn.worldvectorlogo.com/logos/expo-1.svg",
+    "totalLessons": 4
   },
   {
-    "id": "expo-setup",
-    "title": "Expo Setup and First Project",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 6,
-    "progress": 0
+    "id": "expo-cli-vs-react-native-cli",
+    "title": "Expo vs React Native CLI",
+    "icon": "https://cdn.worldvectorlogo.com/logos/expo-1.svg",
+    "totalLessons": 5
+  },
+  {
+    "id": "expo-installation",
+    "title": "Installing Expo",
+    "icon": "https://cdn.worldvectorlogo.com/logos/expo-1.svg",
+    "totalLessons": 4
+  },
+  {
+    "id": "expo-create-project",
+    "title": "Creating Your First Expo Project",
+    "icon": "https://cdn.worldvectorlogo.com/logos/expo-1.svg",
+    "totalLessons": 5
   },
   {
     "id": "expo-project-structure",
     "title": "Expo Project Structure",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 6,
-    "progress": 0
+    "icon": "https://cdn.worldvectorlogo.com/logos/expo-1.svg",
+    "totalLessons": 5
   },
   {
     "id": "expo-router",
-    "title": "Expo Router Fundamentals",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 10,
-    "progress": 0
+    "title": "Expo Router",
+    "icon": "https://cdn.worldvectorlogo.com/logos/expo-1.svg",
+    "totalLessons": 7
   },
   {
     "id": "expo-navigation",
-    "title": "Stack, Tabs and Drawer Navigation",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 12,
-    "progress": 0
+    "title": "Navigation in Expo",
+    "icon": "https://cdn.worldvectorlogo.com/logos/expo-1.svg",
+    "totalLessons": 6
   },
   {
     "id": "expo-assets",
-    "title": "Assets, Fonts and Icons",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "title": "Managing Assets",
+    "icon": "https://cdn.worldvectorlogo.com/logos/expo-1.svg",
+    "totalLessons": 4
   },
   {
-    "id": "expo-splash",
-    "title": "Splash Screen and App Icon",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
+    "id": "expo-fonts",
+    "title": "Custom Fonts",
+    "icon": "https://cdn.worldvectorlogo.com/logos/expo-1.svg",
+    "totalLessons": 4
   },
   {
-    "id": "expo-configuration",
-    "title": "App Configuration",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
+    "id": "expo-camera",
+    "title": "Camera",
+    "icon": "https://cdn.worldvectorlogo.com/logos/expo-1.svg",
+    "totalLessons": 6
   },
   {
-    "id": "expo-storage",
-    "title": "AsyncStorage and SecureStore",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "id": "expo-image-picker",
+    "title": "Image Picker",
+    "icon": "https://cdn.worldvectorlogo.com/logos/expo-1.svg",
+    "totalLessons": 5
   },
   {
-    "id": "expo-file-system",
-    "title": "Expo File System",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
-  },
-  {
-    "id": "expo-camera-images",
-    "title": "Camera and Image Picker",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 9,
-    "progress": 0
-  },
-  {
-    "id": "expo-audio-video",
-    "title": "Audio and Video",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 9,
-    "progress": 0
-  },
-  {
-    "id": "expo-location-maps",
-    "title": "Location and Maps",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 10,
-    "progress": 0
-  },
-  {
-    "id": "expo-permissions",
-    "title": "Permissions and Device APIs",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 9,
-    "progress": 0
+    "id": "expo-location",
+    "title": "Location",
+    "icon": "https://cdn.worldvectorlogo.com/logos/expo-1.svg",
+    "totalLessons": 5
   },
   {
     "id": "expo-notifications",
     "title": "Push Notifications",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 10,
-    "progress": 0
+    "icon": "https://cdn.worldvectorlogo.com/logos/expo-1.svg",
+    "totalLessons": 6
   },
   {
-    "id": "expo-background-tasks",
-    "title": "Background Tasks",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "id": "expo-file-system",
+    "title": "File System",
+    "icon": "https://cdn.worldvectorlogo.com/logos/expo-1.svg",
+    "totalLessons": 5
   },
   {
-    "id": "expo-api-auth",
-    "title": "API Integration and Authentication",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 10,
-    "progress": 0
+    "id": "expo-secure-store",
+    "title": "Secure Store",
+    "icon": "https://cdn.worldvectorlogo.com/logos/expo-1.svg",
+    "totalLessons": 4
   },
   {
-    "id": "expo-prebuild",
-    "title": "Prebuild and Native Directories",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "id": "expo-splash-screen",
+    "title": "Splash Screen",
+    "icon": "https://cdn.worldvectorlogo.com/logos/expo-1.svg",
+    "totalLessons": 4
   },
   {
-    "id": "expo-config-plugins",
-    "title": "Expo Config Plugins",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "id": "expo-app-icon",
+    "title": "App Icons & Adaptive Icons",
+    "icon": "https://cdn.worldvectorlogo.com/logos/expo-1.svg",
+    "totalLessons": 4
   },
   {
-    "id": "expo-development-builds",
-    "title": "Development Builds",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "id": "expo-environment-variables",
+    "title": "Environment Variables",
+    "icon": "https://cdn.worldvectorlogo.com/logos/expo-1.svg",
+    "totalLessons": 4
   },
   {
-    "id": "expo-eas",
-    "title": "EAS Build and Submit",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 10,
-    "progress": 0
+    "id": "expo-eas-build",
+    "title": "EAS Build",
+    "icon": "https://cdn.worldvectorlogo.com/logos/expo-1.svg",
+    "totalLessons": 7
   },
   {
-    "id": "expo-updates",
-    "title": "Expo Updates",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
-  },
-  {
-    "id": "expo-debugging",
-    "title": "Debugging and Performance",
-    "image": "https://img.icons8.com/color/512/expo.png",
-    "totalLessonsOfTopic": 9,
-    "progress": 0
+    "id": "expo-publishing",
+    "title": "Publishing Expo Apps",
+    "icon": "https://cdn.worldvectorlogo.com/logos/expo-1.svg",
+    "totalLessons": 6
   }
 ]

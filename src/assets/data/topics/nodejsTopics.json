@@ -2,141 +2,121 @@
   {
     "id": "nodejs-introduction",
     "title": "Introduction to Node.js",
-    "image": "https://img.icons8.com/color/512/nodejs.png",
-    "totalLessonsOfTopic": 5,
-    "progress": 0
+    "icon": "https://cdn.worldvectorlogo.com/logos/nodejs-1.svg",
+    "totalLessons": 4
   },
   {
-    "id": "nodejs-setup",
-    "title": "Node.js Setup and First Program",
-    "image": "https://img.icons8.com/color/512/nodejs.png",
-    "totalLessonsOfTopic": 5,
-    "progress": 0
+    "id": "nodejs-installation",
+    "title": "Installing Node.js",
+    "icon": "https://cdn.worldvectorlogo.com/logos/nodejs-1.svg",
+    "totalLessons": 3
+  },
+  {
+    "id": "nodejs-how-it-works",
+    "title": "How Node.js Works",
+    "icon": "https://cdn.worldvectorlogo.com/logos/nodejs-1.svg",
+    "totalLessons": 5
+  },
+  {
+    "id": "nodejs-repl",
+    "title": "Node.js REPL",
+    "icon": "https://cdn.worldvectorlogo.com/logos/nodejs-1.svg",
+    "totalLessons": 3
   },
   {
     "id": "nodejs-modules",
-    "title": "Node.js Modules",
-    "image": "https://img.icons8.com/color/512/nodejs.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "title": "Modules",
+    "icon": "https://cdn.worldvectorlogo.com/logos/nodejs-1.svg",
+    "totalLessons": 5
+  },
+  {
+    "id": "nodejs-package-json",
+    "title": "package.json",
+    "icon": "https://cdn.worldvectorlogo.com/logos/nodejs-1.svg",
+    "totalLessons": 4
   },
   {
     "id": "nodejs-npm",
-    "title": "NPM and Package Management",
-    "image": "https://img.icons8.com/color/512/nodejs.png",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
+    "title": "NPM",
+    "icon": "https://cdn.worldvectorlogo.com/logos/nodejs-1.svg",
+    "totalLessons": 5
   },
   {
     "id": "nodejs-file-system",
-    "title": "File System and Path Modules",
-    "image": "https://img.icons8.com/color/512/nodejs.png",
-    "totalLessonsOfTopic": 9,
-    "progress": 0
+    "title": "File System (fs)",
+    "icon": "https://cdn.worldvectorlogo.com/logos/nodejs-1.svg",
+    "totalLessons": 6
+  },
+  {
+    "id": "nodejs-path-module",
+    "title": "Path Module",
+    "icon": "https://cdn.worldvectorlogo.com/logos/nodejs-1.svg",
+    "totalLessons": 4
   },
   {
     "id": "nodejs-events",
-    "title": "Events and Event Emitter",
-    "image": "https://img.icons8.com/color/512/nodejs.png",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
+    "title": "Events & EventEmitter",
+    "icon": "https://cdn.worldvectorlogo.com/logos/nodejs-1.svg",
+    "totalLessons": 5
   },
   {
-    "id": "nodejs-streams",
-    "title": "Buffers and Streams",
-    "image": "https://img.icons8.com/color/512/nodejs.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
-  },
-  {
-    "id": "nodejs-http",
-    "title": "Creating HTTP Servers",
-    "image": "https://img.icons8.com/color/512/nodejs.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "id": "nodejs-http-module",
+    "title": "HTTP Module",
+    "icon": "https://cdn.worldvectorlogo.com/logos/nodejs-1.svg",
+    "totalLessons": 5
   },
   {
     "id": "nodejs-express",
-    "title": "Express.js Fundamentals",
-    "image": "https://img.icons8.com/color/512/nodejs.png",
-    "totalLessonsOfTopic": 12,
-    "progress": 0
+    "title": "Introduction to Express.js",
+    "icon": "https://cdn.worldvectorlogo.com/logos/nodejs-1.svg",
+    "totalLessons": 5
   },
   {
-    "id": "nodejs-rest-api",
-    "title": "REST API Development",
-    "image": "https://img.icons8.com/color/512/nodejs.png",
-    "totalLessonsOfTopic": 12,
-    "progress": 0
+    "id": "nodejs-routing",
+    "title": "Routing",
+    "icon": "https://cdn.worldvectorlogo.com/logos/nodejs-1.svg",
+    "totalLessons": 5
   },
   {
     "id": "nodejs-middleware",
     "title": "Middleware",
-    "image": "https://img.icons8.com/color/512/nodejs.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "icon": "https://cdn.worldvectorlogo.com/logos/nodejs-1.svg",
+    "totalLessons": 6
   },
   {
-    "id": "nodejs-validation",
-    "title": "Request Validation and Error Handling",
-    "image": "https://img.icons8.com/color/512/nodejs.png",
-    "totalLessonsOfTopic": 9,
-    "progress": 0
+    "id": "nodejs-rest-api",
+    "title": "Building REST APIs",
+    "icon": "https://cdn.worldvectorlogo.com/logos/nodejs-1.svg",
+    "totalLessons": 8
+  },
+  {
+    "id": "nodejs-mongodb",
+    "title": "MongoDB Integration",
+    "icon": "https://cdn.worldvectorlogo.com/logos/nodejs-1.svg",
+    "totalLessons": 7
   },
   {
     "id": "nodejs-authentication",
-    "title": "Authentication and Authorization",
-    "image": "https://img.icons8.com/color/512/nodejs.png",
-    "totalLessonsOfTopic": 12,
-    "progress": 0
-  },
-  {
-    "id": "nodejs-database",
-    "title": "Database Integration",
-    "image": "https://img.icons8.com/color/512/nodejs.png",
-    "totalLessonsOfTopic": 12,
-    "progress": 0
+    "title": "Authentication & Authorization",
+    "icon": "https://cdn.worldvectorlogo.com/logos/nodejs-1.svg",
+    "totalLessons": 8
   },
   {
     "id": "nodejs-file-upload",
-    "title": "File Upload and Email Services",
-    "image": "https://img.icons8.com/color/512/nodejs.png",
-    "totalLessonsOfTopic": 9,
-    "progress": 0
+    "title": "File Upload",
+    "icon": "https://cdn.worldvectorlogo.com/logos/nodejs-1.svg",
+    "totalLessons": 5
   },
   {
-    "id": "nodejs-environment",
-    "title": "Environment Variables and Configuration",
-    "image": "https://img.icons8.com/color/512/nodejs.png",
-    "totalLessonsOfTopic": 6,
-    "progress": 0
-  },
-  {
-    "id": "nodejs-event-loop",
-    "title": "Event Loop and Async Programming",
-    "image": "https://img.icons8.com/color/512/nodejs.png",
-    "totalLessonsOfTopic": 9,
-    "progress": 0
-  },
-  {
-    "id": "nodejs-websockets",
-    "title": "WebSockets and Real-Time Apps",
-    "image": "https://img.icons8.com/color/512/nodejs.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
-  },
-  {
-    "id": "nodejs-testing",
-    "title": "Testing and Debugging",
-    "image": "https://img.icons8.com/color/512/nodejs.png",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "id": "nodejs-error-handling",
+    "title": "Error Handling",
+    "icon": "https://cdn.worldvectorlogo.com/logos/nodejs-1.svg",
+    "totalLessons": 5
   },
   {
     "id": "nodejs-deployment",
-    "title": "Performance and Deployment",
-    "image": "https://img.icons8.com/color/512/nodejs.png",
-    "totalLessonsOfTopic": 9,
-    "progress": 0
+    "title": "Deployment",
+    "icon": "https://cdn.worldvectorlogo.com/logos/nodejs-1.svg",
+    "totalLessons": 6
   }
 ]

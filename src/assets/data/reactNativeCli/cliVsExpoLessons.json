@@ -1,0 +1,68 @@
+[
+  {
+    "id": "rn-cli-vs-expo-lesson-1",
+    "topicId": "rn-cli-vs-expo",
+    "lessonNumber": 1,
+    "title": "What is React Native CLI?",
+    "overview": "React Native CLI is the official command-line tool used to create React Native applications. It provides complete access to the native Android and iOS projects, allowing developers to integrate native libraries, customize platform-specific code, and build production-ready applications without limitations.",
+    "example": {
+      "title": "Create a React Native CLI Project",
+      "content": "npx @react-native-community/cli init MyApp"
+    }
+  },
+  {
+    "id": "rn-cli-vs-expo-lesson-2",
+    "topicId": "rn-cli-vs-expo",
+    "lessonNumber": 2,
+    "title": "What is Expo?",
+    "overview": "Expo is a framework and platform built on top of React Native that simplifies mobile app development. It comes with many built-in APIs and tools, allowing developers to create applications quickly without configuring native Android or iOS projects initially.",
+    "example": {
+      "title": "Create an Expo Project",
+      "content": "npx create-expo-app MyApp"
+    }
+  },
+  {
+    "id": "rn-cli-vs-expo-lesson-3",
+    "topicId": "rn-cli-vs-expo",
+    "lessonNumber": 3,
+    "title": "React Native CLI vs Expo",
+    "overview": "Both React Native CLI and Expo are used to build cross-platform mobile applications. React Native CLI gives complete control over native code and project configuration, while Expo focuses on faster development with built-in features and minimal setup. The best choice depends on your application's requirements.",
+    "example": {
+      "title": "Comparison",
+      "content": "React Native CLI provides full native access and complete project customization. Expo offers a managed workflow, quick setup, and many built-in APIs for faster development."
+    }
+  },
+  {
+    "id": "rn-cli-vs-expo-lesson-4",
+    "topicId": "rn-cli-vs-expo",
+    "lessonNumber": 4,
+    "title": "When Should You Use React Native CLI?",
+    "overview": "React Native CLI is the preferred choice for applications that require native SDKs, custom native modules, advanced device features, or complete control over the Android and iOS projects. It is commonly used for enterprise and large-scale production applications.",
+    "example": {
+      "title": "Real-World Example",
+      "content": "If you're building a banking app that needs a custom biometric authentication SDK or a payment gateway requiring native integration, React Native CLI is the better choice because it allows direct access to the native Android and iOS code."
+    }
+  },
+  {
+    "id": "rn-cli-vs-expo-lesson-5",
+    "topicId": "rn-cli-vs-expo",
+    "lessonNumber": 5,
+    "title": "When Should You Use Expo?",
+    "overview": "Expo is ideal for beginners, prototypes, MVPs, and applications that do not require custom native code. It provides a faster development experience with features like Expo Go, automatic configuration, and many ready-to-use APIs.",
+    "example": {
+      "title": "Real-World Example",
+      "content": "Suppose you want to build a learning app, portfolio app, or event management app. Expo lets you start coding immediately, preview your app using Expo Go, and avoid most of the native setup required by React Native CLI."
+    }
+  },
+  {
+    "id": "rn-cli-vs-expo-lesson-6",
+    "topicId": "rn-cli-vs-expo",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You have learned what React Native CLI and Expo are, the differences between them, and when each should be used. React Native CLI offers full native control for advanced applications, while Expo provides a simpler and faster development experience for many common use cases.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ React Native CLI provides full native access.\n✔ Expo provides a managed workflow.\n✔ Choose React Native CLI for advanced native features.\n✔ Choose Expo for faster setup and development.\n✔ Both can build Android and iOS applications."
+    }
+  }
+]

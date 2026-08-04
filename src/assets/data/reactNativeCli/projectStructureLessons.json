@@ -1,0 +1,90 @@
+[
+  {
+    "id": "rn-cli-project-structure-lesson-1",
+    "topicId": "rn-cli-project-structure",
+    "lessonNumber": 1,
+    "title": "Understanding the Project Structure",
+    "overview": "When you create a React Native CLI project, several folders and files are generated automatically. Each folder has a specific purpose, such as storing source code, native Android and iOS projects, dependencies, and configuration files. Understanding the project structure helps you organize your application effectively.",
+    "example": {
+      "title": "Default Project Structure",
+      "content": "MyApp/\n├── android/\n├── ios/\n├── node_modules/\n├── App.tsx\n├── index.js\n├── package.json\n└── metro.config.js"
+    }
+  },
+  {
+    "id": "rn-cli-project-structure-lesson-2",
+    "topicId": "rn-cli-project-structure",
+    "lessonNumber": 2,
+    "title": "The android Folder",
+    "overview": "The android folder contains the complete native Android project. It includes Gradle files, AndroidManifest.xml, Java or Kotlin source files, resources, and everything required to build and run the Android application.",
+    "example": {
+      "title": "Important Android Files",
+      "content": "android/\n├── app/\n├── gradle/\n├── build.gradle\n├── settings.gradle\n└── gradlew"
+    }
+  },
+  {
+    "id": "rn-cli-project-structure-lesson-3",
+    "topicId": "rn-cli-project-structure",
+    "lessonNumber": 3,
+    "title": "The ios Folder",
+    "overview": "The ios folder contains the native iOS project. It includes Xcode project files, Swift or Objective-C source files, CocoaPods configuration, and everything required to build the application for iPhone and iPad devices.",
+    "example": {
+      "title": "Important iOS Files",
+      "content": "ios/\n├── MyApp.xcodeproj\n├── MyApp.xcworkspace\n├── Podfile\n└── MyApp/"
+    }
+  },
+  {
+    "id": "rn-cli-project-structure-lesson-4",
+    "topicId": "rn-cli-project-structure",
+    "lessonNumber": 4,
+    "title": "App.tsx",
+    "overview": "App.tsx is the main component of a React Native application. It acts as the root component where your application's UI begins. In larger projects, it usually contains the navigation container or the main screen of the application.",
+    "example": {
+      "title": "Basic App.tsx",
+      "content": "import { View, Text } from 'react-native';\n\nexport default function App() {\n  return (\n    <View>\n      <Text>Hello World</Text>\n    </View>\n  );\n}"
+    }
+  },
+  {
+    "id": "rn-cli-project-structure-lesson-5",
+    "topicId": "rn-cli-project-structure",
+    "lessonNumber": 5,
+    "title": "index.js",
+    "overview": "The index.js file is the application's entry point. It registers the root component with React Native so the application knows which component should be loaded when it starts.",
+    "example": {
+      "title": "Registering the App",
+      "content": "import { AppRegistry } from 'react-native';\nimport App from './App';\nimport { name as appName } from './app.json';\n\nAppRegistry.registerComponent(appName, () => App);"
+    }
+  },
+  {
+    "id": "rn-cli-project-structure-lesson-6",
+    "topicId": "rn-cli-project-structure",
+    "lessonNumber": 6,
+    "title": "package.json",
+    "overview": "The package.json file stores information about your project, including its name, version, scripts, and dependencies. Whenever you install a library using npm or Yarn, it is automatically added to this file.",
+    "example": {
+      "title": "Installing a Library",
+      "content": "npm install axios\n\n# or\n\nyarn add axios"
+    }
+  },
+  {
+    "id": "rn-cli-project-structure-lesson-7",
+    "topicId": "rn-cli-project-structure",
+    "lessonNumber": 7,
+    "title": "node_modules Folder",
+    "overview": "The node_modules folder contains all the libraries and packages installed for your project. It is automatically generated after running npm install or yarn install. Since it can be recreated at any time, it is usually not committed to version control.",
+    "example": {
+      "title": "Install Dependencies",
+      "content": "npm install\n\n# or\n\nyarn install"
+    }
+  },
+  {
+    "id": "rn-cli-project-structure-lesson-8",
+    "topicId": "rn-cli-project-structure",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You have learned the purpose of the main folders and files in a React Native CLI project, including the android and ios folders, App.tsx, index.js, package.json, and node_modules. Understanding these files will make it easier to navigate and maintain React Native projects.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ android → Android project\n✔ ios → iOS project\n✔ App.tsx → Root component\n✔ index.js → Entry point\n✔ package.json → Project configuration\n✔ node_modules → Installed dependencies"
+    }
+  }
+]

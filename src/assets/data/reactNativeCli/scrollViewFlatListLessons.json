@@ -1,0 +1,90 @@
+[
+  {
+    "id": "rn-cli-scroll-flatlist-lesson-1",
+    "topicId": "rn-cli-scroll-flatlist",
+    "lessonNumber": 1,
+    "title": "What is ScrollView?",
+    "overview": "ScrollView is a React Native component that allows users to scroll through content when the content size is larger than the screen. It can contain multiple components and supports both vertical and horizontal scrolling.",
+    "example": {
+      "title": "Basic ScrollView Example",
+      "content": "import { ScrollView, Text } from 'react-native';\n\n<ScrollView>\n  <Text>Item 1</Text>\n  <Text>Item 2</Text>\n  <Text>Item 3</Text>\n</ScrollView>"
+    }
+  },
+  {
+    "id": "rn-cli-scroll-flatlist-lesson-2",
+    "topicId": "rn-cli-scroll-flatlist",
+    "lessonNumber": 2,
+    "title": "ScrollView Properties",
+    "overview": "ScrollView provides different properties to control scrolling behavior, direction, indicators, and content appearance.",
+    "example": {
+      "title": "Common Properties",
+      "content": "horizontal\nshowsVerticalScrollIndicator\nshowsHorizontalScrollIndicator\ncontentContainerStyle\nonScroll"
+    }
+  },
+  {
+    "id": "rn-cli-scroll-flatlist-lesson-3",
+    "topicId": "rn-cli-scroll-flatlist",
+    "lessonNumber": 3,
+    "title": "What is FlatList?",
+    "overview": "FlatList is a React Native component used to efficiently render large lists of data. Unlike ScrollView, FlatList only renders items currently visible on the screen, improving performance.",
+    "example": {
+      "title": "Basic FlatList Example",
+      "content": "import { FlatList, Text } from 'react-native';\n\n<FlatList\n data={users}\n renderItem={({item}) => <Text>{item.name}</Text>}\n/>"
+    }
+  },
+  {
+    "id": "rn-cli-scroll-flatlist-lesson-4",
+    "topicId": "rn-cli-scroll-flatlist",
+    "lessonNumber": 4,
+    "title": "FlatList Important Props",
+    "overview": "FlatList uses different props to display and manage list data. These props define the data source, rendering method, keys, and list behavior.",
+    "example": {
+      "title": "FlatList Props",
+      "content": "data\nrenderItem\nkeyExtractor\nListHeaderComponent\nListFooterComponent\nItemSeparatorComponent"
+    }
+  },
+  {
+    "id": "rn-cli-scroll-flatlist-lesson-5",
+    "topicId": "rn-cli-scroll-flatlist",
+    "lessonNumber": 5,
+    "title": "Rendering Custom List Items",
+    "overview": "FlatList allows developers to create reusable components for each list item. This keeps code organized and makes complex lists easier to maintain.",
+    "example": {
+      "title": "Custom Item Example",
+      "content": "const UserItem = ({name}) => (\n <Text>{name}</Text>\n);"
+    }
+  },
+  {
+    "id": "rn-cli-scroll-flatlist-lesson-6",
+    "topicId": "rn-cli-scroll-flatlist",
+    "lessonNumber": 6,
+    "title": "FlatList Performance Optimization",
+    "overview": "FlatList provides optimization features to handle large datasets efficiently. Proper configuration helps reduce memory usage and improves application performance.",
+    "example": {
+      "title": "Optimization Props",
+      "content": "initialNumToRender\nmaxToRenderPerBatch\nwindowSize\nremoveClippedSubviews"
+    }
+  },
+  {
+    "id": "rn-cli-scroll-flatlist-lesson-7",
+    "topicId": "rn-cli-scroll-flatlist",
+    "lessonNumber": 7,
+    "title": "ScrollView vs FlatList",
+    "overview": "ScrollView and FlatList are both used for displaying scrollable content, but they are designed for different use cases. ScrollView is suitable for small content while FlatList is better for large lists.",
+    "example": {
+      "title": "Comparison",
+      "content": "ScrollView:\n• Renders all items at once.\n• Used for small content.\n\nFlatList:\n• Renders visible items only.\n• Used for large datasets."
+    }
+  },
+  {
+    "id": "rn-cli-scroll-flatlist-lesson-8",
+    "topicId": "rn-cli-scroll-flatlist",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You learned how ScrollView works, how to use FlatList for optimized lists, important FlatList properties, custom rendering, performance optimization, and the difference between ScrollView and FlatList.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ ScrollView displays scrollable content.\n✔ FlatList handles large lists efficiently.\n✔ renderItem displays list items.\n✔ keyExtractor provides unique keys.\n✔ FlatList improves performance."
+    }
+  }
+]

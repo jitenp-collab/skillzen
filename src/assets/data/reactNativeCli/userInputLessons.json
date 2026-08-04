@@ -1,0 +1,79 @@
+[
+  {
+    "id": "rn-cli-user-input-lesson-1",
+    "topicId": "rn-cli-user-input",
+    "lessonNumber": 1,
+    "title": "What is User Input?",
+    "overview": "User input allows users to enter and provide data inside a React Native application. It is commonly used in forms such as login, registration, search, and profile screens.",
+    "example": {
+      "title": "User Input Example",
+      "content": "Common user inputs:\n• Name\n• Email\n• Password\n• Search Text\n• Feedback"
+    }
+  },
+  {
+    "id": "rn-cli-user-input-lesson-2",
+    "topicId": "rn-cli-user-input",
+    "lessonNumber": 2,
+    "title": "TextInput Component",
+    "overview": "TextInput is a core React Native component used to accept text input from users. It provides various properties to control input behavior, appearance, and validation.",
+    "example": {
+      "title": "Basic TextInput Example",
+      "content": "import { TextInput } from 'react-native';\n\n<TextInput\n placeholder=\"Enter your name\"\n/>"
+    }
+  },
+  {
+    "id": "rn-cli-user-input-lesson-3",
+    "topicId": "rn-cli-user-input",
+    "lessonNumber": 3,
+    "title": "Managing Input Value with State",
+    "overview": "The value entered by users is stored using state. The useState hook keeps track of the input value and updates the UI whenever the user types something.",
+    "example": {
+      "title": "TextInput with State",
+      "content": "const [name, setName] = useState('');\n\n<TextInput\n value={name}\n onChangeText={setName}\n/>"
+    }
+  },
+  {
+    "id": "rn-cli-user-input-lesson-4",
+    "topicId": "rn-cli-user-input",
+    "lessonNumber": 4,
+    "title": "TextInput Important Props",
+    "overview": "TextInput provides many properties to customize user input behavior, keyboard type, security, and user experience.",
+    "example": {
+      "title": "Common TextInput Props",
+      "content": "placeholder\nvalue\nonChangeText\nkeyboardType\nsecureTextEntry\nmaxLength\nautoCapitalize"
+    }
+  },
+  {
+    "id": "rn-cli-user-input-lesson-5",
+    "topicId": "rn-cli-user-input",
+    "lessonNumber": 5,
+    "title": "Handling Forms in React Native",
+    "overview": "Forms combine multiple input fields to collect user information. React Native uses state and event handlers to manage form values and submit data.",
+    "example": {
+      "title": "Form Example",
+      "content": "Login Form:\n• Email Input\n• Password Input\n• Submit Button\n• Validation"
+    }
+  },
+  {
+    "id": "rn-cli-user-input-lesson-6",
+    "topicId": "rn-cli-user-input",
+    "lessonNumber": 6,
+    "title": "Input Validation",
+    "overview": "Input validation checks whether the entered data is correct before processing it. It helps prevent invalid data submission and improves user experience.",
+    "example": {
+      "title": "Validation Example",
+      "content": "Email should contain @\nPassword should have minimum characters\nRequired fields should not be empty"
+    }
+  },
+  {
+    "id": "rn-cli-user-input-lesson-7",
+    "topicId": "rn-cli-user-input",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned how to handle user input using TextInput, manage values with state, use important TextInput properties, create forms, and validate user-entered data.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ TextInput accepts user data.\n✔ State stores input values.\n✔ onChangeText handles changes.\n✔ Forms collect multiple inputs.\n✔ Validation ensures correct data."
+    }
+  }
+]

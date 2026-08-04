@@ -2,120 +2,121 @@
   {
     "id": "redux-introduction",
     "title": "Introduction to Redux",
-    "image": "https://img.icons8.com/color/1200/redux.jpg",
-    "totalLessonsOfTopic": 5,
-    "progress": 0
+    "icon": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+    "totalLessons": 4
+  },
+  {
+    "id": "redux-why-redux",
+    "title": "Why Redux?",
+    "icon": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+    "totalLessons": 3
   },
   {
     "id": "redux-core-concepts",
-    "title": "Redux Core Concepts",
-    "image": "https://img.icons8.com/color/1200/redux.jpg",
-    "totalLessonsOfTopic": 6,
-    "progress": 0
+    "title": "Core Concepts",
+    "icon": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+    "totalLessons": 5
   },
   {
     "id": "redux-store",
-    "title": "Redux Store",
-    "image": "https://img.icons8.com/color/1200/redux.jpg",
-    "totalLessonsOfTopic": 6,
-    "progress": 0
+    "title": "Store",
+    "icon": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+    "totalLessons": 4
   },
   {
-    "id": "redux-actions-reducers",
-    "title": "Actions and Reducers",
-    "image": "https://img.icons8.com/color/1200/redux.jpg",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "id": "redux-actions",
+    "title": "Actions",
+    "icon": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+    "totalLessons": 4
   },
   {
-    "id": "redux-provider",
-    "title": "Provider and React Redux Setup",
-    "image": "https://img.icons8.com/color/1200/redux.jpg",
-    "totalLessonsOfTopic": 6,
-    "progress": 0
+    "id": "redux-reducers",
+    "title": "Reducers",
+    "icon": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+    "totalLessons": 5
   },
   {
-    "id": "redux-hooks",
-    "title": "useSelector and useDispatch",
-    "image": "https://img.icons8.com/color/1200/redux.jpg",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "id": "redux-dispatch",
+    "title": "Dispatch",
+    "icon": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+    "totalLessons": 3
   },
   {
-    "id": "redux-selectors",
-    "title": "Selectors and Derived State",
-    "image": "https://img.icons8.com/color/1200/redux.jpg",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
+    "id": "redux-redux-toolkit",
+    "title": "Redux Toolkit",
+    "icon": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+    "totalLessons": 6
   },
   {
-    "id": "redux-toolkit",
-    "title": "Redux Toolkit Setup",
-    "image": "https://img.icons8.com/color/1200/redux.jpg",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
+    "id": "redux-configure-store",
+    "title": "configureStore()",
+    "icon": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+    "totalLessons": 4
   },
   {
     "id": "redux-create-slice",
-    "title": "CreateSlice",
-    "image": "https://img.icons8.com/color/1200/redux.jpg",
-    "totalLessonsOfTopic": 9,
-    "progress": 0
+    "title": "createSlice()",
+    "icon": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+    "totalLessons": 6
   },
   {
-    "id": "redux-async-thunk",
-    "title": "CreateAsyncThunk",
-    "image": "https://img.icons8.com/color/1200/redux.jpg",
-    "totalLessonsOfTopic": 10,
-    "progress": 0
+    "id": "redux-use-selector",
+    "title": "useSelector()",
+    "icon": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+    "totalLessons": 4
+  },
+  {
+    "id": "redux-use-dispatch",
+    "title": "useDispatch()",
+    "icon": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+    "totalLessons": 4
+  },
+  {
+    "id": "redux-create-async-thunk",
+    "title": "createAsyncThunk()",
+    "icon": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+    "totalLessons": 6
+  },
+  {
+    "id": "redux-extra-reducers",
+    "title": "extraReducers",
+    "icon": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+    "totalLessons": 4
   },
   {
     "id": "redux-middleware",
-    "title": "Redux Middleware",
-    "image": "https://img.icons8.com/color/1200/redux.jpg",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "title": "Middleware",
+    "icon": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+    "totalLessons": 5
   },
   {
-    "id": "redux-rtk-query",
-    "title": "RTK Query",
-    "image": "https://img.icons8.com/color/1200/redux.jpg",
-    "totalLessonsOfTopic": 12,
-    "progress": 0
+    "id": "redux-state-structure",
+    "title": "State Structure",
+    "icon": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+    "totalLessons": 4
   },
   {
-    "id": "redux-entity-adapter",
-    "title": "Entity Adapter and Normalized State",
-    "image": "https://img.icons8.com/color/1200/redux.jpg",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
+    "id": "redux-persist",
+    "title": "Redux Persist",
+    "icon": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+    "totalLessons": 5
   },
   {
-    "id": "redux-persistence",
-    "title": "Redux State Persistence",
-    "image": "https://img.icons8.com/color/1200/redux.jpg",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
+    "id": "redux-devtools",
+    "title": "Redux DevTools",
+    "icon": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+    "totalLessons": 3
   },
   {
-    "id": "redux-performance",
-    "title": "Redux Performance Optimization",
-    "image": "https://img.icons8.com/color/1200/redux.jpg",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
+    "id": "redux-best-practices",
+    "title": "Redux Best Practices",
+    "icon": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+    "totalLessons": 5
   },
   {
-    "id": "redux-testing",
-    "title": "Redux Testing and DevTools",
-    "image": "https://img.icons8.com/color/1200/redux.jpg",
-    "totalLessonsOfTopic": 8,
-    "progress": 0
-  },
-  {
-    "id": "redux-architecture",
-    "title": "Redux Project Architecture",
-    "image": "https://img.icons8.com/color/1200/redux.jpg",
-    "totalLessonsOfTopic": 7,
-    "progress": 0
+    "id": "redux-real-world-project",
+    "title": "Redux in Real Projects",
+    "icon": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+    "totalLessons": 6
   }
 ]

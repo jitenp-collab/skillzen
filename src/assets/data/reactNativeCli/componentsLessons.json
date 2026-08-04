@@ -1,0 +1,101 @@
+[
+  {
+    "id": "rn-cli-components-lesson-1",
+    "topicId": "rn-cli-components",
+    "lessonNumber": 1,
+    "title": "What are Components?",
+    "overview": "Components are the building blocks of every React Native application. Every screen you see in a mobile app is made up of multiple components. React Native provides built-in components like View, Text, Image, Button, TextInput, ScrollView, and FlatList, and you can also create your own custom components.",
+    "example": {
+      "title": "Using Components",
+      "content": "import { View, Text } from 'react-native';\n\nexport default function App() {\n  return (\n    <View>\n      <Text>Hello React Native</Text>\n    </View>\n  );\n}"
+    }
+  },
+  {
+    "id": "rn-cli-components-lesson-2",
+    "topicId": "rn-cli-components",
+    "lessonNumber": 2,
+    "title": "Functional Components",
+    "overview": "A functional component is simply a JavaScript function that returns JSX. It is the recommended way to create components in modern React Native because it is simple, lightweight, and supports React Hooks.",
+    "example": {
+      "title": "Functional Component Example",
+      "content": "import { Text } from 'react-native';\n\nfunction Welcome() {\n  return <Text>Welcome to React Native</Text>;\n}\n\nexport default Welcome;"
+    }
+  },
+  {
+    "id": "rn-cli-components-lesson-3",
+    "topicId": "rn-cli-components",
+    "lessonNumber": 3,
+    "title": "Class Components",
+    "overview": "Class components were commonly used before React Hooks were introduced. They use JavaScript classes and lifecycle methods to manage state and behavior. Today, they are mostly found in older React Native projects.",
+    "example": {
+      "title": "Class Component Example",
+      "content": "import React, { Component } from 'react';\nimport { Text } from 'react-native';\n\nclass Welcome extends Component {\n  render() {\n    return <Text>Welcome to React Native</Text>;\n  }\n}\n\nexport default Welcome;"
+    }
+  },
+  {
+    "id": "rn-cli-components-lesson-4",
+    "topicId": "rn-cli-components",
+    "lessonNumber": 4,
+    "title": "Built-in Components",
+    "overview": "React Native includes many built-in components that help you build mobile interfaces. These components are optimized for Android and iOS and behave like native UI elements.",
+    "example": {
+      "title": "Common Built-in Components",
+      "content": "View\nText\nImage\nButton\nTextInput\nScrollView\nFlatList\nPressable\nTouchableOpacity\nSafeAreaView"
+    }
+  },
+  {
+    "id": "rn-cli-components-lesson-5",
+    "topicId": "rn-cli-components",
+    "lessonNumber": 5,
+    "title": "Creating Custom Components",
+    "overview": "Custom components are reusable components created by developers. They help reduce duplicate code and make applications easier to maintain.",
+    "example": {
+      "title": "Custom Component Example",
+      "content": "// WelcomeCard.tsx\nimport { View, Text } from 'react-native';\n\nexport default function WelcomeCard() {\n  return (\n    <View>\n      <Text>Welcome!</Text>\n    </View>\n  );\n}"
+    }
+  },
+  {
+    "id": "rn-cli-components-lesson-6",
+    "topicId": "rn-cli-components",
+    "lessonNumber": 6,
+    "title": "Reusing Components",
+    "overview": "One of the biggest advantages of components is reusability. Instead of writing the same UI multiple times, you can create a component once and use it anywhere in your application.",
+    "example": {
+      "title": "Using a Custom Component",
+      "content": "import WelcomeCard from './WelcomeCard';\n\nexport default function App() {\n  return <WelcomeCard />;\n}"
+    }
+  },
+  {
+    "id": "rn-cli-components-lesson-7",
+    "topicId": "rn-cli-components",
+    "lessonNumber": 7,
+    "title": "Component Naming Rules",
+    "overview": "Component names must always start with a capital letter. React uses this convention to distinguish custom components from built-in HTML or React Native elements.",
+    "example": {
+      "title": "Correct vs Incorrect",
+      "content": "✔ WelcomeCard\n✔ UserProfile\n\n✖ welcomeCard\n✖ userProfile"
+    }
+  },
+  {
+    "id": "rn-cli-components-lesson-8",
+    "topicId": "rn-cli-components",
+    "lessonNumber": 8,
+    "title": "Best Practices for Components",
+    "overview": "Keep components small, reusable, and focused on a single responsibility. Organize related components into folders and avoid writing very large components that handle multiple tasks.",
+    "example": {
+      "title": "Best Practices",
+      "content": "• Keep components small.\n• Reuse components whenever possible.\n• Use meaningful names.\n• Place each component in its own file.\n• Avoid duplicate UI code."
+    }
+  },
+  {
+    "id": "rn-cli-components-lesson-9",
+    "topicId": "rn-cli-components",
+    "lessonNumber": 9,
+    "title": "Topic Summary",
+    "overview": "You learned what components are, the difference between functional and class components, how to use built-in components, create custom components, reuse them, follow naming conventions, and write maintainable component-based applications.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Components are the building blocks of React Native.\n✔ Functional components are recommended.\n✔ Class components are mainly used in older projects.\n✔ Create reusable custom components.\n✔ Follow proper naming conventions and best practices."
+    }
+  }
+]
