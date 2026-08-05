@@ -126,7 +126,8 @@ export type GlobalState = {
   topics?: Topic[];
   selectedCategoryId?: string | null;
   view?: ContentView;
-  selectedCatogery?: TopicListItem[] | null
+  selectedCatogery?: TopicListItem[] | null;
+  selectLessons?: any[];
 };
 
 export type BenefitCardProps = {
@@ -167,9 +168,7 @@ export type VisualRendererMap = {
   focus: VisualRenderer;
 };
 
-
 export type LoopedBenefitItem = BenefitItem & { uid: string };
-
 
 export type ContentBlock =
   | { type: "heading"; text: string }
@@ -205,7 +204,7 @@ export type BenefitItem = {
   id: string;
   title: string;
   description: string;
-  icon: (props: GetStartedIconProps) => ReactElement
+  icon: (props: GetStartedIconProps) => ReactElement;
   visualType: string;
 };
 
