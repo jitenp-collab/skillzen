@@ -1,17 +1,19 @@
 import { useCallback, useState } from "react";
 import { FlatList, StyleSheet, Text, View } from "react-native";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { RootState } from "@/redux/store";
+import { RootState, AppDispatch } from "@/redux/store";
 import { theme } from "@/utils/theme/Theme";
 import type { TopicListItem } from "@/utils/types/Apptypes";
 import { BackIcon } from "../../assets/svg/SvgIcons";
 import CustomeSearch from "@/components/reusableComponents/CustomeSearch";
 import AppButton from "../reusableComponents/AppButton";
 import TopickCart from "./TopickCart";
+import { fetchLessonsByTopic } from "@/redux/actions";
 
 const TopickeComp = () => {
   const router = useRouter();
+  const dispatch = useDispatch<AppDispatch>();
   const { categoryTitle } = useLocalSearchParams<{ categoryTitle?: string }>();
 
   const { selectedCatogery } = useSelector((state: RootState) => state.global);
@@ -21,11 +23,13 @@ const TopickeComp = () => {
   const [selectedTopicId, setSelectedTopicId] = useState<string | null>(null);
 
   const filteredTopics = topics.filter((t) =>
-    t.title.toLowerCase().includes(searchQuery.trim().toLowerCase()),
+    t.title.toLowerCase().includes(searchQuery.trim().toLowerCase())
   );
 
   const handleTopicPress = useCallback((item: TopicListItem) => {
     setSelectedTopicId(item.id);
+    dispatch(fetchLessonsByTopic(item.id));
+
     // router.navigate(`/lesson/${item.id}`)
   }, []);
 

@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 import {
   completeGetStarted,
+  fetchLessonsByTopic,
   GetCategories,
   googleSignInUser,
   loadAppData,
@@ -20,7 +21,8 @@ const initialState: GlobalState = {
   isLoading: false,
   error: null,
   categories: [],
-  selectedCatogery: []
+  selectedCatogery: [],
+  selectLessons: [],
 };
 
 const globalSlice = createSlice({
@@ -184,6 +186,24 @@ const globalSlice = createSlice({
         state.isLoading = false;
         state.error = action.error.message || "Unable to fetch categories";
       })
+
+      //select the Lessons
+
+      .addCase(fetchLessonsByTopic.pending, (state) => {
+        state.isLoading = true;
+        state.error = null;
+      })
+
+      .addCase(fetchLessonsByTopic.fulfilled, (state, action) => {
+        state.selectLessons = action.payload;
+        console.log(state.selectLessons);
+        state.isLoading = false;
+      })
+
+      .addCase(fetchLessonsByTopic.rejected, (state, action) => {
+        state.isLoading = false;
+        state.error = action.error.message || "Unable to fetch categories";
+      });
   },
 });
 

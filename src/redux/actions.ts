@@ -19,7 +19,11 @@ import {
   REGISTERED_USERS_KEY,
 } from "@/utils/constants/AsyncStorageConfig";
 import { webclientID } from "@/utils/constants/WebclientID";
-import { categoryTopicsMap, DEFAULT_CATEGORY } from "@/utils/constants/fileMaping";
+import {
+  categoryTopicsMap,
+  DEFAULT_CATEGORY,
+  lessonsMap,
+} from "../utils/constants/fileMaping";
 
 GoogleOneTapSignIn.configure({
   webClientId: webclientID,
@@ -233,6 +237,7 @@ export const logoutUser = createAsyncThunk("global/logoutUser", async () => {
   return null;
 });
 
+// Get categories
 export const GetCategories = createAsyncThunk("get/categories", async () => {
   try {
     return require("../assets/data/categories.json");
@@ -242,15 +247,38 @@ export const GetCategories = createAsyncThunk("get/categories", async () => {
   }
 });
 
+// Select Categories And Topics
 export const SelectCaogery = createAsyncThunk(
   "get/catogery",
   async (categoryTitle: string) => {
-    const loadTopics = categoryTopicsMap[categoryTitle] ?? categoryTopicsMap[DEFAULT_CATEGORY];
+    const loadTopics =
+      categoryTopicsMap[categoryTitle] ?? categoryTopicsMap[DEFAULT_CATEGORY];
     try {
       return loadTopics();
     } catch (error) {
       console.log("Error loading topics:", error);
       return categoryTopicsMap[DEFAULT_CATEGORY]();
+    }
+  }
+);
+
+// Select Topics Lessons
+export const fetchLessonsByTopic = createAsyncThunk(
+  "get/lessonsByTopic",
+
+  async (topicId: string) => {
+    const loadLessons = lessonsMap[topicId];
+
+    if (!loadLessons) {
+      console.log("No lessons found for:", topicId);
+      return [];
+    }
+
+    try {
+      return loadLessons();
+    } catch (error) {
+      console.log("Error loading lessons:", error);
+      return [];
     }
   }
 );
