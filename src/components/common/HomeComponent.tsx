@@ -41,7 +41,7 @@ const HomeComponent = () => {
         </Animated.View>
       )}
 
-      <Animated.View layout={LinearTransition.duration(250)}>
+      <Animated.View entering={FadeIn.duration(200)}>
         <CategoriesComp searchQuery={searchQuery} />
       </Animated.View>
     </View>

@@ -132,8 +132,8 @@ const SplashScreenAnimation = () => {
         useNativeDriver: true,
       }).start(async () => {
         const appData = await appDataPromise;
+        // await dispatch(GetCategories()).unwrap();
         if (appData.currentUser) {
-          dispatch(GetCategories()).unwrap();
           route.replace("/(tabs)");
         } else if (appData.getStartedCompleted) {
           route.replace("/loginScreen");

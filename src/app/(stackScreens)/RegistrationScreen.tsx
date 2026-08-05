@@ -1,4 +1,3 @@
-import React from "react";
 import { Alert } from "react-native";
 import { router } from "expo-router";
 import { useDispatch } from "react-redux";

@@ -6,7 +6,7 @@ import {
     TargetIcon,
 } from "../../assets/svg/SvgIcons";
 
-import type { BenefitCardProps } from "../types/Apptypes";
+import type { BenefitCardProps, BenefitItem } from "../types/Apptypes";
 
 export const benefitsConfig = [
 
@@ -60,4 +60,4 @@ export const benefitsConfig = [
 
     },
 
-] satisfies Array<BenefitCardProps & { id: string }>;
+] satisfies BenefitItem[];

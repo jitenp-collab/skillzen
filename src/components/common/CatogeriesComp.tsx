@@ -1,4 +1,4 @@
-import { useCallback, useMemo } from "react";
+import { useCallback, useEffect, useMemo } from "react";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
 import Animated, { FadeInDown } from "react-native-reanimated";
 import { useDispatch, useSelector } from "react-redux";
@@ -6,7 +6,7 @@ import { AppDispatch, RootState } from "@/redux/store";
 import { theme } from "../../utils/theme/Theme";
 import { CategoriesCompProps, Category } from "@/utils/types/Apptypes";
 import CategoryCard from "./CategoryCard";
-import { SelectCaogery } from "@/redux/actions";
+import { GetCategories, SelectCaogery } from "@/redux/actions";
 import { router } from "expo-router";
 
 const SECTION_ENTRY_DELAY = 0;
@@ -47,6 +47,10 @@ const CategoriesComp = ({ searchQuery = "" }: CategoriesCompProps) => {
 
   const isSearchActive = searchQuery.trim().length > 0;
   const isEmpty = isSearchActive && filteredCategories.length === 0;
+
+  useEffect(() => {
+    dispatch(GetCategories()).unwrap();
+  }, [categories]);
 
   return (
     <Animated.View
