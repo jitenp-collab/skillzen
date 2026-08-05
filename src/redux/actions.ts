@@ -86,8 +86,8 @@ export const registerUser = createAsyncThunk(
 
     await StoreData(CURRENT_USER_KEY, newUser);
 
-    console.log("Email user registered:", newUser);
-    console.log("Total registered users:", updatedUsers.length);
+    // console.log("Email user registered:", newUser);
+    // console.log("Total registered users:", updatedUsers.length);
 
     return newUser;
   }
@@ -120,7 +120,7 @@ export const loginUser = createAsyncThunk(
 
     await StoreData(CURRENT_USER_KEY, user);
 
-    console.log("Email user logged in:", user);
+    // console.log("Email user logged in:", user);
 
     return user;
   }
@@ -178,11 +178,11 @@ export const googleSignInUser = createAsyncThunk(
 
       await StoreData(REGISTERED_USERS_KEY, updatedUsers);
 
-      console.log("New Google user registered:", user);
+      // console.log("New Google user registered:", user);
 
       console.log("Total registered users:", updatedUsers.length);
     } else {
-      console.log("Existing Google user logged in:", user);
+      // console.log("Existing Google user logged in:", user);
     }
 
     await StoreData(CURRENT_USER_KEY, user);
@@ -216,7 +216,7 @@ export const updateProfilePhoto = createAsyncThunk(
 
     await StoreData(CURRENT_USER_KEY, updatedUser);
 
-    console.log("Profile photo updated:", photo);
+    // console.log("Profile photo updated:", photo);
 
     return updatedUser;
   }
@@ -232,7 +232,7 @@ export const logoutUser = createAsyncThunk("global/logoutUser", async () => {
 
   await removeData(CURRENT_USER_KEY);
 
-  console.log("User logged out:", currentUser);
+  // console.log("User logged out:", currentUser);
 
   return null;
 });

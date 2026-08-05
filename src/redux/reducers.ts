@@ -196,7 +196,7 @@ const globalSlice = createSlice({
 
       .addCase(fetchLessonsByTopic.fulfilled, (state, action) => {
         state.selectLessons = action.payload;
-        console.log(state.selectLessons);
+        // console.log(state.selectLessons);
         state.isLoading = false;
       })
 
