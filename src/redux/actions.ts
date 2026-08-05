@@ -19,6 +19,7 @@ import {
   REGISTERED_USERS_KEY,
 } from "@/utils/constants/AsyncStorageConfig";
 import { webclientID } from "@/utils/constants/WebclientID";
+import { categoryTopicsMap, DEFAULT_CATEGORY } from "@/utils/constants/fileMaping";
 
 GoogleOneTapSignIn.configure({
   webClientId: webclientID,
@@ -243,39 +244,13 @@ export const GetCategories = createAsyncThunk("get/categories", async () => {
 
 export const SelectCaogery = createAsyncThunk(
   "get/catogery",
-  async (Catogery: string) => {
+  async (categoryTitle: string) => {
+    const loadTopics = categoryTopicsMap[categoryTitle] ?? categoryTopicsMap[DEFAULT_CATEGORY];
     try {
-      switch (Catogery) {
-        case "React Native CLI":
-          return require("../assets/data/reactNativeCli/reactNativeCliTopics.json");
-
-        case "JavaScript":
-          return require("../assets/data/javascript/javascriptTopics.json");
-
-        case "TypeScript":
-          return require("../assets/data/typescript/typescriptTopics.json");
-
-        case "Python":
-          return require("../assets/data/python/pythonTopics.json");
-
-        case "Node.js":
-          return require("../assets/data/nodejs/nodejsTopics.json");
-
-        case "Redux":
-          return require("../assets/data/redux/reduxTopics.json");
-
-        case "Expo":
-          return require("../assets/data/expo/expoTopics.json");
-
-        case "Git":
-          return require("../assets/data/git/gitTopics.json");
-
-        default:
-          return require("../assets/data/reactNativeCli/reactNativeCliTopics.json");
-      }
+      return loadTopics();
     } catch (error) {
-      console.log("Error to fetch Category");
-      return require("../assets/data/reactNativeCli/reactNativeCliTopics.json");
+      console.log("Error loading topics:", error);
+      return categoryTopicsMap[DEFAULT_CATEGORY]();
     }
   }
 );

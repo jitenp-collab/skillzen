@@ -33,7 +33,9 @@ const TopickeComp = () => {
     <View style={styles.screen}>
       <View style={styles.header}>
         <AppButton
-          onPress={() => router.back()}
+          onPress={() => {
+            (router.back(), console.log("Back clicked"));
+          }}
           hitSlop={10}
           style={styles.backButton}
           icon={<BackIcon size={35} />}
@@ -46,48 +48,48 @@ const TopickeComp = () => {
       </View>
 
       {topics.length === 0 ? (
-  <View style={styles.emptyContainer}>
-    <Text style={styles.emptySubtitle}>
-      Select a category from Home to see its topics
-    </Text>
-  </View>
-) : (
-  <>
-    <CustomeSearch
-      value={searchQuery}
-      onChangeText={setSearchQuery}
-      onClear={() => setSearchQuery("")}
-      placeholder="Search topics"
-      containerStyle={styles.searchContainer}
-    />
-
-    {filteredTopics.length === 0 ? (
-      <View style={styles.emptyContainer}>
-        <Text style={styles.emptyTitle}>No topics found</Text>
-        <Text style={styles.emptySubtitle}>
-          Try searching for something else
-        </Text>
-      </View>
-    ) : (
-      <FlatList
-        data={filteredTopics}
-        keyExtractor={(item) => item.id}
-        renderItem={({ item, index }) => (
-          <TopickCart
-            item={item}
-            index={index}
-            isSelected={item.id === selectedTopicId}
-            onPress={handleTopicPress}
+        <View style={styles.emptyContainer}>
+          <Text style={styles.emptySubtitle}>
+            Select a category from Home to see its topics
+          </Text>
+        </View>
+      ) : (
+        <>
+          <CustomeSearch
+            value={searchQuery}
+            onChangeText={setSearchQuery}
+            onClear={() => setSearchQuery("")}
+            placeholder="Search topics"
+            containerStyle={styles.searchContainer}
           />
-        )}
-        contentContainerStyle={styles.listContent}
-        keyboardDismissMode="on-drag"
-        keyboardShouldPersistTaps="handled"
-        showsVerticalScrollIndicator={false}
-      />
-    )}
-  </>
-)}
+
+          {filteredTopics.length === 0 ? (
+            <View style={styles.emptyContainer}>
+              <Text style={styles.emptyTitle}>No topics found</Text>
+              <Text style={styles.emptySubtitle}>
+                Try searching for something else
+              </Text>
+            </View>
+          ) : (
+            <FlatList
+              data={filteredTopics}
+              keyExtractor={(item) => item.id}
+              renderItem={({ item, index }) => (
+                <TopickCart
+                  item={item}
+                  index={index}
+                  isSelected={item.id === selectedTopicId}
+                  onPress={handleTopicPress}
+                />
+              )}
+              contentContainerStyle={styles.listContent}
+              keyboardDismissMode="on-drag"
+              keyboardShouldPersistTaps="handled"
+              showsVerticalScrollIndicator={false}
+            />
+          )}
+        </>
+      )}
     </View>
   );
 };
