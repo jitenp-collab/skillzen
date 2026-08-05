@@ -1,0 +1,90 @@
+[
+  {
+    "id": "git-advanced-lesson-1",
+    "topicId": "git-advanced",
+    "lessonNumber": 1,
+    "title": "Git Rebase",
+    "overview": "Git rebase moves or reapplies commits on top of another branch to create a cleaner project history.",
+    "example": {
+      "title": "Rebase Command",
+      "content": "git checkout feature\n\ngit rebase main"
+    }
+  },
+  {
+    "id": "git-advanced-lesson-2",
+    "topicId": "git-advanced",
+    "lessonNumber": 2,
+    "title": "Git Stash",
+    "overview": "Git stash temporarily saves uncommitted changes so developers can switch branches without losing work.",
+    "example": {
+      "title": "Stash Commands",
+      "content": "git stash\n\ngit stash pop"
+    }
+  },
+  {
+    "id": "git-advanced-lesson-3",
+    "topicId": "git-advanced",
+    "lessonNumber": 3,
+    "title": "Git Reset",
+    "overview": "Git reset moves the branch pointer and can be used to undo commits or remove staged changes.",
+    "example": {
+      "title": "Reset Types",
+      "content": "git reset --soft\n\ngit reset --mixed\n\ngit reset --hard"
+    }
+  },
+  {
+    "id": "git-advanced-lesson-4",
+    "topicId": "git-advanced",
+    "lessonNumber": 4,
+    "title": "Git Revert",
+    "overview": "Git revert creates a new commit that reverses the changes of a previous commit safely.",
+    "example": {
+      "title": "Revert Command",
+      "content": "git revert commit-id"
+    }
+  },
+  {
+    "id": "git-advanced-lesson-5",
+    "topicId": "git-advanced",
+    "lessonNumber": 5,
+    "title": "Git Tags",
+    "overview": "Git tags mark specific points in repository history, commonly used for application releases.",
+    "example": {
+      "title": "Create Tag",
+      "content": "git tag v1.0.0"
+    }
+  },
+  {
+    "id": "git-advanced-lesson-6",
+    "topicId": "git-advanced",
+    "lessonNumber": 6,
+    "title": "Git Cherry Pick",
+    "overview": "Git cherry-pick allows applying a specific commit from one branch to another branch.",
+    "example": {
+      "title": "Cherry Pick Command",
+      "content": "git cherry-pick commit-id"
+    }
+  },
+  {
+    "id": "git-advanced-lesson-7",
+    "topicId": "git-advanced",
+    "lessonNumber": 7,
+    "title": "Git Hooks",
+    "overview": "Git hooks automatically execute scripts during specific Git actions like commit or push.",
+    "example": {
+      "title": "Hook Example",
+      "content": "Before Commit\n ↓\nRun Validation\n ↓\nCreate Commit"
+    }
+  },
+  {
+    "id": "git-advanced-lesson-8",
+    "topicId": "git-advanced",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You learned advanced Git features including rebase, stash, reset, revert, tags, cherry-pick, and hooks.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Rebase cleans history.\n✔ Stash saves temporary work.\n✔ Revert safely removes changes.\n✔ Tags mark releases."
+    }
+  }
+]

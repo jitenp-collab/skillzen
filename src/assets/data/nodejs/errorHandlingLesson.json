@@ -1,0 +1,57 @@
+[
+  {
+    "id": "nodejs-error-handling-lesson-1",
+    "topicId": "nodejs-error-handling",
+    "lessonNumber": 1,
+    "title": "Introduction to Error Handling",
+    "overview": "Error handling is the process of identifying and managing errors in an application to prevent crashes and provide proper responses.",
+    "example": {
+      "title": "Error Handling Purpose",
+      "content": "Error Occurs\n ↓\nDetect Error\n ↓\nHandle Properly\n ↓\nContinue Application"
+    }
+  },
+  {
+    "id": "nodejs-error-handling-lesson-2",
+    "topicId": "nodejs-error-handling",
+    "lessonNumber": 2,
+    "title": "Try Catch in Node.js",
+    "overview": "try-catch is used to handle synchronous errors by catching exceptions and preventing application failure.",
+    "example": {
+      "title": "Try Catch Example",
+      "content": "try {\n  riskyCode();\n} catch(error) {\n  console.log(error);\n}"
+    }
+  },
+  {
+    "id": "nodejs-error-handling-lesson-3",
+    "topicId": "nodejs-error-handling",
+    "lessonNumber": 3,
+    "title": "Handling Async Errors",
+    "overview": "Asynchronous operations require proper error handling using callbacks, promises, or async-await patterns.",
+    "example": {
+      "title": "Async Error Example",
+      "content": "try {\n await fetchData();\n} catch(error) {\n console.log(error);\n}"
+    }
+  },
+  {
+    "id": "nodejs-error-handling-lesson-4",
+    "topicId": "nodejs-error-handling",
+    "lessonNumber": 4,
+    "title": "Express Error Middleware",
+    "overview": "Express provides special middleware functions to handle errors from routes and application logic.",
+    "example": {
+      "title": "Express Error Handler",
+      "content": "app.use((err,req,res,next)=>{\n res.status(500).send(err.message);\n});"
+    }
+  },
+  {
+    "id": "nodejs-error-handling-lesson-5",
+    "topicId": "nodejs-error-handling",
+    "lessonNumber": 5,
+    "title": "Topic Summary",
+    "overview": "You learned how to handle synchronous errors, asynchronous errors, and Express error handling techniques.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Errors should be handled properly.\n✔ try-catch handles exceptions.\n✔ Async code needs error management.\n✔ Express uses error middleware."
+    }
+  }
+]

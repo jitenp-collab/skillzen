@@ -1,0 +1,79 @@
+[
+  {
+    "id": "redux-react-redux-lesson-1",
+    "topicId": "redux-react-redux",
+    "lessonNumber": 1,
+    "title": "Introduction to React Redux",
+    "overview": "React Redux is the official library that connects Redux with React applications. It provides hooks and components to access and update Redux state.",
+    "example": {
+      "title": "React Redux Purpose",
+      "content": "React App\n ↓\nReact Redux\n ↓\nRedux Store"
+    }
+  },
+  {
+    "id": "redux-react-redux-lesson-2",
+    "topicId": "redux-react-redux",
+    "lessonNumber": 2,
+    "title": "Installing React Redux",
+    "overview": "React Redux is installed as a package and provides APIs required to connect React components with Redux.",
+    "example": {
+      "title": "Installation",
+      "content": "npm install react-redux"
+    }
+  },
+  {
+    "id": "redux-react-redux-lesson-3",
+    "topicId": "redux-react-redux",
+    "lessonNumber": 3,
+    "title": "Provider in React Redux",
+    "overview": "Provider is a React component that makes the Redux store available throughout the component tree.",
+    "example": {
+      "title": "Provider Setup",
+      "content": "import { Provider } from 'react-redux';\n\n<Provider store={store}>\n <App />\n</Provider>"
+    }
+  },
+  {
+    "id": "redux-react-redux-lesson-4",
+    "topicId": "redux-react-redux",
+    "lessonNumber": 4,
+    "title": "useSelector Hook",
+    "overview": "useSelector allows React components to read data from the Redux store.",
+    "example": {
+      "title": "useSelector Example",
+      "content": "const username = useSelector(\n state => state.user.name\n);"
+    }
+  },
+  {
+    "id": "redux-react-redux-lesson-5",
+    "topicId": "redux-react-redux",
+    "lessonNumber": 5,
+    "title": "useDispatch Hook",
+    "overview": "useDispatch allows components to send actions to Redux reducers and update the store.",
+    "example": {
+      "title": "useDispatch Example",
+      "content": "const dispatch = useDispatch();\n\ndispatch(updateProfile(data));"
+    }
+  },
+  {
+    "id": "redux-react-redux-lesson-6",
+    "topicId": "redux-react-redux",
+    "lessonNumber": 6,
+    "title": "React Redux Data Flow",
+    "overview": "React Redux creates a connection between UI components and Redux state using a predictable one-way data flow.",
+    "example": {
+      "title": "Data Flow",
+      "content": "Component\n ↓\nuseDispatch()\n ↓\nReducer\n ↓\nStore\n ↓\nuseSelector()\n ↓\nComponent"
+    }
+  },
+  {
+    "id": "redux-react-redux-lesson-7",
+    "topicId": "redux-react-redux",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned about React Redux, Provider, useSelector, useDispatch, and how React communicates with Redux.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ React Redux connects React and Redux.\n✔ Provider shares store.\n✔ useSelector reads data.\n✔ useDispatch updates data."
+    }
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "rn-cli-native-modules-lesson-1",
+    "topicId": "rn-cli-native-modules",
+    "lessonNumber": 1,
+    "title": "What are Native Modules?",
+    "overview": "Native Modules allow React Native applications to access platform-specific features written in native languages like Java, Kotlin, Objective-C, and Swift. They help connect JavaScript code with native device capabilities.",
+    "example": {
+      "title": "Native Module Examples",
+      "content": "Native features:\n• Camera access\n• Bluetooth\n• Sensors\n• File system\n• Custom Android/iOS APIs"
+    }
+  },
+  {
+    "id": "rn-cli-native-modules-lesson-2",
+    "topicId": "rn-cli-native-modules",
+    "lessonNumber": 2,
+    "title": "Why Use Native Modules?",
+    "overview": "Native Modules are used when React Native does not provide a built-in solution for a specific device feature or when native code provides better performance.",
+    "example": {
+      "title": "Use Cases",
+      "content": "Examples:\n• Using device hardware\n• Integrating native SDKs\n• Improving performance-heavy operations"
+    }
+  },
+  {
+    "id": "rn-cli-native-modules-lesson-3",
+    "topicId": "rn-cli-native-modules",
+    "lessonNumber": 3,
+    "title": "Native Module Architecture",
+    "overview": "Native Modules create communication between JavaScript and native code through React Native's native bridge. JavaScript sends requests to native modules, and native code returns results back.",
+    "example": {
+      "title": "Communication Flow",
+      "content": "JavaScript Code\n      ↓\nReact Native Bridge\n      ↓\nNative Android/iOS Code\n      ↓\nResponse Back to JavaScript"
+    }
+  },
+  {
+    "id": "rn-cli-native-modules-lesson-4",
+    "topicId": "rn-cli-native-modules",
+    "lessonNumber": 4,
+    "title": "Creating Custom Native Modules",
+    "overview": "React Native allows developers to create custom native modules when existing libraries do not provide the required functionality. These modules contain native platform code exposed to JavaScript.",
+    "example": {
+      "title": "Custom Module Example",
+      "content": "Android:\n• Java/Kotlin Module\n\niOS:\n• Objective-C/Swift Module"
+    }
+  },
+  {
+    "id": "rn-cli-native-modules-lesson-5",
+    "topicId": "rn-cli-native-modules",
+    "lessonNumber": 5,
+    "title": "Using Native Device Features",
+    "overview": "Many React Native libraries internally use native modules to provide access to device features such as camera, location, notifications, and storage.",
+    "example": {
+      "title": "Native Feature Examples",
+      "content": "Libraries using native modules:\n• Camera libraries\n• Maps\n• Push Notifications\n• Bluetooth libraries"
+    }
+  },
+  {
+    "id": "rn-cli-native-modules-lesson-6",
+    "topicId": "rn-cli-native-modules",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned what native modules are, why they are needed, how JavaScript communicates with native code, and how custom native functionality can be added to React Native applications.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Native Modules connect JS with native code.\n✔ Used for device-specific features.\n✔ Written using Android/iOS native languages.\n✔ React Native libraries often use native modules internally."
+    }
+  }
+]

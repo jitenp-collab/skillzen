@@ -1,0 +1,90 @@
+[
+  {
+    "id": "ts-react-native-lesson-1",
+    "topicId": "ts-react-native",
+    "lessonNumber": 1,
+    "title": "Why Use TypeScript in React Native?",
+    "overview": "TypeScript improves React Native development by adding type safety, reducing errors, and making large applications easier to maintain.",
+    "example": {
+      "title": "Benefits",
+      "content": "✔ Safer code\n✔ Better autocomplete\n✔ Easier debugging\n✔ Improved developer experience"
+    }
+  },
+  {
+    "id": "ts-react-native-lesson-2",
+    "topicId": "ts-react-native",
+    "lessonNumber": 2,
+    "title": "Typing React Native Components",
+    "overview": "React Native components can use TypeScript to define the types of props they receive, making components more predictable.",
+    "example": {
+      "title": "Component Props Example",
+      "content": "interface Props {\n title:string;\n}\n\nfunction Header({title}:Props) {\n return <Text>{title}</Text>;\n}"
+    }
+  },
+  {
+    "id": "ts-react-native-lesson-3",
+    "topicId": "ts-react-native",
+    "lessonNumber": 3,
+    "title": "Typing useState Hook",
+    "overview": "useState can use TypeScript generics to define the type of state values stored inside a component.",
+    "example": {
+      "title": "useState Type Example",
+      "content": "const [count,setCount] = useState<number>(0);\n\nconst [name,setName] = useState<string>('');"
+    }
+  },
+  {
+    "id": "ts-react-native-lesson-4",
+    "topicId": "ts-react-native",
+    "lessonNumber": 4,
+    "title": "Typing useRef and useEffect",
+    "overview": "React hooks like useRef and useEffect can use TypeScript types to provide better safety when working with references and side effects.",
+    "example": {
+      "title": "useRef Example",
+      "content": "const inputRef = useRef<TextInput>(null);"
+    }
+  },
+  {
+    "id": "ts-react-native-lesson-5",
+    "topicId": "ts-react-native",
+    "lessonNumber": 5,
+    "title": "Typing API Responses",
+    "overview": "TypeScript interfaces and types are commonly used to define API response structures in React Native applications.",
+    "example": {
+      "title": "API Response Type",
+      "content": "interface User {\n id:number;\n name:string;\n}\n\nconst user:User = response.data;"
+    }
+  },
+  {
+    "id": "ts-react-native-lesson-6",
+    "topicId": "ts-react-native",
+    "lessonNumber": 6,
+    "title": "Typing Navigation",
+    "overview": "TypeScript can define navigation routes and parameters, preventing invalid screen names and missing route data.",
+    "example": {
+      "title": "Navigation Type Example",
+      "content": "type RootStackParamList = {\n Home: undefined;\n Profile:{id:number};\n};"
+    }
+  },
+  {
+    "id": "ts-react-native-lesson-7",
+    "topicId": "ts-react-native",
+    "lessonNumber": 7,
+    "title": "TypeScript with Redux in React Native",
+    "overview": "Redux applications use TypeScript to define state structures, actions, reducers, and selectors for better type safety.",
+    "example": {
+      "title": "Redux Type Example",
+      "content": "interface UserState {\n users: User[];\n loading:boolean;\n}"
+    }
+  },
+  {
+    "id": "ts-react-native-lesson-8",
+    "topicId": "ts-react-native",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You learned how TypeScript is used in React Native projects for components, hooks, APIs, navigation, and state management.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Type props and states.\n✔ Type API responses.\n✔ Type navigation routes.\n✔ Improve React Native app reliability."
+    }
+  }
+]

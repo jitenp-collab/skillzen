@@ -1,0 +1,68 @@
+[
+  {
+    "id": "rn-cli-jsx-lesson-1",
+    "topicId": "rn-cli-jsx",
+    "lessonNumber": 1,
+    "title": "What is JSX?",
+    "overview": "JSX stands for JavaScript XML. It is a syntax extension for JavaScript that allows you to write UI using HTML-like tags inside JavaScript code. React Native uses JSX to describe how the application's user interface should look.",
+    "example": {
+      "title": "Basic JSX Example",
+      "content": "import { Text } from 'react-native';\n\nexport default function App() {\n  return <Text>Hello JSX!</Text>;\n}"
+    }
+  },
+  {
+    "id": "rn-cli-jsx-lesson-2",
+    "topicId": "rn-cli-jsx",
+    "lessonNumber": 2,
+    "title": "Why Do We Use JSX?",
+    "overview": "JSX makes UI development easier to read and write. Instead of creating UI elements using JavaScript functions, developers can use a syntax that closely resembles HTML, making the code more understandable and maintainable.",
+    "example": {
+      "title": "Real-World Example",
+      "content": "Imagine building a house using a blueprint instead of writing every measurement in words. JSX acts like the blueprint for your application's UI."
+    }
+  },
+  {
+    "id": "rn-cli-jsx-lesson-3",
+    "topicId": "rn-cli-jsx",
+    "lessonNumber": 3,
+    "title": "JSX Rules",
+    "overview": "JSX follows several important rules. Every component must return a single parent element, all tags must be properly closed, and JavaScript expressions should be written inside curly braces.",
+    "example": {
+      "title": "JSX Rules Example",
+      "content": "return (\n  <View>\n    <Text>Hello</Text>\n    <Text>World</Text>\n  </View>\n);"
+    }
+  },
+  {
+    "id": "rn-cli-jsx-lesson-4",
+    "topicId": "rn-cli-jsx",
+    "lessonNumber": 4,
+    "title": "Using JavaScript Inside JSX",
+    "overview": "You can use JavaScript expressions inside JSX by wrapping them with curly braces {}. This allows you to display variables, perform calculations, or call functions directly inside your UI.",
+    "example": {
+      "title": "JavaScript in JSX",
+      "content": "const name = 'Manthan';\n\n<Text>Welcome {name}</Text>"
+    }
+  },
+  {
+    "id": "rn-cli-jsx-lesson-5",
+    "topicId": "rn-cli-jsx",
+    "lessonNumber": 5,
+    "title": "JSX vs HTML",
+    "overview": "Although JSX looks similar to HTML, they are not the same. JSX uses JavaScript syntax and React Native components such as View and Text instead of HTML elements like div and p. JSX is eventually converted into JavaScript before execution.",
+    "example": {
+      "title": "Comparison",
+      "content": "HTML:\n<div>Hello</div>\n\nJSX (React Native):\n<View>\n  <Text>Hello</Text>\n</View>"
+    }
+  },
+  {
+    "id": "rn-cli-jsx-lesson-6",
+    "topicId": "rn-cli-jsx",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned what JSX is, why it is used, the basic rules of writing JSX, how to use JavaScript expressions inside JSX, and the differences between JSX and HTML. JSX is an essential part of every React Native application.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ JSX stands for JavaScript XML.\n✔ JSX describes the UI.\n✔ Always return one parent element.\n✔ Use {} for JavaScript expressions.\n✔ JSX uses React Native components instead of HTML tags."
+    }
+  }
+]

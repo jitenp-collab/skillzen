@@ -19,6 +19,11 @@ import {
   REGISTERED_USERS_KEY,
 } from "@/utils/constants/AsyncStorageConfig";
 import { webclientID } from "@/utils/constants/WebclientID";
+import {
+  categoryTopicsMap,
+  DEFAULT_CATEGORY,
+  lessonsMap,
+} from "../utils/constants/fileMaping";
 
 GoogleOneTapSignIn.configure({
   webClientId: webclientID,
@@ -232,6 +237,7 @@ export const logoutUser = createAsyncThunk("global/logoutUser", async () => {
   return null;
 });
 
+// Get categories
 export const GetCategories = createAsyncThunk("get/categories", async () => {
   try {
     return require("../assets/data/categories.json");
@@ -241,41 +247,38 @@ export const GetCategories = createAsyncThunk("get/categories", async () => {
   }
 });
 
+// Select Categories And Topics
 export const SelectCaogery = createAsyncThunk(
   "get/catogery",
-  async (Catogery: string) => {
+  async (categoryTitle: string) => {
+    const loadTopics =
+      categoryTopicsMap[categoryTitle] ?? categoryTopicsMap[DEFAULT_CATEGORY];
     try {
-      switch (Catogery) {
-        case "React Native CLI":
-          return require("../assets/data/topics/reactNativeTopics.json");
-
-        case "JavaScript":
-          return require("../assets/data/topics/javascriptTopics.json");
-
-        case "TypeScript":
-          return require("../assets/data/topics/typescriptTopics.json");
-
-        case "Python":
-          return require("../assets/data/topics/pythonTopics.json");
-
-        case "Node.js":
-          return require("../assets/data/topics/nodejsTopics.json");
-
-        case "Redux":
-          return require("../assets/data/topics/reduxTopics.json");
-
-        case "Expo":
-          return require("../assets/data/topics/expoTopics.json");
-
-        case "Git":
-          return require("../assets/data/topics/gitTopics.json");
-
-        case "React Native CLI":
-        default: return require("../assets/data/topics/reactNativeTopics.json");
-      }
+      return loadTopics();
     } catch (error) {
-      console.log("Error to fetch Category");
-      return require("../../assets/Translater/catogery.json");
+      console.log("Error loading topics:", error);
+      return categoryTopicsMap[DEFAULT_CATEGORY]();
+    }
+  }
+);
+
+// Select Topics Lessons
+export const fetchLessonsByTopic = createAsyncThunk(
+  "get/lessonsByTopic",
+
+  async (topicId: string) => {
+    const loadLessons = lessonsMap[topicId];
+
+    if (!loadLessons) {
+      console.log("No lessons found for:", topicId);
+      return [];
+    }
+
+    try {
+      return loadLessons();
+    } catch (error) {
+      console.log("Error loading lessons:", error);
+      return [];
     }
   }
 );

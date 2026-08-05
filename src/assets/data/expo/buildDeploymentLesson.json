@@ -1,0 +1,90 @@
+[
+  {
+    "id": "expo-build-deployment-lesson-1",
+    "topicId": "expo-build-deployment",
+    "lessonNumber": 1,
+    "title": "Introduction to Expo Build",
+    "overview": "Expo provides tools to create production-ready builds of mobile applications for Android and iOS platforms.",
+    "example": {
+      "title": "Build Process",
+      "content": "Source Code\n ↓\nExpo Build Service\n ↓\nAndroid APK/AAB or iOS IPA"
+    }
+  },
+  {
+    "id": "expo-build-deployment-lesson-2",
+    "topicId": "expo-build-deployment",
+    "lessonNumber": 2,
+    "title": "EAS Build Introduction",
+    "overview": "EAS Build is Expo's cloud service used to create application binaries for Android and iOS.",
+    "example": {
+      "title": "EAS Build Command",
+      "content": "eas build --platform android\n\neas build --platform ios"
+    }
+  },
+  {
+    "id": "expo-build-deployment-lesson-3",
+    "topicId": "expo-build-deployment",
+    "lessonNumber": 3,
+    "title": "Android Build Types",
+    "overview": "Android applications can be built in different formats depending on testing and store distribution requirements.",
+    "example": {
+      "title": "Android Formats",
+      "content": "APK:\nTesting purpose\n\nAAB:\nPlay Store upload"
+    }
+  },
+  {
+    "id": "expo-build-deployment-lesson-4",
+    "topicId": "expo-build-deployment",
+    "lessonNumber": 4,
+    "title": "iOS Build Process",
+    "overview": "Expo allows developers to create iOS builds using EAS without manually managing native build configurations.",
+    "example": {
+      "title": "iOS Build",
+      "content": "Expo Project\n ↓\nEAS Build\n ↓\nIPA File\n ↓\nApp Store"
+    }
+  },
+  {
+    "id": "expo-build-deployment-lesson-5",
+    "topicId": "expo-build-deployment",
+    "lessonNumber": 5,
+    "title": "App Configuration Before Build",
+    "overview": "Before creating builds, application information like name, icon, version, permissions, and identifiers must be configured.",
+    "example": {
+      "title": "Configuration",
+      "content": "app.json\n\nname\nversion\nicon\npackage identifier"
+    }
+  },
+  {
+    "id": "expo-build-deployment-lesson-6",
+    "topicId": "expo-build-deployment",
+    "lessonNumber": 6,
+    "title": "Testing Production Builds",
+    "overview": "Production builds should be tested on real devices before publishing to application stores.",
+    "example": {
+      "title": "Testing Flow",
+      "content": "Create Build\n ↓\nInstall on Device\n ↓\nTest Features\n ↓\nRelease"
+    }
+  },
+  {
+    "id": "expo-build-deployment-lesson-7",
+    "topicId": "expo-build-deployment",
+    "lessonNumber": 7,
+    "title": "Publishing Applications",
+    "overview": "Expo applications can be published to Google Play Store and Apple App Store after completing build and testing steps.",
+    "example": {
+      "title": "Release Flow",
+      "content": "Build\n ↓\nStore Upload\n ↓\nReview\n ↓\nApp Published"
+    }
+  },
+  {
+    "id": "expo-build-deployment-lesson-8",
+    "topicId": "expo-build-deployment",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You learned about Expo builds, EAS Build, Android and iOS builds, configuration, testing, and publishing.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ EAS creates builds.\n✔ APK is for testing.\n✔ AAB is for Play Store.\n✔ Test before release."
+    }
+  }
+]

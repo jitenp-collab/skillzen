@@ -1,0 +1,90 @@
+[
+  {
+    "id": "nodejs-rest-api-lesson-1",
+    "topicId": "nodejs-rest-api",
+    "lessonNumber": 1,
+    "title": "What is a REST API?",
+    "overview": "A REST API is an interface that allows applications to communicate using HTTP requests. It follows REST principles to exchange data between client and server.",
+    "example": {
+      "title": "REST API Flow",
+      "content": "Client\n ↓\nHTTP Request\n ↓\nREST API Server\n ↓\nResponse"
+    }
+  },
+  {
+    "id": "nodejs-rest-api-lesson-2",
+    "topicId": "nodejs-rest-api",
+    "lessonNumber": 2,
+    "title": "HTTP Methods in REST API",
+    "overview": "REST APIs use HTTP methods to perform different operations on resources.",
+    "example": {
+      "title": "HTTP Methods",
+      "content": "GET → Read data\nPOST → Create data\nPUT → Update data\nDELETE → Remove data"
+    }
+  },
+  {
+    "id": "nodejs-rest-api-lesson-3",
+    "topicId": "nodejs-rest-api",
+    "lessonNumber": 3,
+    "title": "Creating GET API",
+    "overview": "GET APIs are used to retrieve data from the server.",
+    "example": {
+      "title": "GET API Example",
+      "content": "app.get('/users',(req,res)=>{\n res.json(users);\n});"
+    }
+  },
+  {
+    "id": "nodejs-rest-api-lesson-4",
+    "topicId": "nodejs-rest-api",
+    "lessonNumber": 4,
+    "title": "Creating POST API",
+    "overview": "POST APIs are used to send new data from the client to the server.",
+    "example": {
+      "title": "POST API Example",
+      "content": "app.post('/users',(req,res)=>{\n const user = req.body;\n res.json(user);\n});"
+    }
+  },
+  {
+    "id": "nodejs-rest-api-lesson-5",
+    "topicId": "nodejs-rest-api",
+    "lessonNumber": 5,
+    "title": "Updating and Deleting Data",
+    "overview": "PUT and DELETE methods are used to modify and remove existing resources from the server.",
+    "example": {
+      "title": "Update and Delete",
+      "content": "PUT → Update existing user\nDELETE → Remove user"
+    }
+  },
+  {
+    "id": "nodejs-rest-api-lesson-6",
+    "topicId": "nodejs-rest-api",
+    "lessonNumber": 6,
+    "title": "Working with JSON Data",
+    "overview": "REST APIs commonly exchange data in JSON format because it is lightweight and easy for applications to understand.",
+    "example": {
+      "title": "JSON Example",
+      "content": "{\n \"name\":\"Manthan\",\n \"role\":\"Developer\"\n}"
+    }
+  },
+  {
+    "id": "nodejs-rest-api-lesson-7",
+    "topicId": "nodejs-rest-api",
+    "lessonNumber": 7,
+    "title": "API Testing",
+    "overview": "API testing verifies whether endpoints work correctly by checking requests, responses, and returned data.",
+    "example": {
+      "title": "Testing Tools",
+      "content": "✔ Postman\n✔ Thunder Client\n✔ Insomnia"
+    }
+  },
+  {
+    "id": "nodejs-rest-api-lesson-8",
+    "topicId": "nodejs-rest-api",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You learned REST API concepts, HTTP methods, creating endpoints, handling JSON data, and testing APIs.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ REST APIs connect client and server.\n✔ HTTP methods perform operations.\n✔ JSON transfers data.\n✔ APIs should be tested properly."
+    }
+  }
+]

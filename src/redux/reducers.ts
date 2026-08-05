@@ -2,12 +2,14 @@ import { createSlice } from "@reduxjs/toolkit";
 
 import {
   completeGetStarted,
+  fetchLessonsByTopic,
   GetCategories,
   googleSignInUser,
   loadAppData,
   loginUser,
   logoutUser,
   registerUser,
+  SelectCaogery,
   updateProfilePhoto,
 } from "./actions";
 
@@ -18,8 +20,9 @@ const initialState: GlobalState = {
   getStartedCompleted: false,
   isLoading: false,
   error: null,
-
-  categories: []
+  categories: [],
+  selectedCatogery: [],
+  selectLessons: [],
 };
 
 const globalSlice = createSlice({
@@ -167,6 +170,40 @@ const globalSlice = createSlice({
         state.isLoading = false;
         state.error = action.error.message || "Unable to fetch categories";
       })
+
+      //select the catogery
+      .addCase(SelectCaogery.pending, (state) => {
+        state.isLoading = true;
+        state.error = null;
+      })
+
+      .addCase(SelectCaogery.fulfilled, (state, action) => {
+        state.selectedCatogery = action.payload;
+        state.isLoading = false;
+      })
+
+      .addCase(SelectCaogery.rejected, (state, action) => {
+        state.isLoading = false;
+        state.error = action.error.message || "Unable to fetch categories";
+      })
+
+      //select the Lessons
+
+      .addCase(fetchLessonsByTopic.pending, (state) => {
+        state.isLoading = true;
+        state.error = null;
+      })
+
+      .addCase(fetchLessonsByTopic.fulfilled, (state, action) => {
+        state.selectLessons = action.payload;
+        console.log(state.selectLessons);
+        state.isLoading = false;
+      })
+
+      .addCase(fetchLessonsByTopic.rejected, (state, action) => {
+        state.isLoading = false;
+        state.error = action.error.message || "Unable to fetch categories";
+      });
   },
 });
 

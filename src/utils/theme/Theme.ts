@@ -81,3 +81,12 @@ export const theme = {
 } as const;
 
 export type theme = typeof theme;
+
+export const ICON_PALETTE = [
+  theme.colors.secondary,
+  theme.colors.accent,
+  theme.colors.success,
+  theme.colors.warning,
+  theme.colors.danger,
+  theme.colors.info,
+];

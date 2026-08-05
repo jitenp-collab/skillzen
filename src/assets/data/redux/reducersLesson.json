@@ -1,0 +1,68 @@
+[
+  {
+    "id": "redux-reducers-lesson-1",
+    "topicId": "redux-reducers",
+    "lessonNumber": 1,
+    "title": "What are Reducers?",
+    "overview": "Reducers are pure functions that handle actions and return a new updated state. They define how the application state changes.",
+    "example": {
+      "title": "Reducer Structure",
+      "content": "function reducer(state, action) {\n return newState;\n}"
+    }
+  },
+  {
+    "id": "redux-reducers-lesson-2",
+    "topicId": "redux-reducers",
+    "lessonNumber": 2,
+    "title": "Reducer Function Rules",
+    "overview": "Reducers must follow specific rules: they should be pure functions, should not modify existing state, and should always return a state value.",
+    "example": {
+      "title": "Reducer Rules",
+      "content": "✔ No direct mutation\n✔ Same input gives same output\n✔ Return new state"
+    }
+  },
+  {
+    "id": "redux-reducers-lesson-3",
+    "topicId": "redux-reducers",
+    "lessonNumber": 3,
+    "title": "Handling Actions in Reducers",
+    "overview": "Reducers use the action type to decide which state update operation should be performed.",
+    "example": {
+      "title": "Action Handling",
+      "content": "switch(action.type){\n case 'ADD':\n  return newState;\n}"
+    }
+  },
+  {
+    "id": "redux-reducers-lesson-4",
+    "topicId": "redux-reducers",
+    "lessonNumber": 4,
+    "title": "Combining Multiple Reducers",
+    "overview": "Large applications can split state logic into multiple reducers and combine them together.",
+    "example": {
+      "title": "Multiple Reducers",
+      "content": "userReducer\n +\nproductReducer\n ↓\nrootReducer"
+    }
+  },
+  {
+    "id": "redux-reducers-lesson-5",
+    "topicId": "redux-reducers",
+    "lessonNumber": 5,
+    "title": "Reducers in Redux Toolkit",
+    "overview": "Redux Toolkit simplifies reducer creation by allowing direct state updates using Immer internally.",
+    "example": {
+      "title": "createSlice Reducer",
+      "content": "reducers:{\n increment:(state)=>{\n  state.count++;\n }\n}"
+    }
+  },
+  {
+    "id": "redux-reducers-lesson-6",
+    "topicId": "redux-reducers",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned how reducers work, their rules, action handling, combining reducers, and reducers in Redux Toolkit.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Reducers update state.\n✔ They handle actions.\n✔ They must be pure.\n✔ Redux Toolkit simplifies reducers."
+    }
+  }
+]

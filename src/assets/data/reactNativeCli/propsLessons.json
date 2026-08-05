@@ -1,0 +1,68 @@
+[
+  {
+    "id": "rn-cli-props-lesson-1",
+    "topicId": "rn-cli-props",
+    "lessonNumber": 1,
+    "title": "What are Props?",
+    "overview": "Props (short for Properties) are used to pass data from a parent component to a child component. They allow components to become reusable by displaying different data without changing the component's internal code.",
+    "example": {
+      "title": "Passing Props",
+      "content": "function Welcome(props) {\n  return <Text>Hello {props.name}</Text>;\n}\n\n<Welcome name=\"Manthan\" />"
+    }
+  },
+  {
+    "id": "rn-cli-props-lesson-2",
+    "topicId": "rn-cli-props",
+    "lessonNumber": 2,
+    "title": "Why Do We Use Props?",
+    "overview": "Props make components dynamic and reusable. Instead of creating multiple components with similar functionality, you can create one component and pass different values using props.",
+    "example": {
+      "title": "Real-World Example",
+      "content": "Imagine a User Card component. Instead of creating a separate card for every user, you can pass different names, images, and ages through props."
+    }
+  },
+  {
+    "id": "rn-cli-props-lesson-3",
+    "topicId": "rn-cli-props",
+    "lessonNumber": 3,
+    "title": "Passing Multiple Props",
+    "overview": "A component can receive multiple props at the same time. Each prop represents a different piece of information that the component can display or use.",
+    "example": {
+      "title": "Multiple Props Example",
+      "content": "<UserCard\n  name=\"Manthan\"\n  age={22}\n  city=\"Ahmedabad\"\n/>"
+    }
+  },
+  {
+    "id": "rn-cli-props-lesson-4",
+    "topicId": "rn-cli-props",
+    "lessonNumber": 4,
+    "title": "Destructuring Props",
+    "overview": "Instead of accessing every prop using props.name or props.age, you can destructure props directly in the function parameters. This makes your code shorter and easier to read.",
+    "example": {
+      "title": "Destructuring Example",
+      "content": "function Welcome({ name }) {\n  return <Text>Hello {name}</Text>;\n}"
+    }
+  },
+  {
+    "id": "rn-cli-props-lesson-5",
+    "topicId": "rn-cli-props",
+    "lessonNumber": 5,
+    "title": "Props are Read-Only",
+    "overview": "Props cannot be modified by the child component. They are read-only because the parent component owns the data. If the data needs to change, the parent component should update it and pass the new value again.",
+    "example": {
+      "title": "Example",
+      "content": "Props are like function parameters. The child component can use them but should never change them."
+    }
+  },
+  {
+    "id": "rn-cli-props-lesson-6",
+    "topicId": "rn-cli-props",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned what props are, why they are important, how to pass single and multiple props, how to destructure them, and why props should never be modified inside child components.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Props pass data from parent to child.\n✔ Props make components reusable.\n✔ Multiple props can be passed.\n✔ Destructuring makes code cleaner.\n✔ Props are read-only."
+    }
+  }
+]

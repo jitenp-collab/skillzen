@@ -1,0 +1,68 @@
+[
+  {
+    "id": "js-loops-lesson-1",
+    "topicId": "js-loops",
+    "lessonNumber": 1,
+    "title": "What are Loops?",
+    "overview": "Loops are used to execute a block of code repeatedly until a specific condition becomes false. They help avoid writing the same code multiple times.",
+    "example": {
+      "title": "Loop Example",
+      "content": "for(let i = 1; i <= 5; i++){\n console.log(i);\n}"
+    }
+  },
+  {
+    "id": "js-loops-lesson-2",
+    "topicId": "js-loops",
+    "lessonNumber": 2,
+    "title": "for Loop",
+    "overview": "The for loop is commonly used when the number of iterations is known. It contains initialization, condition, and increment/decrement parts.",
+    "example": {
+      "title": "for Loop Example",
+      "content": "for(let i = 0; i < 3; i++){\n console.log('Hello');\n}"
+    }
+  },
+  {
+    "id": "js-loops-lesson-3",
+    "topicId": "js-loops",
+    "lessonNumber": 3,
+    "title": "while Loop",
+    "overview": "The while loop executes code as long as the given condition remains true. It is useful when the number of iterations is not fixed.",
+    "example": {
+      "title": "while Loop Example",
+      "content": "let count = 1;\n\nwhile(count <= 5){\n console.log(count);\n count++;\n}"
+    }
+  },
+  {
+    "id": "js-loops-lesson-4",
+    "topicId": "js-loops",
+    "lessonNumber": 4,
+    "title": "do...while Loop",
+    "overview": "The do...while loop executes the code block at least once before checking the condition.",
+    "example": {
+      "title": "do...while Example",
+      "content": "let number = 1;\n\ndo{\n console.log(number);\n number++;\n}while(number <= 5);"
+    }
+  },
+  {
+    "id": "js-loops-lesson-5",
+    "topicId": "js-loops",
+    "lessonNumber": 5,
+    "title": "break and continue",
+    "overview": "break is used to stop a loop completely, while continue skips the current iteration and moves to the next one.",
+    "example": {
+      "title": "break and continue Example",
+      "content": "break:\nStops the loop.\n\ncontinue:\nSkips current iteration."
+    }
+  },
+  {
+    "id": "js-loops-lesson-6",
+    "topicId": "js-loops",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned how loops work in JavaScript and how to use for, while, do...while loops along with break and continue statements.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Loops repeat code execution.\n✔ for loop is used for known iterations.\n✔ while checks condition before execution.\n✔ do...while runs at least once.\n✔ break stops loops and continue skips iterations."
+    }
+  }
+]

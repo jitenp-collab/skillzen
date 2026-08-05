@@ -1,0 +1,79 @@
+[
+  {
+    "id": "rn-cli-state-lesson-1",
+    "topicId": "rn-cli-state",
+    "lessonNumber": 1,
+    "title": "What is State?",
+    "overview": "State is a built-in feature in React Native that stores data which can change over time. Whenever the state changes, React Native automatically updates the user interface to reflect the latest data.",
+    "example": {
+      "title": "State Example",
+      "content": "import { useState } from 'react';\nimport { Button, Text, View } from 'react-native';\n\nexport default function App() {\n  const [count, setCount] = useState(0);\n\n  return (\n    <View>\n      <Text>{count}</Text>\n      <Button title=\"Increase\" onPress={() => setCount(count + 1)} />\n    </View>\n  );\n}"
+    }
+  },
+  {
+    "id": "rn-cli-state-lesson-2",
+    "topicId": "rn-cli-state",
+    "lessonNumber": 2,
+    "title": "Why Do We Use State?",
+    "overview": "State allows your application to display dynamic data. It is commonly used for counters, forms, user information, loading indicators, theme switching, and any value that changes while the app is running.",
+    "example": {
+      "title": "Real-World Example",
+      "content": "Think of a Like button on Instagram. Every time you tap the button, the number of likes changes. State stores and updates that value automatically."
+    }
+  },
+  {
+    "id": "rn-cli-state-lesson-3",
+    "topicId": "rn-cli-state",
+    "lessonNumber": 3,
+    "title": "Using useState Hook",
+    "overview": "The useState hook is the simplest way to add state to a functional component. It returns the current state value and a function that updates it. Calling the update function causes the component to re-render with the new value.",
+    "example": {
+      "title": "useState Syntax",
+      "content": "const [name, setName] = useState('Manthan');"
+    }
+  },
+  {
+    "id": "rn-cli-state-lesson-4",
+    "topicId": "rn-cli-state",
+    "lessonNumber": 4,
+    "title": "Updating State",
+    "overview": "State should always be updated using its setter function. Never modify the state variable directly, because React Native will not know that the value has changed and the UI will not update correctly.",
+    "example": {
+      "title": "Updating State Correctly",
+      "content": "const [count, setCount] = useState(0);\n\nsetCount(count + 1);"
+    }
+  },
+  {
+    "id": "rn-cli-state-lesson-5",
+    "topicId": "rn-cli-state",
+    "lessonNumber": 5,
+    "title": "State vs Props",
+    "overview": "Both state and props are used to manage data in React Native, but they have different purposes. Props are passed from a parent component and cannot be modified by the child, while state belongs to a component and can change over time.",
+    "example": {
+      "title": "Comparison",
+      "content": "Props:\n• Passed from parent to child.\n• Read-only.\n\nState:\n• Managed inside the component.\n• Can be updated using useState."
+    }
+  },
+  {
+    "id": "rn-cli-state-lesson-6",
+    "topicId": "rn-cli-state",
+    "lessonNumber": 6,
+    "title": "Common State Examples",
+    "overview": "State is used in many real-world scenarios such as login forms, search bars, counters, dark mode, loading indicators, and showing or hiding UI elements. Almost every interactive React Native application uses state.",
+    "example": {
+      "title": "Examples",
+      "content": "• Login Form\n• Counter\n• Search Bar\n• Dark Mode\n• Loading Spinner\n• Show/Hide Password"
+    }
+  },
+  {
+    "id": "rn-cli-state-lesson-7",
+    "topicId": "rn-cli-state",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned what state is, why it is important, how to use the useState hook, update state correctly, understand the difference between state and props, and identify common situations where state is used.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ State stores changing data.\n✔ useState adds state to functional components.\n✔ Always update state using the setter function.\n✔ State updates automatically re-render the UI.\n✔ Props are read-only, state is mutable."
+    }
+  }
+]

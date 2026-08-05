@@ -1,0 +1,57 @@
+[
+  {
+    "id": "ts-installation-setup-lesson-1",
+    "topicId": "ts-installation-setup",
+    "lessonNumber": 1,
+    "title": "Installing TypeScript",
+    "overview": "TypeScript can be installed using npm. The TypeScript compiler allows developers to convert TypeScript code into JavaScript code.",
+    "example": {
+      "title": "Install TypeScript",
+      "content": "npm install -g typescript\n\nCheck version:\n\ntsc --version"
+    }
+  },
+  {
+    "id": "ts-installation-setup-lesson-2",
+    "topicId": "ts-installation-setup",
+    "lessonNumber": 2,
+    "title": "Creating a TypeScript File",
+    "overview": "TypeScript files use the .ts extension. Developers write TypeScript code inside these files and compile them into JavaScript.",
+    "example": {
+      "title": "TypeScript File",
+      "content": "Create file:\n\napp.ts\n\nCode:\n\nlet message: string = 'Hello TypeScript';"
+    }
+  },
+  {
+    "id": "ts-installation-setup-lesson-3",
+    "topicId": "ts-installation-setup",
+    "lessonNumber": 3,
+    "title": "TypeScript Compiler",
+    "overview": "The TypeScript compiler (tsc) converts TypeScript code into JavaScript that can run in browsers, Node.js, and React Native environments.",
+    "example": {
+      "title": "Compile TypeScript",
+      "content": "tsc app.ts\n\nOutput:\n\napp.js"
+    }
+  },
+  {
+    "id": "ts-installation-setup-lesson-4",
+    "topicId": "ts-installation-setup",
+    "lessonNumber": 4,
+    "title": "tsconfig.json File",
+    "overview": "The tsconfig.json file contains TypeScript compiler configuration settings. It controls how TypeScript code is compiled.",
+    "example": {
+      "title": "tsconfig Example",
+      "content": "{\n  \"compilerOptions\": {\n    \"strict\": true\n  }\n}"
+    }
+  },
+  {
+    "id": "ts-installation-setup-lesson-5",
+    "topicId": "ts-installation-setup",
+    "lessonNumber": 5,
+    "title": "TypeScript Setup in React Native",
+    "overview": "React Native projects can be created with TypeScript support. TypeScript files use .tsx extension when they contain React components and JSX.",
+    "example": {
+      "title": "React Native TypeScript Files",
+      "content": "Component.tsx\nScreen.tsx\nNavigation.tsx\n\n.tsx is used for React components."
+    }
+  }
+]

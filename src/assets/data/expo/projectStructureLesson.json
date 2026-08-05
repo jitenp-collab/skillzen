@@ -1,0 +1,68 @@
+[
+  {
+    "id": "expo-project-structure-lesson-1",
+    "topicId": "expo-project-structure",
+    "lessonNumber": 1,
+    "title": "Understanding Expo Project Structure",
+    "overview": "An Expo project contains files and folders that organize screens, assets, configurations, and application logic.",
+    "example": {
+      "title": "Basic Structure",
+      "content": "MyApp/\n ├── app/\n ├── assets/\n ├── components/\n ├── package.json\n └── app.json"
+    }
+  },
+  {
+    "id": "expo-project-structure-lesson-2",
+    "topicId": "expo-project-structure",
+    "lessonNumber": 2,
+    "title": "App Folder",
+    "overview": "The app folder contains application routes and screens when using Expo Router.",
+    "example": {
+      "title": "App Folder Example",
+      "content": "app/\n ├── index.tsx\n ├── profile.tsx\n └── settings.tsx"
+    }
+  },
+  {
+    "id": "expo-project-structure-lesson-3",
+    "topicId": "expo-project-structure",
+    "lessonNumber": 3,
+    "title": "Assets Folder",
+    "overview": "The assets folder stores static resources like images, fonts, and icons used inside the application.",
+    "example": {
+      "title": "Assets Structure",
+      "content": "assets/\n ├── images/\n ├── fonts/\n └── icons/"
+    }
+  },
+  {
+    "id": "expo-project-structure-lesson-4",
+    "topicId": "expo-project-structure",
+    "lessonNumber": 4,
+    "title": "Configuration Files",
+    "overview": "Expo uses configuration files to define application settings, permissions, and build information.",
+    "example": {
+      "title": "Config Files",
+      "content": "app.json\napp.config.js\npackage.json"
+    }
+  },
+  {
+    "id": "expo-project-structure-lesson-5",
+    "topicId": "expo-project-structure",
+    "lessonNumber": 5,
+    "title": "Components and Utilities",
+    "overview": "Reusable components and utility functions help keep Expo applications clean and maintainable.",
+    "example": {
+      "title": "Recommended Structure",
+      "content": "src/\n ├── components/\n ├── hooks/\n ├── services/\n └── utils/"
+    }
+  },
+  {
+    "id": "expo-project-structure-lesson-6",
+    "topicId": "expo-project-structure",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned about Expo folders, routing structure, assets, configuration files, and organizing application code.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ app contains screens.\n✔ assets stores resources.\n✔ Config files manage settings.\n✔ Components improve reuse."
+    }
+  }
+]

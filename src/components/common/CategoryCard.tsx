@@ -10,8 +10,6 @@ import Animated, {
   useSharedValue,
   withDelay,
   withRepeat,
-  withSequence,
-  withSpring,
   withTiming,
 } from "react-native-reanimated";
 import { theme } from "../../utils/theme/Theme";
@@ -39,7 +37,7 @@ const CategoryCard = memo(
     onPress: (c: Category) => void;
   }) => {
     const pressed = useSharedValue(0);
-    const buttonPressed = useSharedValue(0);
+    // const buttonPressed = useSharedValue(0);
     const shimmerProgress = useSharedValue(0);
     const iconNudge = useSharedValue(0);
 
@@ -66,20 +64,6 @@ const CategoryCard = memo(
       ],
     }));
 
-    const startButtonStyle = useAnimatedStyle(() => ({
-      transform: [
-        {
-          scale: buttonPressed.value
-            ? withTiming(0.92, { duration: 90 })
-            : withSpring(1, { damping: 6, stiffness: 250 }),
-        },
-      ],
-    }));
-
-    const iconChipStyle = useAnimatedStyle(() => ({
-      transform: [{ scale: buttonPressed.value ? 1.12 : 1 }],
-    }));
-   
     const shimmerStyle = useAnimatedStyle(() => {
       const translateX = interpolate(
         shimmerProgress.value,
@@ -102,20 +86,8 @@ const CategoryCard = memo(
       ],
     }));
 
-    const handlePressIn = () => {
-      buttonPressed.value = 1;
-    };
-    const handlePressOut = () => {
-      buttonPressed.value = 0;
-    };
     const handlePress = () => {
-      iconNudge.value = withSequence(
-        withTiming(4, { duration: 100 }),
-        withTiming(0, { duration: 150 }),
-      );
       onPress(item);
-      console.log(item.title);
-      
     };
 
     return (
@@ -151,13 +123,7 @@ const CategoryCard = memo(
               </Text>
             </View>
 
-            <AnimatedPressable
-              hitSlop={8}
-              onPressIn={handlePressIn}
-              onPressOut={handlePressOut}
-              onPress={handlePress}
-              style={startButtonStyle}
-            >
+            <AnimatedPressable hitSlop={8} onPress={handlePress}>
               <View style={styles.startButton}>
                 <Animated.View
                   style={[styles.shimmerWrap, shimmerStyle]}
@@ -175,7 +141,7 @@ const CategoryCard = memo(
                   />
                 </Animated.View>
 
-                <Animated.View style={[styles.startIconChip, iconChipStyle]}>
+                <Animated.View style={[styles.startIconChip]}>
                   <Text style={styles.startButtonText}>Start</Text>
                   <Animated.View style={chevronStyle}>
                     <ChevronRightIcon color="#111318" size={15} />

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "rn-cli-app-entry-lesson-1",
+    "topicId": "rn-cli-app-entry",
+    "lessonNumber": 1,
+    "title": "What is an Entry Point?",
+    "overview": "An entry point is the first file that runs when a React Native application starts. It is responsible for registering the root component so React Native knows which component should be displayed first. In React Native CLI, the entry point is usually the index.js file.",
+    "example": {
+      "title": "Entry Point Flow",
+      "content": "Application Starts → index.js Executes → App Component Loads → UI Appears"
+    }
+  },
+  {
+    "id": "rn-cli-app-entry-lesson-2",
+    "topicId": "rn-cli-app-entry",
+    "lessonNumber": 2,
+    "title": "Understanding index.js",
+    "overview": "The index.js file is the first JavaScript file executed when your application launches. Its main responsibility is to register the root component using AppRegistry. Every React Native application must have an entry point.",
+    "example": {
+      "title": "index.js Example",
+      "content": "import { AppRegistry } from 'react-native';\nimport App from './App';\nimport { name as appName } from './app.json';\n\nAppRegistry.registerComponent(appName, () => App);"
+    }
+  },
+  {
+    "id": "rn-cli-app-entry-lesson-3",
+    "topicId": "rn-cli-app-entry",
+    "lessonNumber": 3,
+    "title": "Understanding App.tsx",
+    "overview": "App.tsx is the root component of your React Native application. It contains the UI that is displayed after the application starts. In larger applications, App.tsx usually initializes navigation, global providers, themes, and state management.",
+    "example": {
+      "title": "Simple App.tsx",
+      "content": "import { SafeAreaView, Text } from 'react-native';\n\nexport default function App() {\n  return (\n    <SafeAreaView>\n      <Text>Welcome to React Native</Text>\n    </SafeAreaView>\n  );\n}"
+    }
+  },
+  {
+    "id": "rn-cli-app-entry-lesson-4",
+    "topicId": "rn-cli-app-entry",
+    "lessonNumber": 4,
+    "title": "Application Startup Flow",
+    "overview": "When a React Native application starts, the native Android or iOS application launches first. It then executes index.js, which registers App.tsx. Finally, React Native renders the user interface on the screen.",
+    "example": {
+      "title": "Startup Flow",
+      "content": "Android/iOS Starts\n      ↓\nindex.js Executes\n      ↓\nApp.tsx Loads\n      ↓\nReact Native Renders UI"
+    }
+  },
+  {
+    "id": "rn-cli-app-entry-lesson-5",
+    "topicId": "rn-cli-app-entry",
+    "lessonNumber": 5,
+    "title": "Topic Summary",
+    "overview": "You learned what an entry point is, why index.js is important, how App.tsx works, and the complete application startup flow. These files form the foundation of every React Native application.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ index.js is the application's entry point.\n✔ AppRegistry registers the root component.\n✔ App.tsx is the root UI component.\n✔ The application starts from the native platform and then loads React Native."
+    }
+  }
+]

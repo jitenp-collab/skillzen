@@ -1,0 +1,68 @@
+[
+  {
+    "id": "redux-introduction-lesson-1",
+    "topicId": "redux-introduction",
+    "lessonNumber": 1,
+    "title": "What is Redux?",
+    "overview": "Redux is a predictable state management library used to manage and share application state in a centralized way.",
+    "example": {
+      "title": "Redux Purpose",
+      "content": "Components\n ↓\nRedux Store\n ↓\nGlobal State Management"
+    }
+  },
+  {
+    "id": "redux-introduction-lesson-2",
+    "topicId": "redux-introduction",
+    "lessonNumber": 2,
+    "title": "Why Use Redux?",
+    "overview": "Redux helps manage complex application states by providing a single source of truth and predictable data flow.",
+    "example": {
+      "title": "Problems Redux Solves",
+      "content": "Without Redux:\nComponent → Component → Component\n\nWith Redux:\nComponent → Store → Component"
+    }
+  },
+  {
+    "id": "redux-introduction-lesson-3",
+    "topicId": "redux-introduction",
+    "lessonNumber": 3,
+    "title": "Redux Core Principles",
+    "overview": "Redux follows three main principles: single source of truth, state is read-only, and changes are made using pure functions.",
+    "example": {
+      "title": "Redux Principles",
+      "content": "1. Single Store\n2. Immutable State\n3. Pure Reducers"
+    }
+  },
+  {
+    "id": "redux-introduction-lesson-4",
+    "topicId": "redux-introduction",
+    "lessonNumber": 4,
+    "title": "Redux Data Flow",
+    "overview": "Redux uses a one-way data flow where actions describe changes and reducers update the store state.",
+    "example": {
+      "title": "Redux Flow",
+      "content": "User Action\n ↓\nDispatch Action\n ↓\nReducer\n ↓\nStore Updated\n ↓\nUI Updated"
+    }
+  },
+  {
+    "id": "redux-introduction-lesson-5",
+    "topicId": "redux-introduction",
+    "lessonNumber": 5,
+    "title": "Redux vs Context API",
+    "overview": "Redux and Context API both manage state, but Redux provides more advanced tools for large and complex applications.",
+    "example": {
+      "title": "Comparison",
+      "content": "Context API:\nSmall application state\n\nRedux:\nLarge application state\nDebugging tools\nMiddleware support"
+    }
+  },
+  {
+    "id": "redux-introduction-lesson-6",
+    "topicId": "redux-introduction",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned what Redux is, why it is used, its principles, data flow, and comparison with Context API.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Redux manages global state.\n✔ Store holds application state.\n✔ Actions describe changes.\n✔ Reducers update state."
+    }
+  }
+]

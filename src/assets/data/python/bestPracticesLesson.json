@@ -1,0 +1,68 @@
+[
+  {
+    "id": "python-best-practices-lesson-1",
+    "topicId": "python-best-practices",
+    "lessonNumber": 1,
+    "title": "Writing Clean Python Code",
+    "overview": "Clean code is easy to read, understand, and maintain. Python developers follow certain practices to keep applications organized and efficient.",
+    "example": {
+      "title": "Clean Code Practices",
+      "content": "✔ Meaningful variable names\n✔ Proper indentation\n✔ Avoid unnecessary code\n✔ Write reusable functions"
+    }
+  },
+  {
+    "id": "python-best-practices-lesson-2",
+    "topicId": "python-best-practices",
+    "lessonNumber": 2,
+    "title": "Follow Python Naming Conventions",
+    "overview": "Python uses naming conventions like snake_case for variables and functions to keep code consistent and readable.",
+    "example": {
+      "title": "Naming Example",
+      "content": "Good:\nuser_name = 'John'\n\nBad:\nun = 'John'"
+    }
+  },
+  {
+    "id": "python-best-practices-lesson-3",
+    "topicId": "python-best-practices",
+    "lessonNumber": 3,
+    "title": "Use Virtual Environments",
+    "overview": "Virtual environments isolate project dependencies and prevent conflicts between different Python projects.",
+    "example": {
+      "title": "Virtual Environment",
+      "content": "Create:\npython -m venv env\n\nActivate environment before installing packages."
+    }
+  },
+  {
+    "id": "python-best-practices-lesson-4",
+    "topicId": "python-best-practices",
+    "lessonNumber": 4,
+    "title": "Handle Errors Properly",
+    "overview": "Proper exception handling prevents applications from crashing and helps developers identify problems easily.",
+    "example": {
+      "title": "Error Handling",
+      "content": "try:\n    execute_code()\nexcept Exception as error:\n    print(error)"
+    }
+  },
+  {
+    "id": "python-best-practices-lesson-5",
+    "topicId": "python-best-practices",
+    "lessonNumber": 5,
+    "title": "Project Organization",
+    "overview": "A well-structured Python project separates files based on responsibilities, making development and maintenance easier.",
+    "example": {
+      "title": "Project Structure",
+      "content": "project/\n ├── app.py\n ├── models/\n ├── services/\n ├── utils/\n └── tests/"
+    }
+  },
+  {
+    "id": "python-best-practices-lesson-6",
+    "topicId": "python-best-practices",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned important Python development practices including clean code, naming conventions, environments, error handling, and project organization.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Write readable code.\n✔ Follow naming rules.\n✔ Use virtual environments.\n✔ Handle errors properly.\n✔ Organize projects clearly."
+    }
+  }
+]

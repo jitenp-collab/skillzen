@@ -1,0 +1,68 @@
+[
+  {
+    "id": "redux-hooks-lesson-1",
+    "topicId": "redux-hooks",
+    "lessonNumber": 1,
+    "title": "Introduction to Redux Hooks",
+    "overview": "React Redux provides hooks that allow functional components to interact with the Redux store easily.",
+    "example": {
+      "title": "Redux Hooks",
+      "content": "useSelector → Read state\nuseDispatch → Send actions"
+    }
+  },
+  {
+    "id": "redux-hooks-lesson-2",
+    "topicId": "redux-hooks",
+    "lessonNumber": 2,
+    "title": "useSelector Hook",
+    "overview": "useSelector is used to extract specific data from the Redux store and subscribe a component to state changes.",
+    "example": {
+      "title": "useSelector Example",
+      "content": "const user = useSelector(\n state => state.user\n);"
+    }
+  },
+  {
+    "id": "redux-hooks-lesson-3",
+    "topicId": "redux-hooks",
+    "lessonNumber": 3,
+    "title": "Selecting Specific State",
+    "overview": "Components should select only the required data from the store to avoid unnecessary re-renders.",
+    "example": {
+      "title": "Specific Selection",
+      "content": "const name = useSelector(\n state => state.user.name\n);"
+    }
+  },
+  {
+    "id": "redux-hooks-lesson-4",
+    "topicId": "redux-hooks",
+    "lessonNumber": 4,
+    "title": "useDispatch Hook",
+    "overview": "useDispatch returns a dispatch function that allows components to send actions to reducers.",
+    "example": {
+      "title": "useDispatch Example",
+      "content": "const dispatch = useDispatch();\n\ndispatch(addTask(task));"
+    }
+  },
+  {
+    "id": "redux-hooks-lesson-5",
+    "topicId": "redux-hooks",
+    "lessonNumber": 5,
+    "title": "Using useSelector and useDispatch Together",
+    "overview": "Most Redux components use both hooks together to read state and update state based on user actions.",
+    "example": {
+      "title": "Combined Usage",
+      "content": "const count = useSelector(state=>state.counter.value);\n\nconst dispatch = useDispatch();\n\ndispatch(increment());"
+    }
+  },
+  {
+    "id": "redux-hooks-lesson-6",
+    "topicId": "redux-hooks",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned how useSelector reads Redux state and useDispatch sends actions to update the application state.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ useSelector reads data.\n✔ useDispatch sends actions.\n✔ Both hooks connect components with Redux store."
+    }
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "nodejs-introduction",
+    "title": "Introduction to Node.js",
+    "icon": "https://webandcrafts.com/_next/image?url=https%3A%2F%2Fadmin.wac.co%2Fuploads%2FNode_js_Architecture_A_Comprehensive_Guide_1_af37a73e1e.png&w=4500&q=90",
+    "totalLessons": 6
+  },
+  {
+    "id": "nodejs-installation-setup",
+    "title": "Node.js Installation & Setup",
+    "icon": "https://webandcrafts.com/_next/image?url=https%3A%2F%2Fadmin.wac.co%2Fuploads%2FNode_js_Architecture_A_Comprehensive_Guide_1_af37a73e1e.png&w=4500&q=90",
+    "totalLessons": 5
+  },
+  {
+    "id": "nodejs-runtime",
+    "title": "Node.js Runtime & Architecture",
+    "icon": "https://webandcrafts.com/_next/image?url=https%3A%2F%2Fadmin.wac.co%2Fuploads%2FNode_js_Architecture_A_Comprehensive_Guide_1_af37a73e1e.png&w=4500&q=90",
+    "totalLessons": 7
+  },
+  {
+    "id": "nodejs-modules",
+    "title": "Node.js Modules",
+    "icon": "https://webandcrafts.com/_next/image?url=https%3A%2F%2Fadmin.wac.co%2Fuploads%2FNode_js_Architecture_A_Comprehensive_Guide_1_af37a73e1e.png&w=4500&q=90",
+    "totalLessons": 7
+  },
+  {
+    "id": "nodejs-npm",
+    "title": "NPM & Package Management",
+    "icon": "https://webandcrafts.com/_next/image?url=https%3A%2F%2Fadmin.wac.co%2Fuploads%2FNode_js_Architecture_A_Comprehensive_Guide_1_af37a73e1e.png&w=4500&q=90",
+    "totalLessons": 6
+  },
+  {
+    "id": "nodejs-file-system",
+    "title": "File System Module",
+    "icon": "https://webandcrafts.com/_next/image?url=https%3A%2F%2Fadmin.wac.co%2Fuploads%2FNode_js_Architecture_A_Comprehensive_Guide_1_af37a73e1e.png&w=4500&q=90",
+    "totalLessons": 5
+  },
+  {
+    "id": "nodejs-events",
+    "title": "Events & Event Loop",
+    "icon": "https://webandcrafts.com/_next/image?url=https%3A%2F%2Fadmin.wac.co%2Fuploads%2FNode_js_Architecture_A_Comprehensive_Guide_1_af37a73e1e.png&w=4500&q=90",
+    "totalLessons": 6
+  },
+  {
+    "id": "nodejs-express",
+    "title": "Express.js Basics",
+    "icon": "https://webandcrafts.com/_next/image?url=https%3A%2F%2Fadmin.wac.co%2Fuploads%2FNode_js_Architecture_A_Comprehensive_Guide_1_af37a73e1e.png&w=4500&q=90",
+    "totalLessons": 8
+  },
+  {
+    "id": "nodejs-rest-api",
+    "title": "Building REST APIs",
+    "icon": "https://webandcrafts.com/_next/image?url=https%3A%2F%2Fadmin.wac.co%2Fuploads%2FNode_js_Architecture_A_Comprehensive_Guide_1_af37a73e1e.png&w=4500&q=90",
+    "totalLessons": 8
+  },
+  {
+    "id": "nodejs-database",
+    "title": "Database Integration",
+    "icon": "https://webandcrafts.com/_next/image?url=https%3A%2F%2Fadmin.wac.co%2Fuploads%2FNode_js_Architecture_A_Comprehensive_Guide_1_af37a73e1e.png&w=4500&q=90",
+    "totalLessons": 7
+  },
+  {
+    "id": "nodejs-authentication",
+    "title": "Authentication & Authorization",
+    "icon": "https://webandcrafts.com/_next/image?url=https%3A%2F%2Fadmin.wac.co%2Fuploads%2FNode_js_Architecture_A_Comprehensive_Guide_1_af37a73e1e.png&w=4500&q=90",
+    "totalLessons": 7
+  },
+  {
+    "id": "nodejs-error-handling",
+    "title": "Error Handling",
+    "icon": "https://webandcrafts.com/_next/image?url=https%3A%2F%2Fadmin.wac.co%2Fuploads%2FNode_js_Architecture_A_Comprehensive_Guide_1_af37a73e1e.png&w=4500&q=90",
+    "totalLessons": 5
+  },
+  {
+    "id": "nodejs-best-practices",
+    "title": "Node.js Best Practices",
+    "icon": "https://webandcrafts.com/_next/image?url=https%3A%2F%2Fadmin.wac.co%2Fuploads%2FNode_js_Architecture_A_Comprehensive_Guide_1_af37a73e1e.png&w=4500&q=90",
+    "totalLessons": 6
+  }
+]

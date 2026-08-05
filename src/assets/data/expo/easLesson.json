@@ -1,0 +1,79 @@
+[
+  {
+    "id": "expo-eas-lesson-1",
+    "topicId": "expo-eas",
+    "lessonNumber": 1,
+    "title": "Introduction to EAS",
+    "overview": "EAS (Expo Application Services) is a collection of cloud services that help developers build, submit, and update Expo applications.",
+    "example": {
+      "title": "EAS Services",
+      "content": "EAS Build\nEAS Submit\nEAS Update\nEAS Metadata"
+    }
+  },
+  {
+    "id": "expo-eas-lesson-2",
+    "topicId": "expo-eas",
+    "lessonNumber": 2,
+    "title": "EAS CLI",
+    "overview": "EAS CLI is a command-line tool used to manage Expo Application Services from the terminal.",
+    "example": {
+      "title": "Install EAS CLI",
+      "content": "npm install -g eas-cli\n\neas --version"
+    }
+  },
+  {
+    "id": "expo-eas-lesson-3",
+    "topicId": "expo-eas",
+    "lessonNumber": 3,
+    "title": "EAS Build",
+    "overview": "EAS Build creates production and development builds for Android and iOS applications using Expo cloud infrastructure.",
+    "example": {
+      "title": "Build Command",
+      "content": "eas build --platform android"
+    }
+  },
+  {
+    "id": "expo-eas-lesson-4",
+    "topicId": "expo-eas",
+    "lessonNumber": 4,
+    "title": "EAS Submit",
+    "overview": "EAS Submit helps upload application builds directly to Google Play Store and Apple App Store.",
+    "example": {
+      "title": "Submit Flow",
+      "content": "Build App\n ↓\nEAS Submit\n ↓\nApp Store"
+    }
+  },
+  {
+    "id": "expo-eas-lesson-5",
+    "topicId": "expo-eas",
+    "lessonNumber": 5,
+    "title": "EAS Update",
+    "overview": "EAS Update allows developers to deliver JavaScript and asset updates without creating a new store build.",
+    "example": {
+      "title": "Update Flow",
+      "content": "Code Change\n ↓\nEAS Update\n ↓\nUsers Receive Update"
+    }
+  },
+  {
+    "id": "expo-eas-lesson-6",
+    "topicId": "expo-eas",
+    "lessonNumber": 6,
+    "title": "EAS Project Configuration",
+    "overview": "EAS uses configuration files to manage project settings, build profiles, and application identifiers.",
+    "example": {
+      "title": "Configuration File",
+      "content": "eas.json\n\nbuild profiles:\ndevelopment\npreview\nproduction"
+    }
+  },
+  {
+    "id": "expo-eas-lesson-7",
+    "topicId": "expo-eas",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned about EAS services including Build, Submit, Update, CLI, and project configuration.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ EAS manages app lifecycle.\n✔ Build creates binaries.\n✔ Submit publishes apps.\n✔ Update delivers changes."
+    }
+  }
+]

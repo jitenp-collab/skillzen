@@ -1,20 +1,38 @@
 import { useCallback, useMemo } from "react";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
 import Animated, { FadeInDown } from "react-native-reanimated";
-import { useSelector } from "react-redux";
-import { RootState } from "@/redux/store";
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispatch, RootState } from "@/redux/store";
 import { theme } from "../../utils/theme/Theme";
 import { CategoriesCompProps, Category } from "@/utils/types/Apptypes";
 import CategoryCard from "./CategoryCard";
+import { SelectCaogery } from "@/redux/actions";
+import { router } from "expo-router";
 
 const SECTION_ENTRY_DELAY = 0;
 
 const CategoriesComp = ({ searchQuery = "" }: CategoriesCompProps) => {
-  const { categories } = useSelector((state: RootState) => state.global);
+  const { categories, selectedCatogery } = useSelector(
+    (state: RootState) => state.global,
+  );
+  const dispatch = useDispatch<AppDispatch>();
 
-  const handlePress = useCallback((cat: Category) => {
-    // router.push(`/category/${cat.id}`)
-  }, []);
+  const handlePress = useCallback(
+    async (cat: Category) => {
+      try {
+        await dispatch(SelectCaogery(cat.title)).unwrap();
+        router.navigate({
+          pathname: "/(tabs)/topics",
+          params: {
+            categoryTitle: cat.title,
+          },
+        });
+      } catch (err) {
+        console.log("Failed to select category:", err);
+      }
+    },
+    [dispatch],
+  );
 
   const filteredCategories = useMemo(() => {
     if (!categories) return [];

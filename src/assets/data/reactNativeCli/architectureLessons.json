@@ -1,0 +1,79 @@
+[
+  {
+    "id": "rn-cli-architecture-lesson-1",
+    "topicId": "rn-cli-architecture",
+    "lessonNumber": 1,
+    "title": "What is React Native Architecture?",
+    "overview": "React Native Architecture is the internal structure that allows JavaScript code to communicate with native Android and iOS code. It manages how your application processes user interactions, updates the user interface, and accesses native device features while providing a smooth user experience.",
+    "example": {
+      "title": "Real-World Example",
+      "content": "Imagine two people speaking different languages. They need a translator to understand each other. Similarly, React Native Architecture helps JavaScript communicate with Android and iOS so they can work together."
+    }
+  },
+  {
+    "id": "rn-cli-architecture-lesson-2",
+    "topicId": "rn-cli-architecture",
+    "lessonNumber": 2,
+    "title": "How React Native Works",
+    "overview": "When you write code in React Native, the JavaScript engine executes your code. React Native then converts your UI into native components that Android and iOS understand. This process allows your application to provide a native look and feel while using JavaScript to build the interface.",
+    "example": {
+      "title": "Application Flow",
+      "content": "JavaScript Code → React Native Framework → Native Android/iOS Components → Mobile Screen"
+    }
+  },
+  {
+    "id": "rn-cli-architecture-lesson-3",
+    "topicId": "rn-cli-architecture",
+    "lessonNumber": 3,
+    "title": "JavaScript Thread",
+    "overview": "The JavaScript Thread is responsible for running your React Native application logic. It handles tasks such as state updates, API requests, event handling, navigation, and executing JavaScript code. Since JavaScript runs on a single thread, performing heavy operations can make the application feel slow or unresponsive.",
+    "example": {
+      "title": "JavaScript Example",
+      "content": "const message = 'Hello React Native';\n\nconsole.log(message);\n\nsetTimeout(() => {\n  console.log('Data Loaded');\n}, 1000);"
+    }
+  },
+  {
+    "id": "rn-cli-architecture-lesson-4",
+    "topicId": "rn-cli-architecture",
+    "lessonNumber": 4,
+    "title": "Native Thread",
+    "overview": "The Native Thread is responsible for rendering native UI components, handling touch gestures, animations, scrolling, and communicating directly with the Android or iOS operating system. It ensures that the application behaves like a real native app.",
+    "example": {
+      "title": "Real-World Example",
+      "content": "When you tap a Button in a React Native application, the Native Thread is responsible for displaying the button press animation and updating the screen smoothly."
+    }
+  },
+  {
+    "id": "rn-cli-architecture-lesson-5",
+    "topicId": "rn-cli-architecture",
+    "lessonNumber": 5,
+    "title": "New React Native Architecture",
+    "overview": "The new React Native Architecture improves communication between JavaScript and native code. It introduces Fabric for faster UI rendering, TurboModules for efficient native modules, and JSI (JavaScript Interface) for direct communication without relying on the old Bridge. This results in better performance and smoother applications.",
+    "example": {
+      "title": "Main Components",
+      "content": "• Fabric - Faster UI rendering\n• TurboModules - Faster native modules\n• JSI - Direct communication between JavaScript and Native code"
+    }
+  },
+  {
+    "id": "rn-cli-architecture-lesson-6",
+    "topicId": "rn-cli-architecture",
+    "lessonNumber": 6,
+    "title": "Old Architecture vs New Architecture",
+    "overview": "The old React Native Architecture relied on the Bridge to exchange messages between JavaScript and native code. The new architecture replaces the Bridge with JSI, allowing direct communication and significantly improving application performance, startup time, and responsiveness.",
+    "example": {
+      "title": "Architecture Comparison",
+      "content": "Old Architecture:\nJavaScript → Bridge → Native\n\nNew Architecture:\nJavaScript → JSI → Native\n\nThe new architecture is faster because it removes the communication delay introduced by the Bridge."
+    }
+  },
+  {
+    "id": "rn-cli-architecture-lesson-7",
+    "topicId": "rn-cli-architecture",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You have learned what React Native Architecture is, how React Native works internally, the roles of the JavaScript Thread and Native Thread, and the improvements introduced by the new architecture. Understanding these concepts will help you build better-performing applications and prepare you for more advanced React Native topics.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ React Native connects JavaScript with native Android and iOS.\n✔ JavaScript Thread runs your application logic.\n✔ Native Thread renders the UI and handles user interactions.\n✔ Fabric improves UI rendering.\n✔ TurboModules improve native module performance.\n✔ JSI replaces the old Bridge for faster communication."
+    }
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "nodejs-best-practices-lesson-1",
+    "topicId": "nodejs-best-practices",
+    "lessonNumber": 1,
+    "title": "Writing Clean Node.js Code",
+    "overview": "Clean code improves readability, maintainability, and reduces errors in Node.js applications.",
+    "example": {
+      "title": "Clean Code Practices",
+      "content": "✔ Meaningful names\n✔ Small functions\n✔ Remove duplicate code\n✔ Follow consistent formatting"
+    }
+  },
+  {
+    "id": "nodejs-best-practices-lesson-2",
+    "topicId": "nodejs-best-practices",
+    "lessonNumber": 2,
+    "title": "Project Folder Structure",
+    "overview": "A proper folder structure separates different responsibilities and makes large applications easier to manage.",
+    "example": {
+      "title": "Backend Structure",
+      "content": "project/\n ├── controllers/\n ├── routes/\n ├── models/\n ├── services/\n └── utils/"
+    }
+  },
+  {
+    "id": "nodejs-best-practices-lesson-3",
+    "topicId": "nodejs-best-practices",
+    "lessonNumber": 3,
+    "title": "Environment Variables",
+    "overview": "Environment variables store sensitive configuration values like database URLs, API keys, and secrets.",
+    "example": {
+      "title": "Environment Example",
+      "content": ".env\n\nDATABASE_URL=my_database\nJWT_SECRET=my_secret"
+    }
+  },
+  {
+    "id": "nodejs-best-practices-lesson-4",
+    "topicId": "nodejs-best-practices",
+    "lessonNumber": 4,
+    "title": "Security Best Practices",
+    "overview": "Node.js applications should follow security practices to protect user data and prevent attacks.",
+    "example": {
+      "title": "Security Practices",
+      "content": "✔ Validate input\n✔ Protect passwords\n✔ Use HTTPS\n✔ Secure API endpoints"
+    }
+  },
+  {
+    "id": "nodejs-best-practices-lesson-5",
+    "topicId": "nodejs-best-practices",
+    "lessonNumber": 5,
+    "title": "Performance Optimization",
+    "overview": "Optimizing Node.js applications improves speed, scalability, and resource usage.",
+    "example": {
+      "title": "Optimization Methods",
+      "content": "✔ Use caching\n✔ Optimize database queries\n✔ Avoid blocking operations"
+    }
+  },
+  {
+    "id": "nodejs-best-practices-lesson-6",
+    "topicId": "nodejs-best-practices",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned important Node.js development practices including clean code, structure, security, environment management, and performance optimization.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Write maintainable code.\n✔ Organize projects properly.\n✔ Secure applications.\n✔ Optimize performance."
+    }
+  }
+]

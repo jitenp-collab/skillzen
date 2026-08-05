@@ -1,0 +1,79 @@
+[
+  {
+    "id": "redux-react-integration-lesson-1",
+    "topicId": "redux-react-integration",
+    "lessonNumber": 1,
+    "title": "Connecting Redux with React",
+    "overview": "Redux can be integrated with React applications using the React Redux library, which provides tools to connect components with the Redux store.",
+    "example": {
+      "title": "Redux React Flow",
+      "content": "React Component\n ↓\nReact Redux\n ↓\nRedux Store"
+    }
+  },
+  {
+    "id": "redux-react-integration-lesson-2",
+    "topicId": "redux-react-integration",
+    "lessonNumber": 2,
+    "title": "Provider Component",
+    "overview": "Provider makes the Redux store available to all React components in the application.",
+    "example": {
+      "title": "Provider Example",
+      "content": "import { Provider } from 'react-redux';\n\n<Provider store={store}>\n <App />\n</Provider>"
+    }
+  },
+  {
+    "id": "redux-react-integration-lesson-3",
+    "topicId": "redux-react-integration",
+    "lessonNumber": 3,
+    "title": "Connecting Components with Store",
+    "overview": "React components access Redux state and dispatch actions using React Redux hooks.",
+    "example": {
+      "title": "Component Connection",
+      "content": "Component\n ↓\nuseSelector()\n ↓\nRead Store Data"
+    }
+  },
+  {
+    "id": "redux-react-integration-lesson-4",
+    "topicId": "redux-react-integration",
+    "lessonNumber": 4,
+    "title": "Reading Redux State",
+    "overview": "Components can read data from the Redux store using the useSelector hook.",
+    "example": {
+      "title": "useSelector Example",
+      "content": "const count = useSelector(\n state => state.counter.value\n);"
+    }
+  },
+  {
+    "id": "redux-react-integration-lesson-5",
+    "topicId": "redux-react-integration",
+    "lessonNumber": 5,
+    "title": "Updating Redux State",
+    "overview": "React components update Redux state by dispatching actions using useDispatch.",
+    "example": {
+      "title": "useDispatch Example",
+      "content": "const dispatch = useDispatch();\n\ndispatch(increment());"
+    }
+  },
+  {
+    "id": "redux-react-integration-lesson-6",
+    "topicId": "redux-react-integration",
+    "lessonNumber": 6,
+    "title": "Redux Component Data Flow",
+    "overview": "Redux creates a predictable flow between user actions, components, reducers, and the store.",
+    "example": {
+      "title": "Complete Flow",
+      "content": "User Click\n ↓\nComponent\n ↓\ndispatch()\n ↓\nReducer\n ↓\nStore\n ↓\nUI Update"
+    }
+  },
+  {
+    "id": "redux-react-integration-lesson-7",
+    "topicId": "redux-react-integration",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned how Redux connects with React using Provider, useSelector, useDispatch, and predictable data flow.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Provider connects store.\n✔ useSelector reads state.\n✔ useDispatch updates state.\n✔ React UI reacts to changes."
+    }
+  }
+]

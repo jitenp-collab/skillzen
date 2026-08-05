@@ -1,0 +1,79 @@
+[
+  {
+    "id": "nodejs-modules-lesson-1",
+    "topicId": "nodejs-modules",
+    "lessonNumber": 1,
+    "title": "What are Modules in Node.js?",
+    "overview": "Modules are reusable blocks of code that can be imported and used in different parts of a Node.js application. They help organize and maintain code.",
+    "example": {
+      "title": "Module Concept",
+      "content": "Module A\n +\nModule B\n +\nModule C\n=\nComplete Application"
+    }
+  },
+  {
+    "id": "nodejs-modules-lesson-2",
+    "topicId": "nodejs-modules",
+    "lessonNumber": 2,
+    "title": "Core Modules",
+    "overview": "Node.js provides built-in modules that can be used without installing additional packages.",
+    "example": {
+      "title": "Core Module Examples",
+      "content": "fs → File System\nhttp → Create Server\npath → File Paths\nos → Operating System"
+    }
+  },
+  {
+    "id": "nodejs-modules-lesson-3",
+    "topicId": "nodejs-modules",
+    "lessonNumber": 3,
+    "title": "Importing Modules",
+    "overview": "Modules can be imported using require() in CommonJS syntax to access their functionality.",
+    "example": {
+      "title": "Import Example",
+      "content": "const fs = require('fs');\n\nfs.readFile('data.txt','utf8',(err,data)=>{\n console.log(data);\n});"
+    }
+  },
+  {
+    "id": "nodejs-modules-lesson-4",
+    "topicId": "nodejs-modules",
+    "lessonNumber": 4,
+    "title": "Creating Custom Modules",
+    "overview": "Developers can create their own modules by exporting functions, objects, or variables and importing them into other files.",
+    "example": {
+      "title": "Custom Module Example",
+      "content": "// math.js\nmodule.exports.add = (a,b)=>a+b;"
+    }
+  },
+  {
+    "id": "nodejs-modules-lesson-5",
+    "topicId": "nodejs-modules",
+    "lessonNumber": 5,
+    "title": "module.exports and exports",
+    "overview": "Node.js uses module.exports and exports to share code from one module to another.",
+    "example": {
+      "title": "Export Example",
+      "content": "module.exports = {\n name:'Node.js'\n};"
+    }
+  },
+  {
+    "id": "nodejs-modules-lesson-6",
+    "topicId": "nodejs-modules",
+    "lessonNumber": 6,
+    "title": "ES Modules in Node.js",
+    "overview": "Modern Node.js applications can use ES Module syntax with import and export statements.",
+    "example": {
+      "title": "ES Module Example",
+      "content": "export const name = 'Node';\n\nimport {name} from './file.js';"
+    }
+  },
+  {
+    "id": "nodejs-modules-lesson-7",
+    "topicId": "nodejs-modules",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned about Node.js modules, core modules, custom modules, exporting, importing, and modern ES module syntax.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Modules organize code.\n✔ Core modules come with Node.js.\n✔ require imports modules.\n✔ exports shares code."
+    }
+  }
+]

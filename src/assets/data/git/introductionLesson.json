@@ -1,0 +1,68 @@
+[
+  {
+    "id": "git-introduction-lesson-1",
+    "topicId": "git-introduction",
+    "lessonNumber": 1,
+    "title": "What is Git?",
+    "overview": "Git is a distributed version control system used to track changes in code and manage software development projects.",
+    "example": {
+      "title": "Git Purpose",
+      "content": "Developer\n ↓\nGit\n ↓\nTrack Code Changes"
+    }
+  },
+  {
+    "id": "git-introduction-lesson-2",
+    "topicId": "git-introduction",
+    "lessonNumber": 2,
+    "title": "Why Use Git?",
+    "overview": "Git helps developers manage code history, collaborate with teams, and restore previous versions of projects.",
+    "example": {
+      "title": "Git Benefits",
+      "content": "✔ Version history\n✔ Team collaboration\n✔ Code backup\n✔ Change tracking"
+    }
+  },
+  {
+    "id": "git-introduction-lesson-3",
+    "topicId": "git-introduction",
+    "lessonNumber": 3,
+    "title": "How Git Works",
+    "overview": "Git stores snapshots of project changes and allows developers to move between different versions of their code.",
+    "example": {
+      "title": "Git Flow",
+      "content": "Working Directory\n ↓\nStaging Area\n ↓\nRepository"
+    }
+  },
+  {
+    "id": "git-introduction-lesson-4",
+    "topicId": "git-introduction",
+    "lessonNumber": 4,
+    "title": "Git Repository",
+    "overview": "A Git repository stores all project files, history, branches, and commits.",
+    "example": {
+      "title": "Repository Types",
+      "content": "Local Repository:\nStored on computer\n\nRemote Repository:\nStored online"
+    }
+  },
+  {
+    "id": "git-introduction-lesson-5",
+    "topicId": "git-introduction",
+    "lessonNumber": 5,
+    "title": "Git vs GitHub",
+    "overview": "Git is a version control tool, while GitHub is a platform that hosts Git repositories online.",
+    "example": {
+      "title": "Difference",
+      "content": "Git:\nVersion Control System\n\nGitHub:\nOnline Repository Platform"
+    }
+  },
+  {
+    "id": "git-introduction-lesson-6",
+    "topicId": "git-introduction",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned what Git is, why it is used, how it works, and the difference between Git and GitHub.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Git tracks changes.\n✔ Repository stores history.\n✔ GitHub hosts repositories online."
+    }
+  }
+]

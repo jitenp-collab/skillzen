@@ -1,0 +1,79 @@
+[
+  {
+    "id": "git-branching-lesson-1",
+    "topicId": "git-branching",
+    "lessonNumber": 1,
+    "title": "Introduction to Git Branches",
+    "overview": "A Git branch is a separate line of development that allows developers to work on features without affecting the main code.",
+    "example": {
+      "title": "Branch Concept",
+      "content": "Main Branch\n     |\nFeature Branch\n     |\nNew Feature Development"
+    }
+  },
+  {
+    "id": "git-branching-lesson-2",
+    "topicId": "git-branching",
+    "lessonNumber": 2,
+    "title": "Creating a Branch",
+    "overview": "A new branch can be created to start working on a separate feature or task.",
+    "example": {
+      "title": "Create Branch",
+      "content": "git branch feature-login"
+    }
+  },
+  {
+    "id": "git-branching-lesson-3",
+    "topicId": "git-branching",
+    "lessonNumber": 3,
+    "title": "Switching Branches",
+    "overview": "Developers can switch between branches to work on different versions of the project.",
+    "example": {
+      "title": "Switch Branch",
+      "content": "git checkout feature-login\n\nor\n\ngit switch feature-login"
+    }
+  },
+  {
+    "id": "git-branching-lesson-4",
+    "topicId": "git-branching",
+    "lessonNumber": 4,
+    "title": "Listing Branches",
+    "overview": "Git provides commands to view all available branches in a repository.",
+    "example": {
+      "title": "List Branches",
+      "content": "git branch"
+    }
+  },
+  {
+    "id": "git-branching-lesson-5",
+    "topicId": "git-branching",
+    "lessonNumber": 5,
+    "title": "Deleting a Branch",
+    "overview": "Branches that are no longer required can be removed from the repository.",
+    "example": {
+      "title": "Delete Branch",
+      "content": "git branch -d feature-login"
+    }
+  },
+  {
+    "id": "git-branching-lesson-6",
+    "topicId": "git-branching",
+    "lessonNumber": 6,
+    "title": "Branch Naming Practices",
+    "overview": "Using meaningful branch names helps teams understand the purpose of each branch.",
+    "example": {
+      "title": "Branch Names",
+      "content": "feature/user-login\nbugfix/payment-error\nhotfix/security-update"
+    }
+  },
+  {
+    "id": "git-branching-lesson-7",
+    "topicId": "git-branching",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned how branches work, how to create and manage branches, and why branching is important in development.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Branches separate work.\n✔ Features use separate branches.\n✔ Clean naming improves teamwork."
+    }
+  }
+]

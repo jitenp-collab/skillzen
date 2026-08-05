@@ -1,3 +1,4 @@
+import { theme } from "@/utils/theme/Theme";
 import type { GetStartedIconProps } from "@/utils/types/Apptypes";
 
 import Svg, { Circle, Line, Path, Polyline, Rect } from "react-native-svg";
@@ -880,6 +881,57 @@ export const ClearIcon = ({
       stroke={color}
       strokeWidth={2}
       strokeLinecap="round"
+    />
+  </Svg>
+);
+
+export const CheckIcon = ({
+  color = "#F8FAFC",
+  size = 20,
+}: {
+  color?: string;
+  size?: number;
+}) => {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path
+        d="M20 6L9 17L4 12"
+        stroke={color}
+        strokeWidth={2.5}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </Svg>
+  );
+};
+
+export const BackIcon = ({ color = theme.colors.text, size = 22 }) => (
+  <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+    <Path
+      d="M15 6L9 12L15 18"
+      stroke={color}
+      strokeWidth={2.2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </Svg>
+);
+
+export const TopicIcon = ({ color }: { color: string }) => (
+  <Svg width={30} height={30} viewBox="0 0 24 24" fill="none">
+    <Path
+      d="M4 5.5C6.8 4.5 9.4 5 12 7V20C9.4 18 6.8 17.5 4 18.5V5.5Z"
+      stroke={color}
+      strokeWidth={1.8}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <Path
+      d="M20 5.5C17.2 4.5 14.6 5 12 7V20C14.6 18 17.2 17.5 20 18.5V5.5Z"
+      stroke={color}
+      strokeWidth={1.8}
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </Svg>
 );

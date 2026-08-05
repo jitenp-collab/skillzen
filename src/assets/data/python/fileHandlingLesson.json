@@ -1,0 +1,57 @@
+[
+  {
+    "id": "python-file-handling-lesson-1",
+    "topicId": "python-file-handling",
+    "lessonNumber": 1,
+    "title": "Introduction to File Handling",
+    "overview": "File handling allows Python programs to create, read, write, and manage files stored on a computer. It is useful for storing data permanently.",
+    "example": {
+      "title": "Opening a File",
+      "content": "file = open('data.txt')"
+    }
+  },
+  {
+    "id": "python-file-handling-lesson-2",
+    "topicId": "python-file-handling",
+    "lessonNumber": 2,
+    "title": "Opening and Closing Files",
+    "overview": "Python uses the open() function to access files and the close() method to release file resources after completing operations.",
+    "example": {
+      "title": "Open and Close Example",
+      "content": "file = open('data.txt','r')\n\nfile.close()"
+    }
+  },
+  {
+    "id": "python-file-handling-lesson-3",
+    "topicId": "python-file-handling",
+    "lessonNumber": 3,
+    "title": "Reading Files",
+    "overview": "Python provides different methods to read file content such as read(), readline(), and readlines().",
+    "example": {
+      "title": "Reading Example",
+      "content": "file = open('data.txt','r')\n\ncontent = file.read()\n\nprint(content)"
+    }
+  },
+  {
+    "id": "python-file-handling-lesson-4",
+    "topicId": "python-file-handling",
+    "lessonNumber": 4,
+    "title": "Writing Files",
+    "overview": "Python allows writing new data into files using write() and append modes.",
+    "example": {
+      "title": "Writing Example",
+      "content": "file = open('data.txt','w')\n\nfile.write('Hello Python')"
+    }
+  },
+  {
+    "id": "python-file-handling-lesson-5",
+    "topicId": "python-file-handling",
+    "lessonNumber": 5,
+    "title": "Topic Summary",
+    "overview": "You learned how Python handles files including opening, reading, writing, and managing file resources.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ open() accesses files.\n✔ read() gets file data.\n✔ write() stores data.\n✔ close() releases resources."
+    }
+  }
+]

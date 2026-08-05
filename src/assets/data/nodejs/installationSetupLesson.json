@@ -1,0 +1,57 @@
+[
+  {
+    "id": "nodejs-installation-setup-lesson-1",
+    "topicId": "nodejs-installation-setup",
+    "lessonNumber": 1,
+    "title": "Installing Node.js",
+    "overview": "Node.js can be installed on different operating systems using the official installer. Installation provides the Node.js runtime and npm package manager.",
+    "example": {
+      "title": "Check Installation",
+      "content": "node -v\n\nnpm -v"
+    }
+  },
+  {
+    "id": "nodejs-installation-setup-lesson-2",
+    "topicId": "nodejs-installation-setup",
+    "lessonNumber": 2,
+    "title": "Node.js Version Management",
+    "overview": "Different projects may require different Node.js versions. Version managers help developers switch between Node.js versions easily.",
+    "example": {
+      "title": "Version Checking",
+      "content": "node --version\n\nnpm --version"
+    }
+  },
+  {
+    "id": "nodejs-installation-setup-lesson-3",
+    "topicId": "nodejs-installation-setup",
+    "lessonNumber": 3,
+    "title": "Creating Your First Node.js Project",
+    "overview": "A Node.js project starts with creating a project folder and initializing it using npm.",
+    "example": {
+      "title": "Initialize Project",
+      "content": "mkdir my-project\ncd my-project\nnpm init"
+    }
+  },
+  {
+    "id": "nodejs-installation-setup-lesson-4",
+    "topicId": "nodejs-installation-setup",
+    "lessonNumber": 4,
+    "title": "Understanding package.json",
+    "overview": "The package.json file stores project information, dependencies, scripts, and configuration details.",
+    "example": {
+      "title": "package.json Example",
+      "content": "{\n  \"name\": \"my-app\",\n  \"version\": \"1.0.0\"\n}"
+    }
+  },
+  {
+    "id": "nodejs-installation-setup-lesson-5",
+    "topicId": "nodejs-installation-setup",
+    "lessonNumber": 5,
+    "title": "Topic Summary",
+    "overview": "You learned how to install Node.js, verify installation, create projects, and understand the package.json configuration file.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Node.js provides runtime.\n✔ npm manages packages.\n✔ npm init creates projects.\n✔ package.json stores project details."
+    }
+  }
+]

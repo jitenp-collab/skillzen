@@ -1,0 +1,80 @@
+[
+  {
+    "id": "ts-introduction",
+    "title": "Introduction to TypeScript",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 6
+  },
+  {
+    "id": "ts-installation-setup",
+    "title": "TypeScript Installation & Setup",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 5
+  },
+  {
+    "id": "ts-basic-types",
+    "title": "Basic Data Types",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 8
+  },
+  {
+    "id": "ts-type-inference",
+    "title": "Type Inference",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 5
+  },
+  {
+    "id": "ts-functions",
+    "title": "Functions in TypeScript",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 7
+  },
+  {
+    "id": "ts-interfaces",
+    "title": "Interfaces",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 7
+  },
+  {
+    "id": "ts-type-alias",
+    "title": "Type Aliases",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 6
+  },
+  {
+    "id": "ts-unions-intersections",
+    "title": "Union & Intersection Types",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 6
+  },
+  {
+    "id": "ts-generics",
+    "title": "Generics",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 7
+  },
+  {
+    "id": "ts-classes",
+    "title": "Classes in TypeScript",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 6
+  },
+  {
+    "id": "ts-enums",
+    "title": "Enums",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 5
+  },
+  {
+    "id": "ts-react-native",
+    "title": "TypeScript with React Native",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 8
+  },
+  {
+    "id": "ts-best-practices",
+    "title": "TypeScript Best Practices",
+    "icon": "https://wallpaperaccess.com/full/7990027.png",
+    "totalLessons": 6
+  }
+]

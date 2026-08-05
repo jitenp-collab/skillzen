@@ -1,0 +1,90 @@
+[
+  {
+    "id": "python-conditions-loops-lesson-1",
+    "topicId": "python-conditions-loops",
+    "lessonNumber": 1,
+    "title": "Conditional Statements in Python",
+    "overview": "Conditional statements allow a program to make decisions based on whether a condition is True or False.",
+    "example": {
+      "title": "if Statement Example",
+      "content": "age = 18\n\nif age >= 18:\n    print('Adult')"
+    }
+  },
+  {
+    "id": "python-conditions-loops-lesson-2",
+    "topicId": "python-conditions-loops",
+    "lessonNumber": 2,
+    "title": "if else Statement",
+    "overview": "The if else statement executes one block of code when a condition is true and another block when the condition is false.",
+    "example": {
+      "title": "if else Example",
+      "content": "age = 16\n\nif age >= 18:\n    print('Adult')\nelse:\n    print('Minor')"
+    }
+  },
+  {
+    "id": "python-conditions-loops-lesson-3",
+    "topicId": "python-conditions-loops",
+    "lessonNumber": 3,
+    "title": "if elif else Statement",
+    "overview": "The elif statement allows checking multiple conditions in a single decision-making structure.",
+    "example": {
+      "title": "elif Example",
+      "content": "marks = 75\n\nif marks >= 90:\n    print('A')\nelif marks >= 60:\n    print('B')\nelse:\n    print('C')"
+    }
+  },
+  {
+    "id": "python-conditions-loops-lesson-4",
+    "topicId": "python-conditions-loops",
+    "lessonNumber": 4,
+    "title": "Nested Conditions",
+    "overview": "Nested conditions are conditions placed inside another condition. They are useful when decisions depend on multiple levels.",
+    "example": {
+      "title": "Nested if Example",
+      "content": "age = 20\n\nif age >= 18:\n    if age <= 60:\n        print('Valid age')"
+    }
+  },
+  {
+    "id": "python-conditions-loops-lesson-5",
+    "topicId": "python-conditions-loops",
+    "lessonNumber": 5,
+    "title": "for Loop",
+    "overview": "The for loop is used to iterate over a sequence like lists, strings, or ranges.",
+    "example": {
+      "title": "for Loop Example",
+      "content": "for i in range(5):\n    print(i)"
+    }
+  },
+  {
+    "id": "python-conditions-loops-lesson-6",
+    "topicId": "python-conditions-loops",
+    "lessonNumber": 6,
+    "title": "while Loop",
+    "overview": "The while loop executes a block of code repeatedly as long as a condition remains true.",
+    "example": {
+      "title": "while Loop Example",
+      "content": "count = 1\n\nwhile count <= 5:\n    print(count)\n    count += 1"
+    }
+  },
+  {
+    "id": "python-conditions-loops-lesson-7",
+    "topicId": "python-conditions-loops",
+    "lessonNumber": 7,
+    "title": "break and continue",
+    "overview": "break stops a loop completely, while continue skips the current iteration and moves to the next one.",
+    "example": {
+      "title": "Loop Control Example",
+      "content": "for i in range(5):\n    if i == 3:\n        break\n    print(i)"
+    }
+  },
+  {
+    "id": "python-conditions-loops-lesson-8",
+    "topicId": "python-conditions-loops",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You learned Python decision-making and looping concepts including if, elif, else, for loops, while loops, and loop control statements.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Conditions control program flow.\n✔ if/else make decisions.\n✔ for and while repeat tasks.\n✔ break and continue control loops."
+    }
+  }
+]

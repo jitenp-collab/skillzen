@@ -1,0 +1,68 @@
+[
+  {
+    "id": "js-promises-lesson-1",
+    "topicId": "js-promises",
+    "lessonNumber": 1,
+    "title": "What are Promises?",
+    "overview": "A Promise is a JavaScript object that represents the result of an asynchronous operation. It can handle operations that complete successfully or fail in the future.",
+    "example": {
+      "title": "Promise Example",
+      "content": "const promise = new Promise((resolve, reject) => {\n resolve('Success');\n});"
+    }
+  },
+  {
+    "id": "js-promises-lesson-2",
+    "topicId": "js-promises",
+    "lessonNumber": 2,
+    "title": "Promise States",
+    "overview": "A Promise has three states: pending, fulfilled, and rejected. These states represent the current status of an asynchronous operation.",
+    "example": {
+      "title": "Promise States",
+      "content": "Pending:\nOperation is running.\n\nFulfilled:\nOperation completed successfully.\n\nRejected:\nOperation failed."
+    }
+  },
+  {
+    "id": "js-promises-lesson-3",
+    "topicId": "js-promises",
+    "lessonNumber": 3,
+    "title": "Creating a Promise",
+    "overview": "Promises are created using the Promise constructor. It receives a function with resolve and reject parameters to handle success and failure.",
+    "example": {
+      "title": "Create Promise",
+      "content": "const check = new Promise((resolve, reject) => {\n const success = true;\n\n if(success){\n  resolve('Done');\n }else{\n  reject('Failed');\n }\n});"
+    }
+  },
+  {
+    "id": "js-promises-lesson-4",
+    "topicId": "js-promises",
+    "lessonNumber": 4,
+    "title": "then and catch Methods",
+    "overview": "The then method handles successful Promise results, while the catch method handles errors when a Promise is rejected.",
+    "example": {
+      "title": "then and catch Example",
+      "content": "promise\n.then(result => console.log(result))\n.catch(error => console.log(error));"
+    }
+  },
+  {
+    "id": "js-promises-lesson-5",
+    "topicId": "js-promises",
+    "lessonNumber": 5,
+    "title": "Promise Chaining",
+    "overview": "Promise chaining allows multiple asynchronous operations to be executed one after another by connecting multiple then methods.",
+    "example": {
+      "title": "Promise Chain",
+      "content": "getUser()\n.then(user => getPosts(user))\n.then(posts => console.log(posts));"
+    }
+  },
+  {
+    "id": "js-promises-lesson-6",
+    "topicId": "js-promises",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned what promises are, their states, how to create promises, handle results using then and catch, and perform multiple asynchronous operations using chaining.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Promises handle asynchronous operations.\n✔ Promise has pending, fulfilled, and rejected states.\n✔ then handles success.\n✔ catch handles errors.\n✔ Chaining manages multiple async tasks."
+    }
+  }
+]

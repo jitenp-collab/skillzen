@@ -1,0 +1,68 @@
+[
+  {
+    "id": "expo-storage-lesson-1",
+    "topicId": "expo-storage",
+    "lessonNumber": 1,
+    "title": "Introduction to Storage",
+    "overview": "Storage allows applications to save data locally on a user's device so it can be accessed later.",
+    "example": {
+      "title": "Storage Concept",
+      "content": "Application Data\n ↓\nLocal Storage\n ↓\nRetrieve Later"
+    }
+  },
+  {
+    "id": "expo-storage-lesson-2",
+    "topicId": "expo-storage",
+    "lessonNumber": 2,
+    "title": "AsyncStorage",
+    "overview": "AsyncStorage is a simple key-value storage system used for saving small amounts of persistent data.",
+    "example": {
+      "title": "AsyncStorage Example",
+      "content": "import AsyncStorage from '@react-native-async-storage/async-storage';\n\nawait AsyncStorage.setItem('name','John');"
+    }
+  },
+  {
+    "id": "expo-storage-lesson-3",
+    "topicId": "expo-storage",
+    "lessonNumber": 3,
+    "title": "Secure Storage",
+    "overview": "Secure storage is used to store sensitive information like authentication tokens securely on the device.",
+    "example": {
+      "title": "Secure Data",
+      "content": "Store:\n✔ Tokens\n✔ Password Keys\n✔ Sensitive Information"
+    }
+  },
+  {
+    "id": "expo-storage-lesson-4",
+    "topicId": "expo-storage",
+    "lessonNumber": 4,
+    "title": "Expo SecureStore",
+    "overview": "Expo SecureStore provides encrypted storage for sensitive key-value data.",
+    "example": {
+      "title": "SecureStore Example",
+      "content": "import * as SecureStore from 'expo-secure-store';\n\nSecureStore.setItemAsync('token','123');"
+    }
+  },
+  {
+    "id": "expo-storage-lesson-5",
+    "topicId": "expo-storage",
+    "lessonNumber": 5,
+    "title": "File Storage",
+    "overview": "File storage allows applications to save and manage files such as images, documents, and downloaded content.",
+    "example": {
+      "title": "File Storage",
+      "content": "Create File\n ↓\nSave File\n ↓\nRead File"
+    }
+  },
+  {
+    "id": "expo-storage-lesson-6",
+    "topicId": "expo-storage",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned about local storage, AsyncStorage, SecureStore, and file storage options in Expo applications.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ AsyncStorage stores simple data.\n✔ SecureStore protects sensitive data.\n✔ Files store larger content."
+    }
+  }
+]

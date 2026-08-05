@@ -1,0 +1,68 @@
+[
+  {
+    "id": "ts-type-alias-lesson-1",
+    "topicId": "ts-type-alias",
+    "lessonNumber": 1,
+    "title": "What are Type Aliases?",
+    "overview": "Type aliases allow developers to create custom names for existing types. They help make complex types easier to read and reuse.",
+    "example": {
+      "title": "Type Alias Example",
+      "content": "type Username = string;\n\nlet name: Username = 'Manthan';"
+    }
+  },
+  {
+    "id": "ts-type-alias-lesson-2",
+    "topicId": "ts-type-alias",
+    "lessonNumber": 2,
+    "title": "Creating Object Type Aliases",
+    "overview": "Type aliases can define the structure of objects similar to interfaces. They are useful for creating reusable object types.",
+    "example": {
+      "title": "Object Type Alias",
+      "content": "type User = {\n name: string;\n age: number;\n};"
+    }
+  },
+  {
+    "id": "ts-type-alias-lesson-3",
+    "topicId": "ts-type-alias",
+    "lessonNumber": 3,
+    "title": "Type Aliases with Arrays",
+    "overview": "Type aliases can be used to define custom array types, making repeated array type declarations simpler.",
+    "example": {
+      "title": "Array Type Alias",
+      "content": "type Numbers = number[];\n\nconst values: Numbers = [1,2,3];"
+    }
+  },
+  {
+    "id": "ts-type-alias-lesson-4",
+    "topicId": "ts-type-alias",
+    "lessonNumber": 4,
+    "title": "Type Aliases with Union Types",
+    "overview": "Type aliases can combine multiple types using union operators. This allows a value to accept more than one type.",
+    "example": {
+      "title": "Union Type Alias",
+      "content": "type Status = 'loading' | 'success' | 'error';"
+    }
+  },
+  {
+    "id": "ts-type-alias-lesson-5",
+    "topicId": "ts-type-alias",
+    "lessonNumber": 5,
+    "title": "Interface vs Type Alias",
+    "overview": "Interfaces and type aliases both define custom types, but they have different capabilities. Interfaces are commonly used for objects, while type aliases are more flexible.",
+    "example": {
+      "title": "Comparison",
+      "content": "Interface:\n• Mainly used for object structures.\n\nType Alias:\n• Supports objects, unions, primitives, and more."
+    }
+  },
+  {
+    "id": "ts-type-alias-lesson-6",
+    "topicId": "ts-type-alias",
+    "lessonNumber": 6,
+    "title": "Topic Summary",
+    "overview": "You learned how to create reusable custom types using type aliases, define objects and arrays, use unions, and understand the difference between interfaces and type aliases.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Type aliases create custom types.\n✔ They improve code readability.\n✔ They support objects, arrays, and unions.\n✔ Useful in React Native projects."
+    }
+  }
+]

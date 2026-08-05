@@ -1,0 +1,90 @@
+[
+  {
+    "id": "redux-toolkit-lesson-1",
+    "topicId": "redux-toolkit",
+    "lessonNumber": 1,
+    "title": "What is Redux Toolkit?",
+    "overview": "Redux Toolkit is the official recommended way to write Redux logic. It simplifies store setup, reducers, actions, and state management.",
+    "example": {
+      "title": "Redux vs Redux Toolkit",
+      "content": "Traditional Redux:\nMore boilerplate code\n\nRedux Toolkit:\nLess code\nBuilt-in utilities"
+    }
+  },
+  {
+    "id": "redux-toolkit-lesson-2",
+    "topicId": "redux-toolkit",
+    "lessonNumber": 2,
+    "title": "Why Use Redux Toolkit?",
+    "overview": "Redux Toolkit reduces complexity by providing built-in functions for common Redux tasks.",
+    "example": {
+      "title": "Benefits",
+      "content": "✔ Less boilerplate\n✔ Easier configuration\n✔ Built-in Immer support\n✔ Better developer experience"
+    }
+  },
+  {
+    "id": "redux-toolkit-lesson-3",
+    "topicId": "redux-toolkit",
+    "lessonNumber": 3,
+    "title": "configureStore",
+    "overview": "configureStore creates the Redux store with default middleware and DevTools support.",
+    "example": {
+      "title": "configureStore Example",
+      "content": "import { configureStore } from '@reduxjs/toolkit';\n\nconst store = configureStore({\n reducer: {}\n});"
+    }
+  },
+  {
+    "id": "redux-toolkit-lesson-4",
+    "topicId": "redux-toolkit",
+    "lessonNumber": 4,
+    "title": "createSlice",
+    "overview": "createSlice combines reducers and action creators into a single structure, reducing Redux boilerplate.",
+    "example": {
+      "title": "createSlice Example",
+      "content": "const counterSlice = createSlice({\n name:'counter',\n initialState:{value:0},\n reducers:{}\n});"
+    }
+  },
+  {
+    "id": "redux-toolkit-lesson-5",
+    "topicId": "redux-toolkit",
+    "lessonNumber": 5,
+    "title": "Immer in Redux Toolkit",
+    "overview": "Redux Toolkit uses Immer internally, allowing developers to write simpler update logic while keeping state immutable.",
+    "example": {
+      "title": "Immer Example",
+      "content": "reducers:{\n increment:(state)=>{\n  state.value++;\n }\n}"
+    }
+  },
+  {
+    "id": "redux-toolkit-lesson-6",
+    "topicId": "redux-toolkit",
+    "lessonNumber": 6,
+    "title": "Redux Toolkit Folder Structure",
+    "overview": "A proper Redux Toolkit structure separates store configuration, slices, and application logic.",
+    "example": {
+      "title": "Folder Structure",
+      "content": "redux/\n ├── store.js\n ├── slices/\n │    └── userSlice.js"
+    }
+  },
+  {
+    "id": "redux-toolkit-lesson-7",
+    "topicId": "redux-toolkit",
+    "lessonNumber": 7,
+    "title": "Redux Toolkit with React",
+    "overview": "Redux Toolkit works with React using React Redux hooks like useSelector and useDispatch.",
+    "example": {
+      "title": "Usage Flow",
+      "content": "Component\n ↓\nuseDispatch()\n ↓\nSlice Reducer\n ↓\nStore\n ↓\nuseSelector()"
+    }
+  },
+  {
+    "id": "redux-toolkit-lesson-8",
+    "topicId": "redux-toolkit",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You learned Redux Toolkit basics including configureStore, createSlice, Immer, folder structure, and React integration.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Toolkit simplifies Redux.\n✔ createSlice creates reducers and actions.\n✔ configureStore creates store.\n✔ Immer simplifies updates."
+    }
+  }
+]

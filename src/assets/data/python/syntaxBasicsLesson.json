@@ -1,0 +1,90 @@
+[
+  {
+    "id": "python-syntax-lesson-1",
+    "topicId": "python-syntax",
+    "lessonNumber": 1,
+    "title": "Python Syntax Overview",
+    "overview": "Python syntax defines the rules for writing Python programs. Python uses simple and readable syntax compared to many other programming languages.",
+    "example": {
+      "title": "Basic Python Syntax",
+      "content": "print('Hello Python')"
+    }
+  },
+  {
+    "id": "python-syntax-lesson-2",
+    "topicId": "python-syntax",
+    "lessonNumber": 2,
+    "title": "Python Indentation",
+    "overview": "Python uses indentation instead of curly brackets to define code blocks. Proper spacing is required for Python programs to run correctly.",
+    "example": {
+      "title": "Indentation Example",
+      "content": "if True:\n    print('Condition is true')"
+    }
+  },
+  {
+    "id": "python-syntax-lesson-3",
+    "topicId": "python-syntax",
+    "lessonNumber": 3,
+    "title": "Python Comments",
+    "overview": "Comments are used to explain code and are ignored by the Python interpreter. They help developers understand programs better.",
+    "example": {
+      "title": "Comment Example",
+      "content": "# This is a comment\nprint('Hello')"
+    }
+  },
+  {
+    "id": "python-syntax-lesson-4",
+    "topicId": "python-syntax",
+    "lessonNumber": 4,
+    "title": "Python Print Function",
+    "overview": "The print function is used to display output on the screen. It is one of the most commonly used Python functions.",
+    "example": {
+      "title": "Print Example",
+      "content": "print('Welcome to Python')\nprint(100)"
+    }
+  },
+  {
+    "id": "python-syntax-lesson-5",
+    "topicId": "python-syntax",
+    "lessonNumber": 5,
+    "title": "Python Input Function",
+    "overview": "The input function allows users to enter values while the program is running. It always returns data as a string.",
+    "example": {
+      "title": "Input Example",
+      "content": "name = input('Enter name: ')\nprint(name)"
+    }
+  },
+  {
+    "id": "python-syntax-lesson-6",
+    "topicId": "python-syntax",
+    "lessonNumber": 6,
+    "title": "Python Statements",
+    "overview": "Statements are instructions executed by Python. Each line of Python code usually represents a statement.",
+    "example": {
+      "title": "Statement Example",
+      "content": "name = 'Manthan'\nprint(name)"
+    }
+  },
+  {
+    "id": "python-syntax-lesson-7",
+    "topicId": "python-syntax",
+    "lessonNumber": 7,
+    "title": "Python Multiple Statements",
+    "overview": "Python allows multiple statements to be written in a program. Usually, each statement is written on a separate line for readability.",
+    "example": {
+      "title": "Multiple Statements",
+      "content": "x = 10\ny = 20\nprint(x + y)"
+    }
+  },
+  {
+    "id": "python-syntax-lesson-8",
+    "topicId": "python-syntax",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You learned Python syntax basics including indentation, comments, print, input, and writing Python statements.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Python uses indentation.\n✔ Comments explain code.\n✔ print displays output.\n✔ input receives user data.\n✔ Statements execute instructions."
+    }
+  }
+]

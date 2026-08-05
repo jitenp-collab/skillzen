@@ -1,0 +1,57 @@
+[
+  {
+    "id": "nodejs-file-system-lesson-1",
+    "topicId": "nodejs-file-system",
+    "lessonNumber": 1,
+    "title": "Introduction to File System Module",
+    "overview": "The File System (fs) module in Node.js allows applications to interact with files and folders such as reading, writing, updating, and deleting files.",
+    "example": {
+      "title": "Import fs Module",
+      "content": "const fs = require('fs');"
+    }
+  },
+  {
+    "id": "nodejs-file-system-lesson-2",
+    "topicId": "nodejs-file-system",
+    "lessonNumber": 2,
+    "title": "Reading Files",
+    "overview": "Node.js provides methods to read file content from the system using the fs module.",
+    "example": {
+      "title": "Read File Example",
+      "content": "const fs = require('fs');\n\nfs.readFile('data.txt','utf8',(err,data)=>{\n console.log(data);\n});"
+    }
+  },
+  {
+    "id": "nodejs-file-system-lesson-3",
+    "topicId": "nodejs-file-system",
+    "lessonNumber": 3,
+    "title": "Writing Files",
+    "overview": "The fs module allows creating new files or replacing existing file content using write methods.",
+    "example": {
+      "title": "Write File Example",
+      "content": "fs.writeFile('data.txt','Hello Node.js',(err)=>{\n console.log('File saved');\n});"
+    }
+  },
+  {
+    "id": "nodejs-file-system-lesson-4",
+    "topicId": "nodejs-file-system",
+    "lessonNumber": 4,
+    "title": "Updating and Deleting Files",
+    "overview": "Node.js can modify existing files and remove files using methods provided by the fs module.",
+    "example": {
+      "title": "Delete File Example",
+      "content": "fs.unlink('data.txt',(err)=>{\n console.log('File deleted');\n});"
+    }
+  },
+  {
+    "id": "nodejs-file-system-lesson-5",
+    "topicId": "nodejs-file-system",
+    "lessonNumber": 5,
+    "title": "Topic Summary",
+    "overview": "You learned how Node.js interacts with files using the File System module including reading, writing, updating, and deleting files.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ fs handles file operations.\n✔ readFile() reads files.\n✔ writeFile() creates or updates files.\n✔ unlink() deletes files."
+    }
+  }
+]

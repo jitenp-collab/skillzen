@@ -1,0 +1,79 @@
+[
+  {
+    "id": "nodejs-runtime-lesson-1",
+    "topicId": "nodejs-runtime",
+    "lessonNumber": 1,
+    "title": "How Node.js Works",
+    "overview": "Node.js runs JavaScript using the V8 JavaScript engine and provides additional APIs to interact with the operating system.",
+    "example": {
+      "title": "Node.js Flow",
+      "content": "JavaScript Code\n        ↓\nV8 Engine\n        ↓\nNode.js Runtime\n        ↓\nOperating System"
+    }
+  },
+  {
+    "id": "nodejs-runtime-lesson-2",
+    "topicId": "nodejs-runtime",
+    "lessonNumber": 2,
+    "title": "V8 JavaScript Engine",
+    "overview": "V8 is the JavaScript engine created by Google that converts JavaScript code into machine code for fast execution.",
+    "example": {
+      "title": "V8 Role",
+      "content": "JavaScript\n ↓\nV8 Engine\n ↓\nMachine Code"
+    }
+  },
+  {
+    "id": "nodejs-runtime-lesson-3",
+    "topicId": "nodejs-runtime",
+    "lessonNumber": 3,
+    "title": "Node.js Event Driven Architecture",
+    "overview": "Node.js follows an event-driven architecture where actions trigger events and callbacks handle their execution.",
+    "example": {
+      "title": "Event Flow",
+      "content": "Request\n ↓\nEvent\n ↓\nCallback\n ↓\nResponse"
+    }
+  },
+  {
+    "id": "nodejs-runtime-lesson-4",
+    "topicId": "nodejs-runtime",
+    "lessonNumber": 4,
+    "title": "Non-Blocking I/O",
+    "overview": "Node.js uses non-blocking operations which allow other tasks to continue while waiting for tasks like file or network operations.",
+    "example": {
+      "title": "Non-Blocking Example",
+      "content": "Task 1 starts\nTask 2 executes\nTask 1 completes later"
+    }
+  },
+  {
+    "id": "nodejs-runtime-lesson-5",
+    "topicId": "nodejs-runtime",
+    "lessonNumber": 5,
+    "title": "Node.js Event Loop",
+    "overview": "The event loop manages asynchronous operations and allows Node.js to handle multiple tasks efficiently.",
+    "example": {
+      "title": "Event Loop Process",
+      "content": "Call Stack\n ↓\nEvent Queue\n ↓\nEvent Loop\n ↓\nCallback Execution"
+    }
+  },
+  {
+    "id": "nodejs-runtime-lesson-6",
+    "topicId": "nodejs-runtime",
+    "lessonNumber": 6,
+    "title": "Single Thread in Node.js",
+    "overview": "Node.js uses a single main thread but handles multiple requests using asynchronous operations and background system processes.",
+    "example": {
+      "title": "Single Thread Concept",
+      "content": "One Main Thread\n+\nAsync Operations\n=\nHigh Scalability"
+    }
+  },
+  {
+    "id": "nodejs-runtime-lesson-7",
+    "topicId": "nodejs-runtime",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned how Node.js works internally using V8, event-driven architecture, non-blocking I/O, and the event loop.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ V8 executes JavaScript.\n✔ Node.js uses event-driven architecture.\n✔ Non-blocking I/O improves performance.\n✔ Event loop handles async tasks."
+    }
+  }
+]

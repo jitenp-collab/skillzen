@@ -1,0 +1,57 @@
+[
+  {
+    "id": "ts-enums-lesson-1",
+    "topicId": "ts-enums",
+    "lessonNumber": 1,
+    "title": "What are Enums?",
+    "overview": "Enums in TypeScript allow developers to define a set of named constants. They make code more readable by replacing hard-coded values with meaningful names.",
+    "example": {
+      "title": "Enum Example",
+      "content": "enum Direction {\n Up,\n Down,\n Left,\n Right\n}"
+    }
+  },
+  {
+    "id": "ts-enums-lesson-2",
+    "topicId": "ts-enums",
+    "lessonNumber": 2,
+    "title": "Numeric Enums",
+    "overview": "Numeric enums store values as numbers. TypeScript automatically assigns numeric values starting from zero unless specified manually.",
+    "example": {
+      "title": "Numeric Enum Example",
+      "content": "enum Status {\n Pending = 1,\n Completed = 2,\n Failed = 3\n}"
+    }
+  },
+  {
+    "id": "ts-enums-lesson-3",
+    "topicId": "ts-enums",
+    "lessonNumber": 3,
+    "title": "String Enums",
+    "overview": "String enums allow developers to assign custom string values to enum members. They are easier to debug and understand.",
+    "example": {
+      "title": "String Enum Example",
+      "content": "enum Role {\n Admin = 'ADMIN',\n User = 'USER'\n}"
+    }
+  },
+  {
+    "id": "ts-enums-lesson-4",
+    "topicId": "ts-enums",
+    "lessonNumber": 4,
+    "title": "Enums in React Native",
+    "overview": "Enums are useful in React Native for managing fixed values like user roles, screen names, app states, and configuration options.",
+    "example": {
+      "title": "React Native Enum Example",
+      "content": "enum Theme {\n Light = 'light',\n Dark = 'dark'\n}"
+    }
+  },
+  {
+    "id": "ts-enums-lesson-5",
+    "topicId": "ts-enums",
+    "lessonNumber": 5,
+    "title": "Topic Summary",
+    "overview": "You learned how enums create named constant values, different enum types, and how they improve readability in TypeScript applications.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Enums create named constants.\n✔ Numeric enums use numbers.\n✔ String enums use custom text values.\n✔ Useful for fixed application values."
+    }
+  }
+]

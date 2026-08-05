@@ -1,0 +1,57 @@
+[
+  {
+    "id": "js-modules-lesson-1",
+    "topicId": "js-modules",
+    "lessonNumber": 1,
+    "title": "What are JavaScript Modules?",
+    "overview": "Modules allow developers to divide JavaScript code into multiple files. They help organize code, improve maintainability, and allow code reuse across applications.",
+    "example": {
+      "title": "Module Concept",
+      "content": "File 1:\nExport code\n\nFile 2:\nImport and use code"
+    }
+  },
+  {
+    "id": "js-modules-lesson-2",
+    "topicId": "js-modules",
+    "lessonNumber": 2,
+    "title": "Exporting Modules",
+    "overview": "The export keyword is used to make variables, functions, or classes available for use in other JavaScript files.",
+    "example": {
+      "title": "Export Example",
+      "content": "export const name = 'Manthan';\n\nexport function greet(){\n console.log('Hello');\n}"
+    }
+  },
+  {
+    "id": "js-modules-lesson-3",
+    "topicId": "js-modules",
+    "lessonNumber": 3,
+    "title": "Importing Modules",
+    "overview": "The import keyword is used to bring exported code from another file into the current file.",
+    "example": {
+      "title": "Import Example",
+      "content": "import { name, greet } from './user';"
+    }
+  },
+  {
+    "id": "js-modules-lesson-4",
+    "topicId": "js-modules",
+    "lessonNumber": 4,
+    "title": "Default Export",
+    "overview": "A default export allows a file to export one main value. It does not require curly braces while importing.",
+    "example": {
+      "title": "Default Export Example",
+      "content": "export default App;\n\nimport App from './App';"
+    }
+  },
+  {
+    "id": "js-modules-lesson-5",
+    "topicId": "js-modules",
+    "lessonNumber": 5,
+    "title": "Topic Summary",
+    "overview": "You learned how JavaScript modules organize code using export and import statements, including named exports and default exports.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Modules split code into files.\n✔ export shares code.\n✔ import uses shared code.\n✔ Default export exports one main value.\n✔ Modules improve code organization."
+    }
+  }
+]

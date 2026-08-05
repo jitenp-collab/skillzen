@@ -1,0 +1,79 @@
+[
+  {
+    "id": "ts-interfaces-lesson-1",
+    "topicId": "ts-interfaces",
+    "lessonNumber": 1,
+    "title": "What are Interfaces?",
+    "overview": "Interfaces in TypeScript define the structure of an object. They describe what properties and methods an object should contain.",
+    "example": {
+      "title": "Interface Example",
+      "content": "interface User {\n name: string;\n age: number;\n}"
+    }
+  },
+  {
+    "id": "ts-interfaces-lesson-2",
+    "topicId": "ts-interfaces",
+    "lessonNumber": 2,
+    "title": "Creating an Interface",
+    "overview": "An interface is created using the interface keyword followed by the interface name and object structure.",
+    "example": {
+      "title": "Create Interface",
+      "content": "interface Product {\n id: number;\n title: string;\n}"
+    }
+  },
+  {
+    "id": "ts-interfaces-lesson-3",
+    "topicId": "ts-interfaces",
+    "lessonNumber": 3,
+    "title": "Using Interfaces with Objects",
+    "overview": "Interfaces can be used to define the type of objects. Objects must follow the structure defined by the interface.",
+    "example": {
+      "title": "Object with Interface",
+      "content": "interface User {\n name:string;\n}\n\nconst user: User = {\n name:'Manthan'\n};"
+    }
+  },
+  {
+    "id": "ts-interfaces-lesson-4",
+    "topicId": "ts-interfaces",
+    "lessonNumber": 4,
+    "title": "Optional Properties in Interfaces",
+    "overview": "Interface properties can be optional by adding a question mark. Optional properties do not need to be provided when creating an object.",
+    "example": {
+      "title": "Optional Property",
+      "content": "interface User {\n name:string;\n age?:number;\n}"
+    }
+  },
+  {
+    "id": "ts-interfaces-lesson-5",
+    "topicId": "ts-interfaces",
+    "lessonNumber": 5,
+    "title": "Readonly Properties",
+    "overview": "Readonly properties cannot be modified after the object is created. They are useful for values that should remain unchanged.",
+    "example": {
+      "title": "Readonly Example",
+      "content": "interface User {\n readonly id:number;\n name:string;\n}"
+    }
+  },
+  {
+    "id": "ts-interfaces-lesson-6",
+    "topicId": "ts-interfaces",
+    "lessonNumber": 6,
+    "title": "Interfaces in React Native",
+    "overview": "Interfaces are commonly used in React Native to define component props, API responses, navigation parameters, and application data structures.",
+    "example": {
+      "title": "Component Props Example",
+      "content": "interface Props {\n title:string;\n count:number;\n}\n\nfunction Card(props:Props){}"
+    }
+  },
+  {
+    "id": "ts-interfaces-lesson-7",
+    "topicId": "ts-interfaces",
+    "lessonNumber": 7,
+    "title": "Topic Summary",
+    "overview": "You learned how interfaces define object structures, optional properties, readonly properties, and their usage in React Native applications.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Interfaces define object shapes.\n✔ They improve type safety.\n✔ Properties can be optional or readonly.\n✔ Widely used in React Native projects."
+    }
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "js-arrays-lesson-1",
+    "topicId": "js-arrays",
+    "lessonNumber": 1,
+    "title": "What are Arrays?",
+    "overview": "Arrays are data structures used to store multiple values in a single variable. Each value in an array has a position called an index.",
+    "example": {
+      "title": "Array Example",
+      "content": "const fruits = ['Apple', 'Banana', 'Mango'];\n\nconsole.log(fruits[0]);\n\nOutput:\nApple"
+    }
+  },
+  {
+    "id": "js-arrays-lesson-2",
+    "topicId": "js-arrays",
+    "lessonNumber": 2,
+    "title": "Creating and Accessing Arrays",
+    "overview": "Arrays can be created using square brackets. Values inside arrays can be accessed using their index number. Array indexes start from 0.",
+    "example": {
+      "title": "Accessing Array Values",
+      "content": "const colors = ['Red','Blue','Green'];\n\nconsole.log(colors[1]);\n\nOutput:\nBlue"
+    }
+  },
+  {
+    "id": "js-arrays-lesson-3",
+    "topicId": "js-arrays",
+    "lessonNumber": 3,
+    "title": "Adding and Removing Array Elements",
+    "overview": "JavaScript provides methods like push, pop, shift, and unshift to add or remove elements from arrays.",
+    "example": {
+      "title": "Array Methods",
+      "content": "push(): Adds element at end\npop(): Removes last element\nshift(): Removes first element\nunshift(): Adds element at beginning"
+    }
+  },
+  {
+    "id": "js-arrays-lesson-4",
+    "topicId": "js-arrays",
+    "lessonNumber": 4,
+    "title": "Array Length and Iteration",
+    "overview": "The length property returns the number of elements in an array. Loops can be used to access each item inside an array.",
+    "example": {
+      "title": "Array Iteration",
+      "content": "const numbers = [1,2,3];\n\nfor(let num of numbers){\n console.log(num);\n}"
+    }
+  },
+  {
+    "id": "js-arrays-lesson-5",
+    "topicId": "js-arrays",
+    "lessonNumber": 5,
+    "title": "Array Methods",
+    "overview": "JavaScript provides built-in array methods that help developers perform common operations like searching, modifying, and transforming data.",
+    "example": {
+      "title": "Common Methods",
+      "content": "map()\nfilter()\nfind()\nincludes()\nindexOf()"
+    }
+  },
+  {
+    "id": "js-arrays-lesson-6",
+    "topicId": "js-arrays",
+    "lessonNumber": 6,
+    "title": "map and filter Methods",
+    "overview": "map creates a new array by transforming each element, while filter creates a new array containing only elements that match a condition.",
+    "example": {
+      "title": "map and filter Example",
+      "content": "const numbers = [1,2,3];\n\nnumbers.map(num => num * 2);\n\nnumbers.filter(num => num > 1);"
+    }
+  },
+  {
+    "id": "js-arrays-lesson-7",
+    "topicId": "js-arrays",
+    "lessonNumber": 7,
+    "title": "Destructuring Arrays",
+    "overview": "Array destructuring allows developers to extract values from arrays and store them directly into variables using a shorter syntax.",
+    "example": {
+      "title": "Destructuring Example",
+      "content": "const colors = ['Red','Blue'];\n\nconst [first, second] = colors;\n\nconsole.log(first);"
+    }
+  },
+  {
+    "id": "js-arrays-lesson-8",
+    "topicId": "js-arrays",
+    "lessonNumber": 8,
+    "title": "Topic Summary",
+    "overview": "You learned how arrays store multiple values, access elements, modify arrays, use array methods, iterate through arrays, and use destructuring.",
+    "example": {
+      "title": "Quick Revision",
+      "content": "✔ Arrays store multiple values.\n✔ Index starts from 0.\n✔ push/pop modify arrays.\n✔ map and filter transform data.\n✔ Destructuring extracts values easily."
+    }
+  }
+]
