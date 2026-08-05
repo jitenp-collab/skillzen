@@ -64,7 +64,6 @@ const CategoryCard = memo(
       ],
     }));
 
-
     const shimmerStyle = useAnimatedStyle(() => {
       const translateX = interpolate(
         shimmerProgress.value,
@@ -88,10 +87,7 @@ const CategoryCard = memo(
     }));
 
     const handlePress = () => {
-  
       onPress(item);
-      console.log(item);
-      
     };
 
     return (
@@ -127,10 +123,7 @@ const CategoryCard = memo(
               </Text>
             </View>
 
-            <AnimatedPressable
-              hitSlop={8}
-              onPress={handlePress}
-            >
+            <AnimatedPressable hitSlop={8} onPress={handlePress}>
               <View style={styles.startButton}>
                 <Animated.View
                   style={[styles.shimmerWrap, shimmerStyle]}
@@ -148,7 +141,7 @@ const CategoryCard = memo(
                   />
                 </Animated.View>
 
-                <Animated.View style={[styles.startIconChip, ]}>
+                <Animated.View style={[styles.startIconChip]}>
                   <Text style={styles.startButtonText}>Start</Text>
                   <Animated.View style={chevronStyle}>
                     <ChevronRightIcon color="#111318" size={15} />

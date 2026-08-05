@@ -34,7 +34,7 @@ const TopickeComp = () => {
       <View style={styles.header}>
         <AppButton
           onPress={() => {
-            (router.back(), console.log("Back clicked"));
+            router.back();
           }}
           hitSlop={10}
           style={styles.backButton}
@@ -112,6 +112,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     left: 0,
     top: 5,
+    zIndex: 200,
   },
   headerTitle: {
     color: theme.colors.text,
