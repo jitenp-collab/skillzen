@@ -181,7 +181,7 @@ export const googleSignInUser = createAsyncThunk(
 
       // console.log("New Google user registered:", user);
 
-      console.log("Total registered users:", updatedUsers.length);
+      // console.log("Total registered users:", updatedUsers.length);
     } else {
       // console.log("Existing Google user logged in:", user);
     }
