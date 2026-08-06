@@ -12,7 +12,7 @@ import { useState } from "react";
 import AppButton from "@/components/reusableComponents/AppButton";
 
 import { theme } from "@/utils/theme/Theme";
-import type {  } from "@/utils/types/Apptypes";
+import type { ProfileCompProps } from "@/utils/types/Apptypes";
 import {
   PencilIcon,
   AchievementIcon,
