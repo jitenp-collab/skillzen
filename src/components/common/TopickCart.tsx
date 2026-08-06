@@ -1,20 +1,35 @@
 import { Pressable, StyleSheet, Text, View } from "react-native";
+import { PieChart } from "react-native-gifted-charts";
 import { ICON_PALETTE, theme } from "@/utils/theme/Theme";
 import type { TopicListItem } from "@/utils/types/Apptypes";
-import { CheckIcon, ChevronRightIcon, TopicIcon } from "../../assets/svg/SvgIcons";
+import { CheckIcon, TopicIcon } from "../../assets/svg/SvgIcons";
+
+const RING_SIZE = 46;
 
 const TopickCart = ({
   item,
   index,
   isSelected,
+  progressPercent,
+  completed,
   onPress,
 }: {
   item: TopicListItem;
   index: number;
   isSelected: boolean;
+  progressPercent: number;
+  completed: boolean;
   onPress: (item: TopicListItem) => void;
 }) => {
   const accent = ICON_PALETTE[index % ICON_PALETTE.length];
+
+  const clampedPercent = Math.max(0, Math.min(100, progressPercent));
+  const ringColor = completed ? theme.colors.primary : accent;
+
+  const pieData = [
+    { value: clampedPercent, color: ringColor },
+    { value: 100 - clampedPercent, color: theme.colors.border },
+  ];
 
   return (
     <Pressable
@@ -41,13 +56,22 @@ const TopickCart = ({
         <Text style={styles.meta}>{item.totalLessons} lessons</Text>
       </View>
 
-      {isSelected ? (
-        <View style={styles.checkBadge}>
-          <CheckIcon color={theme.colors.background} size={14} />
-        </View>
-      ) : (
-        <ChevronRightIcon color={theme.colors.disabled} size={27} />
-      )}
+      <View style={styles.progressWrap}>
+        <PieChart
+          data={pieData}
+          donut
+          radius={RING_SIZE / 2}
+          innerRadius={RING_SIZE / 2 - 5} // was -5, thicker ring at bigger size
+          innerCircleColor={theme.colors.card}
+          centerLabelComponent={() =>
+            completed ? (
+              <CheckIcon color={theme.colors.primary} size={18} />
+            ) : (
+              <Text style={styles.progressPercentText}>{clampedPercent}%</Text>
+            )
+          }
+        />
+      </View>
     </Pressable>
   );
 };
@@ -95,12 +119,15 @@ const styles = StyleSheet.create({
     fontSize: theme.fontSize.caption,
     fontWeight: "500",
   },
-  checkBadge: {
-    width: 26,
-    height: 26,
-    borderRadius: theme.radius.round,
-    backgroundColor: theme.colors.primary,
+  progressWrap: {
+    width: RING_SIZE,
+    height: RING_SIZE,
     alignItems: "center",
     justifyContent: "center",
+  },
+  progressPercentText: {
+    color: theme.colors.text,
+    fontSize: 12,
+    // fontWeight: "700",
   },
 });

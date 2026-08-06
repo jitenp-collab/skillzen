@@ -702,15 +702,17 @@ export const DeleteIcon = ({
 
 export const ChevronRightIcon = ({
   color = "#94A3B8",
-  size = 22,
-  strokeWidth = 3,
-}: GetStartedIconProps) => {
+  size = 20,
+}: {
+  color?: string;
+  size?: number;
+}) => {
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
       <Path
         d="M9 6L15 12L9 18"
         stroke={color}
-        strokeWidth={strokeWidth}
+        strokeWidth={2}
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -933,54 +935,3 @@ export const TopicIcon = ({ color }: { color: string }) => (
     />
   </Svg>
 );
-
-export const QuestionIcon = ({ size = 20, color = "#FFFFFF" }) => (
-  <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
-    <Rect
-      x="3"
-      y="3"
-      width="18"
-      height="18"
-      rx="2"
-      stroke={color}
-      strokeWidth={2}
-    />
-
-    <Path
-      d="M9.5 9.2C9.5 7.8 10.6 7 12 7C13.4 7 14.5 7.9 14.5 9.2C14.5 10.1 14 10.8 13.1 11.4C12.3 12 12 12.5 12 13.4"
-      stroke={color}
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-
-    <Path
-      d="M12 17H12.01"
-      stroke={color}
-      strokeWidth={2}
-      strokeLinecap="round"
-    />
-  </Svg>
-);
-
-export const DoneIcon = ({
-  size = 20,
-  color = "#000",
-}: {
-  size?: number;
-  color?: string;
-}) => {
-  return (
-    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
-      <Circle cx="12" cy="12" r="9" stroke={color} strokeWidth={2} />
-
-      <Path
-        d="M8.5 12.2L11 14.7L15.8 9.8"
-        stroke={color}
-        strokeWidth={2}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </Svg>
-  );
-};

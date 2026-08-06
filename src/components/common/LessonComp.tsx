@@ -1,8 +1,8 @@
 import { Platform, ScrollView, StyleSheet, Text, View } from "react-native";
-import { useSelector } from "react-redux";
-import { useRouter } from "expo-router";
+import { useDispatch, useSelector } from "react-redux";
+import { useLocalSearchParams, useRouter } from "expo-router";
 
-import { RootState } from "@/redux/store";
+import { AppDispatch, RootState } from "@/redux/store";
 import { theme } from "@/utils/theme/Theme";
 import AppButton from "../reusableComponents/AppButton";
 import {
@@ -11,19 +11,63 @@ import {
   DoneIcon,
   QuestionIcon,
 } from "../../assets/svg/SvgIcons";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { updateTopicProgress } from "@/redux/actions";
 
 const LessonComp = () => {
   const router = useRouter();
+  const dispatch = useDispatch<AppDispatch>();
 
-  const { selectLessons } = useSelector((state: RootState) => state.global);
+  const { selectLessons, currentUser } = useSelector(
+    (state: RootState) => state.global,
+  );
 
-  const [currentLessonIndex, setCurrentLessonIndex] = useState(0);
+  const { categoryTitle, topicId } = useLocalSearchParams<{
+    categoryTitle: string;
+    topicId: string;
+  }>();
 
+  // Find saved progress for this exact topic (if any)
+  const savedProgress = currentUser?.userData?.find(
+    (entry) =>
+      entry.categoryTitle === categoryTitle && entry.topicId === topicId,
+  );
+
+  const [currentLessonIndex, setCurrentLessonIndex] = useState(
+    savedProgress?.completed ? 0 : (savedProgress?.lastLessonIndex ?? 0),
+  );
   // Safe array
   const lessons = selectLessons ?? [];
   const lesson = lessons[currentLessonIndex];
   const isLastLesson = currentLessonIndex === lessons.length - 1;
+
+  // Save progress whenever the lesson index changes (Next / Previous)
+  useEffect(() => {
+    if (!categoryTitle || !topicId) return;
+
+    dispatch(
+      updateTopicProgress({
+        categoryTitle,
+        topicId,
+        lastLessonIndex: currentLessonIndex,
+        completed: isLastLesson,
+      }),
+    );
+  }, [currentLessonIndex]);
+
+  const handleDone = () => {
+    if (categoryTitle && topicId) {
+      dispatch(
+        updateTopicProgress({
+          categoryTitle,
+          topicId,
+          lastLessonIndex: currentLessonIndex,
+          completed: true,
+        }),
+      );
+    }
+    router.back();
+  };
 
   return (
     <View style={styles.container}>
@@ -156,8 +200,7 @@ const LessonComp = () => {
           width="48%"
           onPress={() => {
             if (isLastLesson) {
-              // Finish Topic
-              router.back();
+              handleDone();
             } else {
               setCurrentLessonIndex((prev) => prev + 1);
             }
@@ -269,7 +312,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: theme.colors.border,
     padding: theme.spacing.md,
-    //     marginBottom: theme.spacing.lg,
   },
 
   exampleTitle: {

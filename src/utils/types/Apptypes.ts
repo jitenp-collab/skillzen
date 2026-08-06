@@ -97,6 +97,13 @@ export type BenefitVisualType =
   | "community"
   | "focus";
 
+export type TopicProgress = {
+  categoryTitle: string;
+  topicId: string;
+  lastLessonIndex: number;
+  completed: boolean;
+};
+
 export type User = {
   id: string;
   fullName: string;
@@ -105,7 +112,7 @@ export type User = {
   photo?: string;
   googlePhoto?: string;
   loginType: "email" | "google";
-  userData: object[];
+  userData: TopicProgress[];
 };
 
 export type TopicListItem = {

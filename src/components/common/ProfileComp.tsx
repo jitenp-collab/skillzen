@@ -11,7 +11,7 @@ import {
 import AppButton from "@/components/reusableComponents/AppButton";
 
 import { theme } from "@/utils/theme/Theme";
-import type { ProfileCompProps, User } from "@/utils/types/Apptypes";
+import type {  } from "@/utils/types/Apptypes";
 import {
   PencilIcon,
   AchievementIcon,
@@ -35,7 +35,7 @@ const ProfileComp = ({
   onSelectFromGallery,
   onDeletePhoto,
   onLogout,
-}: ProfileCompProps) => {
+}: any) => {
   const firstLetter = currentUser.fullName?.charAt(0).toUpperCase() || "U";
 
   const renderProfileImage = (size: number, style?: object) => {

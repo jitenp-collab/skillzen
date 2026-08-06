@@ -16,21 +16,47 @@ const TopickeComp = () => {
   const dispatch = useDispatch<AppDispatch>();
   const { categoryTitle } = useLocalSearchParams<{ categoryTitle?: string }>();
 
-  const { selectedCatogery } = useSelector((state: RootState) => state.global);
+  const { selectedCatogery, currentUser } = useSelector(
+    (state: RootState) => state.global,
+  );
   const topics: TopicListItem[] = selectedCatogery ?? [];
 
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedTopicId, setSelectedTopicId] = useState<string | null>(null);
 
   const filteredTopics = topics.filter((t) =>
-    t.title.toLowerCase().includes(searchQuery.trim().toLowerCase())
+    t.title.toLowerCase().includes(searchQuery.trim().toLowerCase()),
   );
 
-  const handleTopicPress = useCallback((item: TopicListItem) => {
-    setSelectedTopicId(item.id);
-    dispatch(fetchLessonsByTopic(item.id));
-    router.navigate("/(stackScreens)/LessonScreen")
-  }, []);
+  const handleTopicPress = useCallback(
+    (item: TopicListItem) => {
+      setSelectedTopicId(item.id);
+      dispatch(fetchLessonsByTopic(item.id));
+      router.navigate({
+        pathname: "/(stackScreens)/LessonScreen",
+        params: {
+          categoryTitle: categoryTitle ?? "",
+          topicId: item.id,
+        },
+      });
+    },
+    [dispatch, categoryTitle],
+  );
+
+  const getTopicProgress = (topicId: string, totalLessons: number) => {
+    const entry = currentUser?.userData?.find(
+      (e) => e.categoryTitle === categoryTitle && e.topicId === topicId,
+    );
+
+    if (!entry) return { percent: 0, completed: false };
+    if (entry.completed) return { percent: 100, completed: true };
+    if (!totalLessons) return { percent: 0, completed: false };
+
+    const percent = Math.round(
+      ((entry.lastLessonIndex + 1) / totalLessons) * 100,
+    );
+    return { percent, completed: false };
+  };
 
   return (
     <View style={styles.screen}>
@@ -77,14 +103,22 @@ const TopickeComp = () => {
             <FlatList
               data={filteredTopics}
               keyExtractor={(item) => item.id}
-              renderItem={({ item, index }) => (
-                <TopickCart
-                  item={item}
-                  index={index}
-                  isSelected={item.id === selectedTopicId}
-                  onPress={handleTopicPress}
-                />
-              )}
+              renderItem={({ item, index }) => {
+                const { percent, completed } = getTopicProgress(
+                  item.id,
+                  item.totalLessons,
+                );
+                return (
+                  <TopickCart
+                    item={item}
+                    index={index}
+                    isSelected={item.id === selectedTopicId}
+                    progressPercent={percent}
+                    completed={completed}
+                    onPress={handleTopicPress}
+                  />
+                );
+              }}
               contentContainerStyle={styles.listContent}
               keyboardDismissMode="on-drag"
               keyboardShouldPersistTaps="handled"
@@ -135,7 +169,7 @@ const styles = StyleSheet.create({
   },
   listContent: {
     paddingTop: theme.spacing.sm,
-    paddingBottom: theme.spacing.xxl,
+    paddingBottom: 30,
     gap: theme.spacing.sm,
   },
   emptyContainer: {

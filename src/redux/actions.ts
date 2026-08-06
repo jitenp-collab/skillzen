@@ -11,6 +11,7 @@ import { loadData, removeData, StoreData } from "@/services/AsynckStorage";
 import type {
   LoginFormValues,
   RegistrationFormValues,
+  TopicProgress,
   User,
 } from "@/utils/types/Apptypes";
 import {
@@ -280,5 +281,64 @@ export const fetchLessonsByTopic = createAsyncThunk(
       console.log("Error loading lessons:", error);
       return [];
     }
+  }
+);
+
+
+
+export const updateTopicProgress = createAsyncThunk(
+  "global/updateTopicProgress",
+  async (payload: {
+    categoryTitle: string;
+    topicId: string;
+    lastLessonIndex: number;
+    completed: boolean;
+  }) => {
+    const currentUser: User | null = (await loadData(CURRENT_USER_KEY)) ?? null;
+
+    if (!currentUser) {
+      throw new Error("No logged-in user found");
+    }
+
+    const existingUserData: TopicProgress[] = currentUser.userData ?? [];
+
+    const existingIndex = existingUserData.findIndex(
+      (entry) =>
+        entry.categoryTitle === payload.categoryTitle &&
+        entry.topicId === payload.topicId
+    );
+
+    let updatedUserData: TopicProgress[];
+
+    if (existingIndex !== -1) {
+      updatedUserData = [...existingUserData];
+      updatedUserData[existingIndex] = {
+        ...updatedUserData[existingIndex],
+        lastLessonIndex: payload.lastLessonIndex,
+        completed: payload.completed,
+      };
+    } else {
+      updatedUserData = [
+        ...existingUserData,
+        {
+          categoryTitle: payload.categoryTitle,
+          topicId: payload.topicId,
+          lastLessonIndex: payload.lastLessonIndex,
+          completed: payload.completed,
+        },
+      ];
+    }
+
+    const updatedUser: User = { ...currentUser, userData: updatedUserData };
+
+    await StoreData(CURRENT_USER_KEY, updatedUser);
+
+    const registeredUsers: User[] = (await loadData(REGISTERED_USERS_KEY)) ?? [];
+    const updatedUsers = registeredUsers.map((user) =>
+      user.email === updatedUser.email ? updatedUser : user
+    );
+    await StoreData(REGISTERED_USERS_KEY, updatedUsers);
+
+    return updatedUser;
   }
 );
