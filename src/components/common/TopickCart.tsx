@@ -61,7 +61,7 @@ const TopickCart = ({
           data={pieData}
           donut
           radius={RING_SIZE / 2}
-          innerRadius={RING_SIZE / 2 - 5} // was -5, thicker ring at bigger size
+          innerRadius={RING_SIZE / 2 - 5}
           innerCircleColor={theme.colors.card}
           centerLabelComponent={() =>
             completed ? (

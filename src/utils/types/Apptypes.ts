@@ -103,7 +103,6 @@ export type TopicProgress = {
   lastLessonIndex: number;
   completed: boolean;
 };
-
 export type User = {
   id: string;
   fullName: string;

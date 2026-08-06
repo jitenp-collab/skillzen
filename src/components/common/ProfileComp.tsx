@@ -40,6 +40,7 @@ const ProfileComp = ({
   const [isLogoutModalVisible, setIsLogoutModalVisible] = useState(false);
   const firstLetter = currentUser.fullName?.charAt(0).toUpperCase() || "U";
 
+
   const renderProfileImage = (size: number, style?: object) => {
     const profilePhoto = currentUser.photo || currentUser.googlePhoto;
 
