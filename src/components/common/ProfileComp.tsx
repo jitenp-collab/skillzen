@@ -7,6 +7,7 @@ import {
   Text,
   View,
 } from "react-native";
+import { useState } from "react";
 
 import AppButton from "@/components/reusableComponents/AppButton";
 
@@ -36,6 +37,7 @@ const ProfileComp = ({
   onDeletePhoto,
   onLogout,
 }: ProfileCompProps) => {
+  const [isLogoutModalVisible, setIsLogoutModalVisible] = useState(false);
   const firstLetter = currentUser.fullName?.charAt(0).toUpperCase() || "U";
 
   const renderProfileImage = (size: number, style?: object) => {
@@ -137,10 +139,8 @@ const ProfileComp = ({
             ]}
           >
             <AchievementIcon />
-
             <Text style={styles.menuText}>Achievements</Text>
-
-            <ChevronRightIcon />
+            <ChevronRightIcon color={theme.colors.text} />
           </Pressable>
 
           <View style={styles.divider} />
@@ -155,7 +155,7 @@ const ProfileComp = ({
 
             <Text style={styles.menuText}>Bookmarks</Text>
 
-            <ChevronRightIcon />
+            <ChevronRightIcon color={theme.colors.text} />
           </Pressable>
 
           <View style={styles.divider} />
@@ -168,7 +168,7 @@ const ProfileComp = ({
           >
             <DownloadIcon />
             <Text style={styles.menuText}>Downloads</Text>
-            <ChevronRightIcon />
+            <ChevronRightIcon color={theme.colors.text} />
           </Pressable>
         </View>
 
@@ -181,7 +181,7 @@ const ProfileComp = ({
           >
             <SettingsIcon />
             <Text style={styles.menuText}>Settings</Text>
-            <ChevronRightIcon />
+            <ChevronRightIcon color={theme.colors.text} />
           </Pressable>
 
           <View style={styles.divider} />
@@ -194,7 +194,7 @@ const ProfileComp = ({
           >
             <HelpIcon />
             <Text style={styles.menuText}>Help & Support</Text>
-            <ChevronRightIcon />
+            <ChevronRightIcon color={theme.colors.text} />
           </Pressable>
         </View>
 
@@ -210,7 +210,7 @@ const ProfileComp = ({
           bordercolor={theme.colors.border}
           fontSize={16}
           fontweight="500"
-          onPress={onLogout}
+          onPress={() => setIsLogoutModalVisible(true)}
           style={styles.logoutButton}
         />
       </ScrollView>
@@ -280,6 +280,51 @@ const ProfileComp = ({
             />
           </Pressable>
         </Pressable>
+      </Modal>
+      <Modal
+        visible={isLogoutModalVisible}
+        transparent
+        animationType="fade"
+        onRequestClose={() => setIsLogoutModalVisible(false)}
+      >
+        <View style={styles.confirmOverlay}>
+          <View style={styles.confirmContainer}>
+            <LogoutIcon />
+
+            <Text style={styles.confirmTitle}>Logout?</Text>
+
+            <Text style={styles.confirmMessage}>
+              Are you sure you want to logout from your account?
+            </Text>
+
+            <View style={styles.confirmButtons}>
+              <AppButton
+                title="Cancel"
+                width="48%"
+                height={48}
+                backgroundColor={theme.colors.surface}
+                textColor={theme.colors.text}
+                borderRadius={12}
+                borderwidth={1}
+                bordercolor={theme.colors.border}
+                onPress={() => setIsLogoutModalVisible(false)}
+              />
+
+              <AppButton
+                title="Logout"
+                width="48%"
+                height={48}
+                backgroundColor="#FF4D67"
+                textColor="#FFFFFF"
+                borderRadius={12}
+                onPress={() => {
+                  setIsLogoutModalVisible(false);
+                  onLogout();
+                }}
+              />
+            </View>
+          </View>
+        </View>
       </Modal>
     </View>
   );
@@ -566,5 +611,44 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: "800",
     marginLeft: 10,
+  },
+  confirmOverlay: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "rgba(0, 0, 0, 0.6)",
+    paddingHorizontal: 24,
+  },
+
+  confirmContainer: {
+    width: "100%",
+    backgroundColor: theme.colors.surface,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: theme.colors.border,
+    padding: 24,
+    alignItems: "center",
+  },
+
+  confirmTitle: {
+    color: theme.colors.text,
+    fontSize: 22,
+    fontWeight: "800",
+    marginTop: 16,
+  },
+
+  confirmMessage: {
+    color: theme.colors.muted,
+    fontSize: 15,
+    textAlign: "center",
+    lineHeight: 22,
+    marginTop: 10,
+    marginBottom: 24,
+  },
+
+  confirmButtons: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    width: "100%",
   },
 });
