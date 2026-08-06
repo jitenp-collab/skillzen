@@ -86,8 +86,6 @@ const LessonComp = () => {
             {lesson?.title ?? "Lesson Title"}
           </Text>
 
-          {/* Spacer to balance the back button */}
-          <View style={styles.headerSpacer} />
         </View>
 
         <Text style={styles.lessonCount}>
@@ -147,7 +145,7 @@ const LessonComp = () => {
           </View>
         </View>
 
-        <View style={{ height: 120 }} />
+        <View style={{ height: 20 }} />
       </ScrollView>
 
       {/* ---------------- Footer ---------------- */}
@@ -164,6 +162,7 @@ const LessonComp = () => {
           }
           iconPosition="left"
           title={isLastLesson ? "Quiz" : "Previous"}
+          height={50}
           width="48%"
           disabled={!isLastLesson && currentLessonIndex === 0}
           onPress={() => {
@@ -179,6 +178,7 @@ const LessonComp = () => {
           backgroundColor={
             isLastLesson ? theme.colors.secondary : theme.colors.card
           }
+          textStyle={{ fontSize: 15 }}
           textColor={isLastLesson ? theme.colors.white : theme.colors.text}
           borderwidth={1}
           bordercolor={
@@ -197,6 +197,7 @@ const LessonComp = () => {
           }
           iconPosition="right"
           title={isLastLesson ? "Done" : "Next"}
+          height={50}
           width="48%"
           onPress={() => {
             if (isLastLesson) {
@@ -206,6 +207,7 @@ const LessonComp = () => {
             }
           }}
           backgroundColor={theme.colors.primary}
+          textStyle={{ fontSize: 15 }}
           textColor={theme.colors.black}
         />
       </View>
@@ -229,24 +231,21 @@ const styles = StyleSheet.create({
   headerRow: {
     flexDirection: "row",
     alignItems: "center",
+    justifyContent:"space-between"
   },
 
   backButton: {
-    width: 40,
-    height: 40,
-  },
-
-  headerSpacer: {
-    width: 40,
+    width: 10,
+    height:40,
   },
 
   lessonTitle: {
     flex: 1,
     textAlign: "center",
     color: theme.colors.text,
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: "700",
-    lineHeight: 32,
+    lineHeight: 20,
   },
 
   lessonCount: {
@@ -261,7 +260,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     paddingHorizontal: theme.spacing.md,
-    marginBottom: theme.spacing.lg,
+    marginBottom: theme.spacing.md,
   },
 
   progressTrack: {
@@ -296,14 +295,13 @@ const styles = StyleSheet.create({
     fontSize: 21,
     fontWeight: "700",
     marginBottom: theme.spacing.sm,
-    marginTop: theme.spacing.sm,
   },
 
   overviewText: {
     color: theme.colors.textSecondary,
     fontSize: 16,
-    lineHeight: 28,
-    marginBottom: theme.spacing.xl,
+    lineHeight: 22,
+    marginBottom: theme.spacing.md,
   },
 
   exampleCard: {
@@ -318,7 +316,7 @@ const styles = StyleSheet.create({
     color: theme.colors.primary,
     fontSize: 17,
     fontWeight: "700",
-    marginBottom: theme.spacing.md,
+    marginBottom: theme.spacing.sm,
   },
   codeCard: {
     backgroundColor: "#111827",
@@ -326,19 +324,14 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: theme.colors.border,
     padding: 16,
-    marginBottom: theme.spacing.lg,
+    marginBottom: theme.spacing.sm,
   },
 
   codeText: {
     color: "#E5E7EB",
     fontSize: 15,
-    lineHeight: 26,
+    lineHeight: 23,
     fontFamily: Platform.OS === "ios" ? "Menlo" : "monospace",
-  },
-  exampleContent: {
-    color: theme.colors.textSecondary,
-    fontSize: 16,
-    lineHeight: 28,
   },
 
   footer: {

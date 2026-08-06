@@ -115,6 +115,18 @@ export type User = {
   userData: TopicProgress[];
 };
 
+export type ProfileCompProps = {
+  currentUser: User;
+  isPhotoModalVisible: boolean;
+
+  onOpenPhotoModal: () => void;
+  onClosePhotoModal: () => void;
+  onTakePhoto: () => void;
+  onSelectFromGallery: () => void;
+  onDeletePhoto: () => void;
+  onLogout: () => void;
+};
+
 export type TopicListItem = {
   id: string;
   title: string;
