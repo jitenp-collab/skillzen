@@ -29,8 +29,7 @@ const TopickeComp = () => {
   const handleTopicPress = useCallback((item: TopicListItem) => {
     setSelectedTopicId(item.id);
     dispatch(fetchLessonsByTopic(item.id));
-
-    // router.navigate(`/lesson/${item.id}`)
+    router.navigate("/(stackScreens)/LessonScreen")
   }, []);
 
   return (

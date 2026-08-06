@@ -4,7 +4,7 @@ import { theme } from "@/utils/theme/Theme";
 
 import { Stack } from "expo-router";
 import { Provider } from "react-redux";
-import { SafeAreaProvider } from "react-native-safe-area-context";
+import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 const RootLayout = () => {
@@ -12,16 +12,16 @@ const RootLayout = () => {
     <GestureHandlerRootView>
       <Provider store={store}>
         <SafeAreaProvider>
-          <StatusBarComponent />
-          <Stack
-            screenOptions={{
-              headerShown: false,
-              animation: "none",
-              contentStyle: {
-                backgroundColor: theme.colors.background,
-              },
-            }}
-          />
+            <StatusBarComponent />
+            <Stack
+              screenOptions={{
+                headerShown: false,
+                animation: "none",
+                contentStyle: {
+                  backgroundColor: theme.colors.background,
+                },
+              }}
+            />
         </SafeAreaProvider>
       </Provider>
     </GestureHandlerRootView>
