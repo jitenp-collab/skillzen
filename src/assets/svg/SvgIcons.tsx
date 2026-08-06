@@ -933,7 +933,7 @@ export const TopicIcon = ({ color }: { color: string }) => (
     />
   </Svg>
 );
-
+//ok
 export const QuestionIcon = ({ size = 20, color = "#FFFFFF" }) => (
   <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
     <Rect
