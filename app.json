@@ -4,19 +4,17 @@
     "slug": "SkillZen",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/all_logo.png",
     "scheme": "skillzen",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon",
+      "icon": "./assets/images/forgroundImage.png",
       "bundleIdentifier": "com.anonymous.SkillZen"
     },
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "foregroundImage": "./assets/images/forgroundImage.png"
       },
       "predictiveBackGestureEnabled": false,
       "package": "com.anonymous.SkillZen"

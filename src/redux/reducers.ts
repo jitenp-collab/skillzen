@@ -11,6 +11,7 @@ import {
   registerUser,
   SelectCaogery,
   updateProfilePhoto,
+  updateTopicProgress,
 } from "./actions";
 
 import type { GlobalState } from "@/utils/types/Apptypes";
@@ -196,14 +197,31 @@ const globalSlice = createSlice({
 
       .addCase(fetchLessonsByTopic.fulfilled, (state, action) => {
         state.selectLessons = action.payload;
-        console.log(state.selectLessons);
+        // console.log(state.selectLessons);
         state.isLoading = false;
       })
 
       .addCase(fetchLessonsByTopic.rejected, (state, action) => {
         state.isLoading = false;
         state.error = action.error.message || "Unable to fetch categories";
-      });
+      })
+
+      // Update topic progress
+      .addCase(updateTopicProgress.pending, (state) => {
+        state.isLoading = true;
+        state.error = null;
+      })
+
+      .addCase(updateTopicProgress.fulfilled, (state, action) => {
+        state.currentUser = action.payload;
+        state.isLoading = false;
+        state.error = null;
+      })
+
+      .addCase(updateTopicProgress.rejected, (state, action) => {
+        state.isLoading = false;
+        state.error = action.error.message || "Unable to update progress";
+      })
   },
 });
 
